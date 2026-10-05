@@ -51,10 +51,10 @@ export default function SiteHeader() {
         <div className="flex shrink-0 items-center gap-3">
           <a
             href={en.contact.phoneHref}
-            className="inline-flex min-h-12 shrink-0 items-center gap-2 whitespace-nowrap rounded-lg bg-navy px-4 py-3 text-lg font-semibold text-white no-underline hover:bg-navy-dark md:px-5"
+            className="hidden min-h-12 shrink-0 items-center gap-2 whitespace-nowrap rounded-lg bg-navy px-5 py-3 text-lg font-semibold text-white no-underline hover:bg-navy-dark lg:inline-flex"
           >
             <PhoneIcon />
-            <span className="sr-only md:not-sr-only">{en.contact.phoneDisplay}</span>
+            <span>{en.contact.phoneDisplay}</span>
           </a>
 
           <button
@@ -62,7 +62,7 @@ export default function SiteHeader() {
             onClick={() => setMenuOpen((open) => !open)}
             aria-expanded={menuOpen}
             aria-controls="mobile-menu"
-            className="inline-flex min-h-12 items-center gap-2 rounded-lg border-2 border-navy bg-white px-4 py-2 text-lg font-semibold text-navy hover:bg-cream md:px-5 xl:hidden"
+            className="inline-flex min-h-12 items-center gap-2 rounded-lg border-2 border-navy bg-white px-5 py-2 text-lg font-semibold text-navy hover:bg-cream xl:hidden"
           >
             <MenuIcon open={menuOpen} />
             {menuOpen ? en.nav.closeLabel : en.nav.menuLabel}
