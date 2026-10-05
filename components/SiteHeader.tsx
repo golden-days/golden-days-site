@@ -12,7 +12,7 @@ export default function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-40 border-b-4 border-gold bg-white">
-      <div className="mx-auto flex w-full max-w-5xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
         <Link href="/" className="shrink-0 no-underline" onClick={() => setMenuOpen(false)}>
           <Image
             src="/logo.png"
@@ -24,18 +24,21 @@ export default function SiteHeader() {
           />
         </Link>
 
-        <nav aria-label={en.nav.ariaLabel} className="hidden lg:block">
-          <ul className="flex list-none items-center gap-5">
+        <nav aria-label={en.nav.ariaLabel} className="hidden xl:block">
+          <ul className="flex list-none items-center gap-6">
             {en.nav.links.map((link) => {
               const isCurrent = pathname === link.href;
+              const isMainAction = link.href === "/qualify";
               return (
                 <li key={link.href}>
                   <Link
                     href={link.href}
                     aria-current={isCurrent ? "page" : undefined}
-                    className={`inline-flex min-h-11 items-center text-lg font-semibold text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark ${
-                      isCurrent ? "decoration-gold-deep decoration-4" : ""
-                    }`}
+                    className={`inline-flex min-h-12 items-center whitespace-nowrap text-lg font-semibold text-navy hover:text-navy-dark ${
+                      isMainAction
+                        ? "rounded-lg border-2 border-gold-deep bg-cream px-4 no-underline hover:bg-gold"
+                        : "underline decoration-2 underline-offset-4"
+                    } ${isCurrent ? "underline decoration-gold-deep decoration-4 underline-offset-4" : ""}`}
                   >
                     {link.label}
                   </Link>
@@ -45,29 +48,31 @@ export default function SiteHeader() {
           </ul>
         </nav>
 
-        <a
-          href={en.contact.phoneHref}
-          className="hidden min-h-12 items-center gap-2 rounded-lg bg-navy px-5 py-3 text-base font-semibold text-white no-underline hover:bg-navy-dark lg:inline-flex"
-        >
-          <PhoneIcon />
-          <span>{en.contact.phoneDisplay}</span>
-        </a>
+        <div className="flex shrink-0 items-center gap-3">
+          <a
+            href={en.contact.phoneHref}
+            className="inline-flex min-h-12 shrink-0 items-center gap-2 whitespace-nowrap rounded-lg bg-navy px-4 py-3 text-lg font-semibold text-white no-underline hover:bg-navy-dark md:px-5"
+          >
+            <PhoneIcon />
+            <span className="sr-only md:not-sr-only">{en.contact.phoneDisplay}</span>
+          </a>
 
-        <button
-          type="button"
-          onClick={() => setMenuOpen((open) => !open)}
-          aria-expanded={menuOpen}
-          aria-controls="mobile-menu"
-          className="inline-flex min-h-12 items-center gap-2 rounded-lg border-2 border-navy bg-white px-5 py-2 text-lg font-semibold text-navy hover:bg-cream lg:hidden"
-        >
-          <MenuIcon open={menuOpen} />
-          {menuOpen ? en.nav.closeLabel : en.nav.menuLabel}
-        </button>
+          <button
+            type="button"
+            onClick={() => setMenuOpen((open) => !open)}
+            aria-expanded={menuOpen}
+            aria-controls="mobile-menu"
+            className="inline-flex min-h-12 items-center gap-2 rounded-lg border-2 border-navy bg-white px-4 py-2 text-lg font-semibold text-navy hover:bg-cream md:px-5 xl:hidden"
+          >
+            <MenuIcon open={menuOpen} />
+            {menuOpen ? en.nav.closeLabel : en.nav.menuLabel}
+          </button>
+        </div>
       </div>
 
       {menuOpen ? (
-        <div id="mobile-menu" className="border-t-2 border-gold bg-white lg:hidden">
-          <nav aria-label={en.nav.ariaLabel} className="mx-auto w-full max-w-5xl px-4 py-2 sm:px-6">
+        <div id="mobile-menu" className="border-t-2 border-gold bg-white xl:hidden">
+          <nav aria-label={en.nav.ariaLabel} className="mx-auto w-full max-w-7xl px-4 py-2 sm:px-6">
             <ul className="list-none">
               {en.nav.links.map((link) => (
                 <li key={link.href} className="border-b border-cream last:border-b-0">
@@ -75,7 +80,11 @@ export default function SiteHeader() {
                     href={link.href}
                     onClick={() => setMenuOpen(false)}
                     aria-current={pathname === link.href ? "page" : undefined}
-                    className="flex min-h-14 items-center text-lg font-semibold text-navy underline decoration-2 underline-offset-4"
+                    className={`flex min-h-14 items-center text-lg font-semibold text-navy ${
+                      link.href === "/qualify"
+                        ? "no-underline before:mr-3 before:h-6 before:w-1.5 before:rounded-full before:bg-gold-deep"
+                        : "underline decoration-2 underline-offset-4"
+                    }`}
                   >
                     {link.label}
                   </Link>
