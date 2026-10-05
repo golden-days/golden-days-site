@@ -50,6 +50,7 @@ export const en = {
       { href: "/about", label: "About" },
       { href: "/services", label: "Services" },
       { href: "/transportation", label: "Transportation" },
+      { href: "/qualify", label: "Do I qualify?" },
       { href: "/enrollment", label: "Enrollment" },
       { href: "/contact", label: "Contact" },
     ],
@@ -59,6 +60,7 @@ export const en = {
     call: "Call us",
     callWithNumber: `Call ${phone.display}`,
     scheduleTour: "Schedule a tour",
+    doIQualify: "Do I qualify?",
     learnMore: "Learn more",
   },
 
@@ -516,9 +518,75 @@ export const en = {
         },
       ],
     },
+    qualifyPrompt: {
+      heading: "Not sure if this is a fit?",
+      text: "Answer five short questions and we will point you to the next step. It takes about a minute. [PLACEHOLDER]",
+    },
     cta: {
       heading: "Ready to start?",
       text: "Call us or schedule a tour. There is no cost to ask questions. [PLACEHOLDER]",
+    },
+  },
+
+  // ------------------------------------------------- Do I qualify? check ---
+  // Five questions, one per screen. Nothing here is stored or sent anywhere;
+  // the answers only live in the browser while the page is open.
+  qualify: {
+    meta: {
+      title: "Do I qualify?",
+      description:
+        "Answer five short questions to see whether Golden Days in West Sacramento may be a good fit. [PLACEHOLDER]",
+    },
+    intro: {
+      heading: "See if Golden Days may be right for you or your loved one.",
+      reassurance:
+        "This takes about a minute. It is not an application and not a final decision. We do not ask for your name or any health information, and your answers stay on this page. We do not collect or store them. [PLACEHOLDER]",
+      startLabel: "Start the questions",
+    },
+    progressLabel: "Question {current} of {total}",
+    progressBarLabel: "How far along you are",
+    backLabel: "Go back",
+    helpLabel: "What does this mean?",
+    answers: {
+      yes: "Yes",
+      no: "No",
+      notSure: "Not sure",
+    },
+    answerGroupLabel: "Choose one answer",
+    questions: [
+      {
+        text: "Is the person 18 or older? [PLACEHOLDER]",
+        help: "Golden Days is a program for adults. If you are asking for a parent or a spouse, answer for that person. [PLACEHOLDER]",
+      },
+      {
+        text: "Do they live in or near West Sacramento? [PLACEHOLDER]",
+        help: "Nearby towns can work too. If you are not sure whether your address is close enough, choose Not sure. [PLACEHOLDER]",
+      },
+      {
+        text: "Do they need help with everyday activities, like bathing, dressing, or taking medicine? [PLACEHOLDER]",
+        help: "Everyday activities means things like washing up, getting dressed, eating, walking safely, or remembering medicine. [PLACEHOLDER]",
+      },
+      {
+        text: "Do they have Medi-Cal (California's health coverage program), other health insurance, or can they pay privately? [PLACEHOLDER]",
+        help: "Medi-Cal helps pay for care for people with a low income. Paying privately means paying the center directly. [PLACEHOLDER]",
+      },
+      {
+        text: "Can a doctor fill out a referral form? [PLACEHOLDER]",
+        help: "A referral form is a short form a doctor signs to say the program may help. We can send the form to the doctor's office. [PLACEHOLDER]",
+      },
+    ],
+    results: {
+      announcement: "Here are your results.",
+      goodFit: {
+        heading: "Good news. Golden Days may be a good fit.",
+        text: "Call us or schedule a tour, and we will help with the next steps. [PLACEHOLDER]",
+      },
+      unsure: {
+        heading: "We are not sure yet, and that is okay.",
+        text: "Many families are unsure at the start. Call us and we will go through your situation together. Some answers can change with the right paperwork or coverage. [PLACEHOLDER]",
+      },
+      enrollmentLinkLabel: "Read how enrollment works",
+      startOverLabel: "Start over",
     },
   },
 
@@ -542,14 +610,16 @@ export const en = {
 
   form: {
     heading: "Send us a message",
-    intro: "Fill out the form and we will reply. [PLACEHOLDER]",
+    responseTime: "A member of our team will call you within 2 business days. [PLACEHOLDER]",
+    callAlternativeLead: "Prefer to talk?",
+    callAlternativeLinkPrefix: "Call us at",
     medicalNote: "Please do not include medical information in this form.",
     fields: {
       name: { label: "Your name", placeholder: "First and last name" },
       phone: { label: "Phone number", placeholder: "(916) 555-0100" },
       email: { label: "Email (optional)", placeholder: "you@example.com" },
       message: {
-        label: "How can we help?",
+        label: "How can we help? (optional)",
         placeholder: "Tell us a little about who the care is for.",
       },
       honeypot: { label: "Leave this field empty" },
@@ -569,7 +639,6 @@ export const en = {
     validation: {
       name: "Please enter your name.",
       phone: "Please enter a phone number we can call.",
-      message: "Please tell us how we can help.",
     },
   },
 

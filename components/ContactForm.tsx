@@ -10,7 +10,6 @@ type Status = "idle" | "sending" | "sent" | "error" | "not-configured";
 type Errors = {
   name?: string;
   phone?: string;
-  message?: string;
 };
 
 const fieldClasses =
@@ -38,10 +37,10 @@ export default function ContactForm() {
       return;
     }
 
+    // Only name and phone are required. Email and message are optional.
     const nextErrors: Errors = {};
     if (!String(data.get("name") ?? "").trim()) nextErrors.name = en.form.validation.name;
     if (!String(data.get("phone") ?? "").trim()) nextErrors.phone = en.form.validation.phone;
-    if (!String(data.get("message") ?? "").trim()) nextErrors.message = en.form.validation.message;
 
     setErrors(nextErrors);
     if (Object.keys(nextErrors).length > 0) {
@@ -102,81 +101,88 @@ export default function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} noValidate className="rounded-xl border-4 border-gold bg-white p-5 sm:p-6">
+    <div className="rounded-xl border-4 border-gold bg-white p-5 sm:p-6">
       <h3 className="font-serif text-2xl font-bold text-navy">{en.form.heading}</h3>
-      <p className="mt-2 text-base">{en.form.intro}</p>
+      <p className="mt-2">{en.form.responseTime}</p>
+      <p className="mt-2 text-base">
+        {en.form.callAlternativeLead}{" "}
+        <a
+          href={en.contact.phoneHref}
+          className="font-semibold text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
+        >
+          {en.form.callAlternativeLinkPrefix} {en.contact.phoneDisplay}
+        </a>
+      </p>
 
       <p className="mt-4 rounded-lg border-2 border-gold-deep bg-cream px-4 py-3 text-base font-semibold text-ink">
         {en.form.medicalNote}
       </p>
 
-      <Field
-        id="name"
-        name="name"
-        label={en.form.fields.name.label}
-        placeholder={en.form.fields.name.placeholder}
-        autoComplete="name"
-        required
-        error={errors.name}
-      />
-
-      <Field
-        id="phone"
-        name="phone"
-        type="tel"
-        label={en.form.fields.phone.label}
-        placeholder={en.form.fields.phone.placeholder}
-        autoComplete="tel"
-        required
-        error={errors.phone}
-      />
-
-      <Field
-        id="email"
-        name="email"
-        type="email"
-        label={en.form.fields.email.label}
-        placeholder={en.form.fields.email.placeholder}
-        autoComplete="email"
-      />
-
-      <div className="mt-5">
-        <label htmlFor="message" className="block font-semibold text-navy">
-          {en.form.fields.message.label}{" "}
-          <span className="font-normal text-ink">({en.form.required})</span>
-        </label>
-        <textarea
-          id="message"
-          name="message"
-          rows={5}
-          placeholder={en.form.fields.message.placeholder}
-          aria-invalid={errors.message ? "true" : undefined}
-          aria-describedby={errors.message ? "message-error" : undefined}
-          className={fieldClasses}
+      <form onSubmit={handleSubmit} noValidate>
+        <Field
+          id="name"
+          name="name"
+          label={en.form.fields.name.label}
+          placeholder={en.form.fields.name.placeholder}
+          autoComplete="name"
+          required
+          error={errors.name}
         />
-        {errors.message ? <FieldError id="message-error">{errors.message}</FieldError> : null}
-      </div>
 
-      <div hidden aria-hidden="true">
-        <label htmlFor="_gotcha">{en.form.fields.honeypot.label}</label>
-        <input id="_gotcha" type="text" name="_gotcha" tabIndex={-1} autoComplete="off" />
-      </div>
+        <Field
+          id="phone"
+          name="phone"
+          type="tel"
+          label={en.form.fields.phone.label}
+          placeholder={en.form.fields.phone.placeholder}
+          autoComplete="tel"
+          required
+          error={errors.phone}
+        />
 
-      {status === "error" ? (
-        <div role="alert" className="mt-5 rounded-lg border-2 border-navy bg-cream px-4 py-3">
-          <strong className="block text-navy">{en.form.errorHeading}</strong>
-          <span>{en.form.errorText}</span>
+        <Field
+          id="email"
+          name="email"
+          type="email"
+          label={en.form.fields.email.label}
+          placeholder={en.form.fields.email.placeholder}
+          autoComplete="email"
+        />
+
+        <div className="mt-5">
+          <label htmlFor="message" className="block font-semibold text-navy">
+            {en.form.fields.message.label}
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            rows={5}
+            placeholder={en.form.fields.message.placeholder}
+            className={fieldClasses}
+          />
         </div>
-      ) : null}
 
-      <button
-        type="submit"
-        disabled={status === "sending"}
-        className="mt-6 inline-flex min-h-12 w-full items-center justify-center rounded-lg bg-navy px-6 py-3 text-lg font-semibold text-white hover:bg-navy-dark disabled:opacity-70 sm:w-auto"
-      >
-        {status === "sending" ? en.form.submitting : en.form.submit}
-      </button>
-    </form>
+        <div hidden aria-hidden="true">
+          <label htmlFor="_gotcha">{en.form.fields.honeypot.label}</label>
+          <input id="_gotcha" type="text" name="_gotcha" tabIndex={-1} autoComplete="off" />
+        </div>
+
+        {status === "error" ? (
+          <div role="alert" className="mt-5 rounded-lg border-2 border-navy bg-cream px-4 py-3">
+            <strong className="block text-navy">{en.form.errorHeading}</strong>
+            <span>{en.form.errorText}</span>
+          </div>
+        ) : null}
+
+        <button
+          type="submit"
+          disabled={status === "sending"}
+          className="mt-6 inline-flex min-h-12 w-full items-center justify-center rounded-lg bg-navy px-6 py-3 text-lg font-semibold text-white hover:bg-navy-dark disabled:opacity-70 sm:w-auto"
+        >
+          {status === "sending" ? en.form.submitting : en.form.submit}
+        </button>
+      </form>
+    </div>
   );
 }
 

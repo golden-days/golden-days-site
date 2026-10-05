@@ -28,9 +28,9 @@ export default function HomePage() {
             <h1 className="text-3xl sm:text-4xl md:text-5xl">{home.hero.heading}</h1>
             <p className="mt-4">{home.hero.intro}</p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <ButtonLink href={en.contact.phoneHref}>{en.buttons.call}</ButtonLink>
-              <ButtonLink href="/contact#tour" variant="secondary">
-                {en.buttons.scheduleTour}
+              <ButtonLink href="/qualify">{en.buttons.doIQualify}</ButtonLink>
+              <ButtonLink href={en.contact.phoneHref} variant="secondary">
+                {en.buttons.call}
               </ButtonLink>
             </div>
           </div>

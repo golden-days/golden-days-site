@@ -1,3 +1,4 @@
+import ButtonLink from "@/components/ButtonLink";
 import CallToAction from "@/components/CallToAction";
 import PageHero from "@/components/PageHero";
 import Section from "@/components/Section";
@@ -18,7 +19,17 @@ export default function EnrollmentPage() {
       <PageHero heading={page.heading} lead={page.lead} />
 
       <Section>
-        <h2 className="text-2xl sm:text-3xl">{page.qualifies.heading}</h2>
+        <div className="rounded-xl border-2 border-navy bg-cream p-6 sm:flex sm:items-center sm:justify-between sm:gap-6">
+          <div>
+            <h2 className="text-2xl">{page.qualifyPrompt.heading}</h2>
+            <p className="mt-2 text-base">{page.qualifyPrompt.text}</p>
+          </div>
+          <div className="mt-5 shrink-0 sm:mt-0">
+            <ButtonLink href="/qualify">{en.buttons.doIQualify}</ButtonLink>
+          </div>
+        </div>
+
+        <h2 className="mt-12 text-2xl sm:text-3xl">{page.qualifies.heading}</h2>
         <p className="mt-4 max-w-3xl">{page.qualifies.intro}</p>
         <ul className="mt-4 max-w-3xl list-disc space-y-2 pl-6">
           {page.qualifies.items.map((item) => (
@@ -94,7 +105,7 @@ export default function EnrollmentPage() {
         </dl>
       </Section>
 
-      <CallToAction heading={page.cta.heading} text={page.cta.text} />
+      <CallToAction heading={page.cta.heading} text={page.cta.text} secondary="tour" />
     </>
   );
 }
