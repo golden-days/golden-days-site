@@ -1,0 +1,228 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
+import { en } from "@/content/en";
+
+const endpoint = process.env.NEXT_PUBLIC_FORM_ENDPOINT;
+
+type Status = "idle" | "sending" | "sent" | "error" | "not-configured";
+
+type Errors = {
+  name?: string;
+  phone?: string;
+  message?: string;
+};
+
+const fieldClasses =
+  "mt-2 block w-full min-h-12 rounded-lg border-2 border-navy bg-white px-4 py-3 text-ink placeholder:text-ink/50";
+
+export default function ContactForm() {
+  const [status, setStatus] = useState<Status>("idle");
+  const [errors, setErrors] = useState<Errors>({});
+  const confirmationRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (status === "sent" || status === "not-configured") {
+      confirmationRef.current?.focus();
+    }
+  }, [status]);
+
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const form = event.currentTarget;
+    const data = new FormData(form);
+
+    // Spam bots fill in every field, including the hidden one. Pretend it worked.
+    if (data.get("_gotcha")) {
+      setStatus("sent");
+      return;
+    }
+
+    const nextErrors: Errors = {};
+    if (!String(data.get("name") ?? "").trim()) nextErrors.name = en.form.validation.name;
+    if (!String(data.get("phone") ?? "").trim()) nextErrors.phone = en.form.validation.phone;
+    if (!String(data.get("message") ?? "").trim()) nextErrors.message = en.form.validation.message;
+
+    setErrors(nextErrors);
+    if (Object.keys(nextErrors).length > 0) {
+      form.querySelector<HTMLElement>("[aria-invalid='true']")?.focus();
+      return;
+    }
+
+    if (!endpoint) {
+      setStatus("not-configured");
+      return;
+    }
+
+    setStatus("sending");
+    try {
+      const response = await fetch(endpoint, {
+        method: "POST",
+        body: data,
+        headers: { Accept: "application/json" },
+      });
+      if (!response.ok) throw new Error("Request failed");
+      form.reset();
+      setStatus("sent");
+    } catch {
+      setStatus("error");
+    }
+  }
+
+  if (status === "sent" || status === "not-configured") {
+    const sent = status === "sent";
+    return (
+      <div
+        ref={confirmationRef}
+        tabIndex={-1}
+        role="status"
+        className={`rounded-xl border-4 p-6 ${sent ? "border-navy bg-cream" : "border-gold-deep bg-cream"}`}
+      >
+        <h3 className="font-serif text-2xl font-bold text-navy">
+          {sent ? en.form.successHeading : en.form.notConfiguredHeading}
+        </h3>
+        <p className="mt-3">{sent ? en.form.successText : en.form.notConfiguredText}</p>
+        <p className="mt-4">
+          <a
+            href={en.contact.phoneHref}
+            className="font-semibold text-navy underline decoration-2 underline-offset-4"
+          >
+            {en.buttons.callWithNumber}
+          </a>
+        </p>
+        <button
+          type="button"
+          onClick={() => setStatus("idle")}
+          className="mt-6 inline-flex min-h-12 items-center rounded-lg bg-navy px-6 py-3 font-semibold text-white hover:bg-navy-dark"
+        >
+          {en.form.successAgain}
+        </button>
+      </div>
+    );
+  }
+
+  return (
+    <form onSubmit={handleSubmit} noValidate className="rounded-xl border-4 border-gold bg-white p-5 sm:p-6">
+      <h3 className="font-serif text-2xl font-bold text-navy">{en.form.heading}</h3>
+      <p className="mt-2 text-base">{en.form.intro}</p>
+
+      <p className="mt-4 rounded-lg border-2 border-gold-deep bg-cream px-4 py-3 text-base font-semibold text-ink">
+        {en.form.medicalNote}
+      </p>
+
+      <Field
+        id="name"
+        name="name"
+        label={en.form.fields.name.label}
+        placeholder={en.form.fields.name.placeholder}
+        autoComplete="name"
+        required
+        error={errors.name}
+      />
+
+      <Field
+        id="phone"
+        name="phone"
+        type="tel"
+        label={en.form.fields.phone.label}
+        placeholder={en.form.fields.phone.placeholder}
+        autoComplete="tel"
+        required
+        error={errors.phone}
+      />
+
+      <Field
+        id="email"
+        name="email"
+        type="email"
+        label={en.form.fields.email.label}
+        placeholder={en.form.fields.email.placeholder}
+        autoComplete="email"
+      />
+
+      <div className="mt-5">
+        <label htmlFor="message" className="block font-semibold text-navy">
+          {en.form.fields.message.label}{" "}
+          <span className="font-normal text-ink">({en.form.required})</span>
+        </label>
+        <textarea
+          id="message"
+          name="message"
+          rows={5}
+          placeholder={en.form.fields.message.placeholder}
+          aria-invalid={errors.message ? "true" : undefined}
+          aria-describedby={errors.message ? "message-error" : undefined}
+          className={fieldClasses}
+        />
+        {errors.message ? <FieldError id="message-error">{errors.message}</FieldError> : null}
+      </div>
+
+      <div hidden aria-hidden="true">
+        <label htmlFor="_gotcha">{en.form.fields.honeypot.label}</label>
+        <input id="_gotcha" type="text" name="_gotcha" tabIndex={-1} autoComplete="off" />
+      </div>
+
+      {status === "error" ? (
+        <div role="alert" className="mt-5 rounded-lg border-2 border-navy bg-cream px-4 py-3">
+          <strong className="block text-navy">{en.form.errorHeading}</strong>
+          <span>{en.form.errorText}</span>
+        </div>
+      ) : null}
+
+      <button
+        type="submit"
+        disabled={status === "sending"}
+        className="mt-6 inline-flex min-h-12 w-full items-center justify-center rounded-lg bg-navy px-6 py-3 text-lg font-semibold text-white hover:bg-navy-dark disabled:opacity-70 sm:w-auto"
+      >
+        {status === "sending" ? en.form.submitting : en.form.submit}
+      </button>
+    </form>
+  );
+}
+
+function Field({
+  id,
+  name,
+  label,
+  placeholder,
+  type = "text",
+  autoComplete,
+  required = false,
+  error,
+}: {
+  id: string;
+  name: string;
+  label: string;
+  placeholder?: string;
+  type?: string;
+  autoComplete?: string;
+  required?: boolean;
+  error?: string;
+}) {
+  return (
+    <div className="mt-5">
+      <label htmlFor={id} className="block font-semibold text-navy">
+        {label} {required ? <span className="font-normal text-ink">({en.form.required})</span> : null}
+      </label>
+      <input
+        id={id}
+        name={name}
+        type={type}
+        placeholder={placeholder}
+        autoComplete={autoComplete}
+        aria-invalid={error ? "true" : undefined}
+        aria-describedby={error ? `${id}-error` : undefined}
+        className={fieldClasses}
+      />
+      {error ? <FieldError id={`${id}-error`}>{error}</FieldError> : null}
+    </div>
+  );
+}
+
+function FieldError({ id, children }: { id: string; children: React.ReactNode }) {
+  return (
+    <p id={id} className="mt-2 text-base font-semibold text-navy">
+      {children}
+    </p>
+  );
+}

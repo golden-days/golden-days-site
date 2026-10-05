@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #30317e;
+  --color-navy-dark: #22235e;
+  --color-gold: #f6d375;
+  --color-gold-deep: #e0b64a;
+  --color-cream: #fff8e3;
+  --color-ink: #1a1a1a;
+
+  --font-sans: var(--font-source-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-source-serif), Georgia, "Times New Roman", serif;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1.25rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-navy);
+  text-wrap: balance;
+}
+
+/* A single visible focus style for every interactive element on the site. */
+:focus-visible {
+  outline: 3px solid var(--color-navy);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Keep the focus ring visible against the navy footer. */
+.on-navy :focus-visible {
+  outline-color: #ffffff;
+}
