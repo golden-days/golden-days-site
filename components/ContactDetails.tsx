@@ -30,7 +30,7 @@ export default function ContactDetails() {
         <dd className="mt-1">
           <a
             href={en.contact.phoneHref}
-            className="font-semibold text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
+            className="inline-flex min-h-11 items-center font-semibold text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
           >
             {en.contact.phoneDisplay}
           </a>
@@ -42,7 +42,7 @@ export default function ContactDetails() {
         <dd className="mt-1">
           <a
             href={en.contact.emailHref}
-            className="break-words text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
+            className="inline-flex min-h-11 items-center break-words text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
           >
             {en.contact.email}
           </a>

@@ -20,18 +20,22 @@ export default function SiteFooter() {
                 {line}
               </span>
             ))}
-            <a
-              href={en.contact.phoneHref}
-              className="mt-3 inline-block font-semibold text-white underline decoration-2 underline-offset-4"
-            >
-              {en.contact.phoneDisplay}
-            </a>
-            <a
-              href={en.contact.emailHref}
-              className="mt-1 block break-words text-white underline decoration-2 underline-offset-4"
-            >
-              {en.contact.email}
-            </a>
+            <span className="mt-2 block">
+              <a
+                href={en.contact.phoneHref}
+                className="inline-flex min-h-11 items-center font-semibold text-white underline decoration-2 underline-offset-4"
+              >
+                {en.contact.phoneDisplay}
+              </a>
+            </span>
+            <span className="block">
+              <a
+                href={en.contact.emailHref}
+                className="inline-flex min-h-11 items-center break-words text-white underline decoration-2 underline-offset-4"
+              >
+                {en.contact.email}
+              </a>
+            </span>
           </address>
         </div>
 

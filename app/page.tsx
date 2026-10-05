@@ -22,13 +22,13 @@ export default function HomePage() {
   return (
     <>
       <div className="relative overflow-hidden border-b-4 border-gold bg-cream">
-        <Sunburst className="pointer-events-none absolute -top-16 left-1/2 h-72 w-[40rem] -translate-x-1/2 opacity-40" />
+        <Sunburst className="pointer-events-none absolute -top-16 right-0 h-72 w-[34rem] opacity-30" />
         <div className="relative mx-auto grid w-full max-w-5xl gap-8 px-4 py-12 sm:px-6 md:grid-cols-2 md:items-center md:py-16">
           <div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl">{home.hero.heading}</h1>
             <p className="mt-4">{home.hero.intro}</p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <ButtonLink href={en.contact.phoneHref}>{en.buttons.callWithNumber}</ButtonLink>
+              <ButtonLink href={en.contact.phoneHref}>{en.buttons.call}</ButtonLink>
               <ButtonLink href="/contact#tour" variant="secondary">
                 {en.buttons.scheduleTour}
               </ButtonLink>
@@ -65,7 +65,7 @@ export default function HomePage() {
         <p className="mt-8">
           <Link
             href={home.services.linkHref}
-            className="font-semibold text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
+            className="inline-flex min-h-12 items-center font-semibold text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
           >
             {home.services.linkLabel}
           </Link>
@@ -85,7 +85,7 @@ export default function HomePage() {
             <p className="mt-6">
               <Link
                 href={home.transportation.linkHref}
-                className="font-semibold text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
+                className="inline-flex min-h-12 items-center font-semibold text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
               >
                 {home.transportation.linkLabel}
               </Link>
@@ -109,7 +109,7 @@ export default function HomePage() {
               <h3 className="mt-3 text-xl">
                 <Link
                   href={home.enrollment.linkHref}
-                  className="text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
+                  className="inline-flex min-h-11 items-center text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
                 >
                   <span className="sr-only">{`Step ${index + 1}: `}</span>
                   {step.title}
@@ -122,7 +122,7 @@ export default function HomePage() {
         <p className="mt-8">
           <Link
             href={home.enrollment.linkHref}
-            className="font-semibold text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
+            className="inline-flex min-h-12 items-center font-semibold text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
           >
             {home.enrollment.linkLabel}
           </Link>

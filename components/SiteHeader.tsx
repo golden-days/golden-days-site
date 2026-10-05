@@ -12,7 +12,7 @@ export default function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-40 border-b-4 border-gold bg-white">
-      <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
+      <div className="mx-auto flex w-full max-w-5xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
         <Link href="/" className="shrink-0 no-underline" onClick={() => setMenuOpen(false)}>
           <Image
             src="/logo.png"
@@ -33,7 +33,7 @@ export default function SiteHeader() {
                   <Link
                     href={link.href}
                     aria-current={isCurrent ? "page" : undefined}
-                    className={`text-lg font-semibold text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark ${
+                    className={`inline-flex min-h-11 items-center text-lg font-semibold text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark ${
                       isCurrent ? "decoration-gold-deep decoration-4" : ""
                     }`}
                   >
@@ -67,7 +67,7 @@ export default function SiteHeader() {
 
       {menuOpen ? (
         <div id="mobile-menu" className="border-t-2 border-gold bg-white lg:hidden">
-          <nav aria-label={en.nav.ariaLabel} className="mx-auto w-full max-w-6xl px-4 py-2 sm:px-6">
+          <nav aria-label={en.nav.ariaLabel} className="mx-auto w-full max-w-5xl px-4 py-2 sm:px-6">
             <ul className="list-none">
               {en.nav.links.map((link) => (
                 <li key={link.href} className="border-b border-cream last:border-b-0">

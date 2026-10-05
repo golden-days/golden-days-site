@@ -16,33 +16,33 @@
   color-scheme: light;
 }
 
-html {
-  scroll-behavior: auto;
-}
-
-body {
-  background-color: #ffffff;
-  color: var(--color-ink);
-  font-family: var(--font-sans);
-  font-size: 1.125rem;
-  line-height: 1.7;
-}
-
-@media (min-width: 768px) {
+/* `@layer base` keeps these defaults below the Tailwind utility classes, so a
+   class such as `text-white` can still override them. */
+@layer base {
   body {
-    font-size: 1.25rem;
+    background-color: #ffffff;
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1.125rem;
+    line-height: 1.7;
   }
-}
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: var(--font-serif);
-  font-weight: 700;
-  line-height: 1.2;
-  color: var(--color-navy);
-  text-wrap: balance;
+  @media (min-width: 768px) {
+    body {
+      font-size: 1.25rem;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-navy);
+    text-wrap: balance;
+  }
 }
 
 /* A single visible focus style for every interactive element on the site. */

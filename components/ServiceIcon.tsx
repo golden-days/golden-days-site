@@ -15,8 +15,10 @@ const paths: Record<IconName, React.ReactNode> = {
   ),
   rehabilitation: (
     <>
-      <path d="M8 24h6M34 24h6M14 16v16M34 16v16" />
-      <path d="M20 20v8M28 20v8M20 24h8" />
+      <path d="M6 19v10M42 19v10" />
+      <rect x="11" y="14" width="7" height="20" rx="2" />
+      <rect x="30" y="14" width="7" height="20" rx="2" />
+      <path d="M18 24h12" />
     </>
   ),
   nutrition: (
