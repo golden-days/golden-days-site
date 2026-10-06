@@ -300,7 +300,7 @@ export const en = {
         title: "Nutrition",
         summary: "A hot meal and snacks each program day, with special diets available. [PLACEHOLDER]",
         details: [
-          "Lunch is served every program day, with morning and afternoon snacks. [PLACEHOLDER]",
+          "Breakfast and lunch are served every program day, with morning and afternoon snacks. The meals rotate. [PLACEHOLDER]",
           "We can plan around low-salt, diabetic, and soft-food diets. [PLACEHOLDER]",
           "Tell us about food preferences and we will do our best to match them. [PLACEHOLDER]",
         ],
@@ -320,8 +320,7 @@ export const en = {
         title: "Recreation",
         summary: "Music, games, crafts, gentle exercise, and company through the day. [PLACEHOLDER]",
         details: [
-          "Each day has a schedule of activities people can join or skip. [PLACEHOLDER]",
-          "Activities include music, card games, crafts, and seated exercise. [PLACEHOLDER]",
+          "Each day has a schedule of activities people can join or skip, including music, card games, crafts, and seated exercise. [PLACEHOLDER]",
           "Field trips happen three times a week, at no extra cost. People who use a wheelchair or have other mobility needs can come along. [PLACEHOLDER]",
           "Holidays and birthdays are celebrated together. [PLACEHOLDER]",
         ],
