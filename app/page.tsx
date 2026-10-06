@@ -36,12 +36,6 @@ export default function HomePage() {
             <p className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-1 font-semibold text-ink">
               <span>{en.contact.addressLines.join(", ")}</span>
               <span>{en.contact.hours}</span>
-              <a
-                href={en.contact.phoneHref}
-                className="inline-flex min-h-12 min-w-12 items-center text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
-              >
-                {en.contact.phoneDisplay}
-              </a>
             </p>
           </div>
           <PhotoPlaceholder photo={home.hero.photo} wide />
