@@ -89,7 +89,7 @@ export default function QualifyQuiz() {
           <h1
             ref={headingRef}
             tabIndex={-1}
-            className="text-3xl focus:outline-3 focus:outline-offset-2 focus:outline-navy sm:text-4xl md:text-5xl"
+            className="text-3xl outline-none focus:outline-none focus-visible:outline-none sm:text-4xl md:text-5xl"
           >
             {quiz.intro.heading}
           </h1>
@@ -114,7 +114,7 @@ export default function QualifyQuiz() {
           <h1
             ref={headingRef}
             tabIndex={-1}
-            className="mt-4 text-2xl focus:outline-3 focus:outline-offset-2 focus:outline-navy md:text-3xl"
+            className="mt-4 text-2xl outline-none focus:outline-none focus-visible:outline-none md:text-3xl"
           >
             {quiz.questions[step].text}
           </h1>
@@ -158,7 +158,7 @@ export default function QualifyQuiz() {
           <h1
             ref={headingRef}
             tabIndex={-1}
-            className="text-3xl focus:outline-3 focus:outline-offset-2 focus:outline-navy sm:text-4xl md:text-5xl"
+            className="text-3xl outline-none focus:outline-none focus-visible:outline-none sm:text-4xl md:text-5xl"
           >
             {result.heading}
           </h1>
