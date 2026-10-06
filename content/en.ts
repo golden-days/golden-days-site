@@ -133,7 +133,7 @@ export const en = {
         {
           icon: "recreation" as const,
           title: "Recreation",
-          text: "Music, games, crafts, exercise, and time with other people. [PLACEHOLDER]",
+          text: "Music, games, crafts, exercise, field trips, and time with other people. [PLACEHOLDER]",
         },
         {
           icon: "transportation" as const,
@@ -322,6 +322,7 @@ export const en = {
         details: [
           "Each day has a schedule of activities people can join or skip. [PLACEHOLDER]",
           "Activities include music, card games, crafts, and seated exercise. [PLACEHOLDER]",
+          "Field trips happen three times a week, at no extra cost. People who use a wheelchair or have other mobility needs can come along. [PLACEHOLDER]",
           "Holidays and birthdays are celebrated together. [PLACEHOLDER]",
         ],
       },
