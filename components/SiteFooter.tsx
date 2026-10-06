@@ -43,20 +43,23 @@ export default function SiteFooter() {
           <h2 className="font-serif text-xl font-bold text-white">{en.footer.hoursHeading}</h2>
           <p className="mt-3 text-lg">{en.contact.hours}</p>
           <p className="text-lg">{en.contact.programHours}</p>
-          <p className="text-lg">{en.contact.hoursNote}</p>
-          <ul className="mt-4 flex list-none flex-col gap-2 text-lg">
-            {en.nav.links.map((link) => (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  className="inline-flex min-h-12 min-w-12 items-center text-white underline decoration-2 underline-offset-4"
-                >
-                  {link.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <p className="mt-2 text-lg">{en.contact.hoursNote}</p>
         </div>
+      </div>
+
+      <div className="border-t border-white/30">
+        <ul className="mx-auto flex w-full max-w-5xl list-none flex-col gap-2 px-4 py-6 text-lg sm:px-6 md:flex-row md:flex-wrap md:gap-x-8">
+          {en.nav.links.map((link) => (
+            <li key={link.href}>
+              <Link
+                href={link.href}
+                className="inline-flex min-h-12 min-w-12 items-center text-white underline decoration-2 underline-offset-4"
+              >
+                {link.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
       </div>
 
       <div className="border-t border-white/30">

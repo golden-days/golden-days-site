@@ -10,7 +10,7 @@ const localBusiness = {
   description: stripMarker(en.home.meta.description),
   url: siteUrl,
   telephone: "+1-916-371-6011",
-  email: "info@example.com",
+  email: "info@goldendaysadhc.net",
   image: `${siteUrl}/logo.png`,
   logo: `${siteUrl}/logo.png`,
   foundingDate: "2003",
