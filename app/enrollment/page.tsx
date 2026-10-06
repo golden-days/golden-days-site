@@ -93,16 +93,31 @@ export default function EnrollmentPage() {
         </ol>
       </Section>
 
-      <Section>
+      <Section id="faq" className="scroll-mt-28">
         <h2 className="text-2xl sm:text-3xl">{page.faq.heading}</h2>
-        <dl className="mt-8 max-w-3xl divide-y-2 divide-gold-deep border-y-2 border-gold-deep">
+        <div className="mt-8 max-w-3xl divide-y-2 divide-gold-deep border-y-2 border-gold-deep">
           {page.faq.items.map((item) => (
-            <div key={item.question} className="py-5">
-              <dt className="font-serif text-xl font-bold text-navy">{item.question}</dt>
-              <dd className="mt-2">{item.answer}</dd>
-            </div>
+            <details key={item.question} className="group py-2">
+              <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-4 py-2 font-serif text-xl font-bold text-navy [&::-webkit-details-marker]:hidden">
+                {item.question}
+                <svg
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  focusable="false"
+                  className="h-6 w-6 shrink-0 transition-transform group-open:rotate-180"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </summary>
+              <p className="pb-3 pt-1">{item.answer}</p>
+            </details>
           ))}
-        </dl>
+        </div>
       </Section>
 
       <CallToAction heading={page.cta.heading} text={page.cta.text} secondary="tour" />

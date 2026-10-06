@@ -1,3 +1,4 @@
+import Link from "next/link";
 import CallToAction from "@/components/CallToAction";
 import PageHero from "@/components/PageHero";
 import Section from "@/components/Section";
@@ -48,6 +49,14 @@ export default function ServicesPage() {
             </li>
           ))}
         </ol>
+        <p className="mt-8">
+          <Link
+            href="/enrollment#faq"
+            className="inline-flex min-h-12 min-w-12 items-center font-semibold text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
+          >
+            {en.enrollment.faq.heading}
+          </Link>
+        </p>
       </Section>
 
       <CallToAction heading={services.cta.heading} text={services.cta.text} />

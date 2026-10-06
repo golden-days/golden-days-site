@@ -131,6 +131,14 @@ export default function HomePage() {
             {home.enrollment.linkLabel}
           </Link>
         </p>
+        <p>
+          <Link
+            href="/enrollment#faq"
+            className="inline-flex min-h-12 min-w-12 items-center font-semibold text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
+          >
+            {en.enrollment.faq.heading}
+          </Link>
+        </p>
       </Section>
 
       <Section>

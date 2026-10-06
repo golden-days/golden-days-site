@@ -59,6 +59,14 @@ export default function SiteFooter() {
               </Link>
             </li>
           ))}
+          <li>
+            <Link
+              href="/enrollment#faq"
+              className="inline-flex min-h-12 min-w-12 items-center text-white underline decoration-2 underline-offset-4"
+            >
+              {en.enrollment.faq.heading}
+            </Link>
+          </li>
         </ul>
       </div>
 

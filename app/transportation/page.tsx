@@ -1,3 +1,4 @@
+import Link from "next/link";
 import CallToAction from "@/components/CallToAction";
 import PageHero from "@/components/PageHero";
 import PhotoPlaceholder from "@/components/PhotoPlaceholder";
@@ -45,6 +46,14 @@ export default function TransportationPage() {
 
       <Section>
         <PhotoPlaceholder photo={page.secondPhoto} wide className="mx-auto max-w-3xl" />
+        <p className="mx-auto mt-8 max-w-3xl">
+          <Link
+            href="/enrollment#faq"
+            className="inline-flex min-h-12 min-w-12 items-center font-semibold text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
+          >
+            {en.enrollment.faq.heading}
+          </Link>
+        </p>
       </Section>
 
       <CallToAction heading={page.cta.heading} text={page.cta.text} />
