@@ -23,6 +23,7 @@ export default function QualifyQuiz() {
   const [answers, setAnswers] = useState<AnswerValue[]>([]);
   const [hasStarted, setHasStarted] = useState(false);
   const headingRef = useRef<HTMLHeadingElement>(null);
+  const quizRef = useRef<HTMLDivElement>(null);
 
   // Screen readers announce changes to this text, not its first value, so the
   // intro wording is not read out when the page loads.
@@ -35,8 +36,10 @@ export default function QualifyQuiz() {
 
   useEffect(() => {
     if (!hasStarted) return;
-    headingRef.current?.focus();
-    headingRef.current?.scrollIntoView({ block: "start" });
+    // Focus the heading for screen readers, but scroll to the top of the quiz
+    // so the progress line above the heading stays in view.
+    headingRef.current?.focus({ preventScroll: true });
+    quizRef.current?.scrollIntoView({ block: "start" });
   }, [step, hasStarted]);
 
   function answer(value: AnswerValue) {
@@ -73,7 +76,10 @@ export default function QualifyQuiz() {
         : quiz.results.unsure;
 
   return (
-    <div className="mx-auto flex w-full max-w-3xl flex-col px-4 py-6 sm:px-6 md:py-10">
+    <div
+      ref={quizRef}
+      className="mx-auto flex w-full max-w-3xl scroll-mt-4 flex-col px-4 py-6 sm:px-6 md:scroll-mt-28 md:py-10"
+    >
       <p className="sr-only" role="status" aria-live="polite">
         {announcement}
       </p>
@@ -83,7 +89,7 @@ export default function QualifyQuiz() {
           <h1
             ref={headingRef}
             tabIndex={-1}
-            className="scroll-mt-32 text-3xl focus:outline-3 focus:outline-offset-2 focus:outline-navy sm:text-4xl md:text-5xl"
+            className="text-3xl focus:outline-3 focus:outline-offset-2 focus:outline-navy sm:text-4xl md:text-5xl"
           >
             {quiz.intro.heading}
           </h1>
@@ -108,7 +114,7 @@ export default function QualifyQuiz() {
           <h1
             ref={headingRef}
             tabIndex={-1}
-            className="mt-4 scroll-mt-32 text-2xl focus:outline-3 focus:outline-offset-2 focus:outline-navy md:text-3xl"
+            className="mt-4 text-2xl focus:outline-3 focus:outline-offset-2 focus:outline-navy md:text-3xl"
           >
             {quiz.questions[step].text}
           </h1>
@@ -152,7 +158,7 @@ export default function QualifyQuiz() {
           <h1
             ref={headingRef}
             tabIndex={-1}
-            className="scroll-mt-32 text-3xl focus:outline-3 focus:outline-offset-2 focus:outline-navy sm:text-4xl md:text-5xl"
+            className="text-3xl focus:outline-3 focus:outline-offset-2 focus:outline-navy sm:text-4xl md:text-5xl"
           >
             {result.heading}
           </h1>
