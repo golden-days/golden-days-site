@@ -15,6 +15,12 @@ type Errors = {
 const fieldClasses =
   "mt-2 block w-full min-h-12 rounded-lg border-2 border-navy bg-white px-4 py-3 text-ink placeholder:text-ink/70";
 
+// A dark red (about 6.5:1 on white and on cream) so errors stand out from normal text.
+const invalidFieldClasses = fieldClasses.replace(
+  "border-navy",
+  "border-[#b42318] ring-2 ring-[#b42318]",
+);
+
 export default function ContactForm({
   headingLevel = "h3",
   showCallPrompt = true,
@@ -51,7 +57,9 @@ export default function ContactForm({
 
     setErrors(nextErrors);
     if (Object.keys(nextErrors).length > 0) {
-      form.querySelector<HTMLElement>("[aria-invalid='true']")?.focus();
+      // The fields are not marked invalid until the next render, so pick the first bad one by name.
+      const firstBad = nextErrors.name ? "name" : "phone";
+      form.querySelector<HTMLElement>(`[name='${firstBad}']`)?.focus();
       return;
     }
 
@@ -177,8 +185,8 @@ export default function ContactForm({
         </div>
 
         {status === "error" ? (
-          <div role="alert" className="mt-5 rounded-lg border-2 border-navy bg-cream px-4 py-3">
-            <strong className="block text-navy">{en.form.errorHeading}</strong>
+          <div role="alert" className="mt-5 rounded-lg border-2 border-[#b42318] bg-cream px-4 py-3">
+            <strong className="block text-[#b42318]">{en.form.errorHeading}</strong>
             <span>{en.form.errorText}</span>
           </div>
         ) : null}
@@ -228,7 +236,7 @@ function Field({
         aria-required={required ? "true" : undefined}
         aria-invalid={error ? "true" : undefined}
         aria-describedby={error ? `${id}-error` : undefined}
-        className={fieldClasses}
+        className={error ? invalidFieldClasses : fieldClasses}
       />
       {error ? <FieldError id={`${id}-error`}>{error}</FieldError> : null}
     </div>
@@ -237,8 +245,28 @@ function Field({
 
 function FieldError({ id, children }: { id: string; children: React.ReactNode }) {
   return (
-    <p id={id} className="mt-2 text-lg font-semibold text-navy">
-      {children}
+    <p id={id} className="mt-2 flex items-start gap-2 text-lg font-semibold text-[#b42318]">
+      <WarningIcon />
+      <span>{children}</span>
     </p>
+  );
+}
+
+function WarningIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+      focusable="false"
+      className="mt-1 h-6 w-6 shrink-0"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <circle cx="12" cy="12" r="10" />
+      <path d="M12 7v6M12 17h.01" />
+    </svg>
   );
 }
