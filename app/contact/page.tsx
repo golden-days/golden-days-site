@@ -22,7 +22,7 @@ export default function ContactPage() {
 
       <Section>
         <div className="grid gap-8 lg:grid-cols-2">
-          <ContactForm />
+          <ContactForm headingLevel="h2" />
           <div className="space-y-8">
             <div>
               <h2 className="text-2xl sm:text-3xl">{page.detailsHeading}</h2>
@@ -35,7 +35,7 @@ export default function ContactPage() {
             </div>
             <div id="tour" className="rounded-xl border-2 border-gold-deep bg-cream p-6">
               <h2 className="text-2xl">{page.tourHeading}</h2>
-              <p className="mt-3 text-base">{page.tourText}</p>
+              <p className="mt-3 text-lg">{page.tourText}</p>
               <div className="mt-5">
                 <ButtonLink href={en.contact.phoneHref} variant="secondary">
                   {en.buttons.scheduleTour}

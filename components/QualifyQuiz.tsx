@@ -44,12 +44,14 @@ export default function QualifyQuiz() {
     const next = answers.slice(0, index);
     next[index] = value;
     setAnswers(next);
-    setStep(index + 1 < total ? index + 1 : "result");
+    // "No" to the first question ends the quiz early. "Not sure" never does.
+    const endsEarly = index === 0 && value === "no";
+    setStep(endsEarly || index + 1 >= total ? "result" : index + 1);
   }
 
   function goBack() {
     if (step === "result") {
-      setStep(total - 1);
+      setStep(Math.max(answers.length - 1, 0));
       return;
     }
     const index = step as number;
@@ -61,8 +63,14 @@ export default function QualifyQuiz() {
     setStep("intro");
   }
 
-  const everyAnswerIsYes = answers.length === total && answers.every((a) => a === "yes");
-  const result = everyAnswerIsYes ? quiz.results.goodFit : quiz.results.unsure;
+  const everyAnswerIsYes =
+    answers.length === total && answers.every((a) => a === "yes");
+  const result =
+    answers[0] === "no"
+      ? quiz.results.notFit
+      : everyAnswerIsYes
+        ? quiz.results.goodFit
+        : quiz.results.unsure;
 
   return (
     <div className="mx-auto flex w-full max-w-3xl flex-col px-4 py-6 sm:px-6 md:py-10">
@@ -75,7 +83,7 @@ export default function QualifyQuiz() {
           <h1
             ref={headingRef}
             tabIndex={-1}
-            className="text-2xl focus:outline-3 focus:outline-offset-2 focus:outline-navy sm:text-3xl md:text-4xl"
+            className="scroll-mt-32 text-3xl focus:outline-3 focus:outline-offset-2 focus:outline-navy sm:text-4xl md:text-5xl"
           >
             {quiz.intro.heading}
           </h1>
@@ -100,27 +108,39 @@ export default function QualifyQuiz() {
           <h1
             ref={headingRef}
             tabIndex={-1}
-            className="mt-4 text-2xl focus:outline-3 focus:outline-offset-2 focus:outline-navy md:text-3xl"
+            className="mt-4 scroll-mt-32 text-2xl focus:outline-3 focus:outline-offset-2 focus:outline-navy md:text-3xl"
           >
             {quiz.questions[step].text}
           </h1>
 
-          <p className="mt-3 rounded-lg border-l-8 border-gold-deep bg-cream px-4 py-3 text-base">
-            <span className="block font-semibold text-navy">{quiz.helpLabel}</span>
+          <p className="mt-3 rounded-lg border-l-8 border-gold-deep bg-cream px-4 py-3 text-lg">
+            <span className="block font-semibold text-navy">
+              {quiz.helpLabel}
+            </span>
             {quiz.questions[step].help}
           </p>
 
-          <div role="group" aria-label={quiz.answerGroupLabel} className="mt-5 grid gap-3">
-            {answerOrder.map((value) => (
-              <button
-                key={value}
-                type="button"
-                onClick={() => answer(value)}
-                className="min-h-14 rounded-lg border-2 border-navy bg-white px-6 py-3 text-xl font-semibold text-navy hover:bg-navy hover:text-white"
-              >
-                {quiz.answers[value]}
-              </button>
-            ))}
+          <div
+            role="group"
+            aria-label={quiz.answerGroupLabel}
+            className="mt-5 grid gap-3"
+          >
+            {answerOrder.map((value) => {
+              const selected = answers[step] === value;
+              return (
+                <button
+                  key={value}
+                  type="button"
+                  aria-pressed={selected}
+                  onClick={() => answer(value)}
+                  className={`min-h-14 rounded-lg border-2 border-navy px-6 py-3 text-xl font-semibold hover:bg-navy hover:text-white ${
+                    selected ? "bg-navy text-white" : "bg-white text-navy"
+                  }`}
+                >
+                  {quiz.answers[value]}
+                </button>
+              );
+            })}
           </div>
 
           <BackButton onClick={goBack} />
@@ -132,7 +152,7 @@ export default function QualifyQuiz() {
           <h1
             ref={headingRef}
             tabIndex={-1}
-            className="text-2xl focus:outline-3 focus:outline-offset-2 focus:outline-navy sm:text-3xl md:text-4xl"
+            className="scroll-mt-32 text-3xl focus:outline-3 focus:outline-offset-2 focus:outline-navy sm:text-4xl md:text-5xl"
           >
             {result.heading}
           </h1>
@@ -192,7 +212,10 @@ function Progress({ current, total }: { current: number; total: number }) {
         aria-label={en.qualify.progressBarLabel}
         className="mt-2 h-3 w-full overflow-hidden rounded-full bg-gold"
       >
-        <div className="h-full bg-navy" style={{ width: `${(current / total) * 100}%` }} />
+        <div
+          className="h-full bg-navy"
+          style={{ width: `${(current / total) * 100}%` }}
+        />
       </div>
     </div>
   );

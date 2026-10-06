@@ -23,9 +23,9 @@ export default function ServicesPage() {
           {services.items.map((item) => (
             <li key={item.title} className="rounded-xl border-2 border-gold-deep bg-white p-6">
               <ServiceIcon name={item.icon} className="h-12 w-12" />
-              <h2 className="mt-3 text-2xl">{item.title}</h2>
+              <h2 className="mt-3 text-2xl sm:text-3xl">{item.title}</h2>
               <p className="mt-2">{item.summary}</p>
-              <ul className="mt-4 list-disc space-y-2 pl-6 text-base">
+              <ul className="mt-4 list-disc space-y-2 pl-6 text-lg">
                 {item.details.map((detail) => (
                   <li key={detail}>{detail}</li>
                 ))}

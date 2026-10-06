@@ -22,7 +22,7 @@ export default function EnrollmentPage() {
         <div className="rounded-xl border-2 border-navy bg-cream p-6 sm:flex sm:items-center sm:justify-between sm:gap-6">
           <div>
             <h2 className="text-2xl">{page.qualifyPrompt.heading}</h2>
-            <p className="mt-2 text-base">{page.qualifyPrompt.text}</p>
+            <p className="mt-2 text-lg">{page.qualifyPrompt.text}</p>
           </div>
           <div className="mt-5 shrink-0 sm:mt-0">
             <ButtonLink href="/qualify">{en.buttons.doIQualify}</ButtonLink>
@@ -36,7 +36,7 @@ export default function EnrollmentPage() {
             <li key={item}>{item}</li>
           ))}
         </ul>
-        <p className="mt-6 max-w-3xl rounded-xl border-l-8 border-gold-deep bg-cream p-5 text-base">
+        <p className="mt-6 max-w-3xl rounded-xl border-l-8 border-gold-deep bg-cream p-5 text-lg">
           {page.qualifies.note}
         </p>
       </Section>
@@ -48,11 +48,11 @@ export default function EnrollmentPage() {
           {page.pays.items.map((item) => (
             <li key={item.title} className="rounded-xl border-2 border-gold-deep bg-white p-5">
               <h3 className="text-xl">{item.title}</h3>
-              <p className="mt-2 text-base">{item.text}</p>
+              <p className="mt-2 text-lg">{item.text}</p>
             </li>
           ))}
         </ul>
-        <p className="mt-8 max-w-3xl rounded-xl border-l-8 border-navy bg-white p-5 text-base">
+        <p className="mt-8 max-w-3xl rounded-xl border-l-8 border-navy bg-white p-5 text-lg">
           {page.pays.note}
         </p>
       </Section>

@@ -9,12 +9,12 @@ export default function SiteFooter() {
       <div className="mx-auto grid w-full max-w-5xl gap-8 px-4 py-12 sm:px-6 md:grid-cols-3">
         <div>
           <h2 className="font-serif text-xl font-bold text-white">{en.footer.aboutHeading}</h2>
-          <p className="mt-3 text-base">{en.footer.aboutText}</p>
+          <p className="mt-3 text-lg">{en.footer.aboutText}</p>
         </div>
 
         <div>
           <h2 className="font-serif text-xl font-bold text-white">{en.footer.contactHeading}</h2>
-          <address className="mt-3 text-base not-italic">
+          <address className="mt-3 text-lg not-italic">
             {en.contact.addressLines.map((line) => (
               <span key={line} className="block">
                 {line}
@@ -23,7 +23,7 @@ export default function SiteFooter() {
             <span className="mt-2 block">
               <a
                 href={en.contact.phoneHref}
-                className="inline-flex min-h-11 items-center font-semibold text-white underline decoration-2 underline-offset-4"
+                className="inline-flex min-h-12 min-w-12 items-center font-semibold text-white underline decoration-2 underline-offset-4"
               >
                 {en.contact.phoneDisplay}
               </a>
@@ -31,7 +31,7 @@ export default function SiteFooter() {
             <span className="block">
               <a
                 href={en.contact.emailHref}
-                className="inline-flex min-h-11 items-center break-words text-white underline decoration-2 underline-offset-4"
+                className="inline-flex min-h-12 min-w-12 items-center break-words text-white underline decoration-2 underline-offset-4"
               >
                 {en.contact.email}
               </a>
@@ -41,15 +41,15 @@ export default function SiteFooter() {
 
         <div>
           <h2 className="font-serif text-xl font-bold text-white">{en.footer.hoursHeading}</h2>
-          <p className="mt-3 text-base">{en.contact.hours}</p>
-          <p className="text-base">{en.contact.programHours}</p>
-          <p className="text-base">{en.contact.hoursNote}</p>
-          <ul className="mt-4 list-none text-base">
+          <p className="mt-3 text-lg">{en.contact.hours}</p>
+          <p className="text-lg">{en.contact.programHours}</p>
+          <p className="text-lg">{en.contact.hoursNote}</p>
+          <ul className="mt-4 flex list-none flex-col gap-2 text-lg">
             {en.nav.links.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="inline-flex min-h-10 items-center text-white underline decoration-2 underline-offset-4"
+                  className="inline-flex min-h-12 min-w-12 items-center text-white underline decoration-2 underline-offset-4"
                 >
                   {link.label}
                 </Link>
@@ -60,7 +60,7 @@ export default function SiteFooter() {
       </div>
 
       <div className="border-t border-white/30">
-        <div className="mx-auto w-full max-w-5xl px-4 py-6 text-base sm:px-6">
+        <div className="mx-auto w-full max-w-5xl px-4 py-6 text-lg sm:px-6">
           <p>
             &copy; {year} {en.footer.copyright}
           </p>

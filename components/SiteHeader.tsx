@@ -11,7 +11,7 @@ export default function SiteHeader() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-40 border-b-4 border-gold bg-white">
+    <header className="z-40 md:sticky md:top-0 border-b-4 border-gold bg-white">
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
         <Link href="/" className="shrink-0 no-underline" onClick={() => setMenuOpen(false)}>
           <Image
@@ -20,6 +20,7 @@ export default function SiteHeader() {
             width={1200}
             height={792}
             priority
+            sizes="(min-width: 768px) 110px, 86px"
             className="h-14 w-auto md:h-18"
           />
         </Link>
@@ -34,7 +35,7 @@ export default function SiteHeader() {
                   <Link
                     href={link.href}
                     aria-current={isCurrent ? "page" : undefined}
-                    className={`inline-flex min-h-12 items-center whitespace-nowrap text-lg font-semibold text-navy hover:text-navy-dark ${
+                    className={`inline-flex min-h-12 min-w-12 items-center whitespace-nowrap text-lg font-semibold text-navy hover:text-navy-dark ${
                       isMainAction
                         ? "rounded-lg border-2 border-gold-deep bg-cream px-4 no-underline hover:bg-gold"
                         : "underline decoration-2 underline-offset-4"

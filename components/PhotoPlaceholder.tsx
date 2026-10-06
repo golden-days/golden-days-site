@@ -90,7 +90,7 @@ export default function PhotoPlaceholder({ photo, wide = false, className = "" }
           {scenes[photo.kind]}
         </svg>
       </div>
-      <figcaption className="border-t-4 border-dashed border-gold-deep bg-white px-4 py-3 text-base text-ink">
+      <figcaption className="border-t-4 border-dashed border-gold-deep bg-white px-4 py-3 text-lg text-ink">
         <span className="font-semibold text-navy">{photo.label}</span>
         <span className="block">{en.photoPlaceholderNote}</span>
       </figcaption>

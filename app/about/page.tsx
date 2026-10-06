@@ -38,7 +38,7 @@ export default function AboutPage() {
           {about.values.items.map((item) => (
             <li key={item.title} className="rounded-xl border-2 border-gold-deep bg-white p-5">
               <h3 className="text-xl">{item.title}</h3>
-              <p className="mt-2 text-base">{item.text}</p>
+              <p className="mt-2 text-lg">{item.text}</p>
             </li>
           ))}
         </ul>

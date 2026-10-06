@@ -33,6 +33,16 @@ export default function HomePage() {
                 {en.buttons.call}
               </ButtonLink>
             </div>
+            <p className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-1 font-semibold text-ink">
+              <span>{en.contact.addressLines.join(", ")}</span>
+              <span>{en.contact.hours}</span>
+              <a
+                href={en.contact.phoneHref}
+                className="inline-flex min-h-12 min-w-12 items-center text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
+              >
+                {en.contact.phoneDisplay}
+              </a>
+            </p>
           </div>
           <PhotoPlaceholder photo={home.hero.photo} wide />
         </div>
@@ -58,7 +68,7 @@ export default function HomePage() {
             >
               <ServiceIcon name={tile.icon} className="h-12 w-12" />
               <h3 className="mt-3 text-xl">{tile.title}</h3>
-              <p className="mt-2 text-base">{tile.text}</p>
+              <p className="mt-2 text-lg">{tile.text}</p>
             </li>
           ))}
         </ul>
@@ -109,13 +119,13 @@ export default function HomePage() {
               <h3 className="mt-3 text-xl">
                 <Link
                   href={home.enrollment.linkHref}
-                  className="inline-flex min-h-11 items-center text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
+                  className="inline-flex min-h-12 min-w-12 items-center text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
                 >
                   <span className="sr-only">{`Step ${index + 1}: `}</span>
                   {step.title}
                 </Link>
               </h3>
-              <p className="mt-2 text-base">{step.text}</p>
+              <p className="mt-2 text-lg">{step.text}</p>
             </li>
           ))}
         </ol>

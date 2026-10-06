@@ -33,7 +33,7 @@ export default function TransportationPage() {
           {"list" in section && section.list ? (
             <div className="mt-6 max-w-3xl rounded-xl border-2 border-gold-deep bg-white p-5">
               <h3 className="text-xl">{section.list.label}</h3>
-              <ul className="mt-3 list-disc space-y-2 pl-6 text-base">
+              <ul className="mt-3 list-disc space-y-2 pl-6 text-lg">
                 {section.list.items.map((item) => (
                   <li key={item}>{item}</li>
                 ))}

@@ -582,6 +582,10 @@ export const en = {
         heading: "Good news. Golden Days may be a good fit.",
         text: "Call us or schedule a tour, and we will help with the next steps. [PLACEHOLDER]",
       },
+      notFit: {
+        heading: "Golden Days may not be the right fit. [PLACEHOLDER]",
+        text: "Thank you for checking. If you would like to talk it over, please call us and we will be glad to help. [PLACEHOLDER]",
+      },
       unsure: {
         heading: "We are not sure yet, and that is okay.",
         text: "Many families are unsure at the start. Call us and we will go through your situation together. Some answers can change with the right paperwork or coverage. [PLACEHOLDER]",
@@ -617,7 +621,7 @@ export const en = {
     medicalNote: "Please do not include medical information in this form.",
     fields: {
       name: { label: "Your name", placeholder: "First and last name" },
-      phone: { label: "Phone number", placeholder: "(916) 371-6011" },
+      phone: { label: "Phone number", placeholder: "(916) 555-0123" },
       email: { label: "Email (optional)", placeholder: "you@example.com" },
       message: {
         label: "How can we help? (optional)",
