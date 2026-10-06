@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { en } from "@/content/en";
 
 export type PhotoKind = "building" | "interior" | "bus";
@@ -6,6 +7,10 @@ export type PhotoInfo = {
   kind: PhotoKind;
   label: string;
   alt: string;
+  /** Real photo in `public/`. When set, the photo is shown instead of the drawing. */
+  src?: string;
+  width?: number;
+  height?: number;
 };
 
 const scenes: Record<PhotoKind, React.ReactNode> = {
@@ -67,6 +72,21 @@ type Props = {
  * Swap these out for a real `next/image` once photography is available.
  */
 export default function PhotoPlaceholder({ photo, wide = false, className = "" }: Props) {
+  if (photo.src) {
+    return (
+      <figure className={`overflow-hidden rounded-xl border-4 border-gold-deep ${className}`}>
+        <Image
+          src={photo.src}
+          alt={photo.alt}
+          width={photo.width ?? 1200}
+          height={photo.height ?? 900}
+          sizes={wide ? "(min-width: 1024px) 560px, 100vw" : "(min-width: 768px) 480px, 100vw"}
+          className="block h-auto w-full"
+        />
+      </figure>
+    );
+  }
+
   return (
     <figure
       className={`overflow-hidden rounded-xl border-4 border-dashed border-gold-deep bg-cream ${className}`}

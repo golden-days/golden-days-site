@@ -3,6 +3,7 @@ import ContactDetails from "@/components/ContactDetails";
 import ContactForm from "@/components/ContactForm";
 import MapEmbed from "@/components/MapEmbed";
 import PageHero from "@/components/PageHero";
+import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 import Section from "@/components/Section";
 import { en } from "@/content/en";
 import { pageMetadata } from "@/lib/seo";
@@ -50,7 +51,8 @@ export default function ContactPage() {
         <h2 className="text-2xl sm:text-3xl">{page.directionsHeading}</h2>
         <p className="mt-3 max-w-3xl">{page.directionsText}</p>
         <p className="mt-2 max-w-3xl">{en.contact.addressOneLine}</p>
-        <div className="mt-6">
+        <div className="mt-6 grid gap-6 md:grid-cols-2 md:items-start">
+          <PhotoPlaceholder photo={page.photo} />
           <MapEmbed />
         </div>
       </Section>

@@ -90,7 +90,10 @@ export const en = {
       photo: {
         kind: "building" as const,
         label: "Photo placeholder - building exterior",
-        alt: "Placeholder image standing in for a photo of the Golden Days building exterior",
+        alt: "The front of the Golden Days Adult Day Health Care Center, with its sunburst sign above the open entrance and a Welcome to Golden Days sign in the window.",
+        src: "/images/hero-building.jpg",
+        width: 1600,
+        height: 900,
       },
     },
     whoWeServe: {
@@ -250,7 +253,10 @@ export const en = {
       photo: {
         kind: "interior" as const,
         label: "Photo placeholder - dining room",
-        alt: "Placeholder image standing in for a photo of the Golden Days dining room",
+        alt: "The Golden Days dining room, with round tables set for lunch and fresh flowers on the tables.",
+        src: "/images/dining-room.jpg",
+        width: 1200,
+        height: 900,
       },
     },
     cta: {
@@ -608,6 +614,14 @@ export const en = {
     directionsHeading: "Find us",
     directionsText:
       "The entrance is at ground level and parking is in front of the building. [PLACEHOLDER]",
+    photo: {
+      kind: "building" as const,
+      label: "Photo placeholder - building entrance",
+      alt: "The entrance to Golden Days at 1215 Merkley Ave, with the sign above the door and cones set out by the walkway.",
+      src: "/images/building-entrance.jpg",
+      width: 1200,
+      height: 900,
+    },
     tourHeading: "Schedule a tour",
     tourText:
       "Tours happen during program hours so you can see a normal day. Call us or use the form and say that you would like a tour. [PLACEHOLDER]",
