@@ -42,6 +42,7 @@ export default function SiteFooter() {
         <div>
           <h2 className="font-serif text-xl font-bold text-white">{en.footer.hoursHeading}</h2>
           <p className="mt-3 text-base">{en.contact.hours}</p>
+          <p className="text-base">{en.contact.programHours}</p>
           <p className="text-base">{en.contact.hoursNote}</p>
           <ul className="mt-4 list-none text-base">
             {en.nav.links.map((link) => (

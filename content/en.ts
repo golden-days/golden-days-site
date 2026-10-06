@@ -13,8 +13,8 @@
  */
 
 export const phone = {
-  display: "(916) 555-0100 [PLACEHOLDER]",
-  href: "tel:+19165550100",
+  display: "(916) 371-6011",
+  href: "tel:+19163716011",
 };
 
 export const en = {
@@ -33,11 +33,12 @@ export const en = {
     emailHref: "mailto:info@example.com",
     emailLabel: "Email",
     addressLabel: "Address",
-    addressLines: ["123 Example Street [PLACEHOLDER]", "West Sacramento, CA 95691"],
-    addressOneLine: "123 Example Street, West Sacramento, CA 95691 [PLACEHOLDER]",
+    addressLines: ["1215 Merkley Ave", "West Sacramento, CA 95691"],
+    addressOneLine: "1215 Merkley Ave, West Sacramento, CA 95691",
     hoursLabel: "Hours",
-    hours: "Monday-Friday, 8:00 AM - 4:00 PM [PLACEHOLDER]",
-    hoursNote: "Closed Saturday and Sunday. [PLACEHOLDER]",
+    hours: "Office hours: Monday to Friday, 8:00 AM to 4:30 PM",
+    programHours: "Program day: Monday to Friday, 8:00 AM to 2:00 PM",
+    hoursNote: "Closed Saturday and Sunday. Also closed on Thanksgiving, Christmas Day, New Year's Day, and the Fourth of July.",
     mapTitle: "Map showing the Golden Days Adult Day Health Care location [PLACEHOLDER]",
   },
 
@@ -333,11 +334,11 @@ export const en = {
     daySchedule: [
       { time: "8:00 AM", text: "Arrival, greetings, and morning check-ins. [PLACEHOLDER]" },
       { time: "9:00 AM", text: "Seated exercise and therapy sessions. [PLACEHOLDER]" },
-      { time: "10:30 AM", text: "Activities, music, and small groups. [PLACEHOLDER]" },
-      { time: "12:00 PM", text: "Lunch together in the dining room. [PLACEHOLDER]" },
-      { time: "1:00 PM", text: "Quiet time, nursing visits, and social work meetings. [PLACEHOLDER]" },
-      { time: "2:30 PM", text: "Afternoon activity and snack. [PLACEHOLDER]" },
-      { time: "4:00 PM", text: "Rides home. [PLACEHOLDER]" },
+      { time: "10:00 AM", text: "Activities, music, and small groups. [PLACEHOLDER]" },
+      { time: "11:30 AM", text: "Lunch together in the dining room. [PLACEHOLDER]" },
+      { time: "12:30 PM", text: "Quiet time, nursing visits, and social work meetings. [PLACEHOLDER]" },
+      { time: "1:15 PM", text: "Afternoon activity and snack. [PLACEHOLDER]" },
+      { time: "2:00 PM", text: "Rides home. [PLACEHOLDER]" },
     ],
     cta: {
       heading: "Not sure which parts your parent needs?",
@@ -616,7 +617,7 @@ export const en = {
     medicalNote: "Please do not include medical information in this form.",
     fields: {
       name: { label: "Your name", placeholder: "First and last name" },
-      phone: { label: "Phone number", placeholder: "(916) 555-0100" },
+      phone: { label: "Phone number", placeholder: "(916) 371-6011" },
       email: { label: "Email (optional)", placeholder: "you@example.com" },
       message: {
         label: "How can we help? (optional)",

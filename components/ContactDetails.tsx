@@ -21,6 +21,7 @@ export default function ContactDetails() {
         <dt className="font-serif text-lg font-bold text-navy">{en.contact.hoursLabel}</dt>
         <dd className="mt-1">
           {en.contact.hours}
+          <span className="block">{en.contact.programHours}</span>
           <span className="block">{en.contact.hoursNote}</span>
         </dd>
       </div>
