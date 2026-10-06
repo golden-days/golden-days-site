@@ -23,15 +23,12 @@ export default function ContactPage() {
 
       <Section>
         <div className="grid gap-8 lg:grid-cols-2">
-          <ContactForm headingLevel="h2" />
+          <ContactForm headingLevel="h2" showCallPrompt={false} />
           <div className="space-y-8">
             <div>
               <h2 className="text-2xl sm:text-3xl">{page.detailsHeading}</h2>
               <div className="mt-6">
                 <ContactDetails />
-              </div>
-              <div className="mt-6 flex flex-col gap-4 sm:flex-row">
-                <ButtonLink href={en.contact.phoneHref}>{en.buttons.callWithNumber}</ButtonLink>
               </div>
             </div>
             <div id="tour" className="rounded-xl border-2 border-gold-deep bg-cream p-6">

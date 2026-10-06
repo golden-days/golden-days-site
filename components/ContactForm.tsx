@@ -15,7 +15,13 @@ type Errors = {
 const fieldClasses =
   "mt-2 block w-full min-h-12 rounded-lg border-2 border-navy bg-white px-4 py-3 text-ink placeholder:text-ink/70";
 
-export default function ContactForm({ headingLevel = "h3" }: { headingLevel?: "h2" | "h3" }) {
+export default function ContactForm({
+  headingLevel = "h3",
+  showCallPrompt = true,
+}: {
+  headingLevel?: "h2" | "h3";
+  showCallPrompt?: boolean;
+}) {
   const Heading = headingLevel;
   const [status, setStatus] = useState<Status>("idle");
   const [errors, setErrors] = useState<Errors>({});
@@ -105,15 +111,17 @@ export default function ContactForm({ headingLevel = "h3" }: { headingLevel?: "h
     <div className="rounded-xl border-4 border-gold bg-white p-5 sm:p-6">
       <Heading className="font-serif text-2xl font-bold text-navy">{en.form.heading}</Heading>
       <p className="mt-2">{en.form.responseTime}</p>
-      <p className="mt-2 text-lg">
-        {en.form.callAlternativeLead}{" "}
-        <a
-          href={en.contact.phoneHref}
-          className="inline-flex min-h-12 min-w-12 items-center font-semibold text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
-        >
-          {en.form.callAlternativeLinkPrefix} {en.contact.phoneDisplay}
-        </a>
-      </p>
+      {showCallPrompt ? (
+        <p className="mt-2 text-lg">
+          {en.form.callAlternativeLead}{" "}
+          <a
+            href={en.contact.phoneHref}
+            className="inline-flex min-h-12 min-w-12 items-center font-semibold text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
+          >
+            {en.form.callAlternativeLinkPrefix} {en.contact.phoneDisplay}
+          </a>
+        </p>
+      ) : null}
 
       <p className="mt-4 rounded-lg border-2 border-gold-deep bg-cream px-4 py-3 text-lg font-semibold text-ink">
         {en.form.medicalNote}
