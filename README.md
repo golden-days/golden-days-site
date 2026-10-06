@@ -97,10 +97,9 @@ any dark color.
 
 - [ ] Replace every `[PLACEHOLDER]` string in `content/en.ts` with confirmed information.
 - [ ] Replace the fake phone number, email, and address.
-- [ ] Switch the public email to `1215goldendays@gmail.com`: update `email` and `emailHref`
-      in `content/en.ts` and `email` in `components/LocalBusinessJsonLd.tsx`. If form messages
-      should go there too, add and verify it under Linked Emails in Formspree, then change
-      the form's "Send emails to" address.
+- [ ] Point the contact form at the production inbox: add and verify
+      `1215goldendays@gmail.com` under Linked Emails in Formspree, then change the form's
+      "Send emails to" address. (The site already shows this email.)
 - [ ] Add real photos of the building, the rooms, and the buses.
 - [ ] Set `NEXT_PUBLIC_FORM_ENDPOINT` and `NEXT_PUBLIC_SITE_URL` in Vercel.
 - [ ] Remove `robots: "noindex"` from `lib/seo.ts` and from `app/layout.tsx` so search
