@@ -3,7 +3,7 @@ import { en } from "@/content/en";
 /** A call button pinned to the bottom of the screen on phones. */
 export default function MobileCallBar() {
   return (
-    <div className="fixed inset-x-0 bottom-0 z-50 border-t-4 border-gold bg-white p-2 lg:hidden">
+    <aside className="fixed inset-x-0 bottom-0 z-50 border-t-4 border-gold bg-white p-2 lg:hidden">
       <a
         href={en.contact.phoneHref}
         className="flex min-h-14 w-full items-center justify-center gap-3 rounded-lg bg-navy px-4 py-3 text-center text-lg font-semibold text-white no-underline hover:bg-navy-dark"
@@ -23,6 +23,6 @@ export default function MobileCallBar() {
         </svg>
         <span>{en.buttons.callWithNumber}</span>
       </a>
-    </div>
+    </aside>
   );
 }
