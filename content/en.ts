@@ -81,12 +81,12 @@ export const en = {
     meta: {
       title: "Adult Day Health Care in West Sacramento",
       description:
-        "Golden Days Adult Day Health Care is a day program for older adults in West Sacramento, California. Call us or schedule a tour. [PLACEHOLDER]",
+        "Golden Days Adult Day Health Care is a day program for adults, including many older adults, in West Sacramento, California. Call us or schedule a tour. [PLACEHOLDER]",
     },
     hero: {
-      heading: "Daytime care for older adults in West Sacramento",
+      heading: "Daytime care for adults in West Sacramento",
       intro:
-        "Golden Days is a day program for older adults who need some help during the day, and for the families who care for them. [PLACEHOLDER]",
+        "Golden Days is a day program for adults of any age who need some help during the day, including many older adults, and for the families who care for them. [PLACEHOLDER]",
       photo: {
         kind: "building" as const,
         label: "Photo placeholder - building exterior",
@@ -99,9 +99,9 @@ export const en = {
     whoWeServe: {
       heading: "Who we serve",
       paragraphs: [
-        "Golden Days welcomes older adults who live at home and need support, company, or supervision during the day. [PLACEHOLDER]",
+        "Golden Days welcomes adults, including many older adults, who live at home and need support, company, or supervision during the day. [PLACEHOLDER]",
         "Many of the people who come to us live with a family member who works, or who simply needs a break during the week. [PLACEHOLDER]",
-        "If you are not sure whether Golden Days is the right fit for your parent, call us. We are happy to talk it through, with no pressure. [PLACEHOLDER]",
+        "If you are not sure whether Golden Days is the right fit for your loved one, call us. We are happy to talk it through, with no pressure. [PLACEHOLDER]",
       ],
     },
     services: {
@@ -162,7 +162,7 @@ export const en = {
       steps: [
         {
           title: "Call or send a message",
-          text: "Tell us a little about your parent and what the days look like now. [PLACEHOLDER]",
+          text: "Tell us a little about your loved one and what the days look like now. [PLACEHOLDER]",
         },
         {
           title: "Visit the center",
@@ -174,7 +174,7 @@ export const en = {
         },
         {
           title: "Start attending",
-          text: "We agree on days, arrange rides, and welcome your parent in. [PLACEHOLDER]",
+          text: "We agree on days, arrange rides, and welcome your loved one in. [PLACEHOLDER]",
         },
       ],
       linkLabel: "See the full enrollment guide",
@@ -211,7 +211,7 @@ export const en = {
     story: {
       heading: "Our story",
       paragraphs: [
-        "Golden Days opened in West Sacramento in 2003 as a place where older adults could spend the day with care close at hand. The same owners have run the center since 2007.",
+        "Golden Days opened in West Sacramento in 2003 as a place where adults could spend the day with care close at hand. The same owners have run the center since 2007. [PLACEHOLDER]",
         "Over those years we have come to know many local families. Some people come to us a few days a week for years, and their families become part of the center too. [PLACEHOLDER]",
         "We are a small center on purpose. Staff learn names, routines, and what makes each person comfortable. [PLACEHOLDER]",
       ],
@@ -278,7 +278,7 @@ export const en = {
       {
         icon: "nursing" as const,
         title: "Nursing Care",
-        summary: "Health checks and medication support while your parent is at the center. [PLACEHOLDER]",
+        summary: "Health checks and medication support while your loved one is at the center. [PLACEHOLDER]",
         details: [
           "Nursing staff check vital signs and watch for changes during the day. [PLACEHOLDER]",
           "We help with medications that are scheduled during program hours. [PLACEHOLDER]",
@@ -347,7 +347,7 @@ export const en = {
       { time: "2:00 PM", text: "Rides home. [PLACEHOLDER]" },
     ],
     cta: {
-      heading: "Not sure which parts your parent needs?",
+      heading: "Not sure which parts your loved one needs? [PLACEHOLDER]",
       text: "Call us. We will ask a few questions and give you a straight answer. [PLACEHOLDER]",
     },
   },
@@ -402,7 +402,7 @@ export const en = {
       {
         heading: "How families arrange or change a ride",
         paragraphs: [
-          "Rides are set up when your parent enrolls, and the schedule stays the same week to week. [PLACEHOLDER]",
+          "Rides are set up when your loved one enrolls, and the schedule stays the same week to week. [PLACEHOLDER]",
           "To change a pickup address, add a day, or cancel a ride, call the office. [PLACEHOLDER]",
           "For a same-day cancellation, call as early as you can so the driver can adjust the route. [PLACEHOLDER]",
         ],
@@ -441,7 +441,7 @@ export const en = {
       heading: "Who qualifies",
       intro: "Golden Days is generally a fit for an adult who: [PLACEHOLDER]",
       items: [
-        "Is an older adult living at home or with family [PLACEHOLDER]",
+        "Is an adult living at home or with family [PLACEHOLDER]",
         "Needs help, supervision, or company during the day [PLACEHOLDER]",
         "Has a health condition that benefits from regular check-ins [PLACEHOLDER]",
         "Can take part in a group day program [PLACEHOLDER]",
@@ -484,11 +484,11 @@ export const en = {
       items: [
         {
           title: "Call or send a message",
-          text: "Tell us about your parent, the days you are hoping for, and any concerns. This call takes about ten minutes. [PLACEHOLDER]",
+          text: "Tell us about your loved one, the days you are hoping for, and any concerns. This call takes about ten minutes. [PLACEHOLDER]",
         },
         {
           title: "Tour the center",
-          text: "Visit during program hours so you can see a normal day. Bring your parent if that is comfortable. [PLACEHOLDER]",
+          text: "Visit during program hours so you can see a normal day. Bring your loved one if that is comfortable. [PLACEHOLDER]",
         },
         {
           title: "Assessment",
@@ -500,7 +500,7 @@ export const en = {
         },
         {
           title: "First day",
-          text: "We set the schedule, arrange rides, and introduce your parent to staff and other participants. [PLACEHOLDER]",
+          text: "We set the schedule, arrange rides, and introduce your loved one to staff and other participants. [PLACEHOLDER]",
         },
       ],
     },
@@ -508,7 +508,7 @@ export const en = {
       heading: "Common questions",
       items: [
         {
-          question: "How many days a week can my parent come?",
+          question: "How many days a week can my loved one come? [PLACEHOLDER]",
           answer: "Schedules range from one day to five days a week. We work out a schedule together. [PLACEHOLDER]",
         },
         {
@@ -520,7 +520,7 @@ export const en = {
           answer: "Start with a tour. Ask us about a trial day when you visit. [PLACEHOLDER]",
         },
         {
-          question: "What if my parent does not want to go?",
+          question: "What if my loved one does not want to go? [PLACEHOLDER]",
           answer: "That is common. A tour and a short first week often help. We have done this many times. [PLACEHOLDER]",
         },
       ],
