@@ -322,7 +322,7 @@ export const en = {
         summary: "Music, games, crafts, gentle exercise, and company through the day. [PLACEHOLDER]",
         details: [
           "Each day has a schedule of activities people can join or skip, including music, card games, crafts, and seated exercise. [PLACEHOLDER]",
-          "Field trips happen three times a week, at no extra cost. People who use a wheelchair or have other mobility needs can come along. [PLACEHOLDER]",
+          "Field trips happen up to three times a week on average, at no extra cost. People who use a wheelchair or have other mobility needs can come along. [PLACEHOLDER]",
           "Holidays and birthdays are celebrated together. [PLACEHOLDER]",
         ],
       },
