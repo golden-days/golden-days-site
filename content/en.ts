@@ -586,8 +586,8 @@ export const en = {
         help: "Nearby towns can work too. If you are not sure whether your address is close enough, choose Not sure. [PLACEHOLDER]",
       },
       {
-        text: "Do they need help with everyday activities, like bathing, dressing, or taking medicine? [PLACEHOLDER]",
-        help: "Everyday activities means things like washing up, getting dressed, eating, walking safely, or remembering medicine. [PLACEHOLDER]",
+        text: "Would they enjoy a day with company, activities, and meals? [PLACEHOLDER]",
+        help: "Most people come for company, exercise, meals, and activities. Some also need medical attention during the day. [PLACEHOLDER]",
       },
       {
         text: "Do they have Medi-Cal (California's health coverage program), other health insurance, or can they pay privately? [PLACEHOLDER]",
