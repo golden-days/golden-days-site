@@ -49,6 +49,20 @@ export default function ServicesPage() {
             </li>
           ))}
         </ol>
+
+        <h3 className="mt-12 text-xl sm:text-2xl">{services.weeklyHeading}</h3>
+        <ul className="mt-6 list-none border-t-2 border-gold-deep">
+          {services.weeklyActivities.map((activity) => (
+            <li
+              key={activity.day}
+              className="grid gap-1 border-b-2 border-gold-deep py-4 sm:grid-cols-[9rem_1fr] sm:gap-6"
+            >
+              <span className="font-serif text-lg font-bold text-navy">{activity.day}</span>
+              <span>{activity.text}</span>
+            </li>
+          ))}
+        </ul>
+
         <p className="mt-8">
           <Link
             href="/enrollment#faq"
