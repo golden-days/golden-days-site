@@ -333,7 +333,7 @@ export const en = {
         details: [
           "Rides are available within our service area. [PLACEHOLDER]",
           "Our vehicles can carry riders who use a wheelchair or a walker. [PLACEHOLDER]",
-          "The bus drives as close to the door as possible. Drivers do not help participants on the bus. Their caregiver does. [PLACEHOLDER]",
+          "The bus drives as close to the door as possible. At home, a caregiver helps the participant onto the bus. At the center, drivers help participants off the bus. [PLACEHOLDER]",
         ],
       },
     ],
@@ -394,7 +394,8 @@ export const en = {
         heading: "Pickup and drop-off",
         paragraphs: [
           "Each rider gets a pickup window rather than an exact minute, because traffic and other riders change the route. [PLACEHOLDER]",
-          "We drive as close to the door as possible. Drivers do not help participants on the bus, and they cannot lift anyone onto it. Their caregiver helps instead. [PLACEHOLDER]",
+          "We drive as close to the door as possible. At pickup, the participant's caregiver helps them onto the bus. Drivers do not help participants on, and they cannot lift anyone onto the bus. [PLACEHOLDER]",
+          "At the center, drivers can help participants off the bus, and our caregivers here are ready to meet them. Our caregivers do not go to people's homes. [PLACEHOLDER]",
           "If the bus is running late, we call the family. [PLACEHOLDER]",
         ],
       },
