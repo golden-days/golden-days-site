@@ -471,7 +471,7 @@ export const en = {
       items: [
         {
           title: "Medi-Cal",
-          text: "Many families use Medi-Cal coverage for adult day health care. We can explain what the process looks like. [PLACEHOLDER]",
+          text: "We accept Medi-Cal together with an insurance plan, but not Medi-Cal on its own. We can explain what the process looks like. [PLACEHOLDER]",
         },
         {
           title: "Managed care plans",
@@ -489,10 +489,11 @@ export const en = {
       intro: "Bring what you have. We will help with the rest. [PLACEHOLDER]",
       items: [
         "Photo identification [PLACEHOLDER]",
-        "Insurance or Medi-Cal card (you can bring this on its own) [PLACEHOLDER]",
+        "Insurance card (you can bring this on its own) [PLACEHOLDER]",
+        "Medi-Cal card (bring this together with your insurance card, not by itself) [PLACEHOLDER]",
         "Your doctor's name and phone number [PLACEHOLDER]",
         "Emergency contact names and numbers [PLACEHOLDER]",
-        "Any recent medical paperwork you already have (bring this together with your insurance card, not by itself) [PLACEHOLDER]",
+        "Any recent medical paperwork you already have [PLACEHOLDER]",
       ],
     },
     steps: {
@@ -582,20 +583,20 @@ export const en = {
         help: "Golden Days is a program for adults. If you are asking for a parent or a spouse, answer for that person. [PLACEHOLDER]",
       },
       {
-        text: "Do they live in or near West Sacramento? [PLACEHOLDER]",
-        help: "Nearby towns can work too. If you are not sure whether your address is close enough, choose Not sure. [PLACEHOLDER]",
+        text: "Do they live in West Sacramento or a nearby area we serve? [PLACEHOLDER]",
+        help: "We serve West Sacramento and nearby areas, including Sacramento, Natomas, Elk Grove, Carmichael, Rancho Cordova, and Antelope. If you are not sure, choose Not sure and we will check. [PLACEHOLDER]",
       },
       {
         text: "Can they take part in group activities during the day, with or without a walker or wheelchair? [PLACEHOLDER]",
         help: "Group activities include exercise, music, games, and meals together. People take part in their own way, and some also need medical attention during the day. If you are not sure they could manage a group setting, choose Not sure. [PLACEHOLDER]",
       },
       {
-        text: "Do they have Medi-Cal (California's health coverage program), other health insurance, or can they pay privately? [PLACEHOLDER]",
-        help: "Medi-Cal helps pay for care for people with a low income. Paying privately means paying the center directly. [PLACEHOLDER]",
+        text: "Do they have health insurance from an insurance provider, with or without Medi-Cal? [PLACEHOLDER]",
+        help: "We accept insurance, and Medi-Cal together with insurance. Medi-Cal on its own is not enough. If you are not sure, choose Not sure. [PLACEHOLDER]",
       },
       {
-        text: "Can a doctor fill out a referral form? [PLACEHOLDER]",
-        help: "A referral form is a short form a doctor signs to say the program may help. We can send the form to the doctor's office. [PLACEHOLDER]",
+        text: "Do they have a doctor who can share recent medical paperwork? [PLACEHOLDER]",
+        help: "We ask for recent medical paperwork from their doctor, along with their insurance information. If you are not sure, choose Not sure. [PLACEHOLDER]",
       },
     ],
     results: {
