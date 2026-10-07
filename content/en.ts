@@ -40,6 +40,7 @@ export const en = {
     programHours: "Program day: Monday to Friday, 8:00 AM to 2:00 PM",
     hoursNote: "Closed Saturday and Sunday. Also closed on Thanksgiving, Christmas Day, New Year's Day, and the Fourth of July.",
     mapTitle: "Map showing the Golden Days Adult Day Health Care location [PLACEHOLDER]",
+    directionsLinkLabel: "Get directions [PLACEHOLDER]",
   },
 
   nav: {
