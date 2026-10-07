@@ -586,8 +586,8 @@ export const en = {
         help: "Nearby towns can work too. If you are not sure whether your address is close enough, choose Not sure. [PLACEHOLDER]",
       },
       {
-        text: "Would they enjoy a day with company, activities, and meals? [PLACEHOLDER]",
-        help: "Most people come for company, exercise, meals, and activities. Some also need medical attention during the day. [PLACEHOLDER]",
+        text: "Can they take part in group activities during the day, with or without a walker or wheelchair? [PLACEHOLDER]",
+        help: "Group activities include exercise, music, games, and meals together. People take part in their own way, and some also need medical attention during the day. If you are not sure they could manage a group setting, choose Not sure. [PLACEHOLDER]",
       },
       {
         text: "Do they have Medi-Cal (California's health coverage program), other health insurance, or can they pay privately? [PLACEHOLDER]",
