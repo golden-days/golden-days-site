@@ -333,7 +333,7 @@ export const en = {
         details: [
           "Rides are available within our service area. [PLACEHOLDER]",
           "Our vehicles can carry riders who use a wheelchair or a walker. [PLACEHOLDER]",
-          "Drivers do not come to the door. A caregiver takes the participant to the bus, and drivers cannot lift people onto it. [PLACEHOLDER]",
+          "The bus drives as close to the door as possible. Drivers do not help participants on the bus. Their caregiver does. [PLACEHOLDER]",
         ],
       },
     ],
@@ -346,7 +346,7 @@ export const en = {
       { time: "10:30 AM", text: "Activities, music, and small groups. [PLACEHOLDER]" },
       { time: "11:30 AM", text: "Quiet time, nursing visits, and social work meetings. [PLACEHOLDER]" },
       { time: "12:45 PM", text: "Lunch together in the dining room. [PLACEHOLDER]" },
-      { time: "1:30 PM", text: "Rides home. [PLACEHOLDER]" },
+      { time: "1:30 PM", text: "People leave for home. [PLACEHOLDER]" },
     ],
     cta: {
       heading: "Not sure which parts your loved one needs? [PLACEHOLDER]",
@@ -394,8 +394,7 @@ export const en = {
         heading: "Pickup and drop-off",
         paragraphs: [
           "Each rider gets a pickup window rather than an exact minute, because traffic and other riders change the route. [PLACEHOLDER]",
-          "Drivers do not come to the door. A caregiver brings the participant out to the bus. [PLACEHOLDER]",
-          "Drivers cannot lift people onto the bus. [PLACEHOLDER]",
+          "We drive as close to the door as possible. Drivers do not help participants on the bus, and they cannot lift anyone onto it. Their caregiver helps instead. [PLACEHOLDER]",
           "If the bus is running late, we call the family. [PLACEHOLDER]",
         ],
       },
@@ -495,7 +494,7 @@ export const en = {
         },
         {
           title: "Tour the center",
-          text: "Visit during program hours so you can see a normal day. Bring your loved one if that is comfortable. [PLACEHOLDER]",
+          text: "Visit during program hours, preferably before 1:30 PM, so you can see a normal day. Bring your loved one if that is comfortable. [PLACEHOLDER]",
         },
         {
           title: "Assessment",
@@ -631,7 +630,7 @@ export const en = {
     },
     tourHeading: "Schedule a tour",
     tourText:
-      "Tours happen during program hours so you can see a normal day. Call us or use the form and say that you would like a tour. [PLACEHOLDER]",
+      "Tours happen during program hours, preferably before 1:30 PM, so you can see a normal day. Call us or use the form and say that you would like a tour. [PLACEHOLDER]",
   },
 
   form: {
