@@ -147,7 +147,7 @@ export const en = {
       heading: "Getting here is part of the care",
       paragraphs: [
         "Golden Days offers rides to and from the center for people who attend the program, including riders who use a wheelchair or a walker.",
-        "We work out a pickup window with your family, and we call if a schedule needs to change. [PLACEHOLDER]",
+        "We work out a pickup window with your family, and we call if a schedule needs to change.",
       ],
       linkLabel: "Read about transportation",
       linkHref: "/transportation",
@@ -171,7 +171,7 @@ export const en = {
         },
         {
           title: "Complete an assessment",
-          text: "Our team reviews health and daily needs to see whether the program fits. [PLACEHOLDER]",
+          text: "Our team reviews health and daily needs to see whether the program fits.",
         },
         {
           title: "Start attending",
