@@ -20,6 +20,7 @@ export default function Sunburst({ className = "" }: { className?: string }) {
       focusable="false"
       className={className}
     >
+      <path d="M142 200a58 58 0 0 1 116 0Z" fill="#E0B64A" />
       {rays.map((ray, index) => (
         <line
           key={index}
