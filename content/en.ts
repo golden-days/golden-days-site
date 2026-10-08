@@ -646,7 +646,7 @@ export const en = {
 
   form: {
     heading: "Send us a message",
-    responseTime: "A member of our team will call you within one business day. [PLACEHOLDER]",
+    responseTime: "A member of our team will call you within one business day.",
     callAlternativeLead: "Prefer to talk?",
     callAlternativeLinkPrefix: "Call us at",
     medicalNote: "Please do not include medical information in this form.",
