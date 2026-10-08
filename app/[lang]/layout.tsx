@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { Noto_Sans_TC, Source_Sans_3, Source_Serif_4 } from "next/font/google";
+import { Noto_Sans_Gurmukhi, Noto_Sans_TC, Source_Sans_3, Source_Serif_4 } from "next/font/google";
 import "../globals.css";
 import LanguageBar from "@/components/LanguageBar";
 import LocalBusinessJsonLd from "@/components/LocalBusinessJsonLd";
@@ -28,11 +28,25 @@ const sourceSerif = Source_Serif_4({
 // Chinese characters. The browser only downloads the pieces of this font that a page
 // actually uses, so English, Russian and Ukrainian pages do not load it.
 const notoSansTC = Noto_Sans_TC({
-  variable: "--font-cjk",
+  variable: "--font-script",
   weight: ["400", "600", "700"],
   preload: false,
   display: "swap",
 });
+
+const notoSansGurmukhi = Noto_Sans_Gurmukhi({
+  variable: "--font-script",
+  weight: ["400", "600", "700"],
+  subsets: ["gurmukhi"],
+  preload: false,
+  display: "swap",
+});
+
+/** Fonts for languages whose letters Source Sans does not have. */
+const scriptFonts: Partial<Record<string, string>> = {
+  zh: notoSansTC.variable,
+  pa: notoSansGurmukhi.variable,
+};
 
 export function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
@@ -73,7 +87,7 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[la
   return (
     <html
       lang={localeInfo[lang].htmlLang}
-      className={`${sourceSans.variable} ${sourceSerif.variable} ${notoSansTC.variable} h-full antialiased`}
+      className={`${sourceSans.variable} ${sourceSerif.variable} ${scriptFonts[lang] ?? ""} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-white">
         <LocaleProvider lang={lang} t={clientText}>

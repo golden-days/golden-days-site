@@ -8,8 +8,8 @@
   --color-cream: #fff8e3;
   --color-ink: #1a1a1a;
 
-  --font-sans: var(--font-source-sans), var(--font-cjk), ui-sans-serif, system-ui, sans-serif;
-  --font-serif: var(--font-source-serif), var(--font-cjk), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-source-sans), var(--font-script, sans-serif), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-source-serif), var(--font-script, serif), Georgia, "Times New Roman", serif;
 }
 
 :root {

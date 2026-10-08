@@ -31,7 +31,7 @@ export default function LanguageBar() {
                 lang={localeInfo[code].htmlLang}
                 hrefLang={localeInfo[code].htmlLang}
                 aria-current={isCurrent ? "true" : undefined}
-                className={`inline-flex min-h-12 min-w-12 items-center justify-center px-3 text-lg font-semibold text-navy hover:text-navy-dark ${
+                className={`inline-flex min-h-12 min-w-12 items-center justify-center px-2.5 text-lg font-semibold text-navy hover:text-navy-dark ${
                   isCurrent
                     ? "underline decoration-gold-deep decoration-4 underline-offset-4"
                     : "underline decoration-2 underline-offset-4"
