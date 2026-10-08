@@ -129,12 +129,12 @@ export const en = {
         {
           icon: "socialWork" as const,
           title: "Social Work",
-          text: "Help understanding benefits, paperwork, and community resources. [PLACEHOLDER]",
+          text: "Help understanding benefits, paperwork, and community resources.",
         },
         {
           icon: "recreation" as const,
           title: "Recreation",
-          text: "Music, games, crafts, exercise, field trips, and time with other people. [PLACEHOLDER]",
+          text: "Music, games, crafts, exercise, field trips, and time with other people.",
         },
         {
           icon: "transportation" as const,
@@ -146,7 +146,7 @@ export const en = {
     transportation: {
       heading: "Getting here is part of the care",
       paragraphs: [
-        "Golden Days offers door-to-door rides for people who attend the program, including riders who use a wheelchair or a walker. [PLACEHOLDER]",
+        "Golden Days offers rides to and from the center for people who attend the program, including riders who use a wheelchair or a walker.",
         "We work out a pickup window with your family, and we call if a schedule needs to change. [PLACEHOLDER]",
       ],
       linkLabel: "Read about transportation",
@@ -183,7 +183,7 @@ export const en = {
     },
     cost: {
       heading: "What about cost?",
-      text: "Many families use Medi-Cal, and private pay is also an option. Call us and we will explain what applies to your family. [PLACEHOLDER]",
+      text: "We accept insurance, and Medi-Cal together with an insurance plan. Private pay is also an option. Call us and we will explain what applies to your family.",
     },
     trust: {
       text: "Serving West Sacramento families since 2003. Same owners since 2007.",
@@ -271,7 +271,7 @@ export const en = {
     meta: {
       title: "Services",
       description:
-        "Nursing care, rehabilitation, nutrition, social work, recreation, and transportation at Golden Days in West Sacramento. [PLACEHOLDER]",
+        "Nursing care, rehabilitation, nutrition, social work, recreation, and transportation at Golden Days in West Sacramento.",
     },
     heading: "Services",
     lead: "A day at Golden Days is built around six kinds of support. Families choose the days that work for them. [PLACEHOLDER]",
@@ -309,7 +309,7 @@ export const en = {
       {
         icon: "socialWork" as const,
         title: "Social Work",
-        summary: "Help with benefits, paperwork, and finding services outside the center. [PLACEHOLDER]",
+        summary: "Help with benefits, paperwork, and finding services outside the center.",
         details: [
           "Our social worker helps families understand forms and coverage questions. [PLACEHOLDER]",
           "We can point you toward local services such as home help or meal programs. [PLACEHOLDER]",
@@ -319,7 +319,7 @@ export const en = {
       {
         icon: "recreation" as const,
         title: "Recreation",
-        summary: "Music, games, crafts, gentle exercise, and company through the day. [PLACEHOLDER]",
+        summary: "Music, games, crafts, gentle exercise, and company through the day.",
         details: [
           "Each day has a schedule of activities people can join or skip, including music, card games, crafts, and seated exercise. [PLACEHOLDER]",
           "Field trips happen up to three times a week on average, at no extra cost. People who use a wheelchair or have other mobility needs can come along.",
@@ -329,7 +329,7 @@ export const en = {
       {
         icon: "transportation" as const,
         title: "Transportation",
-        summary: "Door-to-door rides to and from the center on program days. [PLACEHOLDER]",
+        summary: "Rides to and from the center on program days.",
         details: [
           "Rides are available within our service area. [PLACEHOLDER]",
           "Our vehicles can carry riders who use a wheelchair or a walker.",
@@ -368,10 +368,10 @@ export const en = {
     meta: {
       title: "Transportation",
       description:
-        "Door-to-door rides to Golden Days in West Sacramento, including wheelchair accessible vehicles. [PLACEHOLDER]",
+        "Rides to Golden Days in West Sacramento, including wheelchair accessible vehicles.",
     },
     heading: "Transportation",
-    lead: "Getting to the center should not be the hard part. Golden Days offers rides to and from the program for people who need them. [PLACEHOLDER]",
+    lead: "Getting to the center should not be the hard part. Golden Days offers rides to and from the program for people who need them.",
     photo: {
       kind: "bus" as const,
       label: "Photo placeholder - Golden Days bus at the entrance",
@@ -479,7 +479,7 @@ export const en = {
         },
         {
           title: "Private pay",
-          text: "Families can also pay directly, by the day or by the month. [PLACEHOLDER]",
+          text: "Families can also pay directly.",
         },
       ],
       note: "Nothing on this page is a promise of coverage or a price. Call us for current information about your situation.",
@@ -646,7 +646,7 @@ export const en = {
 
   form: {
     heading: "Send us a message",
-    responseTime: "A member of our team will call you within 2 business days. [PLACEHOLDER]",
+    responseTime: "A member of our team will call you within one business day. [PLACEHOLDER]",
     callAlternativeLead: "Prefer to talk?",
     callAlternativeLinkPrefix: "Call us at",
     medicalNote: "Please do not include medical information in this form.",
