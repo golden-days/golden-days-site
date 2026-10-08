@@ -21,7 +21,6 @@ export default async function HomePage() {
   return (
     <>
       <div className="relative overflow-hidden border-b-4 border-gold bg-cream">
-        <Sunburst className="pointer-events-none absolute top-0 right-[max(1rem,calc((100%-64rem)/2))] h-auto w-56 rotate-180 sm:w-72 opacity-30" />
         <div className="relative mx-auto grid w-full max-w-5xl gap-8 px-4 py-12 sm:px-6 md:grid-cols-2 md:items-center md:py-16">
           <div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl">{home.hero.heading}</h1>
@@ -37,7 +36,12 @@ export default async function HomePage() {
               <span>{t.contact.hours}</span>
             </p>
           </div>
-          <PhotoPlaceholder photo={home.hero.photo} wide />
+          <div className="relative">
+            <Sunburst className="pointer-events-none absolute bottom-full left-1/2 h-auto w-60 -translate-x-1/2 translate-y-14 opacity-60 sm:w-96 sm:translate-y-[4.5rem]" />
+            <div className="relative">
+              <PhotoPlaceholder photo={home.hero.photo} wide />
+            </div>
+          </div>
         </div>
       </div>
 
