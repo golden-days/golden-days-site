@@ -154,7 +154,10 @@ export const en = {
       photo: {
         kind: "bus" as const,
         label: "Photo placeholder - Golden Days bus",
-        alt: "Placeholder image standing in for a photo of a Golden Days bus parked outside the center",
+        alt: "A white Golden Days bus parked outside the center, with its passenger door open.",
+        src: "/images/bus.jpg",
+        width: 1200,
+        height: 900,
       },
     },
     enrollment: {
