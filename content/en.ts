@@ -274,26 +274,26 @@ export const en = {
         "Nursing care, rehabilitation, nutrition, social work, recreation, and transportation at Golden Days in West Sacramento.",
     },
     heading: "Services",
-    lead: "A day at Golden Days is built around six kinds of support. Families choose the days that work for them. [PLACEHOLDER]",
+    lead: "A day at Golden Days is built around six kinds of support. Families choose the days that work for them.",
     items: [
       {
         icon: "nursing" as const,
         title: "Nursing Care",
         summary: "Health checks and medication support while your loved one is at the center. [PLACEHOLDER]",
         details: [
-          "Nursing staff check vital signs and watch for changes during the day. [PLACEHOLDER]",
+          "Nursing staff check vital signs and watch for changes during the day.",
           "We help with medications that are scheduled during program hours. [PLACEHOLDER]",
-          "If something looks different, we call the family and the doctor's office. [PLACEHOLDER]",
+          "If something looks different, we call the family and the doctor's office.",
         ],
       },
       {
         icon: "rehabilitation" as const,
         title: "Rehabilitation",
-        summary: "Exercises and therapy that support strength, balance, and movement. [PLACEHOLDER]",
+        summary: "Exercises and therapy that support strength, balance, and movement.",
         details: [
-          "Therapy staff work on walking, balance, and everyday movement. [PLACEHOLDER]",
-          "Sessions are planned around what each person is working toward. [PLACEHOLDER]",
-          "Group exercise happens most mornings for people who want to join. [PLACEHOLDER]",
+          "Therapy staff work on walking, balance, and everyday movement.",
+          "Sessions are planned around what each person is working toward.",
+          "Group exercise happens most mornings for people who want to join.",
         ],
       },
       {
@@ -311,9 +311,9 @@ export const en = {
         title: "Social Work",
         summary: "Help with benefits, paperwork, and finding services outside the center.",
         details: [
-          "Our social worker helps families understand forms and coverage questions. [PLACEHOLDER]",
-          "We can point you toward local services such as home help or meal programs. [PLACEHOLDER]",
-          "Family meetings are available when a plan needs to change. [PLACEHOLDER]",
+          "Our social worker helps families understand forms and coverage questions.",
+          "We can point you toward local services such as home help or meal programs.",
+          "Family meetings are available when a plan needs to change.",
         ],
       },
       {
@@ -321,9 +321,9 @@ export const en = {
         title: "Recreation",
         summary: "Music, games, crafts, gentle exercise, and company through the day.",
         details: [
-          "Each day has a schedule of activities people can join or skip, including music, card games, crafts, and seated exercise. [PLACEHOLDER]",
+          "Each day has a schedule of activities people can join or skip, including music, card games, crafts, and seated exercise.",
           "Field trips happen up to three times a week on average, at no extra cost. People who use a wheelchair or have other mobility needs can come along.",
-          "Holidays and birthdays are celebrated together. [PLACEHOLDER]",
+          "Holidays and birthdays are celebrated together.",
         ],
       },
       {
@@ -331,7 +331,7 @@ export const en = {
         title: "Transportation",
         summary: "Rides to and from the center on program days.",
         details: [
-          "Rides are available within our service area. [PLACEHOLDER]",
+          "Rides are available within our service area.",
           "Our vehicles can carry riders who use a wheelchair or a walker.",
           "The bus drives as close to the door as possible. At home, a caregiver helps the participant onto the bus. At the center, drivers help participants off the bus.",
         ],
@@ -388,9 +388,9 @@ export const en = {
           label: "Areas we usually serve:",
           items: [
             "West Sacramento",
-            "Bryte and Broderick [PLACEHOLDER]",
-            "Southport [PLACEHOLDER]",
-            "Parts of Sacramento near the river [PLACEHOLDER]",
+            "Bryte and Broderick",
+            "Southport",
+            "Parts of Sacramento near the river",
             "Antelope",
             "Elk Grove",
             "Natomas",
@@ -402,34 +402,34 @@ export const en = {
       {
         heading: "Pickup and drop-off",
         paragraphs: [
-          "Each rider gets a pickup window rather than an exact minute, because traffic and other riders change the route. [PLACEHOLDER]",
+          "Each rider gets a pickup window rather than an exact minute, because traffic and other riders change the route.",
           "We drive as close to the door as possible. At pickup, the participant's caregiver helps them onto the bus. Drivers do not help participants on, and they cannot lift anyone onto the bus.",
           "At the center, drivers can help participants off the bus, and our caregivers here are ready to meet them. Our caregivers do not go to people's homes.",
-          "If the bus is running late, we call the family. [PLACEHOLDER]",
+          "If the bus is running late, we call the family.",
         ],
       },
       {
         heading: "Wheelchair and mobility access",
         paragraphs: [
-          "Our vehicles can carry riders who use a wheelchair, a walker, or a cane. [PLACEHOLDER]",
-          "Wheelchairs are secured before the vehicle moves, and seat belts are used for every rider. [PLACEHOLDER]",
-          "Tell us about oxygen, transfers, or anything else a driver should know, and we will plan for it. [PLACEHOLDER]",
+          "Our vehicles can carry riders who use a wheelchair, a walker, or a cane.",
+          "Wheelchairs are secured before the vehicle moves, and seat belts are used for every rider.",
+          "Tell us about oxygen, transfers, or anything else a driver should know, and we will plan for it.",
         ],
       },
       {
         heading: "How families arrange or change a ride",
         paragraphs: [
-          "Rides are set up when your loved one enrolls, and the schedule stays the same week to week. [PLACEHOLDER]",
-          "To change a pickup address, add a day, or cancel a ride, call the office. [PLACEHOLDER]",
-          "For a same-day cancellation, call as early as you can so the driver can adjust the route. [PLACEHOLDER]",
+          "Rides are set up when your loved one enrolls, and the schedule stays the same week to week.",
+          "To change a pickup address, add a day, or cancel a ride, call the office.",
+          "For a same-day cancellation, call as early as you can so the driver can adjust the route.",
         ],
         list: {
-          label: "To change a ride, have this ready: [PLACEHOLDER]",
+          label: "To change a ride, have this ready:",
           items: [
-            "The rider's name [PLACEHOLDER]",
-            "The date or dates that are changing [PLACEHOLDER]",
-            "The new address, if the pickup location is moving [PLACEHOLDER]",
-            "A phone number where we can reach you that day [PLACEHOLDER]",
+            "The rider's name",
+            "The date or dates that are changing",
+            "The new address, if the pickup location is moving",
+            "A phone number where we can reach you that day",
           ],
         },
       },
@@ -453,21 +453,21 @@ export const en = {
         "Who qualifies for Golden Days, who pays, what to bring, and the steps to enroll in West Sacramento.",
     },
     heading: "Enrollment",
-    lead: "Enrolling takes a few conversations, not a mountain of paperwork. Here is how it goes. [PLACEHOLDER]",
+    lead: "Enrolling takes a few conversations, not a mountain of paperwork. Here is how it goes.",
     qualifies: {
       heading: "Who qualifies",
-      intro: "Golden Days is generally a fit for an adult who: [PLACEHOLDER]",
+      intro: "Golden Days is generally a fit for an adult who:",
       items: [
-        "Is an adult living at home or with family [PLACEHOLDER]",
-        "Needs help, supervision, or company during the day [PLACEHOLDER]",
-        "Has a health condition that benefits from regular check-ins [PLACEHOLDER]",
-        "Can take part in a group day program [PLACEHOLDER]",
+        "Is an adult living at home or with family",
+        "Needs help, supervision, or company during the day",
+        "Has a health condition that benefits from regular check-ins",
+        "Can take part in a group day program",
       ],
-      note: "Eligibility is decided after an assessment, not over the phone. Call us and we will tell you what the next step looks like. [PLACEHOLDER]",
+      note: "Eligibility is decided after an assessment, not over the phone. Call us and we will tell you what the next step looks like.",
     },
     pays: {
       heading: "Who pays",
-      intro: "Families usually pay in one of these ways: [PLACEHOLDER]",
+      intro: "Families usually pay in one of these ways:",
       items: [
         {
           title: "Medi-Cal",
@@ -475,25 +475,25 @@ export const en = {
         },
         {
           title: "Managed care plans",
-          text: "Some health plans cover day programs. We will check what your plan says. [PLACEHOLDER]",
+          text: "Some health plans cover day programs. We will check what your plan says.",
         },
         {
           title: "Private pay",
-          text: "Families can also pay directly.",
+          text: "Families can also pay directly. [PLACEHOLDER]",
         },
       ],
       note: "Nothing on this page is a promise of coverage or a price. Call us for current information about your situation.",
     },
     bring: {
       heading: "What to bring",
-      intro: "Bring what you have. We will help with the rest. [PLACEHOLDER]",
+      intro: "Bring what you have. We will help with the rest.",
       items: [
-        "Photo identification [PLACEHOLDER]",
+        "Photo identification",
         "Insurance card (you can bring this on its own)",
         "Medi-Cal card (bring this together with your insurance card, not by itself)",
-        "Your doctor's name and phone number [PLACEHOLDER]",
-        "Emergency contact names and numbers [PLACEHOLDER]",
-        "Any recent medical paperwork you already have [PLACEHOLDER]",
+        "Your doctor's name and phone number",
+        "Emergency contact names and numbers",
+        "Any recent medical paperwork you already have",
       ],
     },
     steps: {
@@ -501,7 +501,7 @@ export const en = {
       items: [
         {
           title: "Call or send a message",
-          text: "Tell us about your loved one, the days you are hoping for, and any concerns. This call takes about ten minutes. [PLACEHOLDER]",
+          text: "Tell us about your loved one, the days you are hoping for, and any concerns. This call takes about ten minutes.",
         },
         {
           title: "Tour the center",
@@ -509,15 +509,15 @@ export const en = {
         },
         {
           title: "Assessment",
-          text: "Our team reviews health history, daily needs, and goals to confirm the program is a good fit. [PLACEHOLDER]",
+          text: "Our team reviews health history, daily needs, and goals to confirm the program is a good fit.",
         },
         {
           title: "Paperwork and coverage",
-          text: "We complete enrollment forms together and work through the coverage questions. [PLACEHOLDER]",
+          text: "We complete enrollment forms together and work through the coverage questions.",
         },
         {
           title: "First day",
-          text: "We set the schedule, arrange rides, and introduce your loved one to staff and other participants. [PLACEHOLDER]",
+          text: "We set the schedule, arrange rides, and introduce your loved one to staff and other participants.",
         },
       ],
     },
@@ -525,20 +525,20 @@ export const en = {
       heading: "Common questions",
       items: [
         {
-          question: "How many days a week can my loved one come? [PLACEHOLDER]",
-          answer: "Schedules range from one day to five days a week. We will set the schedule together with you. [PLACEHOLDER]",
+          question: "How many days a week can my loved one come?",
+          answer: "Schedules range from one day to five days a week. We will set the schedule together with you.",
         },
         {
           question: "How long does enrollment take?",
-          answer: "It depends on paperwork and coverage. We will give you a realistic timeline on the first call. [PLACEHOLDER]",
+          answer: "It depends on paperwork and coverage. We will give you a realistic timeline on the first call.",
         },
         {
           question: "Can we try it first?",
-          answer: "Start with a tour. Ask us about a trial day when you visit. [PLACEHOLDER]",
+          answer: "Start with a tour. Ask us about a trial day when you visit.",
         },
         {
-          question: "What if my loved one does not want to go? [PLACEHOLDER]",
-          answer: "That is common. A tour and a short first week often help. We have done this many times. [PLACEHOLDER]",
+          question: "What if my loved one does not want to go?",
+          answer: "That is common. A tour and a short first week often help. We have done this many times.",
         },
       ],
     },
@@ -587,31 +587,31 @@ export const en = {
         help: "We serve West Sacramento and nearby areas, including Sacramento, Natomas, Elk Grove, Carmichael, Rancho Cordova, and Antelope. If you are not sure, choose Not sure and we will check.",
       },
       {
-        text: "Can they take part in group activities during the day, with or without a walker or wheelchair? [PLACEHOLDER]",
-        help: "Group activities include exercise, music, games, and meals together. People take part in their own way, and some also need medical attention during the day. If you are not sure they could manage a group setting, choose Not sure. [PLACEHOLDER]",
+        text: "Can they take part in group activities during the day, with or without a walker or wheelchair?",
+        help: "Group activities include exercise, music, games, and meals together. People take part in their own way, and some also need medical attention during the day. If you are not sure they could manage a group setting, choose Not sure.",
       },
       {
         text: "Do they have health insurance from an insurance provider, with or without Medi-Cal?",
         help: "We accept insurance, and Medi-Cal together with insurance. Medi-Cal on its own is not enough. If you are not sure, choose Not sure.",
       },
       {
-        text: "Do they have a doctor who can share recent medical paperwork? [PLACEHOLDER]",
-        help: "We ask for recent medical paperwork from their doctor, along with their insurance information. If you are not sure, choose Not sure. [PLACEHOLDER]",
+        text: "Do they have a doctor who can share recent medical paperwork?",
+        help: "We ask for recent medical paperwork from their doctor, along with their insurance information. If you are not sure, choose Not sure.",
       },
     ],
     results: {
       announcement: "Here are your results.",
       goodFit: {
         heading: "Good news. You are a good fit for Golden Days.",
-        text: "Every answer was yes. Call us or schedule a tour, and we will help with the next steps.",
+        text: "Call us or schedule a tour, and we will help with the next steps.",
       },
       notFit: {
-        heading: "Golden Days may not be the right fit. [PLACEHOLDER]",
-        text: "Thank you for checking. If you would like to talk it over, please call us and we will be glad to help. [PLACEHOLDER]",
+        heading: "Golden Days may not be the right fit.",
+        text: "Thank you for checking. If you would like to talk it over, please call us and we will be glad to help.",
       },
       unsure: {
         heading: "We are not sure yet, and that is okay.",
-        text: "Many families are unsure at the start. Call us and we will go through your situation together. Some answers can change with the right paperwork or coverage. If every answer is yes, you are a good fit. [PLACEHOLDER]",
+        text: "Many families are unsure at the start. Call us and we will go through your situation together. Some answers can change with the right paperwork or coverage. If every answer is yes, you are a good fit.",
       },
       enrollmentLinkLabel: "Read how enrollment works",
       startOverLabel: "Start over",
@@ -630,7 +630,7 @@ export const en = {
     detailsHeading: "Visit or call",
     directionsHeading: "Find us",
     directionsText:
-      "The entrance is at ground level and parking is in front of the building. [PLACEHOLDER]",
+      "The entrance is at ground level and parking is in front of the building.",
     photo: {
       kind: "building" as const,
       label: "Photo placeholder - building entrance",
