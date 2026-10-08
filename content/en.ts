@@ -36,7 +36,7 @@ export const en = {
     addressLines: ["1215 Merkley Ave", "West Sacramento, CA 95691"],
     addressOneLine: "1215 Merkley Ave, West Sacramento, CA 95691",
     hoursLabel: "Hours",
-    hours: "Facility hours: Monday to Friday, 8:00 AM to 3:00 PM [PLACEHOLDER]",
+    hours: "Facility hours: Monday to Friday, 8:00 AM to 4:30 PM",
     programHours: "Service hours: Monday to Friday, 8:00 AM to 2:00 PM",
     hoursNote: "Closed Saturday and Sunday. Also closed on Thanksgiving, Christmas Day, New Year's Day, and the Fourth of July.",
     mapTitle: "Map showing the Golden Days Adult Day Health Care location",
@@ -191,7 +191,7 @@ export const en = {
     contact: {
       heading: "Talk with us",
       intro:
-        "Send a message and we will get back to you, or call during facility hours. [PLACEHOLDER]",
+        "Send a message and we will get back to you, or call during facility hours.",
     },
   },
 
@@ -626,7 +626,7 @@ export const en = {
         "Call Golden Days Adult Day Health Care in West Sacramento, send a message, or schedule a tour.",
     },
     heading: "Contact us",
-    lead: "Call us during facility hours, or send a message and we will get back to you. [PLACEHOLDER]",
+    lead: "Call us during facility hours, or send a message and we will get back to you.",
     detailsHeading: "Visit or call",
     directionsHeading: "Find us",
     directionsText:
@@ -665,7 +665,7 @@ export const en = {
     submitting: "Sending...",
     successHeading: "Thank you. Your message has been sent.",
     successText:
-      "We will get back to you during facility hours. If you need an answer sooner, please call us. [PLACEHOLDER]",
+      "We will get back to you during facility hours. If you need an answer sooner, please call us.",
     successAgain: "Send another message",
     errorHeading: "Your message did not go through.",
     errorText: "Please try again, or call us instead.",
