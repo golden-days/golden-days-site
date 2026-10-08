@@ -279,11 +279,11 @@ export const en = {
       {
         icon: "nursing" as const,
         title: "Nursing Care",
-        summary: "Health checks and medications given by our nurses while your loved one is at the center.",
+        summary: "Health checks and medications from our nurses during the day.",
         details: [
-          "Nursing staff check vital signs and blood glucose (blood sugar) levels.",
-          "Our nurses give medications that are scheduled during program hours.",
-          "If something looks different, we call the family and the doctor's office.",
+          "Nurses check vital signs and blood glucose (blood sugar).",
+          "Nurses give scheduled medications during program hours.",
+          "If health changes, we call the family and the doctor's office.",
         ],
       },
       {
@@ -321,8 +321,8 @@ export const en = {
         title: "Recreation",
         summary: "Music, games, crafts, gentle exercise, and company through the day.",
         details: [
-          "Each day has a schedule of activities people can join or skip, including music, card games, crafts, and seated exercise.",
-          "Field trips happen up to three times a week on average, at no extra cost. People who use a wheelchair or have other mobility needs can come along.",
+          "Daily activities people can join or skip, such as music, games, crafts, and exercise.",
+          "Field trips happen up to three times a week on average, at no extra cost. People with mobility needs can come along.",
           "Holidays and birthdays are celebrated together.",
         ],
       },
@@ -479,7 +479,7 @@ export const en = {
         },
         {
           title: "Private pay",
-          text: "Families can also pay directly. [PLACEHOLDER]",
+          text: "Families can also pay directly.",
         },
       ],
       note: "Nothing on this page is a promise of coverage or a price. Call us for current information about your situation.",
