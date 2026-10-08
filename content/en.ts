@@ -36,11 +36,11 @@ export const en = {
     addressLines: ["1215 Merkley Ave", "West Sacramento, CA 95691"],
     addressOneLine: "1215 Merkley Ave, West Sacramento, CA 95691",
     hoursLabel: "Hours",
-    hours: "Facility hours: Monday to Friday, 8:00 AM to 3:00 PM",
+    hours: "Facility hours: Monday to Friday, 8:00 AM to 3:00 PM [PLACEHOLDER]",
     programHours: "Service hours: Monday to Friday, 8:00 AM to 2:00 PM",
     hoursNote: "Closed Saturday and Sunday. Also closed on Thanksgiving, Christmas Day, New Year's Day, and the Fourth of July.",
-    mapTitle: "Map showing the Golden Days Adult Day Health Care location [PLACEHOLDER]",
-    directionsLinkLabel: "Get directions [PLACEHOLDER]",
+    mapTitle: "Map showing the Golden Days Adult Day Health Care location",
+    directionsLinkLabel: "Get directions",
   },
 
   nav: {
@@ -82,7 +82,7 @@ export const en = {
     meta: {
       title: "Adult Day Health Care in West Sacramento",
       description:
-        "Golden Days Adult Day Health Care is a day program for adults in West Sacramento, California. Call us or schedule a tour. [PLACEHOLDER]",
+        "Golden Days Adult Day Health Care is a day program for adults in West Sacramento, California. Call us or schedule a tour.",
     },
     hero: {
       heading: "Daytime care for adults in West Sacramento",
@@ -114,7 +114,7 @@ export const en = {
         {
           icon: "nursing" as const,
           title: "Nursing Care",
-          text: "Our nursing staff checks in on health needs during the day. [PLACEHOLDER]",
+          text: "Our nursing staff checks in on health needs during the day.",
         },
         {
           icon: "rehabilitation" as const,
@@ -124,7 +124,7 @@ export const en = {
         {
           icon: "nutrition" as const,
           title: "Nutrition",
-          text: "Breakfast and lunch each day, made by a cook who plans for each person's needs. [PLACEHOLDER]",
+          text: "Breakfast and lunch each day, made by a cook who plans for each person's needs.",
         },
         {
           icon: "socialWork" as const,
@@ -167,7 +167,7 @@ export const en = {
         },
         {
           title: "Visit the center",
-          text: "Come see the facility, meet the staff, and ask anything you want. [PLACEHOLDER]",
+          text: "Come see the facility, meet the staff, and ask anything you want.",
         },
         {
           title: "Complete an assessment",
@@ -212,7 +212,7 @@ export const en = {
     story: {
       heading: "Our story",
       paragraphs: [
-        "Golden Days opened in West Sacramento in 2003 as a place where adults could spend the day with care close at hand. The same owners have run the center since 2007. [PLACEHOLDER]",
+        "Golden Days opened in West Sacramento in 2003 as a place where adults could spend the day with care close at hand. The same owners have run the center since 2007.",
         "Over those years we have come to know many local families. Some people come to us a few days a week for years, and their families become part of the center too. [PLACEHOLDER]",
         "We are a small center on purpose. Staff learn names, routines, and what makes each person comfortable. [PLACEHOLDER]",
       ],
@@ -299,11 +299,11 @@ export const en = {
       {
         icon: "nutrition" as const,
         title: "Nutrition",
-        summary: "Breakfast and lunch each program day, made by a cook who plans for each person's needs. [PLACEHOLDER]",
+        summary: "Breakfast and lunch each program day, made by a cook who plans for each person's needs.",
         details: [
-          "Breakfast and lunch are served every program day, and the meals rotate. [PLACEHOLDER]",
-          "A specialist cook plans meals around each person's needs. [PLACEHOLDER]",
-          "Tell us about food needs, such as allergies, trouble swallowing (we can chop food), or a vegetarian diet. [PLACEHOLDER]",
+          "Breakfast and lunch are served every program day, and the meals rotate.",
+          "A specialist cook plans meals around each person's needs.",
+          "Tell us about food needs, such as allergies, trouble swallowing (we can chop food), or a vegetarian diet.",
         ],
       },
       {
@@ -322,7 +322,7 @@ export const en = {
         summary: "Music, games, crafts, gentle exercise, and company through the day. [PLACEHOLDER]",
         details: [
           "Each day has a schedule of activities people can join or skip, including music, card games, crafts, and seated exercise. [PLACEHOLDER]",
-          "Field trips happen up to three times a week on average, at no extra cost. People who use a wheelchair or have other mobility needs can come along. [PLACEHOLDER]",
+          "Field trips happen up to three times a week on average, at no extra cost. People who use a wheelchair or have other mobility needs can come along.",
           "Holidays and birthdays are celebrated together. [PLACEHOLDER]",
         ],
       },
@@ -332,8 +332,8 @@ export const en = {
         summary: "Door-to-door rides to and from the center on program days. [PLACEHOLDER]",
         details: [
           "Rides are available within our service area. [PLACEHOLDER]",
-          "Our vehicles can carry riders who use a wheelchair or a walker. [PLACEHOLDER]",
-          "The bus drives as close to the door as possible. At home, a caregiver helps the participant onto the bus. At the center, drivers help participants off the bus. [PLACEHOLDER]",
+          "Our vehicles can carry riders who use a wheelchair or a walker.",
+          "The bus drives as close to the door as possible. At home, a caregiver helps the participant onto the bus. At the center, drivers help participants off the bus.",
         ],
       },
     ],
@@ -382,20 +382,20 @@ export const en = {
         heading: "Service area",
         paragraphs: [
           "We provide rides in West Sacramento and nearby neighborhoods. [PLACEHOLDER]",
-          "Some addresses outside that area may still work depending on the day and the route. If your area is not listed, call us with your address and we will check. [PLACEHOLDER]",
+          "Some addresses outside that area may still work depending on the day and the route. If your area is not listed, call us with your address and we will check.",
         ],
         list: {
-          label: "Areas we usually serve: [PLACEHOLDER]",
+          label: "Areas we usually serve:",
           items: [
-            "West Sacramento [PLACEHOLDER]",
+            "West Sacramento",
             "Bryte and Broderick [PLACEHOLDER]",
             "Southport [PLACEHOLDER]",
             "Parts of Sacramento near the river [PLACEHOLDER]",
-            "Antelope [PLACEHOLDER]",
-            "Elk Grove [PLACEHOLDER]",
-            "Natomas [PLACEHOLDER]",
-            "Carmichael [PLACEHOLDER]",
-            "Rancho Cordova [PLACEHOLDER]",
+            "Antelope",
+            "Elk Grove",
+            "Natomas",
+            "Carmichael",
+            "Rancho Cordova",
           ],
         },
       },
@@ -403,8 +403,8 @@ export const en = {
         heading: "Pickup and drop-off",
         paragraphs: [
           "Each rider gets a pickup window rather than an exact minute, because traffic and other riders change the route. [PLACEHOLDER]",
-          "We drive as close to the door as possible. At pickup, the participant's caregiver helps them onto the bus. Drivers do not help participants on, and they cannot lift anyone onto the bus. [PLACEHOLDER]",
-          "At the center, drivers can help participants off the bus, and our caregivers here are ready to meet them. Our caregivers do not go to people's homes. [PLACEHOLDER]",
+          "We drive as close to the door as possible. At pickup, the participant's caregiver helps them onto the bus. Drivers do not help participants on, and they cannot lift anyone onto the bus.",
+          "At the center, drivers can help participants off the bus, and our caregivers here are ready to meet them. Our caregivers do not go to people's homes.",
           "If the bus is running late, we call the family. [PLACEHOLDER]",
         ],
       },
@@ -471,7 +471,7 @@ export const en = {
       items: [
         {
           title: "Medi-Cal",
-          text: "We accept Medi-Cal together with an insurance plan, but not Medi-Cal on its own. We can explain what the process looks like. [PLACEHOLDER]",
+          text: "We accept Medi-Cal together with an insurance plan, but not Medi-Cal on its own. We can explain what the process looks like.",
         },
         {
           title: "Managed care plans",
@@ -489,8 +489,8 @@ export const en = {
       intro: "Bring what you have. We will help with the rest. [PLACEHOLDER]",
       items: [
         "Photo identification [PLACEHOLDER]",
-        "Insurance card (you can bring this on its own) [PLACEHOLDER]",
-        "Medi-Cal card (bring this together with your insurance card, not by itself) [PLACEHOLDER]",
+        "Insurance card (you can bring this on its own)",
+        "Medi-Cal card (bring this together with your insurance card, not by itself)",
         "Your doctor's name and phone number [PLACEHOLDER]",
         "Emergency contact names and numbers [PLACEHOLDER]",
         "Any recent medical paperwork you already have [PLACEHOLDER]",
@@ -505,7 +505,7 @@ export const en = {
         },
         {
           title: "Tour the center",
-          text: "Visit during program hours, preferably before 1:30 PM, so you can see a normal day. Bring your loved one if that is comfortable. [PLACEHOLDER]",
+          text: "Visit during program hours, preferably before 1:30 PM, so you can see a normal day. Bring your loved one if that is comfortable.",
         },
         {
           title: "Assessment",
@@ -544,7 +544,7 @@ export const en = {
     },
     qualifyPrompt: {
       heading: "Not sure if this is a fit?",
-      text: "Answer five short questions and we will point you to the next step. It takes about a minute. [PLACEHOLDER]",
+      text: "Answer five short questions and we will point you to the next step. It takes about a minute.",
     },
     cta: {
       heading: "Ready to start?",
@@ -559,12 +559,12 @@ export const en = {
     meta: {
       title: "Do I qualify?",
       description:
-        "Answer five short questions to see whether Golden Days in West Sacramento may be a good fit. [PLACEHOLDER]",
+        "Answer five short questions to see whether Golden Days in West Sacramento may be a good fit.",
     },
     intro: {
       heading: "See if Golden Days may be right for you or your loved one.",
       reassurance:
-        "This takes about a minute. It is not an application and not a final decision. We do not ask for your name or any health information, and your answers stay on this page. We do not collect or store them. [PLACEHOLDER]",
+        "This takes about a minute. It is not an application and not a final decision. We do not ask for your name or any health information, and your answers stay on this page. We do not collect or store them.",
       startLabel: "Start the questions",
     },
     progressLabel: "Question {current} of {total}",
@@ -579,20 +579,20 @@ export const en = {
     answerGroupLabel: "Choose one answer",
     questions: [
       {
-        text: "Is the person 18 or older? [PLACEHOLDER]",
-        help: "Golden Days is a program for adults. If you are asking for a parent or a spouse, answer for that person. [PLACEHOLDER]",
+        text: "Is the person 18 or older?",
+        help: "Golden Days is a program for adults. If you are asking for a parent or a spouse, answer for that person.",
       },
       {
-        text: "Do they live in West Sacramento or a nearby area we serve? [PLACEHOLDER]",
-        help: "We serve West Sacramento and nearby areas, including Sacramento, Natomas, Elk Grove, Carmichael, Rancho Cordova, and Antelope. If you are not sure, choose Not sure and we will check. [PLACEHOLDER]",
+        text: "Do they live in West Sacramento or a nearby area we serve?",
+        help: "We serve West Sacramento and nearby areas, including Sacramento, Natomas, Elk Grove, Carmichael, Rancho Cordova, and Antelope. If you are not sure, choose Not sure and we will check.",
       },
       {
         text: "Can they take part in group activities during the day, with or without a walker or wheelchair? [PLACEHOLDER]",
         help: "Group activities include exercise, music, games, and meals together. People take part in their own way, and some also need medical attention during the day. If you are not sure they could manage a group setting, choose Not sure. [PLACEHOLDER]",
       },
       {
-        text: "Do they have health insurance from an insurance provider, with or without Medi-Cal? [PLACEHOLDER]",
-        help: "We accept insurance, and Medi-Cal together with insurance. Medi-Cal on its own is not enough. If you are not sure, choose Not sure. [PLACEHOLDER]",
+        text: "Do they have health insurance from an insurance provider, with or without Medi-Cal?",
+        help: "We accept insurance, and Medi-Cal together with insurance. Medi-Cal on its own is not enough. If you are not sure, choose Not sure.",
       },
       {
         text: "Do they have a doctor who can share recent medical paperwork? [PLACEHOLDER]",
@@ -603,7 +603,7 @@ export const en = {
       announcement: "Here are your results.",
       goodFit: {
         heading: "Good news. You are a good fit for Golden Days.",
-        text: "Every answer was yes. Call us or schedule a tour, and we will help with the next steps. [PLACEHOLDER]",
+        text: "Every answer was yes. Call us or schedule a tour, and we will help with the next steps.",
       },
       notFit: {
         heading: "Golden Days may not be the right fit. [PLACEHOLDER]",
@@ -641,7 +641,7 @@ export const en = {
     },
     tourHeading: "Schedule a tour",
     tourText:
-      "Tours happen during program hours, preferably before 1:30 PM, so you can see a normal day. Call us or use the form and say that you would like a tour. [PLACEHOLDER]",
+      "Tours happen during program hours, preferably before 1:30 PM, so you can see a normal day. Call us or use the form and say that you would like a tour.",
   },
 
   form: {
