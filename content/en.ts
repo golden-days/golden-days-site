@@ -377,8 +377,11 @@ export const en = {
     lead: "Getting to the center should not be the hard part. Golden Days offers rides to and from the program for people who need them.",
     photo: {
       kind: "bus" as const,
-      label: "Photo placeholder - Golden Days bus at the entrance",
-      alt: "Placeholder image standing in for a photo of a Golden Days bus at the center entrance",
+      label: "Photo placeholder - inside the Golden Days bus",
+      alt: "Inside a Golden Days bus: rows of blue seats on both sides of a wide aisle, with wheelchair accessibility symbols on the wall.",
+      src: "/images/bus-inside.jpg",
+      width: 1600,
+      height: 900,
     },
     sections: [
       {
@@ -440,7 +443,10 @@ export const en = {
     secondPhoto: {
       kind: "bus" as const,
       label: "Photo placeholder - wheelchair lift on a Golden Days bus",
-      alt: "Placeholder image standing in for a photo of the wheelchair lift on a Golden Days bus",
+      alt: "The wheelchair lift at the back of a Golden Days bus, with the platform raised inside the open rear doors.",
+      src: "/images/wheelchair-lift.jpg",
+      width: 1600,
+      height: 900,
     },
     cta: {
       heading: "Questions about a pickup?",
