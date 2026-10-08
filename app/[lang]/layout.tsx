@@ -12,16 +12,16 @@ import { contentFor } from "@/lib/content";
 import { hasLocale, localeInfo, locales } from "@/lib/i18n";
 import { siteUrl } from "@/lib/seo";
 
-// Cyrillic covers Russian and Ukrainian.
+// Cyrillic covers Russian and Ukrainian; Vietnamese needs its own set of accented letters.
 const sourceSans = Source_Sans_3({
   variable: "--font-source-sans",
-  subsets: ["latin", "latin-ext", "cyrillic", "cyrillic-ext"],
+  subsets: ["latin", "latin-ext", "vietnamese", "cyrillic", "cyrillic-ext"],
   display: "swap",
 });
 
 const sourceSerif = Source_Serif_4({
   variable: "--font-source-serif",
-  subsets: ["latin", "latin-ext", "cyrillic", "cyrillic-ext"],
+  subsets: ["latin", "latin-ext", "vietnamese", "cyrillic", "cyrillic-ext"],
   display: "swap",
 });
 

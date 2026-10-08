@@ -3,7 +3,7 @@ import { NextResponse, type NextRequest } from "next/server";
 // Languages other than English keep their prefix (/ru/about). English has no prefix
 // (/about), so we quietly serve it from the /en pages. Keep this list in step with
 // `locales` in lib/i18n.ts.
-const otherLocales = ["ru", "uk", "zh"];
+const otherLocales = ["ru", "uk", "zh", "es", "vi", "pa", "tl", "hmn"];
 
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
