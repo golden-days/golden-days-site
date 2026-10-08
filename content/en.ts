@@ -279,10 +279,10 @@ export const en = {
       {
         icon: "nursing" as const,
         title: "Nursing Care",
-        summary: "Health checks and medication support while your loved one is at the center. [PLACEHOLDER]",
+        summary: "Health checks and medications given by our nurses while your loved one is at the center.",
         details: [
-          "Nursing staff check vital signs and watch for changes during the day.",
-          "We help with medications that are scheduled during program hours. [PLACEHOLDER]",
+          "Nursing staff check vital signs and blood glucose (blood sugar) levels.",
+          "Our nurses give medications that are scheduled during program hours.",
           "If something looks different, we call the family and the doctor's office.",
         ],
       },
