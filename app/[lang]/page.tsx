@@ -37,7 +37,7 @@ export default async function HomePage() {
             </p>
           </div>
           <div className="relative">
-            <Sunburst className="pointer-events-none absolute bottom-full left-1/2 h-auto w-60 -translate-x-1/2 translate-y-0 opacity-60 sm:w-72" />
+            <Sunburst className="pointer-events-none absolute bottom-full left-1/2 h-auto w-60 -translate-x-1/2 translate-y-3 opacity-60 sm:w-72" />
             <div className="relative">
               <PhotoPlaceholder photo={home.hero.photo} wide />
             </div>
