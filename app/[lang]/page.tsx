@@ -21,7 +21,7 @@ export default async function HomePage() {
   return (
     <>
       <div className="relative overflow-hidden border-b-4 border-gold bg-cream">
-        <Sunburst className="pointer-events-none absolute -top-16 right-0 h-72 w-[34rem] opacity-30" />
+        <Sunburst className="pointer-events-none absolute top-0 right-[max(1rem,calc((100%-64rem)/2))] h-auto w-56 rotate-180 sm:w-72 opacity-30" />
         <div className="relative mx-auto grid w-full max-w-5xl gap-8 px-4 py-12 sm:px-6 md:grid-cols-2 md:items-center md:py-16">
           <div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl">{home.hero.heading}</h1>
