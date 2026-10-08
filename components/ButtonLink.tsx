@@ -1,4 +1,4 @@
-import Link from "next/link";
+import LocaleLink from "./LocaleLink";
 
 type Variant = "primary" | "secondary";
 
@@ -36,8 +36,8 @@ export default function ButtonLink({
   }
 
   return (
-    <Link href={href} className={classes}>
+    <LocaleLink href={href} className={classes}>
       {children}
-    </Link>
+    </LocaleLink>
   );
 }

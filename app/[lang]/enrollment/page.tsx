@@ -2,17 +2,16 @@ import ButtonLink from "@/components/ButtonLink";
 import CallToAction from "@/components/CallToAction";
 import PageHero from "@/components/PageHero";
 import Section from "@/components/Section";
-import { en } from "@/content/en";
-import { pageMetadata } from "@/lib/seo";
+import { getContent } from "@/lib/content-server";
+import { pageMetadataFor } from "@/lib/seo";
 
-export const metadata = pageMetadata({
-  title: en.enrollment.meta.title,
-  description: en.enrollment.meta.description,
-  path: "/enrollment",
-});
+export function generateMetadata({ params }: PageProps<"/[lang]/enrollment">) {
+  return pageMetadataFor(params, "/enrollment", (t) => t.enrollment.meta);
+}
 
-export default function EnrollmentPage() {
-  const page = en.enrollment;
+export default async function EnrollmentPage() {
+  const t = await getContent();
+  const page = t.enrollment;
 
   return (
     <>
@@ -25,7 +24,7 @@ export default function EnrollmentPage() {
             <p className="mt-2 text-lg">{page.qualifyPrompt.text}</p>
           </div>
           <div className="mt-5 shrink-0 sm:mt-0">
-            <ButtonLink href="/qualify">{en.buttons.doIQualify}</ButtonLink>
+            <ButtonLink href="/qualify">{t.buttons.doIQualify}</ButtonLink>
           </div>
         </div>
 
@@ -83,7 +82,7 @@ export default function EnrollmentPage() {
               </span>
               <div className="mt-3 sm:mt-0">
                 <h3 className="text-xl">
-                  <span className="sr-only">{`Step ${index + 1}: `}</span>
+                  <span className="sr-only">{t.a11y.stepLabel.replace("{number}", String(index + 1))}</span>
                   {step.title}
                 </h3>
                 <p className="mt-2">{step.text}</p>

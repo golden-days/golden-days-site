@@ -1,19 +1,18 @@
-import Link from "next/link";
+import LocaleLink from "@/components/LocaleLink";
 import CallToAction from "@/components/CallToAction";
 import PageHero from "@/components/PageHero";
 import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 import Section from "@/components/Section";
-import { en } from "@/content/en";
-import { pageMetadata } from "@/lib/seo";
+import { getContent } from "@/lib/content-server";
+import { pageMetadataFor } from "@/lib/seo";
 
-export const metadata = pageMetadata({
-  title: en.transportation.meta.title,
-  description: en.transportation.meta.description,
-  path: "/transportation",
-});
+export function generateMetadata({ params }: PageProps<"/[lang]/transportation">) {
+  return pageMetadataFor(params, "/transportation", (t) => t.transportation.meta);
+}
 
-export default function TransportationPage() {
-  const page = en.transportation;
+export default async function TransportationPage() {
+  const t = await getContent();
+  const page = t.transportation;
 
   return (
     <>
@@ -47,12 +46,12 @@ export default function TransportationPage() {
       <Section>
         <PhotoPlaceholder photo={page.secondPhoto} wide className="mx-auto max-w-3xl" />
         <p className="mx-auto mt-8 max-w-3xl">
-          <Link
+          <LocaleLink
             href="/enrollment#faq"
             className="inline-flex min-h-12 min-w-12 items-center font-semibold text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
           >
-            {en.enrollment.faq.heading}
-          </Link>
+            {t.enrollment.faq.heading}
+          </LocaleLink>
         </p>
       </Section>
 

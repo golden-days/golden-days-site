@@ -1,19 +1,18 @@
-import Link from "next/link";
+import LocaleLink from "@/components/LocaleLink";
 import CallToAction from "@/components/CallToAction";
 import PageHero from "@/components/PageHero";
 import Section from "@/components/Section";
 import ServiceIcon from "@/components/ServiceIcon";
-import { en } from "@/content/en";
-import { pageMetadata } from "@/lib/seo";
+import { getContent } from "@/lib/content-server";
+import { pageMetadataFor } from "@/lib/seo";
 
-export const metadata = pageMetadata({
-  title: en.services.meta.title,
-  description: en.services.meta.description,
-  path: "/services",
-});
+export function generateMetadata({ params }: PageProps<"/[lang]/services">) {
+  return pageMetadataFor(params, "/services", (t) => t.services.meta);
+}
 
-export default function ServicesPage() {
-  const services = en.services;
+export default async function ServicesPage() {
+  const t = await getContent();
+  const services = t.services;
 
   return (
     <>
@@ -64,12 +63,12 @@ export default function ServicesPage() {
         </ul>
 
         <p className="mt-8">
-          <Link
+          <LocaleLink
             href="/enrollment#faq"
             className="inline-flex min-h-12 min-w-12 items-center font-semibold text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
           >
-            {en.enrollment.faq.heading}
-          </Link>
+            {t.enrollment.faq.heading}
+          </LocaleLink>
         </p>
       </Section>
 

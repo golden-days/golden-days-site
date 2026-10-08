@@ -2,17 +2,16 @@ import CallToAction from "@/components/CallToAction";
 import PageHero from "@/components/PageHero";
 import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 import Section from "@/components/Section";
-import { en } from "@/content/en";
-import { pageMetadata } from "@/lib/seo";
+import { getContent } from "@/lib/content-server";
+import { pageMetadataFor } from "@/lib/seo";
 
-export const metadata = pageMetadata({
-  title: en.about.meta.title,
-  description: en.about.meta.description,
-  path: "/about",
-});
+export function generateMetadata({ params }: PageProps<"/[lang]/about">) {
+  return pageMetadataFor(params, "/about", (t) => t.about.meta);
+}
 
-export default function AboutPage() {
-  const about = en.about;
+export default async function AboutPage() {
+  const t = await getContent();
+  const about = t.about;
 
   return (
     <>
@@ -69,7 +68,7 @@ export default function AboutPage() {
 
       <div className="bg-gold">
         <div className="mx-auto w-full max-w-5xl px-4 py-8 text-center sm:px-6">
-          <p className="font-serif text-xl font-bold text-navy sm:text-2xl">{en.home.trust.text}</p>
+          <p className="font-serif text-xl font-bold text-navy sm:text-2xl">{t.home.trust.text}</p>
         </div>
       </div>
 

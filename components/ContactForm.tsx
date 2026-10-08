@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { en } from "@/content/en";
+import { useT } from "./LocaleProvider";
 
 const endpoint = process.env.NEXT_PUBLIC_FORM_ENDPOINT;
 
@@ -28,6 +28,7 @@ export default function ContactForm({
   headingLevel?: "h2" | "h3";
   showCallPrompt?: boolean;
 }) {
+  const t = useT();
   const Heading = headingLevel;
   const [status, setStatus] = useState<Status>("idle");
   const [errors, setErrors] = useState<Errors>({});
@@ -52,8 +53,8 @@ export default function ContactForm({
 
     // Only name and phone are required. Email and message are optional.
     const nextErrors: Errors = {};
-    if (!String(data.get("name") ?? "").trim()) nextErrors.name = en.form.validation.name;
-    if (!String(data.get("phone") ?? "").trim()) nextErrors.phone = en.form.validation.phone;
+    if (!String(data.get("name") ?? "").trim()) nextErrors.name = t.form.validation.name;
+    if (!String(data.get("phone") ?? "").trim()) nextErrors.phone = t.form.validation.phone;
 
     setErrors(nextErrors);
     if (Object.keys(nextErrors).length > 0) {
@@ -93,15 +94,15 @@ export default function ContactForm({
         className={`rounded-xl border-4 p-6 ${sent ? "border-navy bg-cream" : "border-gold-deep bg-cream"}`}
       >
         <Heading className="font-serif text-2xl font-bold text-navy">
-          {sent ? en.form.successHeading : en.form.notConfiguredHeading}
+          {sent ? t.form.successHeading : t.form.notConfiguredHeading}
         </Heading>
-        <p className="mt-3">{sent ? en.form.successText : en.form.notConfiguredText}</p>
+        <p className="mt-3">{sent ? t.form.successText : t.form.notConfiguredText}</p>
         <p className="mt-4">
           <a
-            href={en.contact.phoneHref}
+            href={t.contact.phoneHref}
             className="inline-flex min-h-12 min-w-12 items-center font-semibold text-navy underline decoration-2 underline-offset-4"
           >
-            {en.buttons.callWithNumber}
+            {t.buttons.callWithNumber}
           </a>
         </p>
         <button
@@ -109,7 +110,7 @@ export default function ContactForm({
           onClick={() => setStatus("idle")}
           className="mt-6 inline-flex min-h-12 items-center rounded-lg bg-navy px-6 py-3 font-semibold text-white hover:bg-navy-dark"
         >
-          {en.form.successAgain}
+          {t.form.successAgain}
         </button>
       </div>
     );
@@ -117,30 +118,30 @@ export default function ContactForm({
 
   return (
     <div className="rounded-xl border-4 border-gold bg-white p-5 sm:p-6">
-      <Heading className="font-serif text-2xl font-bold text-navy">{en.form.heading}</Heading>
-      <p className="mt-2">{en.form.responseTime}</p>
+      <Heading className="font-serif text-2xl font-bold text-navy">{t.form.heading}</Heading>
+      <p className="mt-2">{t.form.responseTime}</p>
       {showCallPrompt ? (
         <p className="mt-2 text-lg">
-          {en.form.callAlternativeLead}{" "}
+          {t.form.callAlternativeLead}{" "}
           <a
-            href={en.contact.phoneHref}
+            href={t.contact.phoneHref}
             className="inline-flex min-h-12 min-w-12 items-center font-semibold text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
           >
-            {en.form.callAlternativeLinkPrefix} {en.contact.phoneDisplay}
+            {t.form.callAlternativeLinkPrefix} {t.contact.phoneDisplay}
           </a>
         </p>
       ) : null}
 
       <p className="mt-4 rounded-lg border-2 border-gold-deep bg-cream px-4 py-3 text-lg font-semibold text-ink">
-        {en.form.medicalNote}
+        {t.form.medicalNote}
       </p>
 
       <form onSubmit={handleSubmit} noValidate>
         <Field
           id="name"
           name="name"
-          label={en.form.fields.name.label}
-          placeholder={en.form.fields.name.placeholder}
+          label={t.form.fields.name.label}
+          placeholder={t.form.fields.name.placeholder}
           autoComplete="name"
           required
           error={errors.name}
@@ -150,8 +151,8 @@ export default function ContactForm({
           id="phone"
           name="phone"
           type="tel"
-          label={en.form.fields.phone.label}
-          placeholder={en.form.fields.phone.placeholder}
+          label={t.form.fields.phone.label}
+          placeholder={t.form.fields.phone.placeholder}
           autoComplete="tel"
           required
           error={errors.phone}
@@ -161,33 +162,33 @@ export default function ContactForm({
           id="email"
           name="email"
           type="email"
-          label={en.form.fields.email.label}
-          placeholder={en.form.fields.email.placeholder}
+          label={t.form.fields.email.label}
+          placeholder={t.form.fields.email.placeholder}
           autoComplete="email"
         />
 
         <div className="mt-5">
           <label htmlFor="message" className="block font-semibold text-navy">
-            {en.form.fields.message.label}
+            {t.form.fields.message.label}
           </label>
           <textarea
             id="message"
             name="message"
             rows={5}
-            placeholder={en.form.fields.message.placeholder}
+            placeholder={t.form.fields.message.placeholder}
             className={fieldClasses}
           />
         </div>
 
         <div hidden aria-hidden="true">
-          <label htmlFor="_gotcha">{en.form.fields.honeypot.label}</label>
+          <label htmlFor="_gotcha">{t.form.fields.honeypot.label}</label>
           <input id="_gotcha" type="text" name="_gotcha" tabIndex={-1} autoComplete="off" />
         </div>
 
         {status === "error" ? (
           <div role="alert" className="mt-5 rounded-lg border-2 border-[#b42318] bg-cream px-4 py-3">
-            <strong className="block text-[#b42318]">{en.form.errorHeading}</strong>
-            <span>{en.form.errorText}</span>
+            <strong className="block text-[#b42318]">{t.form.errorHeading}</strong>
+            <span>{t.form.errorText}</span>
           </div>
         ) : null}
 
@@ -196,7 +197,7 @@ export default function ContactForm({
           disabled={status === "sending"}
           className="mt-6 inline-flex min-h-12 w-full items-center justify-center rounded-lg bg-navy px-6 py-3 text-lg font-semibold text-white hover:bg-navy-dark disabled:opacity-70 sm:w-auto"
         >
-          {status === "sending" ? en.form.submitting : en.form.submit}
+          {status === "sending" ? t.form.submitting : t.form.submit}
         </button>
       </form>
     </div>
@@ -222,10 +223,11 @@ function Field({
   required?: boolean;
   error?: string;
 }) {
+  const t = useT();
   return (
     <div className="mt-5">
       <label htmlFor={id} className="block font-semibold text-navy">
-        {label} {required ? <span className="font-normal text-ink">({en.form.required})</span> : null}
+        {label} {required ? <span className="font-normal text-ink">({t.form.required})</span> : null}
       </label>
       <input
         id={id}

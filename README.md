@@ -58,9 +58,29 @@ All of the English text lives in **`content/en.ts`**. Edit the strings there; yo
 need to touch the page files. When you replace a sample fact with a real one, delete the
 ` [PLACEHOLDER]` at the end of that string.
 
-Another language can be added later by copying `content/en.ts` to `content/ru.ts` or
-`content/zh.ts` and translating the strings. The fonts already include Cyrillic
-characters.
+### Languages
+
+The site is in English (no prefix: `/about`) and in other languages under a prefix
+(`/ru/about`). A language bar at the very top of every page links to the same page in
+each language. `content/en.ts` is the source of truth: every other file
+(`content/ru.ts`, `uk.ts`, `zh.ts`, ...) has the same shape, so TypeScript reports any
+string that is missing. When you change wording in `en.ts`, change the matching line in
+each translation too.
+
+Translations are machine-assisted. Have a fluent reader check each one before launch,
+and treat them as drafts until then. Placeholders marked in `en.ts` are not repeated in
+the translations, so check `npm run check-placeholders` and the translations together.
+
+To add a language (for example `xx`):
+
+1. Copy `content/uk.ts` to `content/xx.ts`, rename the export, and translate the strings.
+2. In `lib/i18n.ts`, add `xx` to `locales` and an entry in `localeInfo` (the name as
+   its speakers write it, the `<html lang>` value, and the Open Graph locale).
+3. In `lib/content.ts`, import it and add it to `contentByLocale`.
+4. In `proxy.ts`, add `xx` to `otherLocales`.
+5. If the language needs a font that Source Sans does not have (Chinese, Punjabi, ...),
+   load one in `app/[lang]/layout.tsx` only for that language, as `zh` does.
+6. Run `npm run build` and look at the pages at phone width.
 
 ### Changing the colors
 
@@ -102,7 +122,7 @@ any dark color.
       "Send emails to" address. (The site already shows this email.)
 - [ ] Add real photos of the building, the rooms, and the buses.
 - [ ] Set `NEXT_PUBLIC_FORM_ENDPOINT` and `NEXT_PUBLIC_SITE_URL` in Vercel.
-- [ ] Remove `robots: "noindex"` from `lib/seo.ts` and from `app/layout.tsx` so search
+- [ ] Remove `robots: "noindex"` from `lib/seo.ts`, `app/[lang]/layout.tsx` and `app/[lang]/not-found.tsx` so search
       engines can index the site.
 - [ ] Confirm `npm run check-placeholders` reports nothing.
 

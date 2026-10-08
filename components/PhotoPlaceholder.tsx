@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { en } from "@/content/en";
+import { getContent } from "@/lib/content-server";
 
 export type PhotoKind = "building" | "interior" | "bus";
 
@@ -71,7 +71,9 @@ type Props = {
  * A clearly labeled stand-in for a photo that has not been taken yet.
  * Swap these out for a real `next/image` once photography is available.
  */
-export default function PhotoPlaceholder({ photo, wide = false, className = "" }: Props) {
+export default async function PhotoPlaceholder({ photo, wide = false, className = "" }: Props) {
+  const t = await getContent();
+
   if (photo.src) {
     return (
       <figure className={`overflow-hidden rounded-xl border-4 border-gold-deep ${className}`}>
@@ -112,7 +114,7 @@ export default function PhotoPlaceholder({ photo, wide = false, className = "" }
       </div>
       <figcaption className="border-t-4 border-dashed border-gold-deep bg-white px-4 py-3 text-lg text-ink">
         <span className="font-semibold text-navy">{photo.label}</span>
-        <span className="block">{en.photoPlaceholderNote}</span>
+        <span className="block">{t.photoPlaceholderNote}</span>
       </figcaption>
     </figure>
   );

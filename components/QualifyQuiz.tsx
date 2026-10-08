@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Link from "next/link";
-import { en } from "@/content/en";
+import LocaleLink from "./LocaleLink";
+import { useT } from "./LocaleProvider";
 
 type AnswerValue = "yes" | "no" | "notSure";
 type Step = "intro" | "result" | number;
@@ -16,7 +16,8 @@ const answerOrder: AnswerValue[] = ["yes", "no", "notSure"];
  * written to a cookie, or saved in the browser, so closing the page clears it.
  */
 export default function QualifyQuiz() {
-  const quiz = en.qualify;
+  const t = useT();
+  const quiz = t.qualify;
   const total = quiz.questions.length;
 
   const [step, setStep] = useState<Step>("intro");
@@ -29,7 +30,7 @@ export default function QualifyQuiz() {
   // intro wording is not read out when the page loads.
   const announcement =
     typeof step === "number"
-      ? progressLabel(step + 1, total)
+      ? progressLabel(quiz.progressLabel, step + 1, total)
       : step === "result"
         ? quiz.results.announcement
         : quiz.intro.heading;
@@ -166,26 +167,26 @@ export default function QualifyQuiz() {
 
           <div className="mt-8 grid gap-4 sm:max-w-md">
             <a
-              href={en.contact.phoneHref}
+              href={t.contact.phoneHref}
               className="inline-flex min-h-14 items-center justify-center rounded-lg bg-navy px-6 py-3 text-xl font-semibold text-white no-underline hover:bg-navy-dark"
             >
-              {en.buttons.callWithNumber}
+              {t.buttons.callWithNumber}
             </a>
-            <Link
+            <LocaleLink
               href="/contact#tour"
               className="inline-flex min-h-14 items-center justify-center rounded-lg bg-gold px-6 py-3 text-xl font-semibold text-navy no-underline hover:bg-navy hover:text-white"
             >
-              {en.buttons.scheduleTour}
-            </Link>
+              {t.buttons.scheduleTour}
+            </LocaleLink>
           </div>
 
           <p className="mt-8">
-            <Link
+            <LocaleLink
               href="/enrollment"
               className="inline-flex min-h-12 items-center font-semibold text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
             >
               {quiz.results.enrollmentLinkLabel}
-            </Link>
+            </LocaleLink>
           </p>
 
           <p>
@@ -203,19 +204,20 @@ export default function QualifyQuiz() {
   );
 }
 
-function progressLabel(current: number, total: number) {
-  return en.qualify.progressLabel
+function progressLabel(template: string, current: number, total: number) {
+  return template
     .replace("{current}", String(current))
     .replace("{total}", String(total));
 }
 
 function Progress({ current, total }: { current: number; total: number }) {
+  const { qualify } = useT();
   return (
     <div>
-      <p className="font-semibold text-navy">{progressLabel(current, total)}</p>
+      <p className="font-semibold text-navy">{progressLabel(qualify.progressLabel, current, total)}</p>
       <div
         role="img"
-        aria-label={en.qualify.progressBarLabel}
+        aria-label={qualify.progressBarLabel}
         className="mt-2 h-3 w-full overflow-hidden rounded-full bg-gold"
       >
         <div
@@ -228,6 +230,7 @@ function Progress({ current, total }: { current: number; total: number }) {
 }
 
 function BackButton({ onClick }: { onClick: () => void }) {
+  const { qualify } = useT();
   return (
     <button
       type="button"
@@ -247,7 +250,7 @@ function BackButton({ onClick }: { onClick: () => void }) {
       >
         <path d="M15 19l-7-7 7-7" />
       </svg>
-      {en.qualify.backLabel}
+      {qualify.backLabel}
     </button>
   );
 }

@@ -1,14 +1,15 @@
-import { en } from "@/content/en";
+import { getContent } from "@/lib/content-server";
 
 /** Address, hours, phone, and email, shown the same way on every page. */
-export default function ContactDetails() {
+export default async function ContactDetails() {
+  const t = await getContent();
   return (
     <dl className="grid gap-6 sm:grid-cols-2">
       <div>
-        <dt className="font-serif text-lg font-bold text-navy">{en.contact.addressLabel}</dt>
+        <dt className="font-serif text-lg font-bold text-navy">{t.contact.addressLabel}</dt>
         <dd className="mt-1">
           <address className="not-italic">
-            {en.contact.addressLines.map((line) => (
+            {t.contact.addressLines.map((line) => (
               <span key={line} className="block">
                 {line}
               </span>
@@ -18,34 +19,34 @@ export default function ContactDetails() {
       </div>
 
       <div>
-        <dt className="font-serif text-lg font-bold text-navy">{en.contact.hoursLabel}</dt>
+        <dt className="font-serif text-lg font-bold text-navy">{t.contact.hoursLabel}</dt>
         <dd className="mt-1">
-          {en.contact.hours}
-          <span className="block">{en.contact.programHours}</span>
-          <span className="block">{en.contact.hoursNote}</span>
+          {t.contact.hours}
+          <span className="block">{t.contact.programHours}</span>
+          <span className="block">{t.contact.hoursNote}</span>
         </dd>
       </div>
 
       <div>
-        <dt className="font-serif text-lg font-bold text-navy">{en.contact.phoneLabel}</dt>
+        <dt className="font-serif text-lg font-bold text-navy">{t.contact.phoneLabel}</dt>
         <dd className="mt-1">
           <a
-            href={en.contact.phoneHref}
+            href={t.contact.phoneHref}
             className="inline-flex min-h-12 min-w-12 items-center font-semibold text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
           >
-            {en.contact.phoneDisplay}
+            {t.contact.phoneDisplay}
           </a>
         </dd>
       </div>
 
       <div>
-        <dt className="font-serif text-lg font-bold text-navy">{en.contact.emailLabel}</dt>
+        <dt className="font-serif text-lg font-bold text-navy">{t.contact.emailLabel}</dt>
         <dd className="mt-1">
           <a
-            href={en.contact.emailHref}
+            href={t.contact.emailHref}
             className="inline-flex min-h-12 min-w-12 items-center break-words text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
           >
-            {en.contact.email}
+            {t.contact.email}
           </a>
         </dd>
       </div>
