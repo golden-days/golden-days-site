@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Link from "next/link";
-import { en } from "@/content/en";
+import LocaleLink from "./LocaleLink";
+import { useT } from "./LocaleProvider";
 
 type AnswerValue = "yes" | "no" | "notSure";
 type Step = "intro" | "result" | number;
@@ -16,27 +16,31 @@ const answerOrder: AnswerValue[] = ["yes", "no", "notSure"];
  * written to a cookie, or saved in the browser, so closing the page clears it.
  */
 export default function QualifyQuiz() {
-  const quiz = en.qualify;
+  const t = useT();
+  const quiz = t.qualify;
   const total = quiz.questions.length;
 
   const [step, setStep] = useState<Step>("intro");
   const [answers, setAnswers] = useState<AnswerValue[]>([]);
   const [hasStarted, setHasStarted] = useState(false);
   const headingRef = useRef<HTMLHeadingElement>(null);
+  const quizRef = useRef<HTMLDivElement>(null);
 
   // Screen readers announce changes to this text, not its first value, so the
   // intro wording is not read out when the page loads.
   const announcement =
     typeof step === "number"
-      ? progressLabel(step + 1, total)
+      ? progressLabel(quiz.progressLabel, step + 1, total)
       : step === "result"
         ? quiz.results.announcement
         : quiz.intro.heading;
 
   useEffect(() => {
     if (!hasStarted) return;
-    headingRef.current?.focus();
-    headingRef.current?.scrollIntoView({ block: "start" });
+    // Focus the heading for screen readers, but scroll to the top of the quiz
+    // so the progress line above the heading stays in view.
+    headingRef.current?.focus({ preventScroll: true });
+    quizRef.current?.scrollIntoView({ block: "start" });
   }, [step, hasStarted]);
 
   function answer(value: AnswerValue) {
@@ -44,12 +48,14 @@ export default function QualifyQuiz() {
     const next = answers.slice(0, index);
     next[index] = value;
     setAnswers(next);
-    setStep(index + 1 < total ? index + 1 : "result");
+    // "No" to the first question ends the quiz early. "Not sure" never does.
+    const endsEarly = index === 0 && value === "no";
+    setStep(endsEarly || index + 1 >= total ? "result" : index + 1);
   }
 
   function goBack() {
     if (step === "result") {
-      setStep(total - 1);
+      setStep(Math.max(answers.length - 1, 0));
       return;
     }
     const index = step as number;
@@ -61,11 +67,20 @@ export default function QualifyQuiz() {
     setStep("intro");
   }
 
-  const everyAnswerIsYes = answers.length === total && answers.every((a) => a === "yes");
-  const result = everyAnswerIsYes ? quiz.results.goodFit : quiz.results.unsure;
+  const everyAnswerIsYes =
+    answers.length === total && answers.every((a) => a === "yes");
+  const result =
+    answers[0] === "no"
+      ? quiz.results.notFit
+      : everyAnswerIsYes
+        ? quiz.results.goodFit
+        : quiz.results.unsure;
 
   return (
-    <div className="mx-auto flex w-full max-w-3xl flex-col px-4 py-6 sm:px-6 md:py-10">
+    <div
+      ref={quizRef}
+      className="mx-auto flex w-full max-w-3xl scroll-mt-4 flex-col px-4 py-6 sm:px-6 md:scroll-mt-28 md:py-10"
+    >
       <p className="sr-only" role="status" aria-live="polite">
         {announcement}
       </p>
@@ -75,7 +90,7 @@ export default function QualifyQuiz() {
           <h1
             ref={headingRef}
             tabIndex={-1}
-            className="text-2xl focus:outline-3 focus:outline-offset-2 focus:outline-navy sm:text-3xl md:text-4xl"
+            className="text-3xl outline-none focus:outline-none focus-visible:outline-none sm:text-4xl md:text-5xl"
           >
             {quiz.intro.heading}
           </h1>
@@ -100,27 +115,39 @@ export default function QualifyQuiz() {
           <h1
             ref={headingRef}
             tabIndex={-1}
-            className="mt-4 text-2xl focus:outline-3 focus:outline-offset-2 focus:outline-navy md:text-3xl"
+            className="mt-4 text-2xl outline-none focus:outline-none focus-visible:outline-none md:text-3xl"
           >
             {quiz.questions[step].text}
           </h1>
 
-          <p className="mt-3 rounded-lg border-l-8 border-gold-deep bg-cream px-4 py-3 text-base">
-            <span className="block font-semibold text-navy">{quiz.helpLabel}</span>
+          <p className="mt-3 rounded-lg border-l-8 border-gold-deep bg-cream px-4 py-3 text-lg">
+            <span className="block font-semibold text-navy">
+              {quiz.helpLabel}
+            </span>
             {quiz.questions[step].help}
           </p>
 
-          <div role="group" aria-label={quiz.answerGroupLabel} className="mt-5 grid gap-3">
-            {answerOrder.map((value) => (
-              <button
-                key={value}
-                type="button"
-                onClick={() => answer(value)}
-                className="min-h-14 rounded-lg border-2 border-navy bg-white px-6 py-3 text-xl font-semibold text-navy hover:bg-navy hover:text-white"
-              >
-                {quiz.answers[value]}
-              </button>
-            ))}
+          <div
+            role="group"
+            aria-label={quiz.answerGroupLabel}
+            className="mt-5 grid gap-3"
+          >
+            {answerOrder.map((value) => {
+              const selected = answers[step] === value;
+              return (
+                <button
+                  key={value}
+                  type="button"
+                  aria-pressed={selected}
+                  onClick={() => answer(value)}
+                  className={`min-h-14 rounded-lg border-2 border-navy px-6 py-3 text-xl font-semibold hover:bg-navy hover:text-white ${
+                    selected ? "bg-navy text-white" : "bg-white text-navy"
+                  }`}
+                >
+                  {quiz.answers[value]}
+                </button>
+              );
+            })}
           </div>
 
           <BackButton onClick={goBack} />
@@ -132,7 +159,7 @@ export default function QualifyQuiz() {
           <h1
             ref={headingRef}
             tabIndex={-1}
-            className="text-2xl focus:outline-3 focus:outline-offset-2 focus:outline-navy sm:text-3xl md:text-4xl"
+            className="text-3xl outline-none focus:outline-none focus-visible:outline-none sm:text-4xl md:text-5xl"
           >
             {result.heading}
           </h1>
@@ -140,26 +167,26 @@ export default function QualifyQuiz() {
 
           <div className="mt-8 grid gap-4 sm:max-w-md">
             <a
-              href={en.contact.phoneHref}
+              href={t.contact.phoneHref}
               className="inline-flex min-h-14 items-center justify-center rounded-lg bg-navy px-6 py-3 text-xl font-semibold text-white no-underline hover:bg-navy-dark"
             >
-              {en.buttons.callWithNumber}
+              {t.buttons.callWithNumber}
             </a>
-            <Link
+            <LocaleLink
               href="/contact#tour"
               className="inline-flex min-h-14 items-center justify-center rounded-lg bg-gold px-6 py-3 text-xl font-semibold text-navy no-underline hover:bg-navy hover:text-white"
             >
-              {en.buttons.scheduleTour}
-            </Link>
+              {t.buttons.scheduleTour}
+            </LocaleLink>
           </div>
 
           <p className="mt-8">
-            <Link
+            <LocaleLink
               href="/enrollment"
               className="inline-flex min-h-12 items-center font-semibold text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
             >
               {quiz.results.enrollmentLinkLabel}
-            </Link>
+            </LocaleLink>
           </p>
 
           <p>
@@ -177,28 +204,33 @@ export default function QualifyQuiz() {
   );
 }
 
-function progressLabel(current: number, total: number) {
-  return en.qualify.progressLabel
+function progressLabel(template: string, current: number, total: number) {
+  return template
     .replace("{current}", String(current))
     .replace("{total}", String(total));
 }
 
 function Progress({ current, total }: { current: number; total: number }) {
+  const { qualify } = useT();
   return (
     <div>
-      <p className="font-semibold text-navy">{progressLabel(current, total)}</p>
+      <p className="font-semibold text-navy">{progressLabel(qualify.progressLabel, current, total)}</p>
       <div
         role="img"
-        aria-label={en.qualify.progressBarLabel}
+        aria-label={qualify.progressBarLabel}
         className="mt-2 h-3 w-full overflow-hidden rounded-full bg-gold"
       >
-        <div className="h-full bg-navy" style={{ width: `${(current / total) * 100}%` }} />
+        <div
+          className="h-full bg-navy"
+          style={{ width: `${(current / total) * 100}%` }}
+        />
       </div>
     </div>
   );
 }
 
 function BackButton({ onClick }: { onClick: () => void }) {
+  const { qualify } = useT();
   return (
     <button
       type="button"
@@ -218,7 +250,7 @@ function BackButton({ onClick }: { onClick: () => void }) {
       >
         <path d="M15 19l-7-7 7-7" />
       </svg>
-      {en.qualify.backLabel}
+      {qualify.backLabel}
     </button>
   );
 }

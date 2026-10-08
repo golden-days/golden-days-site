@@ -1,4 +1,5 @@
-import { en } from "@/content/en";
+import Image from "next/image";
+import { getContent } from "@/lib/content-server";
 
 export type PhotoKind = "building" | "interior" | "bus";
 
@@ -6,6 +7,10 @@ export type PhotoInfo = {
   kind: PhotoKind;
   label: string;
   alt: string;
+  /** Real photo in `public/`. When set, the photo is shown instead of the drawing. */
+  src?: string;
+  width?: number;
+  height?: number;
 };
 
 const scenes: Record<PhotoKind, React.ReactNode> = {
@@ -66,7 +71,24 @@ type Props = {
  * A clearly labeled stand-in for a photo that has not been taken yet.
  * Swap these out for a real `next/image` once photography is available.
  */
-export default function PhotoPlaceholder({ photo, wide = false, className = "" }: Props) {
+export default async function PhotoPlaceholder({ photo, wide = false, className = "" }: Props) {
+  const t = await getContent();
+
+  if (photo.src) {
+    return (
+      <figure className={`overflow-hidden rounded-xl border-4 border-gold-deep ${className}`}>
+        <Image
+          src={photo.src}
+          alt={photo.alt}
+          width={photo.width ?? 1200}
+          height={photo.height ?? 900}
+          sizes={wide ? "(min-width: 1024px) 560px, 100vw" : "(min-width: 768px) 480px, 100vw"}
+          className="block h-auto w-full"
+        />
+      </figure>
+    );
+  }
+
   return (
     <figure
       className={`overflow-hidden rounded-xl border-4 border-dashed border-gold-deep bg-cream ${className}`}
@@ -90,9 +112,9 @@ export default function PhotoPlaceholder({ photo, wide = false, className = "" }
           {scenes[photo.kind]}
         </svg>
       </div>
-      <figcaption className="border-t-4 border-dashed border-gold-deep bg-white px-4 py-3 text-base text-ink">
+      <figcaption className="border-t-4 border-dashed border-gold-deep bg-white px-4 py-3 text-lg text-ink">
         <span className="font-semibold text-navy">{photo.label}</span>
-        <span className="block">{en.photoPlaceholderNote}</span>
+        <span className="block">{t.photoPlaceholderNote}</span>
       </figcaption>
     </figure>
   );

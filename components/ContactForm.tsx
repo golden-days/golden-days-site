@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { en } from "@/content/en";
+import { useT } from "./LocaleProvider";
 
 const endpoint = process.env.NEXT_PUBLIC_FORM_ENDPOINT;
 
@@ -13,9 +13,23 @@ type Errors = {
 };
 
 const fieldClasses =
-  "mt-2 block w-full min-h-12 rounded-lg border-2 border-navy bg-white px-4 py-3 text-ink placeholder:text-ink/50";
+  "mt-2 block w-full min-h-12 rounded-lg border-2 border-navy bg-white px-4 py-3 text-ink placeholder:text-ink/70";
 
-export default function ContactForm() {
+// A dark red (about 6.5:1 on white and on cream) so errors stand out from normal text.
+const invalidFieldClasses = fieldClasses.replace(
+  "border-navy",
+  "border-[#b42318] ring-2 ring-[#b42318]",
+);
+
+export default function ContactForm({
+  headingLevel = "h3",
+  showCallPrompt = true,
+}: {
+  headingLevel?: "h2" | "h3";
+  showCallPrompt?: boolean;
+}) {
+  const t = useT();
+  const Heading = headingLevel;
   const [status, setStatus] = useState<Status>("idle");
   const [errors, setErrors] = useState<Errors>({});
   const confirmationRef = useRef<HTMLDivElement>(null);
@@ -39,12 +53,14 @@ export default function ContactForm() {
 
     // Only name and phone are required. Email and message are optional.
     const nextErrors: Errors = {};
-    if (!String(data.get("name") ?? "").trim()) nextErrors.name = en.form.validation.name;
-    if (!String(data.get("phone") ?? "").trim()) nextErrors.phone = en.form.validation.phone;
+    if (!String(data.get("name") ?? "").trim()) nextErrors.name = t.form.validation.name;
+    if (!String(data.get("phone") ?? "").trim()) nextErrors.phone = t.form.validation.phone;
 
     setErrors(nextErrors);
     if (Object.keys(nextErrors).length > 0) {
-      form.querySelector<HTMLElement>("[aria-invalid='true']")?.focus();
+      // The fields are not marked invalid until the next render, so pick the first bad one by name.
+      const firstBad = nextErrors.name ? "name" : "phone";
+      form.querySelector<HTMLElement>(`[name='${firstBad}']`)?.focus();
       return;
     }
 
@@ -77,16 +93,16 @@ export default function ContactForm() {
         role="status"
         className={`rounded-xl border-4 p-6 ${sent ? "border-navy bg-cream" : "border-gold-deep bg-cream"}`}
       >
-        <h3 className="font-serif text-2xl font-bold text-navy">
-          {sent ? en.form.successHeading : en.form.notConfiguredHeading}
-        </h3>
-        <p className="mt-3">{sent ? en.form.successText : en.form.notConfiguredText}</p>
+        <Heading className="font-serif text-2xl font-bold text-navy">
+          {sent ? t.form.successHeading : t.form.notConfiguredHeading}
+        </Heading>
+        <p className="mt-3">{sent ? t.form.successText : t.form.notConfiguredText}</p>
         <p className="mt-4">
           <a
-            href={en.contact.phoneHref}
-            className="font-semibold text-navy underline decoration-2 underline-offset-4"
+            href={t.contact.phoneHref}
+            className="inline-flex min-h-12 min-w-12 items-center font-semibold text-navy underline decoration-2 underline-offset-4"
           >
-            {en.buttons.callWithNumber}
+            {t.buttons.callWithNumber}
           </a>
         </p>
         <button
@@ -94,7 +110,7 @@ export default function ContactForm() {
           onClick={() => setStatus("idle")}
           className="mt-6 inline-flex min-h-12 items-center rounded-lg bg-navy px-6 py-3 font-semibold text-white hover:bg-navy-dark"
         >
-          {en.form.successAgain}
+          {t.form.successAgain}
         </button>
       </div>
     );
@@ -102,28 +118,30 @@ export default function ContactForm() {
 
   return (
     <div className="rounded-xl border-4 border-gold bg-white p-5 sm:p-6">
-      <h3 className="font-serif text-2xl font-bold text-navy">{en.form.heading}</h3>
-      <p className="mt-2">{en.form.responseTime}</p>
-      <p className="mt-2 text-base">
-        {en.form.callAlternativeLead}{" "}
-        <a
-          href={en.contact.phoneHref}
-          className="font-semibold text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
-        >
-          {en.form.callAlternativeLinkPrefix} {en.contact.phoneDisplay}
-        </a>
-      </p>
+      <Heading className="font-serif text-2xl font-bold text-navy">{t.form.heading}</Heading>
+      <p className="mt-2">{t.form.responseTime}</p>
+      {showCallPrompt ? (
+        <p className="mt-2 text-lg">
+          {t.form.callAlternativeLead}{" "}
+          <a
+            href={t.contact.phoneHref}
+            className="inline-flex min-h-12 min-w-12 items-center font-semibold text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
+          >
+            {t.form.callAlternativeLinkPrefix} {t.contact.phoneDisplay}
+          </a>
+        </p>
+      ) : null}
 
-      <p className="mt-4 rounded-lg border-2 border-gold-deep bg-cream px-4 py-3 text-base font-semibold text-ink">
-        {en.form.medicalNote}
+      <p className="mt-4 rounded-lg border-2 border-gold-deep bg-cream px-4 py-3 text-lg font-semibold text-ink">
+        {t.form.medicalNote}
       </p>
 
       <form onSubmit={handleSubmit} noValidate>
         <Field
           id="name"
           name="name"
-          label={en.form.fields.name.label}
-          placeholder={en.form.fields.name.placeholder}
+          label={t.form.fields.name.label}
+          placeholder={t.form.fields.name.placeholder}
           autoComplete="name"
           required
           error={errors.name}
@@ -133,8 +151,8 @@ export default function ContactForm() {
           id="phone"
           name="phone"
           type="tel"
-          label={en.form.fields.phone.label}
-          placeholder={en.form.fields.phone.placeholder}
+          label={t.form.fields.phone.label}
+          placeholder={t.form.fields.phone.placeholder}
           autoComplete="tel"
           required
           error={errors.phone}
@@ -144,33 +162,33 @@ export default function ContactForm() {
           id="email"
           name="email"
           type="email"
-          label={en.form.fields.email.label}
-          placeholder={en.form.fields.email.placeholder}
+          label={t.form.fields.email.label}
+          placeholder={t.form.fields.email.placeholder}
           autoComplete="email"
         />
 
         <div className="mt-5">
           <label htmlFor="message" className="block font-semibold text-navy">
-            {en.form.fields.message.label}
+            {t.form.fields.message.label}
           </label>
           <textarea
             id="message"
             name="message"
             rows={5}
-            placeholder={en.form.fields.message.placeholder}
+            placeholder={t.form.fields.message.placeholder}
             className={fieldClasses}
           />
         </div>
 
         <div hidden aria-hidden="true">
-          <label htmlFor="_gotcha">{en.form.fields.honeypot.label}</label>
+          <label htmlFor="_gotcha">{t.form.fields.honeypot.label}</label>
           <input id="_gotcha" type="text" name="_gotcha" tabIndex={-1} autoComplete="off" />
         </div>
 
         {status === "error" ? (
-          <div role="alert" className="mt-5 rounded-lg border-2 border-navy bg-cream px-4 py-3">
-            <strong className="block text-navy">{en.form.errorHeading}</strong>
-            <span>{en.form.errorText}</span>
+          <div role="alert" className="mt-5 rounded-lg border-2 border-[#b42318] bg-cream px-4 py-3">
+            <strong className="block text-[#b42318]">{t.form.errorHeading}</strong>
+            <span>{t.form.errorText}</span>
           </div>
         ) : null}
 
@@ -179,7 +197,7 @@ export default function ContactForm() {
           disabled={status === "sending"}
           className="mt-6 inline-flex min-h-12 w-full items-center justify-center rounded-lg bg-navy px-6 py-3 text-lg font-semibold text-white hover:bg-navy-dark disabled:opacity-70 sm:w-auto"
         >
-          {status === "sending" ? en.form.submitting : en.form.submit}
+          {status === "sending" ? t.form.submitting : t.form.submit}
         </button>
       </form>
     </div>
@@ -205,10 +223,11 @@ function Field({
   required?: boolean;
   error?: string;
 }) {
+  const t = useT();
   return (
     <div className="mt-5">
       <label htmlFor={id} className="block font-semibold text-navy">
-        {label} {required ? <span className="font-normal text-ink">({en.form.required})</span> : null}
+        {label} {required ? <span className="font-normal text-ink">({t.form.required})</span> : null}
       </label>
       <input
         id={id}
@@ -216,9 +235,10 @@ function Field({
         type={type}
         placeholder={placeholder}
         autoComplete={autoComplete}
+        aria-required={required ? "true" : undefined}
         aria-invalid={error ? "true" : undefined}
         aria-describedby={error ? `${id}-error` : undefined}
-        className={fieldClasses}
+        className={error ? invalidFieldClasses : fieldClasses}
       />
       {error ? <FieldError id={`${id}-error`}>{error}</FieldError> : null}
     </div>
@@ -227,8 +247,28 @@ function Field({
 
 function FieldError({ id, children }: { id: string; children: React.ReactNode }) {
   return (
-    <p id={id} className="mt-2 text-base font-semibold text-navy">
-      {children}
+    <p id={id} className="mt-2 flex items-start gap-2 text-lg font-semibold text-[#b42318]">
+      <WarningIcon />
+      <span>{children}</span>
     </p>
+  );
+}
+
+function WarningIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+      focusable="false"
+      className="mt-1 h-6 w-6 shrink-0"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <circle cx="12" cy="12" r="10" />
+      <path d="M12 7v6M12 17h.01" />
+    </svg>
   );
 }

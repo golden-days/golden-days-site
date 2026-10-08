@@ -71,6 +71,13 @@ async function findDraftContent() {
 const findings = await findDraftContent();
 const strict = process.argv.includes("--strict") || process.env.VERCEL_ENV === "production";
 
+if (process.env.VERCEL_ENV === "production" && !process.env.NEXT_PUBLIC_SITE_URL) {
+  console.error(
+    "check-placeholders: FAILED. Set NEXT_PUBLIC_SITE_URL (for example https://www.goldendays.com) in Vercel before a production build.",
+  );
+  process.exit(1);
+}
+
 if (findings.length === 0) {
   console.log("check-placeholders: no draft content found. Ready for a production build.");
   process.exit(0);

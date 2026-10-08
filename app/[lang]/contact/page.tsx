@@ -3,18 +3,18 @@ import ContactDetails from "@/components/ContactDetails";
 import ContactForm from "@/components/ContactForm";
 import MapEmbed from "@/components/MapEmbed";
 import PageHero from "@/components/PageHero";
+import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 import Section from "@/components/Section";
-import { en } from "@/content/en";
-import { pageMetadata } from "@/lib/seo";
+import { getContent } from "@/lib/content-server";
+import { pageMetadataFor } from "@/lib/seo";
 
-export const metadata = pageMetadata({
-  title: en.contactPage.meta.title,
-  description: en.contactPage.meta.description,
-  path: "/contact",
-});
+export function generateMetadata({ params }: PageProps<"/[lang]/contact">) {
+  return pageMetadataFor(params, "/contact", (t) => t.contactPage.meta);
+}
 
-export default function ContactPage() {
-  const page = en.contactPage;
+export default async function ContactPage() {
+  const t = await getContent();
+  const page = t.contactPage;
 
   return (
     <>
@@ -22,23 +22,20 @@ export default function ContactPage() {
 
       <Section>
         <div className="grid gap-8 lg:grid-cols-2">
-          <ContactForm />
+          <ContactForm headingLevel="h2" showCallPrompt={false} />
           <div className="space-y-8">
             <div>
               <h2 className="text-2xl sm:text-3xl">{page.detailsHeading}</h2>
               <div className="mt-6">
                 <ContactDetails />
               </div>
-              <div className="mt-6 flex flex-col gap-4 sm:flex-row">
-                <ButtonLink href={en.contact.phoneHref}>{en.buttons.callWithNumber}</ButtonLink>
-              </div>
             </div>
             <div id="tour" className="rounded-xl border-2 border-gold-deep bg-cream p-6">
               <h2 className="text-2xl">{page.tourHeading}</h2>
-              <p className="mt-3 text-base">{page.tourText}</p>
+              <p className="mt-3 text-lg">{page.tourText}</p>
               <div className="mt-5">
-                <ButtonLink href={en.contact.phoneHref} variant="secondary">
-                  {en.buttons.scheduleTour}
+                <ButtonLink href={t.contact.phoneHref} variant="secondary">
+                  {t.buttons.scheduleTour}
                 </ButtonLink>
               </div>
             </div>
@@ -49,8 +46,9 @@ export default function ContactPage() {
       <Section background="cream">
         <h2 className="text-2xl sm:text-3xl">{page.directionsHeading}</h2>
         <p className="mt-3 max-w-3xl">{page.directionsText}</p>
-        <p className="mt-2 max-w-3xl">{en.contact.addressOneLine}</p>
-        <div className="mt-6">
+        <p className="mt-2 max-w-3xl">{t.contact.addressOneLine}</p>
+        <div className="mt-6 grid gap-6 md:grid-cols-2 md:items-start">
+          <PhotoPlaceholder photo={page.photo} />
           <MapEmbed />
         </div>
       </Section>

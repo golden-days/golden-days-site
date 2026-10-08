@@ -1,18 +1,18 @@
+import LocaleLink from "@/components/LocaleLink";
 import CallToAction from "@/components/CallToAction";
 import PageHero from "@/components/PageHero";
 import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 import Section from "@/components/Section";
-import { en } from "@/content/en";
-import { pageMetadata } from "@/lib/seo";
+import { getContent } from "@/lib/content-server";
+import { pageMetadataFor } from "@/lib/seo";
 
-export const metadata = pageMetadata({
-  title: en.transportation.meta.title,
-  description: en.transportation.meta.description,
-  path: "/transportation",
-});
+export function generateMetadata({ params }: PageProps<"/[lang]/transportation">) {
+  return pageMetadataFor(params, "/transportation", (t) => t.transportation.meta);
+}
 
-export default function TransportationPage() {
-  const page = en.transportation;
+export default async function TransportationPage() {
+  const t = await getContent();
+  const page = t.transportation;
 
   return (
     <>
@@ -33,7 +33,7 @@ export default function TransportationPage() {
           {"list" in section && section.list ? (
             <div className="mt-6 max-w-3xl rounded-xl border-2 border-gold-deep bg-white p-5">
               <h3 className="text-xl">{section.list.label}</h3>
-              <ul className="mt-3 list-disc space-y-2 pl-6 text-base">
+              <ul className="mt-3 list-disc space-y-2 pl-6 text-lg">
                 {section.list.items.map((item) => (
                   <li key={item}>{item}</li>
                 ))}
@@ -45,6 +45,14 @@ export default function TransportationPage() {
 
       <Section>
         <PhotoPlaceholder photo={page.secondPhoto} wide className="mx-auto max-w-3xl" />
+        <p className="mx-auto mt-8 max-w-3xl">
+          <LocaleLink
+            href="/enrollment#faq"
+            className="inline-flex min-h-12 min-w-12 items-center font-semibold text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
+          >
+            {t.enrollment.faq.heading}
+          </LocaleLink>
+        </p>
       </Section>
 
       <CallToAction heading={page.cta.heading} text={page.cta.text} />

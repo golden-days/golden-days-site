@@ -27,7 +27,7 @@ them in, or set them in the Vercel project settings.
 | Variable | What it does |
 | --- | --- |
 | `NEXT_PUBLIC_FORM_ENDPOINT` | The [Formspree](https://formspree.io) address the contact form posts to. When it is empty, the form shows a "not connected yet" message instead of sending. |
-| `NEXT_PUBLIC_SITE_URL` | The public address of the site, for example `https://www.goldendays.com`. Used by the sitemap and the social sharing tags. Defaults to `https://www.example.com`. |
+| `NEXT_PUBLIC_SITE_URL` | The public address of the site, for example `https://www.goldendays.com`. Used by the sitemap and the social sharing tags. Defaults to `https://www.example.com`. A Vercel production build refuses to run without it, and setting it is what lets search engines index the site. |
 
 ## Commands
 
@@ -58,9 +58,31 @@ All of the English text lives in **`content/en.ts`**. Edit the strings there; yo
 need to touch the page files. When you replace a sample fact with a real one, delete the
 ` [PLACEHOLDER]` at the end of that string.
 
-Another language can be added later by copying `content/en.ts` to `content/ru.ts` or
-`content/zh.ts` and translating the strings. The fonts already include Cyrillic
-characters.
+### Languages
+
+The site is in English (no prefix: `/about`) and in other languages under a prefix
+(`/ru/about`). A language bar at the very top of every page links to the same page in
+each language. `content/en.ts` is the source of truth: every other file
+(`content/ru.ts`, `uk.ts`, `zh.ts`, ...) has the same shape, so TypeScript reports any
+string that is missing. When you change wording in `en.ts`, change the matching line in
+each translation too.
+
+Translations are machine-assisted. Have a fluent reader check each one before launch,
+and treat them as drafts until then. Placeholders marked in `en.ts` are not repeated in
+the translations, so check `npm run check-placeholders` and the translations together.
+
+Punjabi and Hmong are written (`content/pa.ts`, `content/hmn.ts`) but switched off until a native speaker has checked them; see the comment in `lib/i18n.ts` to turn them on.
+
+To add a language (for example `xx`):
+
+1. Copy `content/uk.ts` to `content/xx.ts`, rename the export, and translate the strings.
+2. In `lib/i18n.ts`, add `xx` to `locales` and an entry in `localeInfo` (the name as
+   its speakers write it, the `<html lang>` value, and the Open Graph locale).
+3. In `lib/content.ts`, import it and add it to `contentByLocale`.
+4. In `proxy.ts`, add `xx` to `otherLocales`.
+5. If the language needs a font that Source Sans does not have (Chinese, Punjabi, ...),
+   load one in `app/[lang]/layout.tsx` only for that language, as `zh` does.
+6. Run `npm run build` and look at the pages at phone width.
 
 ### Changing the colors
 
@@ -97,10 +119,13 @@ any dark color.
 
 - [ ] Replace every `[PLACEHOLDER]` string in `content/en.ts` with confirmed information.
 - [ ] Replace the fake phone number, email, and address.
+- [ ] Point the contact form at the production inbox: add and verify
+      `1215goldendays@gmail.com` under Linked Emails in Formspree, then change the form's
+      "Send emails to" address. (The site already shows this email.)
 - [ ] Add real photos of the building, the rooms, and the buses.
 - [ ] Set `NEXT_PUBLIC_FORM_ENDPOINT` and `NEXT_PUBLIC_SITE_URL` in Vercel.
-- [ ] Remove `robots: "noindex"` from `lib/seo.ts` and from `app/layout.tsx` so search
-      engines can index the site.
+- [ ] Search engines are allowed automatically on the live site (a Vercel production
+      build with `NEXT_PUBLIC_SITE_URL` set). Preview links and local builds stay hidden.
 - [ ] Confirm `npm run check-placeholders` reports nothing.
 
 ## Built with

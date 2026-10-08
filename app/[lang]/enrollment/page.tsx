@@ -2,17 +2,16 @@ import ButtonLink from "@/components/ButtonLink";
 import CallToAction from "@/components/CallToAction";
 import PageHero from "@/components/PageHero";
 import Section from "@/components/Section";
-import { en } from "@/content/en";
-import { pageMetadata } from "@/lib/seo";
+import { getContent } from "@/lib/content-server";
+import { pageMetadataFor } from "@/lib/seo";
 
-export const metadata = pageMetadata({
-  title: en.enrollment.meta.title,
-  description: en.enrollment.meta.description,
-  path: "/enrollment",
-});
+export function generateMetadata({ params }: PageProps<"/[lang]/enrollment">) {
+  return pageMetadataFor(params, "/enrollment", (t) => t.enrollment.meta);
+}
 
-export default function EnrollmentPage() {
-  const page = en.enrollment;
+export default async function EnrollmentPage() {
+  const t = await getContent();
+  const page = t.enrollment;
 
   return (
     <>
@@ -22,10 +21,10 @@ export default function EnrollmentPage() {
         <div className="rounded-xl border-2 border-navy bg-cream p-6 sm:flex sm:items-center sm:justify-between sm:gap-6">
           <div>
             <h2 className="text-2xl">{page.qualifyPrompt.heading}</h2>
-            <p className="mt-2 text-base">{page.qualifyPrompt.text}</p>
+            <p className="mt-2 text-lg">{page.qualifyPrompt.text}</p>
           </div>
           <div className="mt-5 shrink-0 sm:mt-0">
-            <ButtonLink href="/qualify">{en.buttons.doIQualify}</ButtonLink>
+            <ButtonLink href="/qualify">{t.buttons.doIQualify}</ButtonLink>
           </div>
         </div>
 
@@ -36,7 +35,7 @@ export default function EnrollmentPage() {
             <li key={item}>{item}</li>
           ))}
         </ul>
-        <p className="mt-6 max-w-3xl rounded-xl border-l-8 border-gold-deep bg-cream p-5 text-base">
+        <p className="mt-6 max-w-3xl rounded-xl border-l-8 border-gold-deep bg-cream p-5 text-lg">
           {page.qualifies.note}
         </p>
       </Section>
@@ -48,11 +47,11 @@ export default function EnrollmentPage() {
           {page.pays.items.map((item) => (
             <li key={item.title} className="rounded-xl border-2 border-gold-deep bg-white p-5">
               <h3 className="text-xl">{item.title}</h3>
-              <p className="mt-2 text-base">{item.text}</p>
+              <p className="mt-2 text-lg">{item.text}</p>
             </li>
           ))}
         </ul>
-        <p className="mt-8 max-w-3xl rounded-xl border-l-8 border-navy bg-white p-5 text-base">
+        <p className="mt-8 max-w-3xl rounded-xl border-l-8 border-navy bg-white p-5 text-lg">
           {page.pays.note}
         </p>
       </Section>
@@ -83,7 +82,7 @@ export default function EnrollmentPage() {
               </span>
               <div className="mt-3 sm:mt-0">
                 <h3 className="text-xl">
-                  <span className="sr-only">{`Step ${index + 1}: `}</span>
+                  <span className="sr-only">{t.a11y.stepLabel.replace("{number}", String(index + 1))}</span>
                   {step.title}
                 </h3>
                 <p className="mt-2">{step.text}</p>
@@ -93,16 +92,31 @@ export default function EnrollmentPage() {
         </ol>
       </Section>
 
-      <Section>
+      <Section id="faq" className="scroll-mt-28">
         <h2 className="text-2xl sm:text-3xl">{page.faq.heading}</h2>
-        <dl className="mt-8 max-w-3xl divide-y-2 divide-gold-deep border-y-2 border-gold-deep">
+        <div className="mt-8 max-w-3xl divide-y-2 divide-gold-deep border-y-2 border-gold-deep">
           {page.faq.items.map((item) => (
-            <div key={item.question} className="py-5">
-              <dt className="font-serif text-xl font-bold text-navy">{item.question}</dt>
-              <dd className="mt-2">{item.answer}</dd>
-            </div>
+            <details key={item.question} className="group py-2">
+              <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-4 py-2 font-serif text-xl font-bold text-navy [&::-webkit-details-marker]:hidden">
+                {item.question}
+                <svg
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  focusable="false"
+                  className="h-6 w-6 shrink-0 transition-transform group-open:rotate-180"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </summary>
+              <p className="pb-3 pt-1">{item.answer}</p>
+            </details>
           ))}
-        </dl>
+        </div>
       </Section>
 
       <CallToAction heading={page.cta.heading} text={page.cta.text} secondary="tour" />

@@ -1,4 +1,4 @@
-import Link from "next/link";
+import LocaleLink from "@/components/LocaleLink";
 import ButtonLink from "@/components/ButtonLink";
 import ContactDetails from "@/components/ContactDetails";
 import ContactForm from "@/components/ContactForm";
@@ -7,34 +7,41 @@ import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 import Section from "@/components/Section";
 import ServiceIcon from "@/components/ServiceIcon";
 import Sunburst from "@/components/Sunburst";
-import { en } from "@/content/en";
-import { pageMetadata } from "@/lib/seo";
+import { getContent } from "@/lib/content-server";
+import { pageMetadataFor } from "@/lib/seo";
 
-export const metadata = pageMetadata({
-  title: en.home.meta.title,
-  description: en.home.meta.description,
-  path: "/",
-});
+export function generateMetadata({ params }: PageProps<"/[lang]">) {
+  return pageMetadataFor(params, "/", (t) => t.home.meta);
+}
 
-export default function HomePage() {
-  const home = en.home;
+export default async function HomePage() {
+  const t = await getContent();
+  const home = t.home;
 
   return (
     <>
       <div className="relative overflow-hidden border-b-4 border-gold bg-cream">
-        <Sunburst className="pointer-events-none absolute -top-16 right-0 h-72 w-[34rem] opacity-30" />
         <div className="relative mx-auto grid w-full max-w-5xl gap-8 px-4 py-12 sm:px-6 md:grid-cols-2 md:items-center md:py-16">
           <div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl">{home.hero.heading}</h1>
             <p className="mt-4">{home.hero.intro}</p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <ButtonLink href="/qualify">{en.buttons.doIQualify}</ButtonLink>
-              <ButtonLink href={en.contact.phoneHref} variant="secondary">
-                {en.buttons.call}
+              <ButtonLink href="/qualify">{t.buttons.doIQualify}</ButtonLink>
+              <ButtonLink href={t.contact.phoneHref} variant="secondary">
+                {t.buttons.call}
               </ButtonLink>
             </div>
+            <p className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-1 font-semibold text-ink">
+              <span>{t.contact.addressLines.join(", ")}</span>
+              <span>{t.contact.hours}</span>
+            </p>
           </div>
-          <PhotoPlaceholder photo={home.hero.photo} wide />
+          <div className="relative mt-10 md:mt-0">
+            <Sunburst className="pointer-events-none absolute bottom-full left-1/2 h-auto w-40 -translate-x-1/2 translate-y-2 opacity-60 md:w-72 md:translate-y-3" />
+            <div className="relative">
+              <PhotoPlaceholder photo={home.hero.photo} wide />
+            </div>
+          </div>
         </div>
       </div>
 
@@ -58,17 +65,17 @@ export default function HomePage() {
             >
               <ServiceIcon name={tile.icon} className="h-12 w-12" />
               <h3 className="mt-3 text-xl">{tile.title}</h3>
-              <p className="mt-2 text-base">{tile.text}</p>
+              <p className="mt-2 text-lg">{tile.text}</p>
             </li>
           ))}
         </ul>
         <p className="mt-8">
-          <Link
+          <LocaleLink
             href={home.services.linkHref}
             className="inline-flex min-h-12 items-center font-semibold text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
           >
             {home.services.linkLabel}
-          </Link>
+          </LocaleLink>
         </p>
       </Section>
 
@@ -83,12 +90,12 @@ export default function HomePage() {
               ))}
             </div>
             <p className="mt-6">
-              <Link
+              <LocaleLink
                 href={home.transportation.linkHref}
                 className="inline-flex min-h-12 items-center font-semibold text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
               >
                 {home.transportation.linkLabel}
-              </Link>
+              </LocaleLink>
             </p>
           </div>
         </div>
@@ -107,25 +114,33 @@ export default function HomePage() {
                 {index + 1}
               </span>
               <h3 className="mt-3 text-xl">
-                <Link
+                <LocaleLink
                   href={home.enrollment.linkHref}
-                  className="inline-flex min-h-11 items-center text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
+                  className="inline-flex min-h-12 min-w-12 items-center text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
                 >
-                  <span className="sr-only">{`Step ${index + 1}: `}</span>
+                  <span className="sr-only">{t.a11y.stepLabel.replace("{number}", String(index + 1))}</span>
                   {step.title}
-                </Link>
+                </LocaleLink>
               </h3>
-              <p className="mt-2 text-base">{step.text}</p>
+              <p className="mt-2 text-lg">{step.text}</p>
             </li>
           ))}
         </ol>
         <p className="mt-8">
-          <Link
+          <LocaleLink
             href={home.enrollment.linkHref}
             className="inline-flex min-h-12 items-center font-semibold text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
           >
             {home.enrollment.linkLabel}
-          </Link>
+          </LocaleLink>
+        </p>
+        <p>
+          <LocaleLink
+            href="/enrollment#faq"
+            className="inline-flex min-h-12 min-w-12 items-center font-semibold text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
+          >
+            {t.enrollment.faq.heading}
+          </LocaleLink>
         </p>
       </Section>
 

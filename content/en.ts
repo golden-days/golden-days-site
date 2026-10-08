@@ -4,17 +4,19 @@
  * To change wording on the site, edit the strings here. You do not need to
  * touch the page files.
  *
- * Draft copy rule: every fact that was invented for this draft ends with
- * " [PLACEHOLDER]" so it is obvious on the page. Run `npm run check-placeholders`
- * to list everything that still needs real information.
+ * Draft copy rule: every fact that was invented for this draft ends with the
+ * placeholder marker (see `scripts/check-placeholders.mjs`) so it is obvious on
+ * the page. Run `npm run check-placeholders` to list everything that still needs
+ * real information.
  *
- * Adding another language later: copy this file to `content/ru.ts` or
- * `content/zh.ts`, translate the strings, and keep the same shape.
+ * Other languages live next to this file (`ru.ts`, ...). Each one has the same
+ * shape as this file, so TypeScript tells you if a string is missing. To add a
+ * language, see "Adding a language" in the README.
  */
 
 export const phone = {
-  display: "(916) 555-0100 [PLACEHOLDER]",
-  href: "tel:+19165550100",
+  display: "(916) 371-6011",
+  href: "tel:+19163716011",
 };
 
 export const en = {
@@ -29,16 +31,18 @@ export const en = {
     phoneDisplay: phone.display,
     phoneHref: phone.href,
     phoneLabel: "Phone",
-    email: "info@example.com [PLACEHOLDER]",
-    emailHref: "mailto:info@example.com",
+    email: "1215goldendays@gmail.com",
+    emailHref: "mailto:1215goldendays@gmail.com",
     emailLabel: "Email",
     addressLabel: "Address",
-    addressLines: ["123 Example Street [PLACEHOLDER]", "West Sacramento, CA 95691"],
-    addressOneLine: "123 Example Street, West Sacramento, CA 95691 [PLACEHOLDER]",
+    addressLines: ["1215 Merkley Ave", "West Sacramento, CA 95691"],
+    addressOneLine: "1215 Merkley Ave, West Sacramento, CA 95691",
     hoursLabel: "Hours",
-    hours: "Monday-Friday, 8:00 AM - 4:00 PM [PLACEHOLDER]",
-    hoursNote: "Closed Saturday and Sunday. [PLACEHOLDER]",
-    mapTitle: "Map showing the Golden Days Adult Day Health Care location [PLACEHOLDER]",
+    hours: "Facility hours: Monday to Friday, 8:00 AM to 4:30 PM",
+    programHours: "Service hours: Monday to Friday, 8:00 AM to 2:00 PM",
+    hoursNote: "Closed Saturday and Sunday. Also closed on Thanksgiving, Christmas Day, New Year's Day, and the Fourth of July.",
+    mapTitle: "Map showing the Golden Days Adult Day Health Care location",
+    directionsLinkLabel: "Get directions",
   },
 
   nav: {
@@ -80,97 +84,103 @@ export const en = {
     meta: {
       title: "Adult Day Health Care in West Sacramento",
       description:
-        "Golden Days Adult Day Health Care is a day program for older adults in West Sacramento, California. Call us or schedule a tour. [PLACEHOLDER]",
+        "Golden Days Adult Day Health Care is a day program for adults in West Sacramento, California. Call us or schedule a tour.",
     },
     hero: {
-      heading: "Daytime care for older adults in West Sacramento",
+      heading: "Daytime care for adults in West Sacramento",
       intro:
-        "Golden Days is a day program for older adults who need some help during the day, and for the families who care for them. [PLACEHOLDER]",
+        "Golden Days is a day program for adults, and for the families who care for them.",
       photo: {
         kind: "building" as const,
         label: "Photo placeholder - building exterior",
-        alt: "Placeholder image standing in for a photo of the Golden Days building exterior",
+        alt: "The front of the Golden Days Adult Day Health Care Center, with its sunburst sign above the open entrance and a Welcome to Golden Days sign in the window.",
+        src: "/images/hero-building.jpg",
+        width: 1600,
+        height: 900,
       },
     },
     whoWeServe: {
       heading: "Who we serve",
       paragraphs: [
-        "Golden Days welcomes older adults who live at home and need support, company, or supervision during the day. [PLACEHOLDER]",
-        "Many of the people who come to us live with a family member who works, or who simply needs a break during the week. [PLACEHOLDER]",
-        "If you are not sure whether Golden Days is the right fit for your parent, call us. We are happy to talk it through, with no pressure. [PLACEHOLDER]",
+        "Golden Days welcomes adults who live at home and need support, company, or supervision during the day.",
+        "Many of the people who come to us live with a family member who works, or who simply needs a break during the week.",
+        "If you are not sure whether Golden Days is the right fit for your loved one, call us. We are happy to talk it through, with no pressure.",
       ],
     },
     services: {
       heading: "What we offer",
-      intro: "A day at Golden Days can include any of the following. [PLACEHOLDER]",
+      intro: "A day at Golden Days can include any of the following.",
       linkLabel: "See all services",
       linkHref: "/services",
       tiles: [
         {
           icon: "nursing" as const,
           title: "Nursing Care",
-          text: "Our nursing staff checks in on health needs during the day. [PLACEHOLDER]",
+          text: "Our nursing staff checks in on health needs during the day.",
         },
         {
           icon: "rehabilitation" as const,
           title: "Rehabilitation",
-          text: "Therapy sessions to help with strength, balance, and daily movement. [PLACEHOLDER]",
+          text: "Therapy sessions to help with strength, balance, and daily movement.",
         },
         {
           icon: "nutrition" as const,
           title: "Nutrition",
-          text: "A hot meal and snacks each day, with options for special diets. [PLACEHOLDER]",
+          text: "Breakfast and lunch each day, made by a cook who plans for each person's needs.",
         },
         {
           icon: "socialWork" as const,
           title: "Social Work",
-          text: "Help understanding benefits, paperwork, and community resources. [PLACEHOLDER]",
+          text: "Help understanding benefits, paperwork, and community resources.",
         },
         {
           icon: "recreation" as const,
           title: "Recreation",
-          text: "Music, games, crafts, exercise, and time with other people. [PLACEHOLDER]",
+          text: "Music, games, crafts, exercise, field trips, and time with other people.",
         },
         {
           icon: "transportation" as const,
           title: "Transportation",
-          text: "Rides to and from the center on program days. [PLACEHOLDER]",
+          text: "Rides to and from the center on program days.",
         },
       ],
     },
     transportation: {
       heading: "Getting here is part of the care",
       paragraphs: [
-        "Golden Days offers door-to-door rides for people who attend the program, including riders who use a wheelchair or a walker. [PLACEHOLDER]",
-        "We work out a pickup window with your family, and we call if a schedule needs to change. [PLACEHOLDER]",
+        "Golden Days offers rides to and from the center for people who attend the program, including riders who use a wheelchair or a walker.",
+        "We work out a pickup window with your family, and we call if a schedule needs to change.",
       ],
       linkLabel: "Read about transportation",
       linkHref: "/transportation",
       photo: {
         kind: "bus" as const,
         label: "Photo placeholder - Golden Days bus",
-        alt: "Placeholder image standing in for a photo of a Golden Days bus parked outside the center",
+        alt: "A white Golden Days bus parked outside the center, with its passenger door open.",
+        src: "/images/bus.jpg",
+        width: 1200,
+        height: 900,
       },
     },
     enrollment: {
       heading: "How enrollment works",
-      intro: "Four steps, and we help with each one. [PLACEHOLDER]",
+      intro: "Four steps, and we help with each one.",
       steps: [
         {
           title: "Call or send a message",
-          text: "Tell us a little about your parent and what the days look like now. [PLACEHOLDER]",
+          text: "Tell us a little about your loved one and what the days look like now.",
         },
         {
           title: "Visit the center",
-          text: "Come see the rooms, meet the staff, and ask anything you want. [PLACEHOLDER]",
+          text: "Come see the facility, meet the staff, and ask anything you want.",
         },
         {
           title: "Complete an assessment",
-          text: "Our team reviews health and daily needs to see whether the program fits. [PLACEHOLDER]",
+          text: "Our team reviews health and daily needs to see whether the program fits.",
         },
         {
           title: "Start attending",
-          text: "We agree on days, arrange rides, and welcome your parent in. [PLACEHOLDER]",
+          text: "We agree on days, arrange rides, and welcome your loved one in.",
         },
       ],
       linkLabel: "See the full enrollment guide",
@@ -178,7 +188,7 @@ export const en = {
     },
     cost: {
       heading: "What about cost?",
-      text: "Many families use Medi-Cal, and private pay is also an option. Call us and we will explain what applies to your family. [PLACEHOLDER]",
+      text: "We accept insurance, and Medi-Cal together with an insurance plan. Private pay is also an option. Call us and we will explain what applies to your family.",
     },
     trust: {
       text: "Serving West Sacramento families since 2003. Same owners since 2007.",
@@ -186,7 +196,7 @@ export const en = {
     contact: {
       heading: "Talk with us",
       intro:
-        "Send a message and we will get back to you, or call during office hours. [PLACEHOLDER]",
+        "Send a message and we will get back to you, or call during facility hours.",
     },
   },
 
@@ -201,15 +211,15 @@ export const en = {
     lead: "Golden Days Adult Day Health Care has been part of West Sacramento since 2003. The same owners have run the center since 2007.",
     photo: {
       kind: "interior" as const,
-      label: "Photo placeholder - activity room",
-      alt: "Placeholder image standing in for a photo of the Golden Days activity room",
+      label: "Photo placeholder - staff group photo",
+      alt: "Placeholder image standing in for a group photo of the Golden Days staff",
     },
     story: {
       heading: "Our story",
       paragraphs: [
-        "Golden Days opened in West Sacramento in 2003 as a place where older adults could spend the day with care close at hand. The same owners have run the center since 2007.",
-        "Over those years we have come to know many local families. Some people come to us a few days a week for years, and their families become part of the center too. [PLACEHOLDER]",
-        "We are a small center on purpose. Staff learn names, routines, and what makes each person comfortable. [PLACEHOLDER]",
+        "Golden Days opened in West Sacramento in 2003 as a place where adults could spend the day with care close at hand. The same owners have run the center since 2007.",
+        "Over those years we have come to know many local families. Some people come to us a few days a week for years, and their families become part of the center too.",
+        "We are a small center on purpose. Staff learn names, routines, and what makes each person comfortable.",
       ],
     },
     values: {
@@ -217,44 +227,47 @@ export const en = {
       items: [
         {
           title: "Respect first",
-          text: "Everyone who comes here is an adult, and we treat them that way. [PLACEHOLDER]",
+          text: "Everyone who comes here is an adult, and we treat them that way.",
         },
         {
           title: "Plain answers",
-          text: "We explain costs, paperwork, and schedules in plain language. [PLACEHOLDER]",
+          text: "We explain costs, paperwork, and schedules in plain language.",
         },
         {
           title: "Steady routines",
-          text: "Familiar faces and a predictable day help people settle in. [PLACEHOLDER]",
+          text: "Familiar faces and a predictable day help people settle in.",
         },
         {
           title: "Family in the loop",
-          text: "We call when something changes, and we answer the phone. [PLACEHOLDER]",
+          text: "We call when something changes, and we answer the phone.",
         },
       ],
     },
     team: {
       heading: "Our team",
       paragraphs: [
-        "Our staff includes nurses, therapy staff, a social worker, activity leaders, drivers, and kitchen staff. [PLACEHOLDER]",
-        "Many of them have worked at Golden Days for years and speak more than one language. [PLACEHOLDER]",
+        "Our staff includes nurses, therapy staff, a social worker, activity leaders, drivers, and kitchen staff.",
+        "Many of them have worked at Golden Days for years and speak more than one language.",
       ],
     },
     center: {
       heading: "The center",
       paragraphs: [
-        "The building has an activity room, a dining room, quiet rooms for rest, a therapy area, and accessible restrooms. [PLACEHOLDER]",
-        "Parking is available in front, and the entrance is at ground level with no stairs. [PLACEHOLDER]",
+        "The building has an activity room, a dining room, quiet rooms for rest, a therapy area, and accessible restrooms.",
+        "Parking is available in front, and the entrance is at ground level with no stairs.",
       ],
       photo: {
         kind: "interior" as const,
         label: "Photo placeholder - dining room",
-        alt: "Placeholder image standing in for a photo of the Golden Days dining room",
+        alt: "The Golden Days dining room, with round tables set for lunch and fresh flowers on the tables.",
+        src: "/images/dining-room.jpg",
+        width: 1200,
+        height: 900,
       },
     },
     cta: {
       heading: "Come see it for yourself",
-      text: "A visit takes about half an hour. Call us and we will find a time. [PLACEHOLDER]",
+      text: "A visit takes about half an hour. Call us and we will find a time.",
     },
   },
 
@@ -263,85 +276,95 @@ export const en = {
     meta: {
       title: "Services",
       description:
-        "Nursing care, rehabilitation, nutrition, social work, recreation, and transportation at Golden Days in West Sacramento. [PLACEHOLDER]",
+        "Nursing care, rehabilitation, nutrition, social work, recreation, and transportation at Golden Days in West Sacramento.",
     },
     heading: "Services",
-    lead: "A day at Golden Days is built around six kinds of support. Families choose the days that work for them. [PLACEHOLDER]",
+    lead: "A day at Golden Days is built around six kinds of support. Families choose the days that work for them.",
     items: [
       {
         icon: "nursing" as const,
         title: "Nursing Care",
-        summary: "Health checks and medication support while your parent is at the center. [PLACEHOLDER]",
+        summary: "Health checks and medications from our nurses during the day.",
         details: [
-          "Nursing staff check vital signs and watch for changes during the day. [PLACEHOLDER]",
-          "We help with medications that are scheduled during program hours. [PLACEHOLDER]",
-          "If something looks different, we call the family and the doctor's office. [PLACEHOLDER]",
+          "Nurses check vital signs and blood glucose (blood sugar).",
+          "Nurses give scheduled medications during program hours.",
+          "If health changes, we call the family and the doctor's office.",
         ],
       },
       {
         icon: "rehabilitation" as const,
         title: "Rehabilitation",
-        summary: "Exercises and therapy that support strength, balance, and movement. [PLACEHOLDER]",
+        summary: "Exercises and therapy that support strength, balance, and movement.",
         details: [
-          "Therapy staff work on walking, balance, and everyday movement. [PLACEHOLDER]",
-          "Sessions are planned around what each person is working toward. [PLACEHOLDER]",
-          "Group exercise happens most mornings for people who want to join. [PLACEHOLDER]",
+          "Therapy staff work on walking, balance, and everyday movement.",
+          "Sessions are planned around what each person is working toward.",
+          "Group exercise happens most mornings for people who want to join.",
         ],
       },
       {
         icon: "nutrition" as const,
         title: "Nutrition",
-        summary: "A hot meal and snacks each program day, with special diets available. [PLACEHOLDER]",
+        summary: "Breakfast and lunch each program day, made by a cook who plans for each person's needs.",
         details: [
-          "Lunch is served every program day, with morning and afternoon snacks. [PLACEHOLDER]",
-          "We can plan around low-salt, diabetic, and soft-food diets. [PLACEHOLDER]",
-          "Tell us about food preferences and we will do our best to match them. [PLACEHOLDER]",
+          "Breakfast and lunch are served every program day, and the meals rotate.",
+          "A specialist cook plans meals around each person's needs.",
+          "Tell us about food needs, such as allergies, trouble swallowing (we can chop food), or a vegetarian diet.",
         ],
       },
       {
         icon: "socialWork" as const,
         title: "Social Work",
-        summary: "Help with benefits, paperwork, and finding services outside the center. [PLACEHOLDER]",
+        summary: "Help with benefits, paperwork, and finding services outside the center.",
         details: [
-          "Our social worker helps families understand forms and coverage questions. [PLACEHOLDER]",
-          "We can point you toward local services such as home help or meal programs. [PLACEHOLDER]",
-          "Family meetings are available when a plan needs to change. [PLACEHOLDER]",
+          "Our social worker helps families understand forms and coverage questions.",
+          "We can point you toward local services such as home help or meal programs.",
+          "Family meetings are available when a plan needs to change.",
         ],
       },
       {
         icon: "recreation" as const,
         title: "Recreation",
-        summary: "Music, games, crafts, gentle exercise, and company through the day. [PLACEHOLDER]",
+        summary: "Music, games, crafts, gentle exercise, and company through the day.",
         details: [
-          "Each day has a schedule of activities people can join or skip. [PLACEHOLDER]",
-          "Activities include music, card games, crafts, and seated exercise. [PLACEHOLDER]",
-          "Holidays and birthdays are celebrated together. [PLACEHOLDER]",
+          "Daily activities people can join or skip, such as music, games, crafts, and exercise.",
+          "Field trips happen up to three times a week on average, at no extra cost. People with mobility needs can come along.",
+          "Holidays and birthdays are celebrated together.",
         ],
       },
       {
         icon: "transportation" as const,
         title: "Transportation",
-        summary: "Door-to-door rides to and from the center on program days. [PLACEHOLDER]",
+        summary: "Rides to and from the center on program days.",
         details: [
-          "Rides are available within our service area. [PLACEHOLDER]",
-          "Our vehicles can carry riders who use a wheelchair or a walker. [PLACEHOLDER]",
-          "Drivers help at the door and make sure someone is there at drop-off. [PLACEHOLDER]",
+          "Rides are available within our service area.",
+          "Our vehicles can carry riders who use a wheelchair or a walker.",
+          "The bus drives as close to the door as possible. At home, a caregiver helps the participant onto the bus. At the center, drivers help participants off the bus.",
         ],
       },
     ],
     dayHeading: "What a day looks like",
     daySchedule: [
-      { time: "8:00 AM", text: "Arrival, greetings, and morning check-ins. [PLACEHOLDER]" },
-      { time: "9:00 AM", text: "Seated exercise and therapy sessions. [PLACEHOLDER]" },
-      { time: "10:30 AM", text: "Activities, music, and small groups. [PLACEHOLDER]" },
-      { time: "12:00 PM", text: "Lunch together in the dining room. [PLACEHOLDER]" },
-      { time: "1:00 PM", text: "Quiet time, nursing visits, and social work meetings. [PLACEHOLDER]" },
-      { time: "2:30 PM", text: "Afternoon activity and snack. [PLACEHOLDER]" },
-      { time: "4:00 PM", text: "Rides home. [PLACEHOLDER]" },
+      { time: "8:30 AM", text: "Greeting" },
+      { time: "9:00 AM", text: "Rehabilitation Exercise" },
+      { time: "9:30 AM", text: "Breakfast / Current Events on TV" },
+      { time: "10:00 AM", text: "Health Education / Individual Physical Therapy (Mon, Tue, Fri)" },
+      { time: "10:30 AM", text: "Rehabilitation Exercise / Walking Club / Field Trip" },
+      { time: "11:00 AM", text: "Rehabilitation Exercises / Group Therapy" },
+      { time: "11:30 AM", text: "Rehabilitation Exercise / Memory Group / Activity Game / Spiritual Group" },
+      { time: "12:00 PM", text: "Guests and Speakers / Individual Physical Therapy (Mon, Tue, Fri)" },
+      { time: "12:30 PM", text: "Individual Occupational Therapy (Wed, Fri)" },
+      { time: "1:00 PM", text: "Lunch" },
+      { time: "1:30 PM", text: "Movie / Discussion" },
+    ],
+    weeklyHeading: "Weekly activities",
+    weeklyActivities: [
+      { day: "Tuesday", text: "Memory Group" },
+      { day: "Wednesday", text: "English Lesson" },
+      { day: "Friday", text: "Bingo" },
     ],
     cta: {
-      heading: "Not sure which parts your parent needs?",
-      text: "Call us. We will ask a few questions and give you a straight answer. [PLACEHOLDER]",
+      heading: "Not sure which parts your loved one needs?",
+      text: "Call us. We will ask a few questions and give you a straight answer.",
     },
   },
 
@@ -350,62 +373,71 @@ export const en = {
     meta: {
       title: "Transportation",
       description:
-        "Door-to-door rides to Golden Days in West Sacramento, including wheelchair accessible vehicles. [PLACEHOLDER]",
+        "Rides to Golden Days in West Sacramento, including wheelchair accessible vehicles.",
     },
     heading: "Transportation",
-    lead: "Getting to the center should not be the hard part. Golden Days offers rides to and from the program for people who need them. [PLACEHOLDER]",
+    lead: "Getting to the center should not be the hard part. Golden Days offers rides to and from the program for people who need them.",
     photo: {
       kind: "bus" as const,
-      label: "Photo placeholder - Golden Days bus at the entrance",
-      alt: "Placeholder image standing in for a photo of a Golden Days bus at the center entrance",
+      label: "Photo placeholder - inside the Golden Days bus",
+      alt: "Inside a Golden Days bus: rows of blue seats on both sides of a wide aisle, with wheelchair accessibility symbols on the wall.",
+      src: "/images/bus-inside.jpg",
+      width: 1600,
+      height: 900,
     },
     sections: [
       {
         heading: "Service area",
         paragraphs: [
-          "We provide rides in West Sacramento and nearby neighborhoods. [PLACEHOLDER]",
-          "Some addresses outside that area may still work depending on the day and the route. Call us with your address and we will check. [PLACEHOLDER]",
+          "We provide rides in West Sacramento and nearby neighborhoods.",
+          "Some addresses outside that area may still work depending on the day and the route. If your area is not listed, call us with your address and we will check.",
         ],
         list: {
-          label: "Areas we usually serve: [PLACEHOLDER]",
+          label: "Areas we usually serve:",
           items: [
-            "West Sacramento [PLACEHOLDER]",
-            "Bryte and Broderick [PLACEHOLDER]",
-            "Southport [PLACEHOLDER]",
-            "Parts of Sacramento near the river [PLACEHOLDER]",
+            "West Sacramento",
+            "Bryte and Broderick",
+            "Southport",
+            "Parts of Sacramento near the river",
+            "Antelope",
+            "Elk Grove",
+            "Natomas",
+            "Carmichael",
+            "Rancho Cordova",
           ],
         },
       },
       {
         heading: "Pickup and drop-off",
         paragraphs: [
-          "Each rider gets a pickup window rather than an exact minute, because traffic and other riders change the route. [PLACEHOLDER]",
-          "Drivers come to the door, help with the walk to the vehicle, and wait until someone answers at drop-off. [PLACEHOLDER]",
-          "If the bus is running late, we call the family. [PLACEHOLDER]",
+          "Each rider gets a pickup window rather than an exact minute, because traffic and other riders change the route.",
+          "We drive as close to the door as possible. At pickup, the participant's caregiver helps them onto the bus. Drivers do not help participants on, and they cannot lift anyone onto the bus.",
+          "At the center, drivers can help participants off the bus, and our caregivers here are ready to meet them. Our caregivers do not go to people's homes.",
+          "If the bus is running late, we call the family.",
         ],
       },
       {
         heading: "Wheelchair and mobility access",
         paragraphs: [
-          "Our vehicles can carry riders who use a wheelchair, a walker, or a cane. [PLACEHOLDER]",
-          "Wheelchairs are secured before the vehicle moves, and seat belts are used for every rider. [PLACEHOLDER]",
-          "Tell us about oxygen, transfers, or anything else a driver should know, and we will plan for it. [PLACEHOLDER]",
+          "Our vehicles can carry riders who use a wheelchair, a walker, or a cane.",
+          "Wheelchairs are secured before the vehicle moves, and seat belts are used for every rider.",
+          "Tell us about oxygen, transfers, or anything else a driver should know, and we will plan for it.",
         ],
       },
       {
         heading: "How families arrange or change a ride",
         paragraphs: [
-          "Rides are set up when your parent enrolls, and the schedule stays the same week to week. [PLACEHOLDER]",
-          "To change a pickup address, add a day, or cancel a ride, call the office. [PLACEHOLDER]",
-          "For a same-day cancellation, call as early as you can so the driver can adjust the route. [PLACEHOLDER]",
+          "Rides are set up when your loved one enrolls, and the schedule stays the same week to week.",
+          "To change a pickup address, add a day, or cancel a ride, call the office.",
+          "For a same-day cancellation, call as early as you can so the driver can adjust the route.",
         ],
         list: {
-          label: "To change a ride, have this ready: [PLACEHOLDER]",
+          label: "To change a ride, have this ready:",
           items: [
-            "The rider's name [PLACEHOLDER]",
-            "The date or dates that are changing [PLACEHOLDER]",
-            "The new address, if the pickup location is moving [PLACEHOLDER]",
-            "A phone number where we can reach you that day [PLACEHOLDER]",
+            "The rider's name",
+            "The date or dates that are changing",
+            "The new address, if the pickup location is moving",
+            "A phone number where we can reach you that day",
           ],
         },
       },
@@ -413,11 +445,14 @@ export const en = {
     secondPhoto: {
       kind: "bus" as const,
       label: "Photo placeholder - wheelchair lift on a Golden Days bus",
-      alt: "Placeholder image standing in for a photo of the wheelchair lift on a Golden Days bus",
+      alt: "The wheelchair lift at the back of a Golden Days bus, with the platform raised inside the open rear doors.",
+      src: "/images/wheelchair-lift.jpg",
+      width: 1600,
+      height: 900,
     },
     cta: {
       heading: "Questions about a pickup?",
-      text: "Call the office and ask for the transportation schedule. [PLACEHOLDER]",
+      text: "Call the office and ask for the transportation schedule.",
     },
   },
 
@@ -426,50 +461,50 @@ export const en = {
     meta: {
       title: "Enrollment",
       description:
-        "Who qualifies for Golden Days, who pays, what to bring, and the steps to enroll in West Sacramento. [PLACEHOLDER]",
+        "Who qualifies for Golden Days, who pays, what to bring, and the steps to enroll in West Sacramento.",
     },
     heading: "Enrollment",
-    lead: "Enrolling takes a few conversations, not a mountain of paperwork. Here is how it goes. [PLACEHOLDER]",
+    lead: "Enrolling takes a few conversations, not a mountain of paperwork. Here is how it goes.",
     qualifies: {
       heading: "Who qualifies",
-      intro: "Golden Days is generally a fit for an adult who: [PLACEHOLDER]",
+      intro: "Golden Days is generally a fit for an adult who:",
       items: [
-        "Is an older adult living at home or with family [PLACEHOLDER]",
-        "Needs help, supervision, or company during the day [PLACEHOLDER]",
-        "Has a health condition that benefits from regular check-ins [PLACEHOLDER]",
-        "Can take part in a group day program [PLACEHOLDER]",
+        "Is an adult living at home or with family",
+        "Needs help, supervision, or company during the day",
+        "Has a health condition that benefits from regular check-ins",
+        "Can take part in a group day program",
       ],
-      note: "Eligibility is decided after an assessment, not over the phone. Call us and we will tell you what the next step looks like. [PLACEHOLDER]",
+      note: "Eligibility is decided after an assessment, not over the phone. Call us and we will tell you what the next step looks like.",
     },
     pays: {
       heading: "Who pays",
-      intro: "Families usually pay in one of these ways: [PLACEHOLDER]",
+      intro: "Families usually pay in one of these ways:",
       items: [
         {
           title: "Medi-Cal",
-          text: "Many families use Medi-Cal coverage for adult day health care. We can explain what the process looks like. [PLACEHOLDER]",
+          text: "We accept Medi-Cal together with an insurance plan, but not Medi-Cal on its own. We can explain what the process looks like.",
         },
         {
           title: "Managed care plans",
-          text: "Some health plans cover day programs. We will check what your plan says. [PLACEHOLDER]",
+          text: "Some health plans cover day programs. We will check what your plan says.",
         },
         {
           title: "Private pay",
-          text: "Families can also pay directly, by the day or by the month. [PLACEHOLDER]",
+          text: "Families can also pay directly.",
         },
       ],
-      note: "Nothing on this page is a promise of coverage or a price. Call us for current information about your situation. [PLACEHOLDER]",
+      note: "Nothing on this page is a promise of coverage or a price. Call us for current information about your situation.",
     },
     bring: {
       heading: "What to bring",
-      intro: "Bring what you have. We will help with the rest. [PLACEHOLDER]",
+      intro: "Bring what you have. We will help with the rest.",
       items: [
-        "Photo identification [PLACEHOLDER]",
-        "Insurance or Medi-Cal card [PLACEHOLDER]",
-        "A current list of medications [PLACEHOLDER]",
-        "Your doctor's name and phone number [PLACEHOLDER]",
-        "Emergency contact names and numbers [PLACEHOLDER]",
-        "Any recent medical paperwork you already have [PLACEHOLDER]",
+        "Photo identification",
+        "Insurance card (you can bring this on its own)",
+        "Medi-Cal card (bring this together with your insurance card, not by itself)",
+        "Your doctor's name and phone number",
+        "Emergency contact names and numbers",
+        "Any recent medical paperwork you already have",
       ],
     },
     steps: {
@@ -477,23 +512,23 @@ export const en = {
       items: [
         {
           title: "Call or send a message",
-          text: "Tell us about your parent, the days you are hoping for, and any concerns. This call takes about ten minutes. [PLACEHOLDER]",
+          text: "Tell us about your loved one, the days you are hoping for, and any concerns. This call takes about ten minutes.",
         },
         {
           title: "Tour the center",
-          text: "Visit during program hours so you can see a normal day. Bring your parent if that is comfortable. [PLACEHOLDER]",
+          text: "Visit during program hours, preferably before 1:30 PM, so you can see a normal day. Bring your loved one if that is comfortable.",
         },
         {
           title: "Assessment",
-          text: "Our team reviews health history, daily needs, and goals to confirm the program is a good fit. [PLACEHOLDER]",
+          text: "Our team reviews health history, daily needs, and goals to confirm the program is a good fit.",
         },
         {
           title: "Paperwork and coverage",
-          text: "We complete enrollment forms together and work through the coverage questions. [PLACEHOLDER]",
+          text: "We complete enrollment forms together and work through the coverage questions.",
         },
         {
           title: "First day",
-          text: "We set the schedule, arrange rides, and introduce your parent to staff and other participants. [PLACEHOLDER]",
+          text: "We set the schedule, arrange rides, and introduce your loved one to staff and other participants.",
         },
       ],
     },
@@ -501,30 +536,30 @@ export const en = {
       heading: "Common questions",
       items: [
         {
-          question: "How many days a week can my parent come?",
-          answer: "Schedules range from one day to five days a week. We work out a schedule together. [PLACEHOLDER]",
+          question: "How many days a week can my loved one come?",
+          answer: "Schedules range from one day to five days a week. We will set the schedule together with you.",
         },
         {
           question: "How long does enrollment take?",
-          answer: "It depends on paperwork and coverage. We will give you a realistic timeline on the first call. [PLACEHOLDER]",
+          answer: "It depends on paperwork and coverage. We will give you a realistic timeline on the first call.",
         },
         {
           question: "Can we try it first?",
-          answer: "Start with a tour. Ask us about a trial day when you visit. [PLACEHOLDER]",
+          answer: "Start with a tour. Ask us about a trial day when you visit.",
         },
         {
-          question: "What if my parent does not want to go?",
-          answer: "That is common. A tour and a short first week often help. We have done this many times. [PLACEHOLDER]",
+          question: "What if my loved one does not want to go?",
+          answer: "That is common. A tour and a short first week often help. We have done this many times.",
         },
       ],
     },
     qualifyPrompt: {
       heading: "Not sure if this is a fit?",
-      text: "Answer five short questions and we will point you to the next step. It takes about a minute. [PLACEHOLDER]",
+      text: "Answer five short questions and we will point you to the next step. It takes about a minute.",
     },
     cta: {
       heading: "Ready to start?",
-      text: "Call us or schedule a tour. There is no cost to ask questions. [PLACEHOLDER]",
+      text: "Call us or schedule a tour. There is no cost to ask questions.",
     },
   },
 
@@ -535,12 +570,12 @@ export const en = {
     meta: {
       title: "Do I qualify?",
       description:
-        "Answer five short questions to see whether Golden Days in West Sacramento may be a good fit. [PLACEHOLDER]",
+        "Answer five short questions to see whether Golden Days in West Sacramento may be a good fit.",
     },
     intro: {
       heading: "See if Golden Days may be right for you or your loved one.",
       reassurance:
-        "This takes about a minute. It is not an application and not a final decision. We do not ask for your name or any health information, and your answers stay on this page. We do not collect or store them. [PLACEHOLDER]",
+        "This takes about a minute. It is not an application and not a final decision. We do not ask for your name or any health information, and your answers stay on this page. We do not collect or store them.",
       startLabel: "Start the questions",
     },
     progressLabel: "Question {current} of {total}",
@@ -555,35 +590,39 @@ export const en = {
     answerGroupLabel: "Choose one answer",
     questions: [
       {
-        text: "Is the person 18 or older? [PLACEHOLDER]",
-        help: "Golden Days is a program for adults. If you are asking for a parent or a spouse, answer for that person. [PLACEHOLDER]",
+        text: "Is the person 18 or older?",
+        help: "Golden Days is a program for adults. If you are asking for a parent or a spouse, answer for that person.",
       },
       {
-        text: "Do they live in or near West Sacramento? [PLACEHOLDER]",
-        help: "Nearby towns can work too. If you are not sure whether your address is close enough, choose Not sure. [PLACEHOLDER]",
+        text: "Do they live in West Sacramento or a nearby area we serve?",
+        help: "We serve West Sacramento and nearby areas, including Sacramento, Natomas, Elk Grove, Carmichael, Rancho Cordova, and Antelope. If you are not sure, choose Not sure and we will check.",
       },
       {
-        text: "Do they need help with everyday activities, like bathing, dressing, or taking medicine? [PLACEHOLDER]",
-        help: "Everyday activities means things like washing up, getting dressed, eating, walking safely, or remembering medicine. [PLACEHOLDER]",
+        text: "Can they take part in group activities during the day, with or without a walker or wheelchair?",
+        help: "Group activities include exercise, music, games, and meals together. People take part in their own way, and some also need medical attention during the day. If you are not sure they could manage a group setting, choose Not sure.",
       },
       {
-        text: "Do they have Medi-Cal (California's health coverage program), other health insurance, or can they pay privately? [PLACEHOLDER]",
-        help: "Medi-Cal helps pay for care for people with a low income. Paying privately means paying the center directly. [PLACEHOLDER]",
+        text: "Do they have health insurance from an insurance provider, with or without Medi-Cal?",
+        help: "We accept insurance, and Medi-Cal together with insurance. Medi-Cal on its own is not enough. If you are not sure, choose Not sure.",
       },
       {
-        text: "Can a doctor fill out a referral form? [PLACEHOLDER]",
-        help: "A referral form is a short form a doctor signs to say the program may help. We can send the form to the doctor's office. [PLACEHOLDER]",
+        text: "Do they have a doctor who can share recent medical paperwork?",
+        help: "We ask for recent medical paperwork from their doctor, along with their insurance information. If you are not sure, choose Not sure.",
       },
     ],
     results: {
       announcement: "Here are your results.",
       goodFit: {
-        heading: "Good news. Golden Days may be a good fit.",
-        text: "Call us or schedule a tour, and we will help with the next steps. [PLACEHOLDER]",
+        heading: "Good news. You are a good fit for Golden Days.",
+        text: "Call us or schedule a tour, and we will help with the next steps.",
+      },
+      notFit: {
+        heading: "Golden Days may not be the right fit.",
+        text: "Thank you for checking. If you would like to talk it over, please call us and we will be glad to help.",
       },
       unsure: {
         heading: "We are not sure yet, and that is okay.",
-        text: "Many families are unsure at the start. Call us and we will go through your situation together. Some answers can change with the right paperwork or coverage. [PLACEHOLDER]",
+        text: "Many families are unsure at the start. Call us and we will go through your situation together. Some answers can change with the right paperwork or coverage. If every answer is yes, you are a good fit.",
       },
       enrollmentLinkLabel: "Read how enrollment works",
       startOverLabel: "Start over",
@@ -595,28 +634,36 @@ export const en = {
     meta: {
       title: "Contact",
       description:
-        "Call Golden Days Adult Day Health Care in West Sacramento, send a message, or schedule a tour. [PLACEHOLDER]",
+        "Call Golden Days Adult Day Health Care in West Sacramento, send a message, or schedule a tour.",
     },
     heading: "Contact us",
-    lead: "Call us during office hours, or send a message and we will get back to you. [PLACEHOLDER]",
+    lead: "Call us during facility hours, or send a message and we will get back to you.",
     detailsHeading: "Visit or call",
     directionsHeading: "Find us",
     directionsText:
-      "The entrance is at ground level and parking is in front of the building. [PLACEHOLDER]",
+      "The entrance is at ground level and parking is in front of the building.",
+    photo: {
+      kind: "building" as const,
+      label: "Photo placeholder - building entrance",
+      alt: "The entrance to Golden Days at 1215 Merkley Ave, with the sign above the door and cones set out by the walkway.",
+      src: "/images/building-entrance.jpg",
+      width: 1200,
+      height: 900,
+    },
     tourHeading: "Schedule a tour",
     tourText:
-      "Tours happen during program hours so you can see a normal day. Call us or use the form and say that you would like a tour. [PLACEHOLDER]",
+      "Tours happen during program hours, preferably before 1:30 PM, so you can see a normal day. Call us or use the form and say that you would like a tour.",
   },
 
   form: {
     heading: "Send us a message",
-    responseTime: "A member of our team will call you within 2 business days. [PLACEHOLDER]",
+    responseTime: "A member of our team will call you within one business day.",
     callAlternativeLead: "Prefer to talk?",
     callAlternativeLinkPrefix: "Call us at",
     medicalNote: "Please do not include medical information in this form.",
     fields: {
       name: { label: "Your name", placeholder: "First and last name" },
-      phone: { label: "Phone number", placeholder: "(916) 555-0100" },
+      phone: { label: "Phone number", placeholder: "(916) 555-0123" },
       email: { label: "Email (optional)", placeholder: "you@example.com" },
       message: {
         label: "How can we help? (optional)",
@@ -629,7 +676,7 @@ export const en = {
     submitting: "Sending...",
     successHeading: "Thank you. Your message has been sent.",
     successText:
-      "We will get back to you during office hours. If you need an answer sooner, please call us. [PLACEHOLDER]",
+      "We will get back to you during facility hours. If you need an answer sooner, please call us.",
     successAgain: "Send another message",
     errorHeading: "Your message did not go through.",
     errorText: "Please try again, or call us instead.",
@@ -640,6 +687,22 @@ export const en = {
       name: "Please enter your name.",
       phone: "Please enter a phone number we can call.",
     },
+  },
+
+  language: {
+    label: "Language",
+  },
+
+  // Words read aloud by screen readers but not shown on the page.
+  a11y: {
+    stepLabel: "Step {number}: ",
+  },
+
+  notFound: {
+    metaTitle: "Page not found",
+    heading: "We could not find that page",
+    text: "The page may have moved. Try the menu at the top of the screen, or call us and we will help.",
+    homeLabel: "Go to the home page",
   },
 
   photoPlaceholderNote: "Placeholder image. Replace with a real photo before launch.",
