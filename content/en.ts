@@ -100,14 +100,14 @@ export const en = {
     whoWeServe: {
       heading: "Who we serve",
       paragraphs: [
-        "Golden Days welcomes adults who live at home and need support, company, or supervision during the day. [PLACEHOLDER]",
+        "Golden Days welcomes adults who live at home and need support, company, or supervision during the day.",
         "Many of the people who come to us live with a family member who works, or who simply needs a break during the week. [PLACEHOLDER]",
-        "If you are not sure whether Golden Days is the right fit for your loved one, call us. We are happy to talk it through, with no pressure. [PLACEHOLDER]",
+        "If you are not sure whether Golden Days is the right fit for your loved one, call us. We are happy to talk it through, with no pressure.",
       ],
     },
     services: {
       heading: "What we offer",
-      intro: "A day at Golden Days can include any of the following. [PLACEHOLDER]",
+      intro: "A day at Golden Days can include any of the following.",
       linkLabel: "See all services",
       linkHref: "/services",
       tiles: [
@@ -119,7 +119,7 @@ export const en = {
         {
           icon: "rehabilitation" as const,
           title: "Rehabilitation",
-          text: "Therapy sessions to help with strength, balance, and daily movement. [PLACEHOLDER]",
+          text: "Therapy sessions to help with strength, balance, and daily movement.",
         },
         {
           icon: "nutrition" as const,
@@ -139,7 +139,7 @@ export const en = {
         {
           icon: "transportation" as const,
           title: "Transportation",
-          text: "Rides to and from the center on program days. [PLACEHOLDER]",
+          text: "Rides to and from the center on program days.",
         },
       ],
     },
@@ -159,11 +159,11 @@ export const en = {
     },
     enrollment: {
       heading: "How enrollment works",
-      intro: "Four steps, and we help with each one. [PLACEHOLDER]",
+      intro: "Four steps, and we help with each one.",
       steps: [
         {
           title: "Call or send a message",
-          text: "Tell us a little about your loved one and what the days look like now. [PLACEHOLDER]",
+          text: "Tell us a little about your loved one and what the days look like now.",
         },
         {
           title: "Visit the center",
@@ -175,7 +175,7 @@ export const en = {
         },
         {
           title: "Start attending",
-          text: "We agree on days, arrange rides, and welcome your loved one in. [PLACEHOLDER]",
+          text: "We agree on days, arrange rides, and welcome your loved one in.",
         },
       ],
       linkLabel: "See the full enrollment guide",
@@ -358,8 +358,8 @@ export const en = {
       { day: "Friday", text: "Bingo" },
     ],
     cta: {
-      heading: "Not sure which parts your loved one needs? [PLACEHOLDER]",
-      text: "Call us. We will ask a few questions and give you a straight answer. [PLACEHOLDER]",
+      heading: "Not sure which parts your loved one needs?",
+      text: "Call us. We will ask a few questions and give you a straight answer.",
     },
   },
 
@@ -381,7 +381,7 @@ export const en = {
       {
         heading: "Service area",
         paragraphs: [
-          "We provide rides in West Sacramento and nearby neighborhoods. [PLACEHOLDER]",
+          "We provide rides in West Sacramento and nearby neighborhoods.",
           "Some addresses outside that area may still work depending on the day and the route. If your area is not listed, call us with your address and we will check.",
         ],
         list: {
@@ -441,7 +441,7 @@ export const en = {
     },
     cta: {
       heading: "Questions about a pickup?",
-      text: "Call the office and ask for the transportation schedule. [PLACEHOLDER]",
+      text: "Call the office and ask for the transportation schedule.",
     },
   },
 
@@ -450,7 +450,7 @@ export const en = {
     meta: {
       title: "Enrollment",
       description:
-        "Who qualifies for Golden Days, who pays, what to bring, and the steps to enroll in West Sacramento. [PLACEHOLDER]",
+        "Who qualifies for Golden Days, who pays, what to bring, and the steps to enroll in West Sacramento.",
     },
     heading: "Enrollment",
     lead: "Enrolling takes a few conversations, not a mountain of paperwork. Here is how it goes. [PLACEHOLDER]",
@@ -482,7 +482,7 @@ export const en = {
           text: "Families can also pay directly, by the day or by the month. [PLACEHOLDER]",
         },
       ],
-      note: "Nothing on this page is a promise of coverage or a price. Call us for current information about your situation. [PLACEHOLDER]",
+      note: "Nothing on this page is a promise of coverage or a price. Call us for current information about your situation.",
     },
     bring: {
       heading: "What to bring",
@@ -548,7 +548,7 @@ export const en = {
     },
     cta: {
       heading: "Ready to start?",
-      text: "Call us or schedule a tour. There is no cost to ask questions. [PLACEHOLDER]",
+      text: "Call us or schedule a tour. There is no cost to ask questions.",
     },
   },
 
@@ -623,7 +623,7 @@ export const en = {
     meta: {
       title: "Contact",
       description:
-        "Call Golden Days Adult Day Health Care in West Sacramento, send a message, or schedule a tour. [PLACEHOLDER]",
+        "Call Golden Days Adult Day Health Care in West Sacramento, send a message, or schedule a tour.",
     },
     heading: "Contact us",
     lead: "Call us during facility hours, or send a message and we will get back to you. [PLACEHOLDER]",
