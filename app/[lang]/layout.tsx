@@ -10,7 +10,7 @@ import SiteFooter from "@/components/SiteFooter";
 import SiteHeader from "@/components/SiteHeader";
 import { contentFor } from "@/lib/content";
 import { hasLocale, localeInfo, locales } from "@/lib/i18n";
-import { siteUrl } from "@/lib/seo";
+import { robotsDirective, siteUrl } from "@/lib/seo";
 
 // Cyrillic covers Russian and Ukrainian; Vietnamese needs its own set of accented letters.
 const sourceSans = Source_Sans_3({
@@ -64,7 +64,7 @@ export async function generateMetadata({ params }: LayoutProps<"/[lang]">): Prom
       template: `%s | ${t.site.name}`,
     },
     description: t.home.meta.description,
-    robots: "noindex",
+    robots: robotsDirective,
   };
 }
 

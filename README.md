@@ -27,7 +27,7 @@ them in, or set them in the Vercel project settings.
 | Variable | What it does |
 | --- | --- |
 | `NEXT_PUBLIC_FORM_ENDPOINT` | The [Formspree](https://formspree.io) address the contact form posts to. When it is empty, the form shows a "not connected yet" message instead of sending. |
-| `NEXT_PUBLIC_SITE_URL` | The public address of the site, for example `https://www.goldendays.com`. Used by the sitemap and the social sharing tags. Defaults to `https://www.example.com`. |
+| `NEXT_PUBLIC_SITE_URL` | The public address of the site, for example `https://www.goldendays.com`. Used by the sitemap and the social sharing tags. Defaults to `https://www.example.com`. A Vercel production build refuses to run without it, and setting it is what lets search engines index the site. |
 
 ## Commands
 
@@ -122,8 +122,8 @@ any dark color.
       "Send emails to" address. (The site already shows this email.)
 - [ ] Add real photos of the building, the rooms, and the buses.
 - [ ] Set `NEXT_PUBLIC_FORM_ENDPOINT` and `NEXT_PUBLIC_SITE_URL` in Vercel.
-- [ ] Remove `robots: "noindex"` from `lib/seo.ts`, `app/[lang]/layout.tsx` and `app/[lang]/not-found.tsx` so search
-      engines can index the site.
+- [ ] Search engines are allowed automatically on the live site (a Vercel production
+      build with `NEXT_PUBLIC_SITE_URL` set). Preview links and local builds stay hidden.
 - [ ] Confirm `npm run check-placeholders` reports nothing.
 
 ## Built with

@@ -4,9 +4,10 @@
  * To change wording on the site, edit the strings here. You do not need to
  * touch the page files.
  *
- * Draft copy rule: every fact that was invented for this draft ends with
- * " [PLACEHOLDER]" so it is obvious on the page. Run `npm run check-placeholders`
- * to list everything that still needs real information.
+ * Draft copy rule: every fact that was invented for this draft ends with the
+ * placeholder marker (see `scripts/check-placeholders.mjs`) so it is obvious on
+ * the page. Run `npm run check-placeholders` to list everything that still needs
+ * real information.
  *
  * Other languages live next to this file (`ru.ts`, ...). Each one has the same
  * shape as this file, so TypeScript tells you if a string is missing. To add a
