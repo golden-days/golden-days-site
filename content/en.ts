@@ -209,8 +209,8 @@ export const en = {
     lead: "Golden Days Adult Day Health Care has been part of West Sacramento since 2003. The same owners have run the center since 2007.",
     photo: {
       kind: "interior" as const,
-      label: "Photo placeholder - activity room",
-      alt: "Placeholder image standing in for a photo of the Golden Days activity room",
+      label: "Photo placeholder - staff group photo",
+      alt: "Placeholder image standing in for a group photo of the Golden Days staff",
     },
     story: {
       heading: "Our story",
