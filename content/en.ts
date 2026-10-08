@@ -8,8 +8,9 @@
  * " [PLACEHOLDER]" so it is obvious on the page. Run `npm run check-placeholders`
  * to list everything that still needs real information.
  *
- * Adding another language later: copy this file to `content/ru.ts` or
- * `content/zh.ts`, translate the strings, and keep the same shape.
+ * Other languages live next to this file (`ru.ts`, ...). Each one has the same
+ * shape as this file, so TypeScript tells you if a string is missing. To add a
+ * language, see "Adding a language" in the README.
  */
 
 export const phone = {
@@ -685,6 +686,22 @@ export const en = {
       name: "Please enter your name.",
       phone: "Please enter a phone number we can call.",
     },
+  },
+
+  language: {
+    label: "Language",
+  },
+
+  // Words read aloud by screen readers but not shown on the page.
+  a11y: {
+    stepLabel: "Step {number}: ",
+  },
+
+  notFound: {
+    metaTitle: "Page not found",
+    heading: "We could not find that page",
+    text: "The page may have moved. Try the menu at the top of the screen, or call us and we will help.",
+    homeLabel: "Go to the home page",
   },
 
   photoPlaceholderNote: "Placeholder image. Replace with a real photo before launch.",

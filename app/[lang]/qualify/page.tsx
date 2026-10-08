@@ -1,12 +1,9 @@
 import QualifyQuiz from "@/components/QualifyQuiz";
-import { en } from "@/content/en";
-import { pageMetadata } from "@/lib/seo";
+import { pageMetadataFor } from "@/lib/seo";
 
-export const metadata = pageMetadata({
-  title: en.qualify.meta.title,
-  description: en.qualify.meta.description,
-  path: "/qualify",
-});
+export function generateMetadata({ params }: PageProps<"/[lang]/qualify">) {
+  return pageMetadataFor(params, "/qualify", (t) => t.qualify.meta);
+}
 
 export default function QualifyPage() {
   return (
