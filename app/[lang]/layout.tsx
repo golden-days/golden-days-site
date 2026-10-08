@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { Source_Sans_3, Source_Serif_4 } from "next/font/google";
+import { Noto_Sans_TC, Source_Sans_3, Source_Serif_4 } from "next/font/google";
 import "../globals.css";
 import LanguageBar from "@/components/LanguageBar";
 import LocalBusinessJsonLd from "@/components/LocalBusinessJsonLd";
@@ -22,6 +22,15 @@ const sourceSans = Source_Sans_3({
 const sourceSerif = Source_Serif_4({
   variable: "--font-source-serif",
   subsets: ["latin", "latin-ext", "cyrillic", "cyrillic-ext"],
+  display: "swap",
+});
+
+// Chinese characters. The browser only downloads the pieces of this font that a page
+// actually uses, so English, Russian and Ukrainian pages do not load it.
+const notoSansTC = Noto_Sans_TC({
+  variable: "--font-cjk",
+  weight: ["400", "600", "700"],
+  preload: false,
   display: "swap",
 });
 
@@ -64,7 +73,7 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[la
   return (
     <html
       lang={localeInfo[lang].htmlLang}
-      className={`${sourceSans.variable} ${sourceSerif.variable} h-full antialiased`}
+      className={`${sourceSans.variable} ${sourceSerif.variable} ${notoSansTC.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-white">
         <LocaleProvider lang={lang} t={clientText}>

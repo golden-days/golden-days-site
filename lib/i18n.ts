@@ -4,7 +4,7 @@
  * English is the default and has no prefix in the address (`/about`). Every other
  * language lives under its own prefix (`/ru/about`).
  */
-export const locales = ["en", "ru", "uk"] as const;
+export const locales = ["en", "ru", "uk", "zh"] as const;
 export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = "en";
 
@@ -13,6 +13,7 @@ export const localeInfo: Record<Locale, { label: string; htmlLang: string; ogLoc
   en: { label: "English", htmlLang: "en", ogLocale: "en_US" },
   ru: { label: "Русский", htmlLang: "ru", ogLocale: "ru_RU" },
   uk: { label: "Українська", htmlLang: "uk", ogLocale: "uk_UA" },
+  zh: { label: "中文", htmlLang: "zh-Hant", ogLocale: "zh_TW" },
 };
 
 export function hasLocale(value: string): value is Locale {
