@@ -101,7 +101,7 @@ export const en = {
       heading: "Who we serve",
       paragraphs: [
         "Golden Days welcomes adults who live at home and need support, company, or supervision during the day.",
-        "Many of the people who come to us live with a family member who works, or who simply needs a break during the week. [PLACEHOLDER]",
+        "Many of the people who come to us live with a family member who works, or who simply needs a break during the week.",
         "If you are not sure whether Golden Days is the right fit for your loved one, call us. We are happy to talk it through, with no pressure.",
       ],
     },
