@@ -87,7 +87,7 @@ export const en = {
     hero: {
       heading: "Daytime care for adults in West Sacramento",
       intro:
-        "Golden Days is a day program for adults who need some help during the day, and for the families who care for them. [PLACEHOLDER]",
+        "Golden Days is a day program for adults, and for the families who care for them.",
       photo: {
         kind: "building" as const,
         label: "Photo placeholder - building exterior",
