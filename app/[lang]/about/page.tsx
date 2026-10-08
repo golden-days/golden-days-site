@@ -18,16 +18,11 @@ export default async function AboutPage() {
       <PageHero heading={about.heading} lead={about.lead} />
 
       <Section>
-        <div className="grid gap-8 md:grid-cols-2 md:items-start">
-          <div>
-            <h2 className="text-2xl sm:text-3xl">{about.story.heading}</h2>
-            <div className="mt-4 space-y-4">
-              {about.story.paragraphs.map((paragraph) => (
-                <p key={paragraph}>{paragraph}</p>
-              ))}
-            </div>
-          </div>
-          <PhotoPlaceholder photo={about.photo} />
+        <h2 className="text-2xl sm:text-3xl">{about.story.heading}</h2>
+        <div className="mt-4 max-w-3xl space-y-4">
+          {about.story.paragraphs.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
         </div>
       </Section>
 
