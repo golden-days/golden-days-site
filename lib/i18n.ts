@@ -4,7 +4,10 @@
  * English is the default and has no prefix in the address (`/about`). Every other
  * language lives under its own prefix (`/ru/about`).
  */
-export const locales = ["en", "ru", "uk", "zh", "es", "vi", "pa", "tl", "hmn"] as const;
+// Punjabi (`content/pa.ts`) and Hmong (`content/hmn.ts`) are written but switched off
+// until a native speaker has checked them. To turn one on, add its code here and its
+// `localeInfo` entry, then follow steps 3 and 4 of "Languages" in the README.
+export const locales = ["en", "ru", "uk", "zh", "es", "vi", "tl"] as const;
 export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = "en";
 
@@ -16,9 +19,7 @@ export const localeInfo: Record<Locale, { label: string; htmlLang: string; ogLoc
   zh: { label: "中文", htmlLang: "zh-Hant", ogLocale: "zh_TW" },
   es: { label: "Español", htmlLang: "es", ogLocale: "es_US" },
   vi: { label: "Tiếng Việt", htmlLang: "vi", ogLocale: "vi_VN" },
-  pa: { label: "ਪੰਜਾਬੀ", htmlLang: "pa", ogLocale: "pa_IN" },
   tl: { label: "Tagalog", htmlLang: "tl", ogLocale: "tl_PH" },
-  hmn: { label: "Hmoob", htmlLang: "hmn", ogLocale: "hmn_HM" },
 };
 
 export function hasLocale(value: string): value is Locale {

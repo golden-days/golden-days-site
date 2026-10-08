@@ -71,6 +71,8 @@ Translations are machine-assisted. Have a fluent reader check each one before la
 and treat them as drafts until then. Placeholders marked in `en.ts` are not repeated in
 the translations, so check `npm run check-placeholders` and the translations together.
 
+Punjabi and Hmong are written (`content/pa.ts`, `content/hmn.ts`) but switched off until a native speaker has checked them; see the comment in `lib/i18n.ts` to turn them on.
+
 To add a language (for example `xx`):
 
 1. Copy `content/uk.ts` to `content/xx.ts`, rename the export, and translate the strings.
