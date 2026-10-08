@@ -213,8 +213,8 @@ export const en = {
       heading: "Our story",
       paragraphs: [
         "Golden Days opened in West Sacramento in 2003 as a place where adults could spend the day with care close at hand. The same owners have run the center since 2007.",
-        "Over those years we have come to know many local families. Some people come to us a few days a week for years, and their families become part of the center too. [PLACEHOLDER]",
-        "We are a small center on purpose. Staff learn names, routines, and what makes each person comfortable. [PLACEHOLDER]",
+        "Over those years we have come to know many local families. Some people come to us a few days a week for years, and their families become part of the center too.",
+        "We are a small center on purpose. Staff learn names, routines, and what makes each person comfortable.",
       ],
     },
     values: {
@@ -222,34 +222,34 @@ export const en = {
       items: [
         {
           title: "Respect first",
-          text: "Everyone who comes here is an adult, and we treat them that way. [PLACEHOLDER]",
+          text: "Everyone who comes here is an adult, and we treat them that way.",
         },
         {
           title: "Plain answers",
-          text: "We explain costs, paperwork, and schedules in plain language. [PLACEHOLDER]",
+          text: "We explain costs, paperwork, and schedules in plain language.",
         },
         {
           title: "Steady routines",
-          text: "Familiar faces and a predictable day help people settle in. [PLACEHOLDER]",
+          text: "Familiar faces and a predictable day help people settle in.",
         },
         {
           title: "Family in the loop",
-          text: "We call when something changes, and we answer the phone. [PLACEHOLDER]",
+          text: "We call when something changes, and we answer the phone.",
         },
       ],
     },
     team: {
       heading: "Our team",
       paragraphs: [
-        "Our staff includes nurses, therapy staff, a social worker, activity leaders, drivers, and kitchen staff. [PLACEHOLDER]",
-        "Many of them have worked at Golden Days for years and speak more than one language. [PLACEHOLDER]",
+        "Our staff includes nurses, therapy staff, a social worker, activity leaders, drivers, and kitchen staff.",
+        "Many of them have worked at Golden Days for years and speak more than one language.",
       ],
     },
     center: {
       heading: "The center",
       paragraphs: [
-        "The building has an activity room, a dining room, quiet rooms for rest, a therapy area, and accessible restrooms. [PLACEHOLDER]",
-        "Parking is available in front, and the entrance is at ground level with no stairs. [PLACEHOLDER]",
+        "The building has an activity room, a dining room, quiet rooms for rest, a therapy area, and accessible restrooms.",
+        "Parking is available in front, and the entrance is at ground level with no stairs.",
       ],
       photo: {
         kind: "interior" as const,
@@ -262,7 +262,7 @@ export const en = {
     },
     cta: {
       heading: "Come see it for yourself",
-      text: "A visit takes about half an hour. Call us and we will find a time. [PLACEHOLDER]",
+      text: "A visit takes about half an hour. Call us and we will find a time.",
     },
   },
 
