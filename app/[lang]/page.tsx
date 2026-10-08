@@ -36,8 +36,8 @@ export default async function HomePage() {
               <span>{t.contact.hours}</span>
             </p>
           </div>
-          <div className="relative">
-            <Sunburst className="pointer-events-none absolute bottom-full left-1/2 h-auto w-60 -translate-x-1/2 translate-y-3 opacity-60 sm:w-72" />
+          <div className="relative mt-10 md:mt-0">
+            <Sunburst className="pointer-events-none absolute bottom-full left-1/2 h-auto w-40 -translate-x-1/2 translate-y-2 opacity-60 md:w-72 md:translate-y-3" />
             <div className="relative">
               <PhotoPlaceholder photo={home.hero.photo} wide />
             </div>
