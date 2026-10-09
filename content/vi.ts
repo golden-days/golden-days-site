@@ -257,6 +257,14 @@ export const vi: Content = {
         height: 900,
       },
     },
+    licensing: {
+      heading: "Được cấp phép tại California",
+      text: "Golden Days được Sở Y tế Công cộng California (California Department of Public Health) cấp phép hoạt động như một trung tâm chăm sóc sức khỏe ban ngày cho người lớn (Adult Day Health Center) và có giấy phép kinh doanh của thành phố West Sacramento.",
+      items: [
+        "Giấy phép tiểu bang: Sở Y tế Công cộng California, Adult Day Health Center, số giấy phép 070000633",
+        "Giấy phép kinh doanh thành phố West Sacramento, số 12046",
+      ],
+    },
     cta: {
       heading: "Hãy đến tận mắt xem",
       text: "Một buổi thăm kéo dài khoảng nửa giờ. Hãy gọi cho chúng tôi và chúng tôi sẽ tìm một thời gian phù hợp.",
