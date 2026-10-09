@@ -51,11 +51,11 @@ export default async function ServicesPage() {
 
         <h3 className="mt-12 text-xl sm:text-2xl">{services.rotatingHeading}</h3>
         <p className="mt-3 max-w-3xl">{services.rotatingIntro}</p>
-        <ul className="mt-6 grid list-none gap-4 sm:grid-cols-3">
+        <ul className="mt-6 grid list-none gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {services.rotatingActivities.map((activity) => (
             <li
               key={activity}
-              className="rounded-xl border-2 border-gold-deep bg-white px-5 py-4 text-center font-serif text-lg font-bold text-navy"
+              className="flex min-h-[5.5rem] items-center justify-center rounded-xl border-2 border-gold-deep bg-white px-5 py-4 text-center font-serif text-lg font-bold text-navy"
             >
               {activity}
             </li>

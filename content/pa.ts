@@ -362,11 +362,13 @@ export const pa: Content = {
     ],
     // TODO: translate the English heading and intro below before turning this language on.
     rotatingHeading: "Rotating activities",
-    rotatingIntro: "Activities rotate through the week, and some, like bingo, happen more than once a week. Call us for the current schedule.",
+    rotatingIntro: "Activities rotate through the week. Bingo happens several times a week, and we go on outings to local stores, markets, and parks. Call us for this month's calendar.",
     rotatingActivities: [
-      "ਯਾਦਦਾਸ਼ਤ ਸੁਧਾਰ ਸਮੂਹ",
       "ਅੰਗਰੇਜ਼ੀ ਦੀ ਕਲਾਸ",
       "ਬਿੰਗੋ",
+      // TODO: translate the two English items below before turning this language on.
+      "Outings to stores, markets, and parks",
+      "Birthday celebrations",
     ],
     cta: {
       heading: "ਪੱਕਾ ਨਹੀਂ ਪਤਾ ਕਿ ਤੁਹਾਡੇ ਪਿਆਰੇ ਨੂੰ ਕਿਹੜੇ ਹਿੱਸਿਆਂ ਦੀ ਲੋੜ ਹੈ?",
