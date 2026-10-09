@@ -358,7 +358,7 @@ export const vi: Content = {
       { time: "1:30 chiều", text: "Xem phim / Thảo luận" },
     ],
     rotatingHeading: "Hoạt động luân phiên",
-    rotatingIntro: "Các hoạt động được luân phiên trong tuần. Bingo diễn ra nhiều lần mỗi tuần, và chúng tôi có các chuyến đi đến cửa hàng, chợ và công viên địa phương. Hãy gọi cho chúng tôi để biết lịch của tháng này.",
+    rotatingIntro: "Các hoạt động được luân phiên trong tuần. Bingo diễn ra nhiều lần mỗi tuần, và chúng tôi có các chuyến đi đến cửa hàng, chợ và công viên địa phương. Hãy gọi cho chúng tôi để biết lịch của tháng này, có bằng tiếng Anh và tiếng Nga.",
     rotatingActivities: [
       "Lớp tiếng Anh",
       "Bingo",

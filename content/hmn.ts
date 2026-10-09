@@ -362,7 +362,7 @@ export const hmn: Content = {
     ],
     // TODO: translate the English heading and intro below before turning this language on.
     rotatingHeading: "Rotating activities",
-    rotatingIntro: "Activities rotate through the week. Bingo happens several times a week, and we go on outings to local stores, markets, and parks. Call us for this month's calendar.",
+    rotatingIntro: "Activities rotate through the week. Bingo happens several times a week, and we go on outings to local stores, markets, and parks. Call us for this month's calendar, which is available in English and Russian.",
     rotatingActivities: [
       "Chav Kawm Lus Askiv",
       "Bingo",

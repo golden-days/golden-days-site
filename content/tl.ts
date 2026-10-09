@@ -358,7 +358,7 @@ export const tl: Content = {
       { time: "1:30 n.h.", text: "Pelikula / Talakayan" },
     ],
     rotatingHeading: "Mga umiikot na aktibidad",
-    rotatingIntro: "Umiikot ang mga aktibidad sa buong linggo. Ilang beses sa isang linggo ang bingo, at namamasyal kami sa mga lokal na tindahan, palengke, at parke. Tawagan kami para sa kalendaryo ngayong buwan.",
+    rotatingIntro: "Umiikot ang mga aktibidad sa buong linggo. Ilang beses sa isang linggo ang bingo, at namamasyal kami sa mga lokal na tindahan, palengke, at parke. Tawagan kami para sa kalendaryo ngayong buwan, na available sa Ingles at Ruso.",
     rotatingActivities: [
       "Klase sa Ingles",
       "Bingo",

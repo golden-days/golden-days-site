@@ -360,7 +360,7 @@ export const zh: Content = {
       { time: "下午 1:30", text: "電影／討論" },
     ],
     rotatingHeading: "輪流舉行的活動",
-    rotatingIntro: "活動在一週內輪流舉行。賓果每週進行好幾次，我們也會外出到當地商店、市場和公園。請打電話給我們，了解本月的活動日曆。",
+    rotatingIntro: "活動在一週內輪流舉行。賓果每週進行好幾次，我們也會外出到當地商店、市場和公園。請打電話給我們索取本月的活動日曆，有英文和俄文版本。",
     rotatingActivities: [
       "英語課",
       "賓果",
