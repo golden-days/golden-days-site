@@ -5,6 +5,7 @@ import "../globals.css";
 import LanguageBar from "@/components/LanguageBar";
 import LocalBusinessJsonLd from "@/components/LocalBusinessJsonLd";
 import { LocaleProvider } from "@/components/LocaleProvider";
+import { Analytics } from "@vercel/analytics/next";
 import MobileCallBar from "@/components/MobileCallBar";
 import SiteFooter from "@/components/SiteFooter";
 import SiteHeader from "@/components/SiteHeader";
@@ -107,6 +108,8 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[la
           <MobileCallBar />
           <LocalBusinessJsonLd />
         </LocaleProvider>
+        {/* Page views only (no cookies). Switch it on in the Vercel project: Analytics tab. */}
+        <Analytics />
       </body>
     </html>
   );
