@@ -186,6 +186,7 @@ export const zh: Content = {
     },
     trust: {
       text: "自 2003 年起，我們一直照顧 West Sacramento 的家庭。自 2007 年起由同一批業主經營。",
+      licenseText: "持有加州公共衛生部核發的執照。執照號碼 070000633。",
     },
     contact: {
       heading: "與我們聯絡",

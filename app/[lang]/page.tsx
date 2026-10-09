@@ -154,6 +154,7 @@ export default async function HomePage() {
       <div className="bg-gold">
         <div className="mx-auto w-full max-w-5xl px-4 py-8 text-center sm:px-6">
           <p className="font-serif text-xl font-bold text-navy sm:text-2xl">{home.trust.text}</p>
+          <p className="mt-2 text-lg font-semibold text-navy">{home.trust.licenseText}</p>
         </div>
       </div>
 

@@ -184,6 +184,7 @@ export const es: Content = {
     },
     trust: {
       text: "Al servicio de las familias de West Sacramento desde 2003. Los mismos dueños desde 2007.",
+      licenseText: "Con licencia del Departamento de Salud Pública de California. Número de licencia 070000633.",
     },
     contact: {
       heading: "Hable con nosotros",
