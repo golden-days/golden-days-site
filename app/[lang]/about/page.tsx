@@ -61,6 +61,16 @@ export default async function AboutPage() {
         </div>
       </Section>
 
+      <Section>
+        <h2 className="text-2xl sm:text-3xl">{about.licensing.heading}</h2>
+        <p className="mt-4 max-w-3xl">{about.licensing.text}</p>
+        <ul className="mt-4 max-w-3xl list-disc space-y-2 pl-6">
+          {about.licensing.items.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+      </Section>
+
       <div className="bg-gold">
         <div className="mx-auto w-full max-w-5xl px-4 py-8 text-center sm:px-6">
           <p className="font-serif text-xl font-bold text-navy sm:text-2xl">{t.home.trust.text}</p>

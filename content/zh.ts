@@ -259,6 +259,14 @@ export const zh: Content = {
         height: 900,
       },
     },
+    licensing: {
+      heading: "加州執照",
+      text: "Golden Days 持有加州公共衛生部（California Department of Public Health）核發的成人日間健康中心（Adult Day Health Center）執照，以及 West Sacramento 市的營業執照。",
+      items: [
+        "州執照：加州公共衛生部，成人日間健康中心，執照號碼 070000633",
+        "West Sacramento 市營業執照，號碼 12046",
+      ],
+    },
     cta: {
       heading: "歡迎來親自看看",
       text: "參觀大約需要半小時。請打電話給我們，我們會安排時間。",

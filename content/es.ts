@@ -257,6 +257,14 @@ export const es: Content = {
         height: 900,
       },
     },
+    licensing: {
+      heading: "Con licencia en California",
+      text: "Golden Days cuenta con licencia del Departamento de Salud Pública de California como centro de salud de día para adultos (Adult Day Health Center) y tiene una licencia comercial de la ciudad de West Sacramento.",
+      items: [
+        "Licencia estatal: Departamento de Salud Pública de California, Adult Day Health Center, número de licencia 070000633",
+        "Licencia comercial de la ciudad de West Sacramento, número 12046",
+      ],
+    },
     cta: {
       heading: "Venga a conocernos",
       text: "Una visita dura cerca de media hora. Llámenos y buscaremos un horario.",

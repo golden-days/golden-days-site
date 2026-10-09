@@ -257,6 +257,14 @@ export const tl: Content = {
         height: 900,
       },
     },
+    licensing: {
+      heading: "May lisensya sa California",
+      text: "May lisensya ang Golden Days mula sa California Department of Public Health bilang Adult Day Health Center, at may business license mula sa City of West Sacramento.",
+      items: [
+        "Lisensya ng estado: California Department of Public Health, Adult Day Health Center, numero ng lisensya 070000633",
+        "Business license ng City of West Sacramento, numero 12046",
+      ],
+    },
     cta: {
       heading: "Pumunta at tingnan ninyo mismo",
       text: "Mga kalahating oras lang ang pagbisita. Tawagan kami at hahanap tayo ng oras.",

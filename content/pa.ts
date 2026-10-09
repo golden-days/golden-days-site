@@ -258,6 +258,15 @@ export const pa: Content = {
         height: 900,
       },
     },
+    // TODO: translate the English text below before turning this language on.
+    licensing: {
+      heading: "Licensed in California",
+      text: "Golden Days is licensed by the California Department of Public Health as an Adult Day Health Center, and holds a City of West Sacramento business license.",
+      items: [
+        "State license: California Department of Public Health, Adult Day Health Center, license number 070000633",
+        "City of West Sacramento business license, number 12046",
+      ],
+    },
     cta: {
       heading: "ਆ ਕੇ ਆਪ ਦੇਖੋ",
       text: "ਦੌਰੇ ਵਿੱਚ ਲਗਭਗ ਅੱਧਾ ਘੰਟਾ ਲੱਗਦਾ ਹੈ। ਸਾਨੂੰ ਫ਼ੋਨ ਕਰੋ ਅਤੇ ਅਸੀਂ ਸਮਾਂ ਲੱਭ ਲਵਾਂਗੇ।",
