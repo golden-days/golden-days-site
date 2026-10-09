@@ -359,11 +359,12 @@ export const zh: Content = {
       { time: "下午 1:00", text: "午餐" },
       { time: "下午 1:30", text: "電影／討論" },
     ],
-    weeklyHeading: "每週活動",
-    weeklyActivities: [
-      { day: "星期二", text: "記憶小組" },
-      { day: "星期三", text: "英語課" },
-      { day: "星期五", text: "賓果" },
+    rotatingHeading: "輪流舉行的活動",
+    rotatingIntro: "活動在一週內輪流舉行，有些活動（例如賓果）每週不只一次。請打電話給我們，了解目前的時間表。",
+    rotatingActivities: [
+      "記憶小組",
+      "英語課",
+      "賓果",
     ],
     cta: {
       heading: "不確定您的家人需要哪些服務？",

@@ -360,11 +360,13 @@ export const hmn: Content = {
       { time: "1:00 PM", text: "Noj Su" },
       { time: "1:30 PM", text: "Saib Yeeb Yaj Kiab / Sib Tham" },
     ],
-    weeklyHeading: "Kev ua si txhua lub limtiam",
-    weeklyActivities: [
-      { day: "Hnub Tuam Tsav", text: "Pab Pawg Txhim Kho Lub Cim Xeeb" },
-      { day: "Hnub Peb", text: "Chav Kawm Lus Askiv" },
-      { day: "Hnub Tsib", text: "Bingo" },
+    // TODO: translate the English heading and intro below before turning this language on.
+    rotatingHeading: "Rotating activities",
+    rotatingIntro: "Activities rotate through the week, and some, like bingo, happen more than once a week. Call us for the current schedule.",
+    rotatingActivities: [
+      "Pab Pawg Txhim Kho Lub Cim Xeeb",
+      "Chav Kawm Lus Askiv",
+      "Bingo",
     ],
     cta: {
       heading: "Tsis paub tias koj tus neeg hlub xav tau yam twg?",

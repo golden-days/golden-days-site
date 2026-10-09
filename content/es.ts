@@ -357,11 +357,12 @@ export const es: Content = {
       { time: "1:00 p. m.", text: "Almuerzo" },
       { time: "1:30 p. m.", text: "Película / Conversación" },
     ],
-    weeklyHeading: "Actividades semanales",
-    weeklyActivities: [
-      { day: "Martes", text: "Grupo para mejorar la memoria" },
-      { day: "Miércoles", text: "Clase de inglés" },
-      { day: "Viernes", text: "Bingo" },
+    rotatingHeading: "Actividades rotativas",
+    rotatingIntro: "Las actividades rotan durante la semana y algunas, como el bingo, se realizan más de una vez por semana. Llámenos para conocer el horario actual.",
+    rotatingActivities: [
+      "Grupo para mejorar la memoria",
+      "Clase de inglés",
+      "Bingo",
     ],
     cta: {
       heading: "¿No sabe qué necesita su ser querido?",

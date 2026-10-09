@@ -360,11 +360,13 @@ export const pa: Content = {
       { time: "ਦੁਪਹਿਰ 1:00", text: "ਦੁਪਹਿਰ ਦਾ ਖਾਣਾ" },
       { time: "ਦੁਪਹਿਰ 1:30", text: "ਫ਼ਿਲਮ / ਚਰਚਾ" },
     ],
-    weeklyHeading: "ਹਫ਼ਤਾਵਾਰੀ ਗਤੀਵਿਧੀਆਂ",
-    weeklyActivities: [
-      { day: "ਮੰਗਲਵਾਰ", text: "ਯਾਦਦਾਸ਼ਤ ਸੁਧਾਰ ਸਮੂਹ" },
-      { day: "ਬੁੱਧਵਾਰ", text: "ਅੰਗਰੇਜ਼ੀ ਦੀ ਕਲਾਸ" },
-      { day: "ਸ਼ੁੱਕਰਵਾਰ", text: "ਬਿੰਗੋ" },
+    // TODO: translate the English heading and intro below before turning this language on.
+    rotatingHeading: "Rotating activities",
+    rotatingIntro: "Activities rotate through the week, and some, like bingo, happen more than once a week. Call us for the current schedule.",
+    rotatingActivities: [
+      "ਯਾਦਦਾਸ਼ਤ ਸੁਧਾਰ ਸਮੂਹ",
+      "ਅੰਗਰੇਜ਼ੀ ਦੀ ਕਲਾਸ",
+      "ਬਿੰਗੋ",
     ],
     cta: {
       heading: "ਪੱਕਾ ਨਹੀਂ ਪਤਾ ਕਿ ਤੁਹਾਡੇ ਪਿਆਰੇ ਨੂੰ ਕਿਹੜੇ ਹਿੱਸਿਆਂ ਦੀ ਲੋੜ ਹੈ?",

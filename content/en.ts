@@ -366,11 +366,12 @@ export const en = {
       { time: "1:00 PM", text: "Lunch" },
       { time: "1:30 PM", text: "Movie / Discussion" },
     ],
-    weeklyHeading: "Weekly activities",
-    weeklyActivities: [
-      { day: "Tuesday", text: "Memory Group" },
-      { day: "Wednesday", text: "English Lesson" },
-      { day: "Friday", text: "Bingo" },
+    rotatingHeading: "Rotating activities",
+    rotatingIntro: "Activities rotate through the week, and some, like bingo, happen more than once a week. Call us for the current schedule.",
+    rotatingActivities: [
+      "Memory Group",
+      "English Lesson",
+      "Bingo",
     ],
     cta: {
       heading: "Not sure which parts your loved one needs?",
