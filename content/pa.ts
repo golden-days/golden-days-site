@@ -184,7 +184,7 @@ export const pa: Content = {
       text: "ਅਸੀਂ ਇੰਸ਼ੋਰੈਂਸ ਸਵੀਕਾਰ ਕਰਦੇ ਹਾਂ, ਅਤੇ ਇੰਸ਼ੋਰੈਂਸ ਪਲਾਨ ਦੇ ਨਾਲ Medi-Cal ਵੀ। ਆਪਣੀ ਜੇਬ ਤੋਂ ਭੁਗਤਾਨ ਦਾ ਵਿਕਲਪ ਵੀ ਹੈ। ਸਾਨੂੰ ਫ਼ੋਨ ਕਰੋ ਅਤੇ ਅਸੀਂ ਸਮਝਾਵਾਂਗੇ ਕਿ ਤੁਹਾਡੇ ਪਰਿਵਾਰ ਉੱਤੇ ਕੀ ਲਾਗੂ ਹੁੰਦਾ ਹੈ।",
     },
     trust: {
-      text: "2003 ਤੋਂ West Sacramento ਦੇ ਪਰਿਵਾਰਾਂ ਦੀ ਸੇਵਾ ਵਿੱਚ। 2007 ਤੋਂ ਉਹੀ ਮਾਲਕ।",
+      text: "2003 ਤੋਂ West Sacramento ਦੇ ਪਰਿਵਾਰਾਂ ਦੀ ਸੇਵਾ ਵਿੱਚ। 2007 ਤੋਂ ਪਰਿਵਾਰਕ ਮਾਲਕੀ।",
       // TODO: translate the English line below before turning this language on.
       licenseText: "Licensed by the California Department of Public Health. License number 070000633.",
     },

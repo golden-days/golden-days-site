@@ -192,7 +192,7 @@ export const en = {
       text: "We accept insurance, and Medi-Cal together with an insurance plan. Private pay is also an option. Call us and we will explain what applies to your family.",
     },
     trust: {
-      text: "Serving West Sacramento families since 2003. Same owners since 2007.",
+      text: "Serving West Sacramento families since 2003. Family owned since 2007.",
       licenseText: "Licensed by the California Department of Public Health. License number 070000633.",
     },
     contact: {

@@ -183,7 +183,7 @@ export const tl: Content = {
       text: "Tumatanggap kami ng insurance, at ng Medi-Cal kasama ng isang insurance plan. Maaari rin ang private pay. Tawagan kami at ipapaliwanag namin kung ano ang naaangkop sa inyong pamilya.",
     },
     trust: {
-      text: "Naglilingkod sa mga pamilya sa West Sacramento mula pa noong 2003. Parehong may-ari mula noong 2007.",
+      text: "Naglilingkod sa mga pamilya sa West Sacramento mula pa noong 2003. Negosyong pag-aari ng pamilya mula noong 2007.",
       licenseText: "May lisensya mula sa California Department of Public Health. Numero ng lisensya 070000633.",
     },
     contact: {

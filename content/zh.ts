@@ -185,7 +185,7 @@ export const zh: Content = {
       text: "我們接受保險，也接受 Medi-Cal 加上保險。也可以自費。請打電話給我們，我們會說明適合您家庭的方式。",
     },
     trust: {
-      text: "自 2003 年起，我們一直照顧 West Sacramento 的家庭。自 2007 年起由同一批業主經營。",
+      text: "自 2003 年起，我們一直照顧 West Sacramento 的家庭。自 2007 年起由家族經營。",
       licenseText: "持有加州公共衛生部核發的執照。執照號碼 070000633。",
     },
     contact: {

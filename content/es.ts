@@ -183,7 +183,7 @@ export const es: Content = {
       text: "Aceptamos seguro médico, y Medi-Cal junto con un plan de seguro. El pago particular también es una opción. Llámenos y le explicaremos qué se aplica a su familia.",
     },
     trust: {
-      text: "Al servicio de las familias de West Sacramento desde 2003. Los mismos dueños desde 2007.",
+      text: "Al servicio de las familias de West Sacramento desde 2003. Negocio familiar desde 2007.",
       licenseText: "Con licencia del Departamento de Salud Pública de California. Número de licencia 070000633.",
     },
     contact: {
