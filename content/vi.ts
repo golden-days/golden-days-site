@@ -184,6 +184,7 @@ export const vi: Content = {
     },
     trust: {
       text: "Phục vụ các gia đình West Sacramento từ năm 2003. Các chủ sở hữu vẫn không thay đổi từ năm 2007.",
+      licenseText: "Được Sở Y tế Công cộng California cấp phép. Số giấy phép 070000633.",
     },
     contact: {
       heading: "Trò chuyện với chúng tôi",

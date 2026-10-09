@@ -185,6 +185,8 @@ export const hmn: Content = {
     },
     trust: {
       text: "Pab cov tsev neeg West Sacramento txij li xyoo 2003. Cov tswv tib yam txij li xyoo 2007.",
+      // TODO: translate the English line below before turning this language on.
+      licenseText: "Licensed by the California Department of Public Health. License number 070000633.",
     },
     contact: {
       heading: "Tham nrog peb",

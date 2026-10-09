@@ -193,6 +193,7 @@ export const en = {
     },
     trust: {
       text: "Serving West Sacramento families since 2003. Same owners since 2007.",
+      licenseText: "Licensed by the California Department of Public Health. License number 070000633.",
     },
     contact: {
       heading: "Talk with us",
