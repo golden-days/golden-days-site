@@ -183,7 +183,7 @@ export const vi: Content = {
       text: "Chúng tôi nhận bảo hiểm, và nhận Medi-Cal khi dùng cùng một chương trình bảo hiểm. Quý vị cũng có thể tự thanh toán. Hãy gọi cho chúng tôi và chúng tôi sẽ giải thích điều gì áp dụng cho gia đình quý vị.",
     },
     trust: {
-      text: "Phục vụ các gia đình West Sacramento từ năm 2003. Các chủ sở hữu vẫn không thay đổi từ năm 2007.",
+      text: "Phục vụ các gia đình West Sacramento từ năm 2003. Doanh nghiệp gia đình từ năm 2007.",
       licenseText: "Được Sở Y tế Công cộng California cấp phép. Số giấy phép 070000633.",
     },
     contact: {

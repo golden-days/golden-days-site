@@ -184,7 +184,7 @@ export const hmn: Content = {
       text: "Peb txais insurance, thiab Medi-Cal ua ke nrog insurance. Them nyiaj ncaj qha kuj tau. Hu rau peb thiab peb yuav piav seb dab tsi siv tau rau koj tsev neeg.",
     },
     trust: {
-      text: "Pab cov tsev neeg West Sacramento txij li xyoo 2003. Cov tswv tib yam txij li xyoo 2007.",
+      text: "Pab cov tsev neeg West Sacramento txij li xyoo 2003. Tsev neeg li txij li xyoo 2007.",
       // TODO: translate the English line below before turning this language on.
       licenseText: "Licensed by the California Department of Public Health. License number 070000633.",
     },
