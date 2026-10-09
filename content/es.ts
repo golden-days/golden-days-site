@@ -358,11 +358,12 @@ export const es: Content = {
       { time: "1:30 p. m.", text: "Película / Conversación" },
     ],
     rotatingHeading: "Actividades rotativas",
-    rotatingIntro: "Las actividades rotan durante la semana y algunas, como el bingo, se realizan más de una vez por semana. Llámenos para conocer el horario actual.",
+    rotatingIntro: "Las actividades rotan durante la semana. El bingo se juega varias veces por semana y hacemos salidas a tiendas, mercados y parques de la zona. Llámenos para conocer el calendario de este mes.",
     rotatingActivities: [
-      "Grupo para mejorar la memoria",
       "Clase de inglés",
       "Bingo",
+      "Salidas a tiendas, mercados y parques",
+      "Celebraciones de cumpleaños",
     ],
     cta: {
       heading: "¿No sabe qué necesita su ser querido?",
