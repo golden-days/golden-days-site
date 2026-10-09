@@ -297,8 +297,7 @@ export const en = {
         title: "Rehabilitation",
         summary: "Exercises and therapy that support strength, balance, and movement.",
         details: [
-          "Therapy staff work on walking, balance, and everyday movement.",
-          "Sessions are planned around what each person is working toward.",
+          "Therapy staff work on walking, balance, and everyday movement, with sessions planned around what each person is working toward.",
           "Group exercise happens most mornings for people who want to join.",
           "Licensed therapists provide massage therapy and paraffin wax treatments, included for participants at no extra charge.",
         ],

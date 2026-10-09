@@ -288,8 +288,7 @@ export const es: Content = {
         title: "Rehabilitación",
         summary: "Ejercicios y terapia que ayudan con la fuerza, el equilibrio y el movimiento.",
         details: [
-          "El personal de terapia trabaja con cada persona el caminar, el equilibrio y el movimiento de todos los días.",
-          "Las sesiones se planean según lo que cada persona quiere lograr.",
+          "El personal de terapia trabaja con cada persona el caminar, el equilibrio y el movimiento de todos los días, y planea las sesiones según lo que cada persona quiere lograr.",
           "El ejercicio en grupo se realiza casi todas las mañanas para quienes deseen participar.",
           "Terapeutas con licencia ofrecen terapia de masaje y tratamientos de parafina, incluidos para los participantes sin costo adicional.",
         ],
