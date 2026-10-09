@@ -290,6 +290,7 @@ export const tl: Content = {
           "Ang mga therapy staff ay nagtatrabaho sa paglalakad, balanse, at pang-araw-araw na paggalaw.",
           "Ang mga sesyon ay pinaplano ayon sa tinutungo ng bawat tao.",
           "May group exercise halos tuwing umaga para sa mga gustong sumali.",
+          "May lisensyadong therapist na nagbibigay ng massage therapy at paraffin wax treatment, na kasama para sa mga kalahok nang walang dagdag na bayad.",
         ],
       },
       {
