@@ -299,6 +299,7 @@ export const en = {
           "Therapy staff work on walking, balance, and everyday movement.",
           "Sessions are planned around what each person is working toward.",
           "Group exercise happens most mornings for people who want to join.",
+          "Licensed therapists provide massage therapy and paraffin wax treatments, included for participants at no extra charge.",
         ],
       },
       {

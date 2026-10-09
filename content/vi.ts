@@ -290,6 +290,7 @@ export const vi: Content = {
           "Nhân viên trị liệu giúp cải thiện việc đi lại, thăng bằng và vận động hằng ngày.",
           "Các buổi tập được lên kế hoạch dựa trên mục tiêu của từng người.",
           "Tập thể dục theo nhóm diễn ra hầu hết các buổi sáng cho những ai muốn tham gia.",
+          "Các chuyên viên trị liệu có giấy phép hành nghề cung cấp liệu pháp xoa bóp và liệu pháp sáp paraffin, được bao gồm cho người tham gia mà không tính thêm phí.",
         ],
       },
       {
