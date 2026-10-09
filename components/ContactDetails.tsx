@@ -39,6 +39,11 @@ export default async function ContactDetails() {
         </dd>
       </div>
 
+      <div className="sm:col-span-2">
+        <dt className="font-serif text-lg font-bold text-navy">{t.contact.languagesLabel}</dt>
+        <dd className="mt-1">{t.contact.languagesLine}</dd>
+      </div>
+
       <div>
         <dt className="font-serif text-lg font-bold text-navy">{t.contact.emailLabel}</dt>
         <dd className="mt-1">

@@ -66,8 +66,6 @@ export const vi: Content = {
     contactHeading: "Liên hệ với chúng tôi",
     hoursHeading: "Giờ làm việc",
     copyright: "Golden Days Adult Day Health Care. Bảo lưu mọi quyền.",
-    disclaimer:
-      "Trang web này là bản nháp. Mọi chi tiết được đánh dấu là nội dung tạm là văn bản mẫu và chưa được xác nhận.",
   },
 
   // ---------------------------------------------------------------- Home ---

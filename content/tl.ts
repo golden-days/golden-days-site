@@ -66,8 +66,6 @@ export const tl: Content = {
     contactHeading: "Makipag-ugnayan sa amin",
     hoursHeading: "Oras",
     copyright: "Golden Days Adult Day Health Care. Lahat ng karapatan ay nakalaan.",
-    disclaimer:
-      "Draft pa lamang ang website na ito. Ang anumang detalyeng may markang placeholder ay sample na teksto at hindi pa nakukumpirma.",
   },
 
   // ---------------------------------------------------------------- Home ---

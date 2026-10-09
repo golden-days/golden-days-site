@@ -66,8 +66,6 @@ export const es: Content = {
     contactHeading: "Contáctenos",
     hoursHeading: "Horario",
     copyright: "Golden Days Adult Day Health Care. Todos los derechos reservados.",
-    disclaimer:
-      "Este sitio web es un borrador. Cualquier dato marcado como provisional es un texto de ejemplo y aún no ha sido confirmado.",
   },
 
   // ---------------------------------------------------------------- Home ---

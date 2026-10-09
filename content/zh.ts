@@ -68,8 +68,6 @@ export const zh: Content = {
     contactHeading: "聯絡我們",
     hoursHeading: "開放時間",
     copyright: "Golden Days Adult Day Health Care。版權所有。",
-    disclaimer:
-      "本網站仍是草稿。任何標示為暫時的資料都只是尚未確認的範例文字。",
   },
 
   // ---------------------------------------------------------------- Home ---

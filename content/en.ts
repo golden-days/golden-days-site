@@ -43,6 +43,8 @@ export const en = {
     hoursNote: "Closed Saturday and Sunday. Also closed on Thanksgiving, Christmas Day, New Year's Day, and the Fourth of July.",
     mapTitle: "Map showing the Golden Days Adult Day Health Care location",
     directionsLinkLabel: "Get directions",
+    languagesLabel: "Languages",
+    languagesLine: "We speak English, Russian, and Ukrainian, and a Chinese interpreter is available.",
   },
 
   nav: {
@@ -75,8 +77,7 @@ export const en = {
     contactHeading: "Contact us",
     hoursHeading: "Hours",
     copyright: "Golden Days Adult Day Health Care. All rights reserved.",
-    disclaimer:
-      "This website is a draft. Any detail marked as a placeholder is sample text and has not been confirmed.",
+    privacyLabel: "Privacy",
   },
 
   // ---------------------------------------------------------------- Home ---
@@ -688,6 +689,61 @@ export const en = {
       name: "Please enter your name.",
       phone: "Please enter a phone number we can call.",
     },
+  },
+
+  // ------------------------------------------------------------- Privacy ---
+  // Plain-language description of what this website does with information.
+  // Update it if the site starts collecting anything new (new analytics, new forms).
+  privacy: {
+    meta: {
+      title: "Privacy",
+      description:
+        "What the Golden Days website does and does not do with your information.",
+    },
+    heading: "Privacy",
+    lead: "This page explains in plain words what this website does with your information.",
+    updated: "Last updated: October 2026",
+    sections: [
+      {
+        heading: "If you send us a message",
+        paragraphs: [
+          "The contact form asks for your name and phone number. Your email address and message are optional. We use what you send only to reply to you. We do not sell it.",
+          "Messages are delivered to our center's email by Formspree, a service that handles website forms.",
+          "Please do not put health or medical information in the form. Call us instead.",
+        ],
+      },
+      {
+        heading: "The “Do I qualify?” questions",
+        paragraphs: [
+          "Your answers stay in your browser while the page is open. We do not collect, send, or save them.",
+        ],
+      },
+      {
+        heading: "Visitor counts",
+        paragraphs: [
+          "We use Vercel Analytics to count visits. It records which pages were viewed, the country, the type of device and browser, and which website sent the visitor. It does not use cookies, does not show ads, and does not follow you to other websites.",
+        ],
+      },
+      {
+        heading: "Maps and cookies",
+        paragraphs: [
+          "The home page and the contact page show a Google Map. When the map loads, Google may receive your IP address and may set cookies, under Google's own privacy policy. This website does not set any other cookies of its own.",
+        ],
+      },
+      {
+        heading: "We do not sell your information",
+        paragraphs: [
+          "We do not sell your information or share it for advertising.",
+        ],
+      },
+      {
+        heading: "Questions or requests",
+        paragraphs: [
+          "To ask us to delete a message you sent, or if you have any question about this page, call us or send an email. Our phone number and email are at the bottom of every page.",
+          "If we change what this website does with information, we will update this page.",
+        ],
+      },
+    ],
   },
 
   language: {
