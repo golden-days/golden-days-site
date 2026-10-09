@@ -31,9 +31,11 @@ export const es: Content = {
     hours: "Horario del centro: de lunes a viernes, de 8:00 a. m. a 4:30 p. m.",
     programHours: "Horario del servicio: de lunes a viernes, de 8:00 a. m. a 2:00 p. m.",
     hoursNote:
-      "Cerrado los sábados y domingos. También cerramos el Día de Acción de Gracias, el día de Navidad, el Día de Año Nuevo y el 4 de Julio.",
+      "Cerrado los sábados y domingos. También cerramos el Día de Acción de Gracias, el día de Navidad, el Día de Año Nuevo y el 4 de julio.",
     mapTitle: "Mapa con la ubicación de Golden Days Adult Day Health Care",
     directionsLinkLabel: "Cómo llegar",
+    languagesLabel: "Idiomas",
+    languagesLine: "Hablamos inglés, ruso y ucraniano, y contamos con un intérprete de chino.",
   },
 
   nav: {
@@ -66,8 +68,7 @@ export const es: Content = {
     contactHeading: "Contáctenos",
     hoursHeading: "Horario",
     copyright: "Golden Days Adult Day Health Care. Todos los derechos reservados.",
-    disclaimer:
-      "Este sitio web es un borrador. Cualquier dato marcado como provisional es un texto de ejemplo y aún no ha sido confirmado.",
+    privacyLabel: "Privacidad",
   },
 
   // ---------------------------------------------------------------- Home ---
@@ -139,7 +140,7 @@ export const es: Content = {
     transportation: {
       heading: "Llegar hasta aquí también es parte del cuidado",
       paragraphs: [
-        "Golden Days ofrece viajes de ida y vuelta al centro para las personas que asisten al programa, incluso quienes usan silla de ruedas o andador.",
+        "Golden Days ofrece viajes de ida y vuelta al centro para las personas que asisten al programa, incluidas las que usan silla de ruedas o andador.",
         "Acordamos con su familia un margen de tiempo para la recogida, y le llamamos si es necesario cambiar el horario.",
       ],
       linkLabel: "Lea sobre el transporte",
@@ -287,7 +288,7 @@ export const es: Content = {
         title: "Rehabilitación",
         summary: "Ejercicios y terapia que ayudan con la fuerza, el equilibrio y el movimiento.",
         details: [
-          "El personal de terapia trabaja la caminata, el equilibrio y el movimiento de todos los días.",
+          "El personal de terapia trabaja con cada persona el caminar, el equilibrio y el movimiento de todos los días.",
           "Las sesiones se planean según lo que cada persona quiere lograr.",
           "El ejercicio en grupo se realiza casi todas las mañanas para quienes deseen participar.",
           "Terapeutas con licencia ofrecen terapia de masaje y tratamientos de parafina, incluidos para los participantes sin costo adicional.",
@@ -679,6 +680,59 @@ export const es: Content = {
       name: "Por favor, escriba su nombre.",
       phone: "Por favor, escriba un número de teléfono al que podamos llamar.",
     },
+  },
+
+  // ------------------------------------------------------------- Privacy ---
+  privacy: {
+    meta: {
+      title: "Privacidad",
+      description:
+        "Lo que el sitio web de Golden Days hace y no hace con su información.",
+    },
+    heading: "Privacidad",
+    lead: "Esta página explica con palabras sencillas qué hace este sitio web con su información.",
+    updated: "Última actualización: octubre de 2026",
+    sections: [
+      {
+        heading: "Si nos envía un mensaje",
+        paragraphs: [
+          "El formulario de contacto pide su nombre y su número de teléfono. Su correo electrónico y su mensaje son opcionales. Usamos lo que nos envía solo para responderle. No lo vendemos.",
+          "Formspree, un servicio que maneja los formularios de sitios web, entrega los mensajes al correo electrónico de nuestro centro.",
+          "Por favor, no escriba información médica ni de salud en el formulario. Llámenos.",
+        ],
+      },
+      {
+        heading: "Las preguntas de “¿Califico?”",
+        paragraphs: [
+          "Sus respuestas se quedan en su navegador mientras la página está abierta. No las recopilamos, no las enviamos ni las guardamos.",
+        ],
+      },
+      {
+        heading: "Conteo de visitantes",
+        paragraphs: [
+          "Usamos Vercel Analytics para contar las visitas. Registra qué páginas se vieron, el país, el tipo de dispositivo y de navegador, y qué sitio web envió al visitante. No usa cookies, no muestra anuncios y no lo sigue a otros sitios web.",
+        ],
+      },
+      {
+        heading: "Mapas y cookies",
+        paragraphs: [
+          "La página de inicio y la página de contacto muestran un mapa de Google. Cuando el mapa se carga, Google puede recibir su dirección IP y puede colocar cookies, según la política de privacidad de Google. Este sitio web no coloca otras cookies propias.",
+        ],
+      },
+      {
+        heading: "No vendemos su información",
+        paragraphs: [
+          "No vendemos su información ni la compartimos con fines de publicidad.",
+        ],
+      },
+      {
+        heading: "Preguntas o solicitudes",
+        paragraphs: [
+          "Para pedirnos que borremos un mensaje que usted envió, o si tiene alguna pregunta sobre esta página, llámenos o envíenos un correo electrónico. Nuestro teléfono y nuestro correo electrónico están al final de cada página.",
+          "Si cambiamos lo que este sitio web hace con la información, actualizaremos esta página.",
+        ],
+      },
+    ],
   },
 
   language: {

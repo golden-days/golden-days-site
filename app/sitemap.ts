@@ -7,7 +7,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
 
   // Every page, once per language, each pointing to its translations.
-  return contentFor(defaultLocale).nav.links.flatMap((link) =>
+  const links = [...contentFor(defaultLocale).nav.links, { href: "/privacy" }];
+  return links.flatMap((link) =>
     locales.map((lang) => ({
       url: `${siteUrl}${localizeHref(link.href, lang)}`,
       lastModified,
