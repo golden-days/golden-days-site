@@ -288,8 +288,7 @@ export const tl: Content = {
         title: "Rehabilitasyon",
         summary: "Mga ehersisyo at therapy na sumusuporta sa lakas, balanse, at paggalaw.",
         details: [
-          "Ang mga therapy staff ay nagtatrabaho sa paglalakad, balanse, at pang-araw-araw na paggalaw.",
-          "Ang mga sesyon ay pinaplano ayon sa nais abutin ng bawat tao.",
+          "Ang mga therapy staff ay nagtatrabaho sa paglalakad, balanse, at pang-araw-araw na paggalaw, at pinaplano ang mga sesyon ayon sa nais abutin ng bawat tao.",
           "May group exercise halos tuwing umaga para sa mga gustong sumali.",
           "May lisensyadong therapist na nagbibigay ng massage therapy at paraffin wax treatment, na kasama para sa mga kalahok nang walang dagdag na bayad.",
         ],

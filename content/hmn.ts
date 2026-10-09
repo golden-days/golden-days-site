@@ -289,8 +289,7 @@ export const hmn: Content = {
         title: "Kev Kho Lub Cev",
         summary: "Kev tawm dag zog thiab kev kho pab kom muaj zog, sib npaug, thiab txav tau zoo.",
         details: [
-          "Cov neeg kho lub cev pab ua kom taug kev, sib npaug, thiab txav tau txhua hnub.",
-          "Kev kho npaj raws li txhua tus xav ua kom tau dab tsi.",
+          "Cov neeg kho lub cev pab ua kom taug kev, sib npaug, thiab txav tau txhua hnub, thiab kev kho npaj raws li txhua tus xav ua kom tau dab tsi.",
           "Muaj kev tawm dag zog ua pab pawg feem ntau thaum sawv ntxov rau cov neeg xav koom.",
           "Cov kws kho mob uas muaj daim ntawv tso cai ua kev tsuam lub cev (massage) thiab kev kho nrog paraffin wax, suav nrog rau cov neeg koom, tsis them ntxiv.",
         ],
