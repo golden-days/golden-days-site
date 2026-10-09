@@ -423,6 +423,8 @@ export const pa: Content = {
         paragraphs: [
           "ਸਾਡੀਆਂ ਗੱਡੀਆਂ ਵ੍ਹੀਲਚੇਅਰ, ਵਾਕਰ ਜਾਂ ਸੋਟੀ ਵਰਤਣ ਵਾਲੇ ਸਵਾਰਾਂ ਨੂੰ ਲਿਜਾ ਸਕਦੀਆਂ ਹਨ।",
           "ਗੱਡੀ ਚੱਲਣ ਤੋਂ ਪਹਿਲਾਂ ਵ੍ਹੀਲਚੇਅਰਾਂ ਨੂੰ ਬੰਨ੍ਹ ਦਿੱਤਾ ਜਾਂਦਾ ਹੈ, ਅਤੇ ਹਰ ਸਵਾਰ ਲਈ ਸੀਟ ਬੈਲਟ ਵਰਤੀ ਜਾਂਦੀ ਹੈ।",
+          // TODO: translate the English line below before turning this language on.
+          "Our buses operate under a permit from the California Public Utilities Commission.",
           "ਆਕਸੀਜਨ, ਇੱਕ ਥਾਂ ਤੋਂ ਦੂਜੀ ਥਾਂ ਬਦਲਣ, ਜਾਂ ਡਰਾਈਵਰ ਨੂੰ ਜਾਣਨ ਵਾਲੀ ਕਿਸੇ ਹੋਰ ਗੱਲ ਬਾਰੇ ਸਾਨੂੰ ਦੱਸੋ, ਅਤੇ ਅਸੀਂ ਉਸ ਦੀ ਤਿਆਰੀ ਕਰ ਲਵਾਂਗੇ।",
         ],
       },

@@ -421,6 +421,7 @@ export const vi: Content = {
         paragraphs: [
           "Xe của chúng tôi có thể chở người dùng xe lăn, khung tập đi hoặc gậy.",
           "Xe lăn được cố định trước khi xe di chuyển, và mọi hành khách đều thắt dây an toàn.",
+          "Xe buýt của chúng tôi hoạt động theo giấy phép của Ủy ban Tiện ích Công cộng California (California Public Utilities Commission).",
           "Hãy cho chúng tôi biết về việc dùng oxy, việc cần được đỡ khi chuyển chỗ hoặc bất cứ điều gì khác tài xế cần biết, và chúng tôi sẽ chuẩn bị.",
         ],
       },

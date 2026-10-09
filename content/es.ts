@@ -421,6 +421,7 @@ export const es: Content = {
         paragraphs: [
           "Nuestros vehículos pueden transportar a personas que usan silla de ruedas, andador o bastón.",
           "Las sillas de ruedas se aseguran antes de que el vehículo se mueva, y se usa cinturón de seguridad con todos los pasajeros.",
+          "Nuestros autobuses operan con un permiso de la Comisión de Servicios Públicos de California (California Public Utilities Commission).",
           "Cuéntenos sobre el oxígeno, los traslados o cualquier otra cosa que el conductor deba saber, y lo tendremos en cuenta.",
         ],
       },

@@ -423,6 +423,8 @@ export const hmn: Content = {
         paragraphs: [
           "Peb cov tsheb thauj tau cov neeg siv wheelchair, walker, lossis tus pas.",
           "Wheelchair raug khi ruaj ua ntej tsheb tsav, thiab txhua tus neeg caij siv txoj siv tsheb.",
+          // TODO: translate the English line below before turning this language on.
+          "Our buses operate under a permit from the California Public Utilities Commission.",
           "Qhia peb txog oxygen, kev hloov chaw zaum, lossis lwm yam uas tus tsav tsheb yuav tsum paub, thiab peb yuav npaj.",
         ],
       },

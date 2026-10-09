@@ -430,6 +430,7 @@ export const en = {
         paragraphs: [
           "Our vehicles can carry riders who use a wheelchair, a walker, or a cane.",
           "Wheelchairs are secured before the vehicle moves, and seat belts are used for every rider.",
+          "Our buses operate under a permit from the California Public Utilities Commission.",
           "Tell us about oxygen, transfers, or anything else a driver should know, and we will plan for it.",
         ],
       },
