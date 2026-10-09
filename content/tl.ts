@@ -357,11 +357,12 @@ export const tl: Content = {
       { time: "1:00 n.h.", text: "Tanghalian" },
       { time: "1:30 n.h.", text: "Pelikula / Talakayan" },
     ],
-    weeklyHeading: "Mga lingguhang aktibidad",
-    weeklyActivities: [
-      { day: "Martes", text: "Grupo sa Memorya" },
-      { day: "Miyerkules", text: "Klase sa Ingles" },
-      { day: "Biyernes", text: "Bingo" },
+    rotatingHeading: "Mga umiikot na aktibidad",
+    rotatingIntro: "Umiikot ang mga aktibidad sa buong linggo, at ang ilan, tulad ng bingo, ay higit sa isang beses sa isang linggo. Tawagan kami para sa kasalukuyang iskedyul.",
+    rotatingActivities: [
+      "Grupo sa Memorya",
+      "Klase sa Ingles",
+      "Bingo",
     ],
     cta: {
       heading: "Hindi sigurado kung alin ang kailangan ng inyong mahal sa buhay?",

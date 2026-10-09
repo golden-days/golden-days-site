@@ -49,15 +49,15 @@ export default async function ServicesPage() {
           ))}
         </ol>
 
-        <h3 className="mt-12 text-xl sm:text-2xl">{services.weeklyHeading}</h3>
-        <ul className="mt-6 list-none border-t-2 border-gold-deep">
-          {services.weeklyActivities.map((activity) => (
+        <h3 className="mt-12 text-xl sm:text-2xl">{services.rotatingHeading}</h3>
+        <p className="mt-3 max-w-3xl">{services.rotatingIntro}</p>
+        <ul className="mt-6 grid list-none gap-4 sm:grid-cols-3">
+          {services.rotatingActivities.map((activity) => (
             <li
-              key={activity.day}
-              className="grid gap-1 border-b-2 border-gold-deep py-4 sm:grid-cols-[9rem_1fr] sm:gap-6"
+              key={activity}
+              className="rounded-xl border-2 border-gold-deep bg-white px-5 py-4 text-center font-serif text-lg font-bold text-navy"
             >
-              <span className="font-serif text-lg font-bold text-navy">{activity.day}</span>
-              <span>{activity.text}</span>
+              {activity}
             </li>
           ))}
         </ul>

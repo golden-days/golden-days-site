@@ -357,11 +357,12 @@ export const vi: Content = {
       { time: "1:00 chiều", text: "Bữa trưa" },
       { time: "1:30 chiều", text: "Xem phim / Thảo luận" },
     ],
-    weeklyHeading: "Hoạt động hằng tuần",
-    weeklyActivities: [
-      { day: "Thứ Ba", text: "Nhóm cải thiện trí nhớ" },
-      { day: "Thứ Tư", text: "Lớp tiếng Anh" },
-      { day: "Thứ Sáu", text: "Bingo" },
+    rotatingHeading: "Hoạt động luân phiên",
+    rotatingIntro: "Các hoạt động được luân phiên trong tuần, và một số hoạt động, như bingo, diễn ra hơn một lần mỗi tuần. Hãy gọi cho chúng tôi để biết lịch hiện tại.",
+    rotatingActivities: [
+      "Nhóm cải thiện trí nhớ",
+      "Lớp tiếng Anh",
+      "Bingo",
     ],
     cta: {
       heading: "Chưa chắc người thân cần những phần nào?",
