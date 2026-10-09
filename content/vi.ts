@@ -34,6 +34,8 @@ export const vi: Content = {
       "Đóng cửa Thứ Bảy và Chủ Nhật. Cũng đóng cửa vào Lễ Tạ Ơn, Lễ Giáng Sinh, Ngày Tết Dương Lịch và Ngày Quốc Khánh Hoa Kỳ (4 tháng 7).",
     mapTitle: "Bản đồ chỉ vị trí của Golden Days Adult Day Health Care",
     directionsLinkLabel: "Xem chỉ đường",
+    languagesLabel: "Ngôn ngữ",
+    languagesLine: "Chúng tôi nói tiếng Anh, tiếng Nga và tiếng Ukraina, và có thông dịch viên tiếng Trung.",
   },
 
   nav: {
@@ -66,6 +68,7 @@ export const vi: Content = {
     contactHeading: "Liên hệ với chúng tôi",
     hoursHeading: "Giờ làm việc",
     copyright: "Golden Days Adult Day Health Care. Bảo lưu mọi quyền.",
+    privacyLabel: "Quyền riêng tư",
   },
 
   // ---------------------------------------------------------------- Home ---
@@ -177,10 +180,10 @@ export const vi: Content = {
     },
     cost: {
       heading: "Còn chi phí thì sao?",
-      text: "Chúng tôi nhận bảo hiểm, và Medi-Cal cùng với một chương trình bảo hiểm. Quý vị cũng có thể tự thanh toán. Hãy gọi cho chúng tôi và chúng tôi sẽ giải thích điều gì áp dụng cho gia đình quý vị.",
+      text: "Chúng tôi nhận bảo hiểm, và nhận Medi-Cal khi dùng cùng một chương trình bảo hiểm. Quý vị cũng có thể tự thanh toán. Hãy gọi cho chúng tôi và chúng tôi sẽ giải thích điều gì áp dụng cho gia đình quý vị.",
     },
     trust: {
-      text: "Phục vụ các gia đình West Sacramento từ năm 2003. Cùng các chủ sở hữu từ năm 2007.",
+      text: "Phục vụ các gia đình West Sacramento từ năm 2003. Các chủ sở hữu vẫn không thay đổi từ năm 2007.",
     },
     contact: {
       heading: "Trò chuyện với chúng tôi",
@@ -194,10 +197,10 @@ export const vi: Content = {
     meta: {
       title: "Giới thiệu về Golden Days",
       description:
-        "Golden Days Adult Day Health Care đã phục vụ các gia đình West Sacramento từ năm 2003, với cùng các chủ sở hữu từ năm 2007.",
+        "Golden Days Adult Day Health Care đã phục vụ các gia đình West Sacramento từ năm 2003, và do cùng các chủ sở hữu điều hành từ năm 2007.",
     },
     heading: "Giới thiệu về Golden Days",
-    lead: "Golden Days Adult Day Health Care đã là một phần của West Sacramento từ năm 2003. Cùng các chủ sở hữu điều hành trung tâm từ năm 2007.",
+    lead: "Golden Days Adult Day Health Care đã là một phần của West Sacramento từ năm 2003. Các chủ sở hữu hiện nay đã điều hành trung tâm từ năm 2007.",
     photo: {
       kind: "interior" as const,
       label: "Chỗ dành cho ảnh - ảnh tập thể nhân viên",
@@ -206,7 +209,7 @@ export const vi: Content = {
     story: {
       heading: "Câu chuyện của chúng tôi",
       paragraphs: [
-        "Golden Days mở cửa tại West Sacramento vào năm 2003 như một nơi để người lớn trải qua cả ngày với sự chăm sóc luôn ở gần. Cùng các chủ sở hữu điều hành trung tâm từ năm 2007.",
+        "Golden Days mở cửa tại West Sacramento vào năm 2003 như một nơi để người lớn trải qua cả ngày với sự chăm sóc luôn ở gần. Các chủ sở hữu hiện nay đã điều hành trung tâm từ năm 2007.",
         "Qua những năm đó, chúng tôi đã quen biết nhiều gia đình địa phương. Có người đến với chúng tôi vài ngày mỗi tuần trong nhiều năm, và gia đình họ cũng trở thành một phần của trung tâm.",
         "Khoảng 120 người trải qua một ngày tại trung tâm mỗi ngày, và nhân viên vẫn dành thời gian tìm hiểu tên, thói quen và điều gì khiến mỗi người cảm thấy thoải mái.",
       ],
@@ -288,7 +291,7 @@ export const vi: Content = {
           "Nhân viên trị liệu giúp cải thiện việc đi lại, thăng bằng và vận động hằng ngày.",
           "Các buổi tập được lên kế hoạch dựa trên mục tiêu của từng người.",
           "Tập thể dục theo nhóm diễn ra hầu hết các buổi sáng cho những ai muốn tham gia.",
-          "Các chuyên viên trị liệu có giấy phép hành nghề cung cấp liệu pháp xoa bóp và liệu pháp sáp paraffin, được bao gồm cho người tham gia mà không tính thêm phí.",
+          "Các chuyên viên trị liệu có giấy phép hành nghề cung cấp liệu pháp xoa bóp và liệu pháp sáp paraffin, không tính thêm phí cho người tham gia.",
         ],
       },
       {
@@ -398,7 +401,7 @@ export const vi: Content = {
         },
       },
       {
-        heading: "Đón và trả",
+        heading: "Đón và đưa về",
         paragraphs: [
           "Mỗi hành khách được cho một khoảng thời gian đón chứ không phải một phút chính xác, vì giao thông và các hành khách khác làm thay đổi tuyến đường.",
           "Chúng tôi chạy đến gần cửa nhất có thể. Khi đón, người chăm sóc của người tham gia giúp họ lên xe. Tài xế không giúp người tham gia lên xe, và không thể nhấc ai lên xe.",
@@ -411,7 +414,7 @@ export const vi: Content = {
         paragraphs: [
           "Xe của chúng tôi có thể chở người dùng xe lăn, khung tập đi hoặc gậy.",
           "Xe lăn được cố định trước khi xe di chuyển, và mọi hành khách đều thắt dây an toàn.",
-          "Hãy cho chúng tôi biết về việc dùng oxy, việc chuyển chỗ ngồi hoặc bất cứ điều gì khác tài xế cần biết, và chúng tôi sẽ chuẩn bị.",
+          "Hãy cho chúng tôi biết về việc dùng oxy, việc cần được đỡ khi chuyển chỗ hoặc bất cứ điều gì khác tài xế cần biết, và chúng tôi sẽ chuẩn bị.",
         ],
       },
       {
@@ -604,7 +607,7 @@ export const vi: Content = {
       announcement: "Sau đây là kết quả của quý vị.",
       goodFit: {
         heading: "Tin vui. Quý vị phù hợp với Golden Days.",
-        text: "Hãy gọi cho chúng tôi hoặc đặt lịch tham quan, và chúng tôi sẽ giúp quý vị các bước tiếp theo.",
+        text: "Hãy gọi cho chúng tôi hoặc đặt lịch tham quan, và chúng tôi sẽ giúp quý vị thực hiện các bước tiếp theo.",
       },
       notFit: {
         heading: "Golden Days có thể chưa phù hợp.",
@@ -635,7 +638,7 @@ export const vi: Content = {
     photo: {
       kind: "building" as const,
       label: "Chỗ dành cho ảnh - lối vào tòa nhà",
-      alt: "Lối vào của Golden Days tại 1215 Merkley Ave, với bảng hiệu phía trên cửa và các cọc tiêu đặt dọc lối đi.",
+      alt: "Lối vào của Golden Days tại 1215 Merkley Ave, với bảng hiệu phía trên cửa và các nón giao thông đặt dọc lối đi.",
       src: "/images/building-entrance.jpg",
       width: 1200,
       height: 900,
@@ -677,6 +680,59 @@ export const vi: Content = {
       name: "Xin vui lòng nhập tên của quý vị.",
       phone: "Xin vui lòng nhập số điện thoại để chúng tôi gọi lại.",
     },
+  },
+
+  // ------------------------------------------------------------- Privacy ---
+  privacy: {
+    meta: {
+      title: "Quyền riêng tư",
+      description:
+        "Trang web Golden Days làm gì và không làm gì với thông tin của quý vị.",
+    },
+    heading: "Quyền riêng tư",
+    lead: "Trang này giải thích bằng lời đơn giản về việc trang web này làm gì với thông tin của quý vị.",
+    updated: "Cập nhật lần cuối: tháng 10 năm 2026",
+    sections: [
+      {
+        heading: "Nếu quý vị gửi tin nhắn cho chúng tôi",
+        paragraphs: [
+          "Biểu mẫu liên hệ yêu cầu tên và số điện thoại của quý vị. Địa chỉ email và nội dung tin nhắn là không bắt buộc. Chúng tôi chỉ dùng những gì quý vị gửi để trả lời quý vị. Chúng tôi không bán thông tin đó.",
+          "Tin nhắn được chuyển đến email của trung tâm qua Formspree, một dịch vụ xử lý các biểu mẫu trên trang web.",
+          "Xin đừng ghi thông tin sức khỏe hay y tế vào biểu mẫu. Thay vào đó, xin hãy gọi cho chúng tôi.",
+        ],
+      },
+      {
+        heading: "Các câu hỏi “Tôi có đủ điều kiện không?”",
+        paragraphs: [
+          "Câu trả lời của quý vị chỉ nằm trong trình duyệt của quý vị khi trang đang mở. Chúng tôi không thu thập, không gửi đi và không lưu lại.",
+        ],
+      },
+      {
+        heading: "Đếm lượt truy cập",
+        paragraphs: [
+          "Chúng tôi dùng Vercel Analytics để đếm lượt truy cập. Công cụ này ghi lại những trang đã được xem, quốc gia, loại thiết bị và trình duyệt, và trang web nào đã đưa khách đến. Công cụ này không dùng cookie, không hiển thị quảng cáo và không theo dõi quý vị sang các trang web khác.",
+        ],
+      },
+      {
+        heading: "Bản đồ và cookie",
+        paragraphs: [
+          "Trang chủ và trang liên hệ có hiển thị Google Map. Khi bản đồ tải lên, Google có thể nhận địa chỉ IP của quý vị và có thể đặt cookie, theo chính sách quyền riêng tư của Google. Trang web này không đặt thêm cookie nào khác của riêng mình.",
+        ],
+      },
+      {
+        heading: "Chúng tôi không bán thông tin của quý vị",
+        paragraphs: [
+          "Chúng tôi không bán thông tin của quý vị và không chia sẻ để quảng cáo.",
+        ],
+      },
+      {
+        heading: "Câu hỏi hoặc yêu cầu",
+        paragraphs: [
+          "Nếu quý vị muốn nhờ chúng tôi xóa một tin nhắn đã gửi, hoặc có bất kỳ câu hỏi nào về trang này, xin hãy gọi điện hoặc gửi email cho chúng tôi. Số điện thoại và email của chúng tôi ở cuối mỗi trang.",
+          "Nếu chúng tôi thay đổi cách trang web này sử dụng thông tin, chúng tôi sẽ cập nhật trang này.",
+        ],
+      },
+    ],
   },
 
   language: {

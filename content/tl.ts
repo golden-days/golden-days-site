@@ -34,6 +34,8 @@ export const tl: Content = {
       "Sarado kapag Sabado at Linggo. Sarado rin kapag Thanksgiving, Araw ng Pasko, Bagong Taon, at Ikaapat ng Hulyo.",
     mapTitle: "Mapa na nagpapakita ng lokasyon ng Golden Days Adult Day Health Care",
     directionsLinkLabel: "Kumuha ng direksyon",
+    languagesLabel: "Mga wika",
+    languagesLine: "Nagsasalita kami ng Ingles, Ruso, at Ukranyano, at may interpreter para sa Chinese.",
   },
 
   nav: {
@@ -66,6 +68,7 @@ export const tl: Content = {
     contactHeading: "Makipag-ugnayan sa amin",
     hoursHeading: "Oras",
     copyright: "Golden Days Adult Day Health Care. Lahat ng karapatan ay nakalaan.",
+    privacyLabel: "Privacy",
   },
 
   // ---------------------------------------------------------------- Home ---
@@ -223,7 +226,7 @@ export const tl: Content = {
           text: "Ipinapaliwanag namin ang gastos, papeles, at iskedyul sa simpleng salita.",
         },
         {
-          title: "Tiyak na gawain",
+          title: "Pare-parehong gawain",
           text: "Ang pamilyar na mga mukha at maayos na takbo ng araw ay nakatutulong para makapag-adjust ang mga tao.",
         },
         {
@@ -286,7 +289,7 @@ export const tl: Content = {
         summary: "Mga ehersisyo at therapy na sumusuporta sa lakas, balanse, at paggalaw.",
         details: [
           "Ang mga therapy staff ay nagtatrabaho sa paglalakad, balanse, at pang-araw-araw na paggalaw.",
-          "Ang mga sesyon ay pinaplano ayon sa tinutungo ng bawat tao.",
+          "Ang mga sesyon ay pinaplano ayon sa nais abutin ng bawat tao.",
           "May group exercise halos tuwing umaga para sa mga gustong sumali.",
           "May lisensyadong therapist na nagbibigay ng massage therapy at paraffin wax treatment, na kasama para sa mga kalahok nang walang dagdag na bayad.",
         ],
@@ -348,7 +351,7 @@ export const tl: Content = {
     ],
     weeklyHeading: "Mga lingguhang aktibidad",
     weeklyActivities: [
-      { day: "Martes", text: "Grupo sa Pagpapabuti ng Memorya" },
+      { day: "Martes", text: "Grupo sa Memorya" },
       { day: "Miyerkules", text: "Klase sa Ingles" },
       { day: "Biyernes", text: "Bingo" },
     ],
@@ -380,7 +383,7 @@ export const tl: Content = {
         heading: "Service area",
         paragraphs: [
           "Nagbibigay kami ng sakay sa West Sacramento at sa mga kalapit na lugar.",
-          "Maaaring umubra pa rin ang ilang address sa labas ng lugar na iyon depende sa araw at sa ruta. Kung wala sa listahan ang inyong lugar, tawagan kami dala ang inyong address at titingnan namin.",
+          "Maaari pa ring magawa ang ilang address sa labas ng lugar na iyon depende sa araw at sa ruta. Kung wala sa listahan ang inyong lugar, tawagan kami at ibigay ang inyong address, at titingnan namin.",
         ],
         list: {
           label: "Mga lugar na karaniwan naming pinaglilingkuran:",
@@ -568,7 +571,7 @@ export const tl: Content = {
         "Mga isang minuto lang ito. Hindi ito aplikasyon at hindi pinal na desisyon. Hindi namin hinihingi ang inyong pangalan o anumang impormasyon tungkol sa kalusugan, at nananatili sa pahinang ito ang inyong mga sagot. Hindi namin ito kinokolekta o iniimbak.",
       startLabel: "Simulan ang mga tanong",
     },
-    progressLabel: "Tanong {current} sa {total}",
+    progressLabel: "Tanong {current} ng {total}",
     progressBarLabel: "Gaano na kayo kalayo",
     backLabel: "Bumalik",
     helpLabel: "Ano ang ibig sabihin nito?",
@@ -672,11 +675,64 @@ export const tl: Content = {
     errorText: "Pakisubukang muli, o tawagan na lang kami.",
     notConfiguredHeading: "Hindi pa nakakonekta ang message form.",
     notConfiguredText:
-      "Walang nakatakdang address ng form ang site na ito, kaya walang naipadala. Itakda ang NEXT_PUBLIC_FORM_ENDPOINT sa isang Formspree address para paganahin ang form. Hanggang doon, mangyaring tawagan kami.",
+      "Walang nakatakdang address ng form ang site na ito, kaya walang naipadala. Itakda ang NEXT_PUBLIC_FORM_ENDPOINT sa isang Formspree address para paganahin ang form. Sa ngayon, mangyaring tawagan kami.",
     validation: {
       name: "Pakilagay ang inyong pangalan.",
       phone: "Pakilagay ang numero ng telepono na maaari naming tawagan.",
     },
+  },
+
+  // ------------------------------------------------------------- Privacy ---
+  privacy: {
+    meta: {
+      title: "Privacy",
+      description:
+        "Ang ginagawa at hindi ginagawa ng website ng Golden Days sa inyong impormasyon.",
+    },
+    heading: "Privacy",
+    lead: "Ipinapaliwanag ng pahinang ito sa simpleng salita kung ano ang ginagawa ng website na ito sa inyong impormasyon.",
+    updated: "Huling na-update: Oktubre 2026",
+    sections: [
+      {
+        heading: "Kung magpapadala kayo ng mensahe",
+        paragraphs: [
+          "Hinihingi ng contact form ang inyong pangalan at numero ng telepono. Opsyonal ang inyong email address at mensahe. Ginagamit lang namin ang ipinapadala ninyo para sagutin kayo. Hindi namin ito ibinebenta.",
+          "Ang mga mensahe ay inihahatid sa email ng aming center ng Formspree, isang serbisyong humahawak ng mga form sa website.",
+          "Mangyaring huwag maglagay ng impormasyong pangkalusugan o medikal sa form. Tawagan na lang kami.",
+        ],
+      },
+      {
+        heading: "Ang mga tanong na “Kwalipikado ba Ako?”",
+        paragraphs: [
+          "Nananatili sa inyong browser ang inyong mga sagot habang bukas ang pahina. Hindi namin ito kinokolekta, ipinapadala, o sine-save.",
+        ],
+      },
+      {
+        heading: "Bilang ng bumibisita",
+        paragraphs: [
+          "Gumagamit kami ng Vercel Analytics para bilangin ang mga bisita. Itinatala nito kung aling mga pahina ang tiningnan, ang bansa, ang uri ng device at browser, at kung aling website ang nagdala sa bisita. Hindi ito gumagamit ng cookies, hindi nagpapakita ng ads, at hindi kayo sinusundan sa ibang website.",
+        ],
+      },
+      {
+        heading: "Mga mapa at cookies",
+        paragraphs: [
+          "Ang home page at ang contact page ay may Google Map. Kapag nag-load ang mapa, maaaring matanggap ng Google ang inyong IP address at maaaring maglagay ng cookies, ayon sa sariling privacy policy ng Google. Walang ibang cookies na inilalagay ang website na ito mismo.",
+        ],
+      },
+      {
+        heading: "Hindi namin ibinebenta ang inyong impormasyon",
+        paragraphs: [
+          "Hindi namin ibinebenta ang inyong impormasyon o ibinabahagi para sa advertising.",
+        ],
+      },
+      {
+        heading: "Mga tanong o kahilingan",
+        paragraphs: [
+          "Para hilingin sa amin na burahin ang mensaheng ipinadala ninyo, o kung may tanong kayo tungkol sa pahinang ito, tawagan kami o magpadala ng email. Nasa ibaba ng bawat pahina ang aming numero ng telepono at email.",
+          "Kung may babaguhin sa ginagawa ng website na ito sa impormasyon, ia-update namin ang pahinang ito.",
+        ],
+      },
+    ],
   },
 
   language: {
