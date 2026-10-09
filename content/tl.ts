@@ -421,6 +421,7 @@ export const tl: Content = {
         paragraphs: [
           "Kayang isakay ng aming mga sasakyan ang mga gumagamit ng wheelchair, walker, o tungkod.",
           "Ikinakabit nang maayos ang mga wheelchair bago umandar ang sasakyan, at may seat belt ang bawat pasahero.",
+          "Ang aming mga bus ay may permit mula sa California Public Utilities Commission.",
           "Sabihin sa amin ang tungkol sa oxygen, paglilipat, o anumang dapat malaman ng driver, at paghahandaan namin ito.",
         ],
       },

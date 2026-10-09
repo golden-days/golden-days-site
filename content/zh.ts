@@ -423,6 +423,7 @@ export const zh: Content = {
         paragraphs: [
           "我們的車輛可載送使用輪椅、助行器或拐杖的人。",
           "輪椅在車輛行駛前會被固定好，所有乘客都會繫上安全帶。",
+          "我們的巴士持有加州公用事業委員會（California Public Utilities Commission）核發的許可證。",
           "如果有氧氣設備、轉位需要，或其他司機應該知道的事，請告訴我們，我們會事先準備。",
         ],
       },
