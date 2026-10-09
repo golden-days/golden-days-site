@@ -62,6 +62,14 @@ export default async function SiteFooter() {
           ))}
           <li>
             <LocaleLink
+              href="/privacy"
+              className="inline-flex min-h-12 min-w-12 items-center text-white underline decoration-2 underline-offset-4"
+            >
+              {t.footer.privacyLabel}
+            </LocaleLink>
+          </li>
+          <li>
+            <LocaleLink
               href="/enrollment#faq"
               className="inline-flex min-h-12 min-w-12 items-center text-white underline decoration-2 underline-offset-4"
             >
@@ -76,7 +84,6 @@ export default async function SiteFooter() {
           <p>
             &copy; {year} {t.footer.copyright}
           </p>
-          <p className="mt-2 text-white/80">{t.footer.disclaimer}</p>
         </div>
       </div>
     </footer>
