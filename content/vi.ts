@@ -210,7 +210,7 @@ export const vi: Content = {
       paragraphs: [
         "Golden Days mở cửa tại West Sacramento vào năm 2003 như một nơi để người lớn trải qua cả ngày với sự chăm sóc luôn ở gần. Cùng các chủ sở hữu điều hành trung tâm từ năm 2007.",
         "Qua những năm đó, chúng tôi đã quen biết nhiều gia đình địa phương. Có người đến với chúng tôi vài ngày mỗi tuần trong nhiều năm, và gia đình họ cũng trở thành một phần của trung tâm.",
-        "Chúng tôi cố ý là một trung tâm nhỏ. Nhân viên nhớ tên, thói quen và điều gì khiến mỗi người cảm thấy thoải mái.",
+        "Khoảng 120 người trải qua một ngày tại trung tâm mỗi ngày, và nhân viên vẫn dành thời gian tìm hiểu tên, thói quen và điều gì khiến mỗi người cảm thấy thoải mái.",
       ],
     },
     values: {
