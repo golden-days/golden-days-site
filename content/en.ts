@@ -367,7 +367,7 @@ export const en = {
       { time: "1:30 PM", text: "Movie / Discussion" },
     ],
     rotatingHeading: "Rotating activities",
-    rotatingIntro: "Activities rotate through the week. Bingo happens several times a week, and we go on outings to local stores, markets, and parks. Call us for this month's calendar.",
+    rotatingIntro: "Activities rotate through the week. Bingo happens several times a week, and we go on outings to local stores, markets, and parks. Call us for this month's calendar, which is available in English and Russian.",
     rotatingActivities: [
       "English Lesson",
       "Bingo",
