@@ -210,7 +210,7 @@ export const hmn: Content = {
       paragraphs: [
         "Golden Days qhib hauv West Sacramento xyoo 2003 ua ib qhov chaw uas cov neeg laus siv tau ib hnub nrog kev saib xyuas nyob ze. Cov tswv tib yam tau tswj lub chaw txij li xyoo 2007.",
         "Ntau xyoo no peb tau paub ntau tsev neeg nyob ze. Qee tus tuaj cuag peb ob peb hnub ib lub limtiam ntau xyoo, thiab lawv tsev neeg kuj los ua ib feem ntawm lub chaw.",
-        "Peb yog ib lub chaw me, thiab peb xaiv li ntawd. Cov neeg ua haujlwm paub npe, kev ua neej txhua hnub, thiab yam uas ua rau txhua tus nyob zoo siab.",
+        "Muaj li 120 tus neeg nrog peb nyob txhua hnub, thiab cov neeg ua haujlwm tseem muab sij hawm kawm paub npe, kev ua neej txhua hnub, thiab yam uas ua rau txhua tus nyob zoo siab.",
       ],
     },
     values: {

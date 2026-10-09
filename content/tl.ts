@@ -210,7 +210,7 @@ export const tl: Content = {
       paragraphs: [
         "Nagbukas ang Golden Days sa West Sacramento noong 2003 bilang isang lugar kung saan maaaring magpalipas ng araw ang mga nasa hustong gulang na may malapit na pangangalaga. Ang parehong mga may-ari ang namamahala sa center mula noong 2007.",
         "Sa paglipas ng mga taon, nakilala namin ang maraming pamilya sa aming lugar. May mga taong pumupunta sa amin ng ilang araw sa isang linggo sa loob ng maraming taon, at ang kanilang mga pamilya ay nagiging bahagi rin ng center.",
-        "Sadyang maliit na center kami. Kabisado ng mga staff ang mga pangalan, gawain, at kung ano ang nagpapagaan ng pakiramdam ng bawat tao.",
+        "Mga 120 katao ang gumugugol ng araw sa amin, at naglalaan pa rin ng oras ang mga staff para kilalanin ang mga pangalan, gawain, at kung ano ang nagpapagaan ng pakiramdam ng bawat tao.",
       ],
     },
     values: {

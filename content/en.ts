@@ -219,7 +219,7 @@ export const en = {
       paragraphs: [
         "Golden Days opened in West Sacramento in 2003 as a place where adults could spend the day with care close at hand. The same owners have run the center since 2007.",
         "Over those years we have come to know many local families. Some people come to us a few days a week for years, and their families become part of the center too.",
-        "We are a small center on purpose. Staff learn names, routines, and what makes each person comfortable.",
+        "Around 120 people spend the day with us, and staff still take the time to learn names, routines, and what makes each person comfortable.",
       ],
     },
     values: {
