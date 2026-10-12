@@ -241,7 +241,7 @@ export const en = {
         },
         {
           title: "Family in the loop",
-          text: "We call when something changes, and we answer the phone.",
+          text: "If something changes, we call you. If you have a question, call us during facility hours.",
         },
       ],
     },

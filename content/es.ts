@@ -232,7 +232,7 @@ export const es: Content = {
         },
         {
           title: "La familia siempre informada",
-          text: "Llamamos cuando algo cambia, y contestamos el teléfono.",
+          text: "Si algo cambia, le llamamos. Si tiene una pregunta, llámenos durante el horario del centro.",
         },
       ],
     },

@@ -232,7 +232,7 @@ export const vi: Content = {
         },
         {
           title: "Gia đình luôn được biết",
-          text: "Chúng tôi gọi khi có điều gì thay đổi, và chúng tôi luôn nghe điện thoại.",
+          text: "Nếu có điều gì thay đổi, chúng tôi sẽ gọi cho quý vị. Nếu quý vị có câu hỏi, hãy gọi cho chúng tôi trong giờ hoạt động của trung tâm.",
         },
       ],
     },

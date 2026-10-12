@@ -234,7 +234,8 @@ export const hmn: Content = {
         },
         {
           title: "Tsev neeg paub tas li",
-          text: "Peb hu thaum muaj yam hloov, thiab peb teb xov tooj.",
+          // TODO: translate the English line below before turning this language on.
+          text: "If something changes, we call you. If you have a question, call us during facility hours.",
         },
       ],
     },

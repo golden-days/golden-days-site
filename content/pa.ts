@@ -234,7 +234,8 @@ export const pa: Content = {
         },
         {
           title: "ਪਰਿਵਾਰ ਨੂੰ ਪੂਰੀ ਖ਼ਬਰ",
-          text: "ਜਦੋਂ ਕੁਝ ਬਦਲਦਾ ਹੈ ਤਾਂ ਅਸੀਂ ਫ਼ੋਨ ਕਰਦੇ ਹਾਂ, ਅਤੇ ਅਸੀਂ ਫ਼ੋਨ ਚੁੱਕਦੇ ਹਾਂ।",
+          // TODO: translate the English line below before turning this language on.
+          text: "If something changes, we call you. If you have a question, call us during facility hours.",
         },
       ],
     },
