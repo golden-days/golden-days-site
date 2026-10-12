@@ -232,7 +232,7 @@ export const tl: Content = {
         },
         {
           title: "Laging may alam ang pamilya",
-          text: "Tumatawag kami kapag may nagbago, at sinasagot namin ang telepono.",
+          text: "Kapag may nagbago, tatawagan namin kayo. Kung may tanong kayo, tawagan kami sa oras ng center.",
         },
       ],
     },
