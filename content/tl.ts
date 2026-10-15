@@ -85,8 +85,8 @@ export const tl: Content = {
       photo: {
         kind: "building" as const,
         label: "Placeholder ng larawan - labas ng gusali",
-        alt: "Harap ng Golden Days Adult Day Health Care Center, na may sunburst na karatula sa itaas ng bukas na pasukan at karatulang Welcome to Golden Days sa bintana.",
-        src: "/images/hero-building.jpg",
+        alt: "Harap ng Golden Days Adult Day Health Care Center, na may sunburst na karatula sa itaas ng pasukan at karatulang Welcome to Golden Days sa bintana.",
+        src: "/images/hero-front.jpg",
         width: 1600,
         height: 900,
       },
@@ -613,8 +613,8 @@ export const tl: Content = {
     photo: {
       kind: "building" as const,
       label: "Placeholder ng larawan - pasukan ng gusali",
-      alt: "Ang pasukan ng Golden Days sa 1215 Merkley Ave, na may karatula sa itaas ng pinto at mga cone sa tabi ng daanan.",
-      src: "/images/building-entrance.jpg",
+      alt: "Ang pasukan ng Golden Days sa 1215 Merkley Ave, na may karatula sa itaas ng pinto at patag na daanan sa harap.",
+      src: "/images/entrance-front.jpg",
       width: 1200,
       height: 900,
     },

@@ -85,8 +85,8 @@ export const ru: Content = {
       photo: {
         kind: "building" as const,
         label: "Место для фото — здание снаружи",
-        alt: "Фасад центра Golden Days Adult Day Health Care: вывеска с солнцем над открытым входом и приветственная надпись Welcome to Golden Days в окне.",
-        src: "/images/hero-building.jpg",
+        alt: "Фасад центра Golden Days Adult Day Health Care: вывеска с солнцем над входом и приветственная надпись Welcome to Golden Days в окне.",
+        src: "/images/hero-front.jpg",
         width: 1600,
         height: 900,
       },
@@ -613,8 +613,8 @@ export const ru: Content = {
     photo: {
       kind: "building" as const,
       label: "Место для фото — вход в здание",
-      alt: "Вход в Golden Days по адресу 1215 Merkley Ave: вывеска над дверью и конусы у дорожки.",
-      src: "/images/building-entrance.jpg",
+      alt: "Вход в Golden Days по адресу 1215 Merkley Ave: вывеска над дверью и ровная дорожка перед входом.",
+      src: "/images/entrance-front.jpg",
       width: 1200,
       height: 900,
     },

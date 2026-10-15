@@ -85,8 +85,8 @@ export const es: Content = {
       photo: {
         kind: "building" as const,
         label: "Espacio para foto - exterior del edificio",
-        alt: "El frente del centro Golden Days Adult Day Health Care, con su letrero de sol sobre la entrada abierta y un cartel de Welcome to Golden Days en la ventana.",
-        src: "/images/hero-building.jpg",
+        alt: "El frente del centro Golden Days Adult Day Health Care, con su letrero de sol sobre la entrada y un cartel de Welcome to Golden Days en la ventana.",
+        src: "/images/hero-front.jpg",
         width: 1600,
         height: 900,
       },
@@ -613,8 +613,8 @@ export const es: Content = {
     photo: {
       kind: "building" as const,
       label: "Espacio para foto - entrada del edificio",
-      alt: "La entrada de Golden Days en 1215 Merkley Ave, con el letrero sobre la puerta y conos colocados junto al camino.",
-      src: "/images/building-entrance.jpg",
+      alt: "La entrada de Golden Days en 1215 Merkley Ave, con el letrero sobre la puerta y un camino plano al frente.",
+      src: "/images/entrance-front.jpg",
       width: 1200,
       height: 900,
     },
