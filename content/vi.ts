@@ -85,8 +85,8 @@ export const vi: Content = {
       photo: {
         kind: "building" as const,
         label: "Chỗ dành cho ảnh - mặt ngoài tòa nhà",
-        alt: "Mặt trước của Trung tâm Golden Days Adult Day Health Care, với bảng hiệu hình mặt trời phía trên lối vào đang mở và tấm biển Welcome to Golden Days ở cửa sổ.",
-        src: "/images/hero-building.jpg",
+        alt: "Mặt trước của Trung tâm Golden Days Adult Day Health Care, với bảng hiệu hình mặt trời phía trên lối vào và tấm biển Welcome to Golden Days ở cửa sổ.",
+        src: "/images/hero-front.jpg",
         width: 1600,
         height: 900,
       },
@@ -613,8 +613,8 @@ export const vi: Content = {
     photo: {
       kind: "building" as const,
       label: "Chỗ dành cho ảnh - lối vào tòa nhà",
-      alt: "Lối vào của Golden Days tại 1215 Merkley Ave, với bảng hiệu phía trên cửa và các nón giao thông đặt dọc lối đi.",
-      src: "/images/building-entrance.jpg",
+      alt: "Lối vào của Golden Days tại 1215 Merkley Ave, với bảng hiệu phía trên cửa và lối đi bằng phẳng phía trước.",
+      src: "/images/entrance-front.jpg",
       width: 1200,
       height: 900,
     },

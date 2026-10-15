@@ -85,8 +85,8 @@ export const uk: Content = {
       photo: {
         kind: "building" as const,
         label: "Місце для фото — будівля ззовні",
-        alt: "Фасад центру Golden Days Adult Day Health Care: вивіска із сонцем над відкритим входом і вітальний напис Welcome to Golden Days у вікні.",
-        src: "/images/hero-building.jpg",
+        alt: "Фасад центру Golden Days Adult Day Health Care: вивіска із сонцем над входом і вітальний напис Welcome to Golden Days у вікні.",
+        src: "/images/hero-front.jpg",
         width: 1600,
         height: 900,
       },
@@ -614,8 +614,8 @@ export const uk: Content = {
     photo: {
       kind: "building" as const,
       label: "Місце для фото — вхід до будівлі",
-      alt: "Вхід до Golden Days за адресою 1215 Merkley Ave: вивіска над дверима та конуси біля доріжки.",
-      src: "/images/building-entrance.jpg",
+      alt: "Вхід до Golden Days за адресою 1215 Merkley Ave: вивіска над дверима та рівна доріжка перед входом.",
+      src: "/images/entrance-front.jpg",
       width: 1200,
       height: 900,
     },

@@ -94,8 +94,8 @@ export const en = {
       photo: {
         kind: "building" as const,
         label: "Photo placeholder - building exterior",
-        alt: "The front of the Golden Days Adult Day Health Care Center, with its sunburst sign above the open entrance and a Welcome to Golden Days sign in the window.",
-        src: "/images/hero-building.jpg",
+        alt: "The front of the Golden Days Adult Day Health Care Center, with its sunburst sign above the entrance and a Welcome to Golden Days sign in the window.",
+        src: "/images/hero-front.jpg",
         width: 1600,
         height: 900,
       },
@@ -622,8 +622,8 @@ export const en = {
     photo: {
       kind: "building" as const,
       label: "Photo placeholder - building entrance",
-      alt: "The entrance to Golden Days at 1215 Merkley Ave, with the sign above the door and cones set out by the walkway.",
-      src: "/images/building-entrance.jpg",
+      alt: "The entrance to Golden Days at 1215 Merkley Ave, with the sign above the door and a level walkway in front.",
+      src: "/images/entrance-front.jpg",
       width: 1200,
       height: 900,
     },
