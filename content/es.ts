@@ -121,7 +121,7 @@ export const es: Content = {
         {
           icon: "socialWork" as const,
           title: "Trabajo social",
-          text: "Evaluaciones, planificación de la atención, defensa de derechos y recursos de la comunidad para el bienestar de los participantes.",
+          text: "Evaluaciones, planificación de la atención, defensa de derechos y recursos de la comunidad.",
         },
         {
           icon: "recreation" as const,
