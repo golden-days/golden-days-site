@@ -121,7 +121,7 @@ export const vi: Content = {
         {
           icon: "socialWork" as const,
           title: "Công tác xã hội",
-          text: "Đánh giá, lập kế hoạch chăm sóc, bênh vực quyền lợi và nguồn lực cộng đồng vì phúc lợi của người tham gia.",
+          text: "Đánh giá, lập kế hoạch chăm sóc, bênh vực quyền lợi và nguồn lực cộng đồng.",
         },
         {
           icon: "recreation" as const,

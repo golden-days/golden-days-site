@@ -130,7 +130,7 @@ export const en = {
         {
           icon: "socialWork" as const,
           title: "Social Work",
-          text: "Assessments, care planning, advocacy, and community resources for participants' well-being.",
+          text: "Assessments, care planning, advocacy, and community resources.",
         },
         {
           icon: "recreation" as const,

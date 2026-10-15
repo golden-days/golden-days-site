@@ -121,7 +121,7 @@ export const tl: Content = {
         {
           icon: "socialWork" as const,
           title: "Social Work",
-          text: "Assessment, pagpaplano ng pangangalaga, adbokasiya, at mga mapagkukunan ng komunidad para sa kapakanan ng mga kalahok.",
+          text: "Assessment, pagpaplano ng pangangalaga, adbokasiya, at mga mapagkukunan ng komunidad.",
         },
         {
           icon: "recreation" as const,
