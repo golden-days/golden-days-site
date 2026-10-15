@@ -121,7 +121,7 @@ export const tl: Content = {
         {
           icon: "socialWork" as const,
           title: "Social Work",
-          text: "Ang aming mga social worker ang bahala sa psychosocial assessment, pagpaplano ng pangangalaga, adbokasiya, at mga mapagkukunan ng komunidad upang suportahan ang kalusugan, kaligtasan, at kapakanan ng mga kalahok.",
+          text: "Assessment, pagpaplano ng pangangalaga, adbokasiya, at mga mapagkukunan ng komunidad para sa kapakanan ng mga kalahok.",
         },
         {
           icon: "recreation" as const,

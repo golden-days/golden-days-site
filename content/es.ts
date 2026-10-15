@@ -121,7 +121,7 @@ export const es: Content = {
         {
           icon: "socialWork" as const,
           title: "Trabajo social",
-          text: "Nuestros trabajadores sociales se encargan de las evaluaciones psicosociales, la planificación de la atención, la defensa de los derechos y los recursos de la comunidad para apoyar la salud, la seguridad y el bienestar de los participantes.",
+          text: "Evaluaciones, planificación de la atención, defensa de derechos y recursos de la comunidad para el bienestar de los participantes.",
         },
         {
           icon: "recreation" as const,
