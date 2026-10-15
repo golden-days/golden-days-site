@@ -123,7 +123,7 @@ export const zh: Content = {
         {
           icon: "socialWork" as const,
           title: "社工服務",
-          text: "我們的社工負責心理社會評估、照護計劃、權益倡導，並協調社區資源，以支持參加者的健康、安全和福祉。",
+          text: "評估、照護計劃、權益倡導和社區資源，支持參加者的福祉。",
         },
         {
           icon: "recreation" as const,

@@ -130,7 +130,7 @@ export const en = {
         {
           icon: "socialWork" as const,
           title: "Social Work",
-          text: "Our social workers handle psychosocial assessments, care planning, advocacy, and community resources to support participants' health, safety, and well-being.",
+          text: "Assessments, care planning, advocacy, and community resources for participants' well-being.",
         },
         {
           icon: "recreation" as const,
