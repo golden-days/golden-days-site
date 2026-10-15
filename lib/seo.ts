@@ -59,13 +59,13 @@ export function pageMetadata({
       title: fullTitle,
       description,
       url,
-      images: [{ url: "/og-image.png", width: 1200, height: 630, alt: t.site.logoAlt }],
+      images: [{ url: "/og-front.jpg", width: 1200, height: 630, alt: t.site.logoAlt }],
     },
     twitter: {
       card: "summary_large_image",
       title: fullTitle,
       description,
-      images: ["/og-image.png"],
+      images: ["/og-front.jpg"],
     },
   };
 }
