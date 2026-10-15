@@ -71,7 +71,7 @@ Translations are machine-assisted. Have a fluent reader check each one before la
 and treat them as drafts until then. Placeholders marked in `en.ts` are not repeated in
 the translations, so check `npm run check-placeholders` and the translations together.
 
-Punjabi and Hmong are written (`content/pa.ts`, `content/hmn.ts`) but switched off until a native speaker has checked them; see the comment in `lib/i18n.ts` to turn them on.
+Ukrainian is written (`content/uk.ts`) but switched off; see the comment in `lib/i18n.ts` to turn it back on. Keep that file in step with `en.ts` if you plan to.
 
 To add a language (for example `xx`):
 
@@ -80,7 +80,7 @@ To add a language (for example `xx`):
    its speakers write it, the `<html lang>` value, and the Open Graph locale).
 3. In `lib/content.ts`, import it and add it to `contentByLocale`.
 4. In `proxy.ts`, add `xx` to `otherLocales`.
-5. If the language needs a font that Source Sans does not have (Chinese, Punjabi, ...),
+5. If the language needs a font that Source Sans does not have (Chinese, ...),
    load one in `app/[lang]/layout.tsx` only for that language, as `zh` does.
 6. Run `npm run build` and look at the pages at phone width.
 
