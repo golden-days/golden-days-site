@@ -283,21 +283,20 @@ export const tl: Content = {
       {
         icon: "nursing" as const,
         title: "Pangangalaga ng Nurse",
-        summary: "Pagsusuri ng kalusugan at mga gamot mula sa aming mga nurse sa buong araw.",
+        summary: "Nagsusumikap ang aming nursing department na itaguyod ang kalusugan, kaligtasan, dignidad, kalayaan, at pangkalahatang kapakanan ng mga kalahok sa pamamagitan ng koordinado, indibidwal, at batay-sa-ebidensyang serbisyong pang-nursing.",
         details: [
-          "Sinusuri ng mga nurse ang vital signs at blood glucose (asukal sa dugo).",
-          "Ibinibigay ng mga nurse ang mga gamot ayon sa iskedyul sa oras ng programa.",
-          "Kung may magbago sa kalusugan, tinatawagan namin ang pamilya at ang opisina ng doktor.",
+          "Pagsusuri ng vital signs, blood pressure, at blood glucose (para sa mga kalahok na may diabetes).",
+          "Pagsubaybay at pamamahala ng mga kondisyong pangkalusugan.",
+          "Edukasyon at pagpapayo tungkol sa kalusugan.",
         ],
       },
       {
         icon: "rehabilitation" as const,
         title: "Rehabilitasyon",
-        summary: "Mga ehersisyo at therapy na sumusuporta sa lakas, balanse, at paggalaw.",
+        summary: "Pang-araw-araw na therapy na nakatuon sa ehersisyo sa grupo upang makatulong na mapabuti ang mobility, galaw ng mga kasukasuan, lakas, balanse, koordinasyon, at tibay.",
         details: [
-          "Ang mga therapy staff ay nagtatrabaho sa paglalakad, balanse, at pang-araw-araw na paggalaw, at pinaplano ang mga sesyon ayon sa nais abutin ng bawat tao.",
-          "May group exercise halos tuwing umaga para sa mga gustong sumali.",
-          "May lisensyadong therapist na nagbibigay ng massage therapy at paraffin wax treatment, na kasama para sa mga kalahok nang walang dagdag na bayad.",
+          "Ang mga lisensyadong physical at occupational therapist ay nagbibigay ng indibidwal na rekomendasyon at edukasyon kung kailangan, kasama ang mga ehersisyo sa bahay at mapagkukunan ng kagamitan, upang mapalaki ang kalayaan at kaligtasan.",
+          "Kasama nang walang dagdag na bayad ang massage therapy at paraffin wax treatment para sa mga angkop na kalahok, matapos suriin ng therapist kung nararapat ang mga ito.",
         ],
       },
       {

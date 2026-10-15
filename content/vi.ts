@@ -283,21 +283,20 @@ export const vi: Content = {
       {
         icon: "nursing" as const,
         title: "Chăm sóc điều dưỡng",
-        summary: "Kiểm tra sức khỏe và cho uống thuốc do các điều dưỡng của chúng tôi thực hiện trong ngày.",
+        summary: "Bộ phận điều dưỡng của chúng tôi nỗ lực thúc đẩy sức khỏe, sự an toàn, phẩm giá, tính tự lập và phúc lợi chung của người tham gia thông qua các dịch vụ điều dưỡng phối hợp, cá nhân hóa và dựa trên bằng chứng.",
         details: [
-          "Điều dưỡng kiểm tra các dấu hiệu sinh tồn và đường huyết (lượng đường trong máu).",
-          "Điều dưỡng cho uống thuốc theo lịch trong giờ chương trình.",
-          "Nếu sức khỏe thay đổi, chúng tôi gọi cho gia đình và văn phòng bác sĩ.",
+          "Kiểm tra dấu hiệu sinh tồn, huyết áp và đường huyết (đối với người tham gia bị tiểu đường).",
+          "Theo dõi và quản lý các tình trạng sức khỏe.",
+          "Giáo dục và tư vấn về sức khỏe.",
         ],
       },
       {
         icon: "rehabilitation" as const,
         title: "Phục hồi chức năng",
-        summary: "Các bài tập và trị liệu hỗ trợ sức mạnh, thăng bằng và vận động.",
+        summary: "Liệu pháp tập luyện hằng ngày theo nhóm giúp cải thiện khả năng vận động, độ linh hoạt của khớp, sức mạnh, thăng bằng, sự phối hợp và sức bền.",
         details: [
-          "Nhân viên trị liệu giúp cải thiện việc đi lại, thăng bằng và vận động hằng ngày, với các buổi tập được lên kế hoạch dựa trên mục tiêu của từng người.",
-          "Tập thể dục theo nhóm diễn ra hầu hết các buổi sáng cho những ai muốn tham gia.",
-          "Các chuyên viên trị liệu có giấy phép hành nghề cung cấp liệu pháp xoa bóp và liệu pháp sáp paraffin, không tính thêm phí cho người tham gia.",
+          "Các chuyên viên vật lý trị liệu và hoạt động trị liệu có giấy phép đưa ra khuyến nghị và hướng dẫn riêng khi cần, gồm các bài tập tại nhà và nguồn trang thiết bị, nhằm tối đa hóa tính tự lập và an toàn.",
+          "Liệu pháp xoa bóp và liệu pháp sáp paraffin được cung cấp miễn phí cho những người tham gia phù hợp, sau khi chuyên viên trị liệu đánh giá mức độ phù hợp.",
         ],
       },
       {
