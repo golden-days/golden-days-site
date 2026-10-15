@@ -28,7 +28,7 @@ export const vi: Content = {
     addressLines: ["1215 Merkley Ave", "West Sacramento, CA 95691"],
     addressOneLine: "1215 Merkley Ave, West Sacramento, CA 95691",
     hoursLabel: "Giờ làm việc",
-    hours: "Giờ làm việc của cơ sở: Thứ Hai đến Thứ Sáu, từ 8:00 sáng đến 4:30 chiều",
+    hours: "Giờ làm việc của cơ sở: Thứ Hai đến Thứ Sáu, từ 8:00 sáng đến 3:00 chiều",
     programHours: "Giờ chương trình: Thứ Hai đến Thứ Sáu, từ 8:00 sáng đến 2:00 chiều",
     hoursNote:
       "Đóng cửa Thứ Bảy và Chủ Nhật. Cũng đóng cửa vào Lễ Tạ Ơn, Lễ Giáng Sinh, Ngày Tết Dương Lịch và Ngày Quốc Khánh Hoa Kỳ (4 tháng 7).",
@@ -94,9 +94,7 @@ export const vi: Content = {
     whoWeServe: {
       heading: "Chúng tôi phục vụ ai",
       paragraphs: [
-        "Golden Days đón nhận những người lớn sống tại nhà và cần được hỗ trợ, bầu bạn hoặc giám sát trong ban ngày.",
-        "Nhiều người đến với chúng tôi sống cùng một thành viên gia đình đang đi làm, hoặc đơn giản là cần được nghỉ ngơi trong tuần.",
-        "Nếu quý vị chưa chắc Golden Days có phù hợp với người thân của mình hay không, xin hãy gọi cho chúng tôi. Chúng tôi sẵn lòng trao đổi, không hề gây áp lực.",
+        "Các chương trình chăm sóc sức khỏe ban ngày cho người lớn phục vụ người cao tuổi yếu sức và người lớn trẻ hơn mắc các bệnh mạn tính gây suy giảm chức năng về thể chất, nhận thức hoặc sức khỏe tâm thần, có nguy cơ phải vào cơ sở chăm sóc. Golden Days phục vụ người lớn từ 18 tuổi trở lên.",
       ],
     },
     services: {
@@ -123,12 +121,12 @@ export const vi: Content = {
         {
           icon: "socialWork" as const,
           title: "Công tác xã hội",
-          text: "Giúp tìm hiểu về phúc lợi, giấy tờ và các nguồn hỗ trợ trong cộng đồng.",
+          text: "Nhân viên xã hội của chúng tôi phụ trách đánh giá tâm lý xã hội, lập kế hoạch chăm sóc, bênh vực quyền lợi và kết nối nguồn lực cộng đồng để hỗ trợ sức khỏe, sự an toàn và phúc lợi của người tham gia.",
         },
         {
           icon: "recreation" as const,
           title: "Sinh hoạt giải trí",
-          text: "Âm nhạc, trò chơi, thủ công, thể dục, đi chơi xa và thời gian bên những người khác.",
+          text: "Âm nhạc, trò chơi, thủ công, các chuyến đi chơi và thời gian bên người khác.",
         },
         {
           icon: "transportation" as const,
@@ -168,7 +166,7 @@ export const vi: Content = {
         },
         {
           title: "Hoàn tất buổi đánh giá",
-          text: "Đội ngũ của chúng tôi xem xét sức khỏe và nhu cầu sinh hoạt hằng ngày để xem chương trình có phù hợp hay không.",
+          text: "Đội ngũ của chúng tôi xem xét sức khỏe và nhu cầu hằng ngày để biết chương trình có phù hợp hay không. Chỉ có thể thực hiện đánh giá khi được bác sĩ chấp thuận.",
         },
         {
           title: "Bắt đầu tham gia",
@@ -180,7 +178,7 @@ export const vi: Content = {
     },
     cost: {
       heading: "Còn chi phí thì sao?",
-      text: "Chúng tôi nhận bảo hiểm, và nhận Medi-Cal khi dùng cùng một chương trình bảo hiểm. Quý vị cũng có thể tự thanh toán. Hãy gọi cho chúng tôi và chúng tôi sẽ giải thích điều gì áp dụng cho gia đình quý vị.",
+      text: "Chúng tôi nhận Medi-Cal. Quý vị cũng có thể tự thanh toán. Hãy gọi cho chúng tôi, chúng tôi sẽ giải thích điều gì áp dụng cho gia đình quý vị.",
     },
     trust: {
       text: "Phục vụ các gia đình West Sacramento từ năm 2003. Doanh nghiệp gia đình từ năm 2007.",
@@ -315,19 +313,15 @@ export const vi: Content = {
       {
         icon: "socialWork" as const,
         title: "Công tác xã hội",
-        summary: "Giúp về phúc lợi, giấy tờ và tìm các dịch vụ bên ngoài trung tâm.",
-        details: [
-          "Nhân viên công tác xã hội của chúng tôi giúp các gia đình hiểu các biểu mẫu và thắc mắc về bảo hiểm.",
-          "Chúng tôi có thể hướng dẫn quý vị đến các dịch vụ địa phương như trợ giúp tại nhà hoặc chương trình cung cấp bữa ăn.",
-          "Có thể họp cùng gia đình khi cần thay đổi kế hoạch.",
-        ],
+        summary: "Nhân viên xã hội là nhân sự cốt lõi, phụ trách đánh giá tâm lý xã hội, lập kế hoạch chăm sóc, bênh vực quyền lợi và điều phối nguồn lực cộng đồng để hỗ trợ sức khỏe, sự an toàn và phúc lợi của người tham gia.",
+        details: [],
       },
       {
         icon: "recreation" as const,
         title: "Sinh hoạt giải trí",
-        summary: "Âm nhạc, trò chơi, thủ công, thể dục nhẹ và bầu bạn suốt cả ngày.",
+        summary: "Âm nhạc, trò chơi, thủ công và sự đồng hành suốt cả ngày.",
         details: [
-          "Các hoạt động hằng ngày mà mọi người có thể tham gia hoặc bỏ qua, như âm nhạc, trò chơi, thủ công và thể dục.",
+          "Các hoạt động hằng ngày mà mọi người có thể tham gia hoặc bỏ qua, như âm nhạc, trò chơi và thủ công.",
           "Các chuyến đi chơi xa diễn ra trung bình tối đa ba lần một tuần, không tính thêm phí. Người gặp khó khăn về đi lại vẫn có thể cùng đi.",
           "Các ngày lễ và sinh nhật được cùng nhau chúc mừng.",
         ],
@@ -348,27 +342,23 @@ export const vi: Content = {
       { time: "8:30 sáng", text: "Chào đón" },
       { time: "9:00 sáng", text: "Bài tập phục hồi chức năng" },
       { time: "9:30 sáng", text: "Bữa sáng / Xem tin tức trên TV" },
-      { time: "10:00 sáng", text: "Giáo dục sức khỏe / Vật lý trị liệu cá nhân (Thứ Hai, Thứ Ba, Thứ Sáu)" },
+      { time: "10:00 sáng", text: "Giáo dục sức khỏe / Vật lý trị liệu cá nhân" },
       { time: "10:30 sáng", text: "Bài tập phục hồi chức năng / Câu lạc bộ đi bộ / Đi chơi xa" },
       { time: "11:00 sáng", text: "Bài tập phục hồi chức năng / Trị liệu nhóm" },
       { time: "11:30 sáng", text: "Bài tập phục hồi chức năng / Nhóm cải thiện trí nhớ / Trò chơi sinh hoạt / Nhóm tâm linh" },
-      { time: "12:00 trưa", text: "Khách mời và diễn giả / Vật lý trị liệu cá nhân (Thứ Hai, Thứ Ba, Thứ Sáu)" },
-      { time: "12:30 chiều", text: "Hoạt động trị liệu cá nhân (Thứ Tư, Thứ Sáu)" },
+      { time: "12:00 trưa", text: "Khách mời và diễn giả / Vật lý trị liệu cá nhân" },
+      { time: "12:30 chiều", text: "Hoạt động trị liệu cá nhân" },
       { time: "1:00 chiều", text: "Bữa trưa" },
       { time: "1:30 chiều", text: "Xem phim / Thảo luận" },
     ],
     rotatingHeading: "Hoạt động luân phiên",
-    rotatingIntro: "Các hoạt động được luân phiên trong tuần. Bingo diễn ra nhiều lần mỗi tuần, và chúng tôi có các chuyến đi đến cửa hàng, chợ và công viên địa phương. Hãy gọi cho chúng tôi để biết lịch của tháng này, có bằng tiếng Anh và tiếng Nga.",
+    rotatingIntro: "Các hoạt động được luân phiên trong tuần. Bingo diễn ra nhiều lần mỗi tuần, và chúng tôi có các chuyến đi đến cửa hàng, chợ và công viên địa phương.",
     rotatingActivities: [
       "Lớp tiếng Anh",
       "Bingo",
       "Đi chơi đến cửa hàng, chợ và công viên",
       "Mừng sinh nhật",
     ],
-    cta: {
-      heading: "Chưa chắc người thân cần những phần nào?",
-      text: "Hãy gọi cho chúng tôi. Chúng tôi sẽ hỏi vài câu và trả lời thẳng thắn cho quý vị.",
-    },
   },
 
   // ------------------------------------------------------ Transportation ---
@@ -413,37 +403,14 @@ export const vi: Content = {
       {
         heading: "Đón và đưa về",
         paragraphs: [
-          "Mỗi hành khách được cho một khoảng thời gian đón chứ không phải một phút chính xác, vì giao thông và các hành khách khác làm thay đổi tuyến đường.",
-          "Chúng tôi chạy đến gần cửa nhất có thể. Khi đón, người chăm sóc của người tham gia giúp họ lên xe. Tài xế không giúp người tham gia lên xe, và không thể nhấc ai lên xe.",
-          "Tại trung tâm, tài xế có thể giúp người tham gia xuống xe, và nhân viên chăm sóc của chúng tôi ở đây sẵn sàng đón họ. Nhân viên chăm sóc của chúng tôi không đến nhà của mọi người.",
-          "Nếu xe buýt đến trễ, chúng tôi sẽ gọi cho gia đình.",
+          "Ở nhà, người chăm sóc giúp người tham gia lên xe, và tại trung tâm, tài xế của chúng tôi giúp họ xuống xe.",
         ],
       },
       {
         heading: "Hỗ trợ xe lăn và người khó đi lại",
         paragraphs: [
-          "Xe của chúng tôi có thể chở người dùng xe lăn, khung tập đi hoặc gậy.",
-          "Xe lăn được cố định trước khi xe di chuyển, và mọi hành khách đều thắt dây an toàn.",
-          "Xe buýt của chúng tôi hoạt động theo giấy phép của Ủy ban Tiện ích Công cộng California (California Public Utilities Commission).",
-          "Hãy cho chúng tôi biết về việc dùng oxy, việc cần được đỡ khi chuyển chỗ hoặc bất cứ điều gì khác tài xế cần biết, và chúng tôi sẽ chuẩn bị.",
+          "Xe của chúng tôi có thể chở những người tham gia sử dụng xe lăn, khung tập đi hoặc gậy.",
         ],
-      },
-      {
-        heading: "Gia đình sắp xếp hoặc thay đổi chuyến xe như thế nào",
-        paragraphs: [
-          "Chuyến xe được sắp xếp khi người thân của quý vị ghi danh, và lịch giữ nguyên từ tuần này sang tuần khác.",
-          "Để đổi địa chỉ đón, thêm một ngày hoặc hủy chuyến xe, hãy gọi cho văn phòng.",
-          "Nếu hủy trong ngày, hãy gọi càng sớm càng tốt để tài xế điều chỉnh tuyến đường.",
-        ],
-        list: {
-          label: "Để thay đổi chuyến xe, hãy chuẩn bị sẵn:",
-          items: [
-            "Tên của hành khách",
-            "Ngày hoặc các ngày thay đổi",
-            "Địa chỉ mới, nếu nơi đón thay đổi",
-            "Số điện thoại để chúng tôi liên lạc với quý vị trong ngày hôm đó",
-          ],
-        },
       },
     ],
     secondPhoto: {
@@ -471,6 +438,7 @@ export const vi: Content = {
     lead: "Ghi danh chỉ cần vài cuộc trò chuyện, không phải một núi giấy tờ. Sau đây là cách thực hiện.",
     qualifies: {
       heading: "Ai đủ điều kiện",
+      purpose: "Chúng tôi ở đây để giúp cải thiện sức khỏe của người tham gia, cả về thể chất lẫn tinh thần. Chúng tôi không cung cấp dịch vụ chăm sóc một kèm một.",
       intro: "Golden Days thường phù hợp với một người lớn:",
       items: [
         "Là người lớn sống tại nhà hoặc với gia đình",
@@ -478,37 +446,30 @@ export const vi: Content = {
         "Có tình trạng sức khỏe được lợi từ việc kiểm tra thường xuyên",
         "Có thể tham gia chương trình ban ngày theo nhóm",
       ],
-      note: "Việc đủ điều kiện được quyết định sau buổi đánh giá, không phải qua điện thoại. Hãy gọi cho chúng tôi và chúng tôi sẽ cho quý vị biết bước tiếp theo như thế nào.",
+      note: "Chỉ có thể thực hiện đánh giá khi được bác sĩ chấp thuận. Hãy gọi cho chúng tôi, chúng tôi sẽ cho quý vị biết bước tiếp theo.",
     },
     pays: {
       heading: "Ai chi trả",
       intro: "Các gia đình thường chi trả theo một trong những cách sau:",
+      value: "Chăm sóc sức khỏe ban ngày cho người lớn thường tốn kém ít hơn nhiều so với nằm viện về sau, vì vậy đăng ký sớm có thể có lợi.",
       items: [
         {
           title: "Medi-Cal",
-          text: "Chúng tôi nhận Medi-Cal cùng với một chương trình bảo hiểm, nhưng không nhận riêng Medi-Cal. Chúng tôi có thể giải thích quy trình diễn ra như thế nào.",
-        },
-        {
-          title: "Chương trình chăm sóc có quản lý",
-          text: "Một số chương trình bảo hiểm sức khỏe chi trả cho các chương trình ban ngày. Chúng tôi sẽ kiểm tra chương trình của quý vị quy định ra sao.",
+          text: "Chúng tôi nhận Medi-Cal. Chúng tôi có thể giải thích quy trình.",
         },
         {
           title: "Tự thanh toán",
           text: "Các gia đình cũng có thể thanh toán trực tiếp.",
         },
       ],
-      note: "Không có nội dung nào trên trang này là lời cam kết về bảo hiểm chi trả hay về giá. Hãy gọi cho chúng tôi để biết thông tin mới nhất về trường hợp của quý vị.",
+      note: "Medicare không chi trả cho chương trình này. Không nội dung nào trên trang này là cam kết chi trả hoặc báo giá. Hãy gọi cho chúng tôi để biết thông tin hiện tại về trường hợp của quý vị.",
     },
     bring: {
       heading: "Cần mang theo gì",
       intro: "Hãy mang những gì quý vị có. Chúng tôi sẽ giúp phần còn lại.",
       items: [
         "Giấy tờ tùy thân có ảnh",
-        "Thẻ bảo hiểm (quý vị có thể mang riêng thẻ này)",
-        "Thẻ Medi-Cal (mang cùng với thẻ bảo hiểm, không mang riêng)",
-        "Tên và số điện thoại của bác sĩ của quý vị",
-        "Tên và số điện thoại của người liên lạc khẩn cấp",
-        "Bất kỳ giấy tờ y tế gần đây nào quý vị đã có",
+        "Thẻ Medi-Cal",
       ],
     },
     steps: {
@@ -521,18 +482,6 @@ export const vi: Content = {
         {
           title: "Tham quan trung tâm",
           text: "Hãy đến trong giờ chương trình, tốt nhất là trước 1:30 chiều, để quý vị thấy một ngày bình thường. Hãy đưa người thân đi cùng nếu họ thấy thoải mái.",
-        },
-        {
-          title: "Đánh giá",
-          text: "Đội ngũ của chúng tôi xem xét tiền sử sức khỏe, nhu cầu hằng ngày và mục tiêu để xác nhận chương trình phù hợp.",
-        },
-        {
-          title: "Giấy tờ và bảo hiểm",
-          text: "Chúng tôi cùng hoàn tất các biểu mẫu ghi danh và giải quyết các thắc mắc về bảo hiểm.",
-        },
-        {
-          title: "Ngày đầu tiên",
-          text: "Chúng tôi sắp xếp lịch, bố trí xe đưa đón và giới thiệu người thân của quý vị với nhân viên và những người tham gia khác.",
         },
       ],
     },
@@ -559,7 +508,7 @@ export const vi: Content = {
     },
     qualifyPrompt: {
       heading: "Chưa chắc có phù hợp không?",
-      text: "Hãy trả lời năm câu hỏi ngắn và chúng tôi sẽ chỉ cho quý vị bước tiếp theo. Chỉ mất khoảng một phút.",
+      text: "Trả lời bốn câu hỏi ngắn và chúng tôi sẽ cho quý vị biết bước tiếp theo. Chỉ mất khoảng một phút.",
     },
     cta: {
       heading: "Sẵn sàng bắt đầu?",
@@ -574,7 +523,7 @@ export const vi: Content = {
     meta: {
       title: "Tôi có đủ điều kiện không?",
       description:
-        "Trả lời năm câu hỏi ngắn để xem Golden Days ở West Sacramento có thể phù hợp hay không.",
+        "Trả lời bốn câu hỏi ngắn để xem Golden Days ở West Sacramento có thể phù hợp hay không.",
     },
     intro: {
       heading: "Xem Golden Days có thể phù hợp với quý vị hoặc người thân hay không.",
@@ -602,16 +551,12 @@ export const vi: Content = {
         help: "Chúng tôi phục vụ West Sacramento và các khu vực lân cận, gồm Sacramento, Natomas, Elk Grove, Carmichael, Rancho Cordova và Antelope. Nếu quý vị không chắc, hãy chọn Không chắc và chúng tôi sẽ kiểm tra.",
       },
       {
-        text: "Họ có thể tham gia các hoạt động nhóm trong ban ngày, dù có dùng khung tập đi hoặc xe lăn hay không?",
-        help: "Các hoạt động nhóm gồm thể dục, âm nhạc, trò chơi và cùng nhau dùng bữa. Mỗi người tham gia theo cách của riêng mình, và một số người còn cần được chăm sóc y tế trong ngày. Nếu quý vị không chắc họ có thể thích ứng với môi trường nhóm, hãy chọn Không chắc.",
+        text: "Họ có thể tham gia các hoạt động nhóm trong ngày mà không cần người kèm riêng không?",
+        help: "Các hoạt động nhóm gồm âm nhạc, trò chơi và cùng nhau dùng bữa. Chúng tôi không cung cấp dịch vụ chăm sóc một kèm một. Mỗi người tham gia theo cách riêng, và một số người cũng cần được chăm sóc y tế trong ngày. Nếu quý vị không chắc họ có thể thích nghi với môi trường nhóm, hãy chọn Không chắc.",
       },
       {
-        text: "Họ có bảo hiểm y tế từ một công ty bảo hiểm, dù có Medi-Cal hay không?",
-        help: "Chúng tôi nhận bảo hiểm, và Medi-Cal cùng với bảo hiểm. Riêng Medi-Cal thì không đủ. Nếu quý vị không chắc, hãy chọn Không chắc.",
-      },
-      {
-        text: "Họ có bác sĩ có thể cung cấp giấy tờ y tế gần đây không?",
-        help: "Chúng tôi yêu cầu giấy tờ y tế gần đây từ bác sĩ của họ, cùng với thông tin bảo hiểm. Nếu quý vị không chắc, hãy chọn Không chắc.",
+        text: "Họ có Medi-Cal không?",
+        help: "Chúng tôi nhận Medi-Cal. Quý vị cũng có thể tự thanh toán, vì vậy nếu họ không có Medi-Cal, hãy chọn Không và gọi cho chúng tôi để trao đổi. Nếu quý vị không chắc, hãy chọn Không chắc.",
       },
     ],
     results: {

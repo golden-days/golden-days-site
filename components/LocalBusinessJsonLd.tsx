@@ -33,7 +33,7 @@ export default async function LocalBusinessJsonLd() {
         "@type": "OpeningHoursSpecification",
         dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
         opens: "08:00",
-        closes: "16:30",
+        closes: "15:00",
       },
     ],
   };

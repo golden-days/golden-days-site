@@ -28,7 +28,7 @@ export const hmn: Content = {
     addressLines: ["1215 Merkley Ave", "West Sacramento, CA 95691"],
     addressOneLine: "1215 Merkley Ave, West Sacramento, CA 95691",
     hoursLabel: "Sij hawm qhib",
-    hours: "Sij hawm qhib lub chaw: Hnub Ib txog Hnub Tsib, 8:00 AM txog 4:30 PM",
+    hours: "Sij hawm qhib lub chaw: Hnub Ib txog Hnub Tsib, 8:00 AM txog 3:00 PM",
     programHours: "Sij hawm pab cuam: Hnub Ib txog Hnub Tsib, 8:00 AM txog 2:00 PM",
     hoursNote:
       "Peb kaw rau hnub Saturday thiab Sunday. Peb kuj kaw rau hnub Thanksgiving, hnub Christmas, hnub New Year thiab hnub 4 Lub Xya Hli.",
@@ -94,10 +94,9 @@ export const hmn: Content = {
     },
     whoWeServe: {
       heading: "Peb pab leej twg",
+      // TODO: translate the English lines below before turning this language on.
       paragraphs: [
-        "Golden Days txais cov neeg laus uas nyob hauv tsev thiab xav tau kev pab, kev nrog nyob, lossis kev saib xyuas thaum nruab hnub.",
-        "Coob leej uas tuaj cuag peb nyob nrog ib tug neeg hauv tsev neeg uas mus ua haujlwm, lossis xav so ib pliag thaum lub limtiam.",
-        "Yog koj tsis paub tseeb tias Golden Days puas haum rau koj tus neeg hlub, hu rau peb. Peb txaus siab sib tham, tsis yuam koj li.",
+        "Adult day health care programs serve frail older adults, and younger adults with chronic, disabling medical, cognitive, or mental health conditions, who are at risk of needing to move into a care facility. Golden Days serves adults age 18 and over.",
       ],
     },
     services: {
@@ -124,12 +123,14 @@ export const hmn: Content = {
         {
           icon: "socialWork" as const,
           title: "Kev Pab Zej Zog",
-          text: "Pab nkag siab txog cov txiaj ntsig, cov ntawv, thiab cov chaw pab hauv zej zog.",
+          // TODO: translate the English line below before turning this language on.
+          text: "Our social workers handle psychosocial assessments, care planning, advocacy, and community resources to support participants' health, safety, and well-being.",
         },
         {
           icon: "recreation" as const,
           title: "Kev Lom Zem",
-          text: "Suab paj nruag, kev ua si, kev ua tes ua taw, kev tawm dag zog, mus ncig, thiab nrog lwm tus nyob.",
+          // TODO: translate the English line below before turning this language on.
+          text: "Music, games, crafts, field trips, and time with other people.",
         },
         {
           icon: "transportation" as const,
@@ -169,7 +170,8 @@ export const hmn: Content = {
         },
         {
           title: "Ua kev ntsuam xyuas",
-          text: "Peb pab neeg tshuaj xyuas kev noj qab haus huv thiab txhua hnub xav tau dab tsi kom paub tias qhov kev pab cuam puas haum.",
+          // TODO: translate the English line below before turning this language on.
+          text: "Our team reviews health and daily needs to see whether the program fits. An assessment can only be done with a doctor's approval.",
         },
         {
           title: "Pib tuaj",
@@ -181,7 +183,8 @@ export const hmn: Content = {
     },
     cost: {
       heading: "Tus nqi thiab?",
-      text: "Peb txais insurance, thiab Medi-Cal ua ke nrog insurance. Them nyiaj ncaj qha kuj tau. Hu rau peb thiab peb yuav piav seb dab tsi siv tau rau koj tsev neeg.",
+      // TODO: translate the English line below before turning this language on.
+      text: "We accept Medi-Cal. Private pay is also an option. Call us and we will explain what applies to your family.",
     },
     trust: {
       text: "Pab cov tsev neeg West Sacramento txij li xyoo 2003. Tsev neeg li txij li xyoo 2007.",
@@ -319,19 +322,18 @@ export const hmn: Content = {
       {
         icon: "socialWork" as const,
         title: "Kev Pab Zej Zog",
-        summary: "Pab txog cov txiaj ntsig, cov ntawv, thiab nrhiav kev pab sab nraum lub chaw.",
-        details: [
-          "Peb tus social worker pab cov tsev neeg nkag siab txog cov foos thiab cov lus nug txog insurance.",
-          "Peb qhia tau cov kev pab hauv zej zog xws li kev pab hauv tsev lossis kev xa zaub mov.",
-          "Muaj kev sib tham nrog tsev neeg thaum txoj kev npaj yuav tsum hloov.",
-        ],
+        // TODO: translate the English line below before turning this language on.
+        summary: "Social workers are core staff responsible for psychosocial assessments, care planning, advocacy, and coordinating community resources to support participants' health, safety, and well-being.",
+        details: [],
       },
       {
         icon: "recreation" as const,
         title: "Kev Lom Zem",
-        summary: "Suab paj nruag, kev ua si, kev ua tes ua taw, kev tawm dag zog maj mam, thiab nrog lwm tus nyob txhua hnub.",
+        // TODO: translate the English line below before turning this language on.
+        summary: "Music, games, crafts, and company through the day.",
         details: [
-          "Kev ua si txhua hnub uas neeg koom tau lossis tsis koom, xws li suab paj nruag, kev ua si, kev ua tes ua taw, thiab kev tawm dag zog.",
+          // TODO: translate the English line below before turning this language on.
+          "Daily activities people can join or skip, such as music, games, and crafts.",
           "Mus ncig tshwm sim txog peb zaug ib lub limtiam nruab nrab, tsis them nqi ntxiv. Cov neeg txav tsis yooj yim mus nrog tau.",
           "Peb ua kev zoo siab hnub so thiab hnub yug ua ke.",
         ],
@@ -352,18 +354,19 @@ export const hmn: Content = {
       { time: "8:30 AM", text: "Txais tos" },
       { time: "9:00 AM", text: "Kev Tawm Dag Zog Kho Lub Cev" },
       { time: "9:30 AM", text: "Noj Tshais / Saib Xov Xwm Tam Sim No ntawm TV" },
-      { time: "10:00 AM", text: "Kawm Txog Kev Noj Qab Haus Huv / Kho Lub Cev Ib Leeg (Hnub Ib, Hnub Tuam Tsav, Hnub Tsib)" },
+      { time: "10:00 AM", text: "Kawm Txog Kev Noj Qab Haus Huv / Kho Lub Cev Ib Leeg" },
       { time: "10:30 AM", text: "Kev Tawm Dag Zog Kho Lub Cev / Pawg Taug Kev / Mus Ncig" },
       { time: "11:00 AM", text: "Kev Tawm Dag Zog Kho Lub Cev / Kev Kho Ua Pab Pawg" },
       { time: "11:30 AM", text: "Kev Tawm Dag Zog Kho Lub Cev / Pab Pawg Txhim Kho Lub Cim Xeeb / Kev Ua Si / Pab Pawg Sab Ntsuj Plig" },
-      { time: "12:00 PM", text: "Cov Qhua thiab Cov Neeg Hais Lus / Kho Lub Cev Ib Leeg (Hnub Ib, Hnub Tuam Tsav, Hnub Tsib)" },
-      { time: "12:30 PM", text: "Kev Kho Kom Ua Haujlwm Tau Ib Leeg (Hnub Peb, Hnub Tsib)" },
+      { time: "12:00 PM", text: "Cov Qhua thiab Cov Neeg Hais Lus / Kho Lub Cev Ib Leeg" },
+      { time: "12:30 PM", text: "Kev Kho Kom Ua Haujlwm Tau Ib Leeg" },
       { time: "1:00 PM", text: "Noj Su" },
       { time: "1:30 PM", text: "Saib Yeeb Yaj Kiab / Sib Tham" },
     ],
     // TODO: translate the English heading and intro below before turning this language on.
     rotatingHeading: "Rotating activities",
-    rotatingIntro: "Activities rotate through the week. Bingo happens several times a week, and we go on outings to local stores, markets, and parks. Call us for this month's calendar, which is available in English and Russian.",
+    // TODO: translate the English line below before turning this language on.
+    rotatingIntro: "Activities rotate through the week. Bingo happens several times a week, and we go on outings to local stores, markets, and parks.",
     rotatingActivities: [
       "Chav Kawm Lus Askiv",
       "Bingo",
@@ -371,10 +374,6 @@ export const hmn: Content = {
       "Outings to stores, markets, and parks",
       "Birthday celebrations",
     ],
-    cta: {
-      heading: "Tsis paub tias koj tus neeg hlub xav tau yam twg?",
-      text: "Hu rau peb. Peb yuav nug ob peb lo lus thiab teb koj ncaj ncaj.",
-    },
   },
 
   // ------------------------------------------------------ Transportation ---
@@ -418,39 +417,17 @@ export const hmn: Content = {
       },
       {
         heading: "Nqa nce thiab xa nqis",
+        // TODO: translate the English lines below before turning this language on.
         paragraphs: [
-          "Txhua tus neeg caij tau ib lub sij hawm tuaj nqa, tsis yog ib feeb tseeb, vim tsheb nres thiab lwm tus neeg caij hloov txoj kev.",
-          "Peb tsav ze rau qhov rooj li ntawm tau. Thaum tuaj nqa, tus neeg saib xyuas ntawm tus neeg tuaj koom pab nws nce bus. Cov tsav tsheb tsis pab cov neeg tuaj koom nce, thiab lawv nqa tsis tau leej twg nce bus.",
-          "Ntawm lub chaw, cov tsav tsheb pab tau cov neeg tuaj koom nqis bus, thiab peb cov neeg saib xyuas ntawm no npaj txais lawv. Peb cov neeg saib xyuas tsis mus rau tib neeg tej tsev.",
-          "Yog bus lig, peb hu rau tsev neeg.",
+          "At home, a caregiver helps the participant onto the bus, and at the center our drivers help them off.",
         ],
       },
       {
         heading: "Wheelchair thiab kev txav tsis yooj yim",
+        // TODO: translate the English lines below before turning this language on.
         paragraphs: [
-          "Peb cov tsheb thauj tau cov neeg siv wheelchair, walker, lossis tus pas.",
-          "Wheelchair raug khi ruaj ua ntej tsheb tsav, thiab txhua tus neeg caij siv txoj siv tsheb.",
-          // TODO: translate the English line below before turning this language on.
-          "Our buses operate under a permit from the California Public Utilities Commission.",
-          "Qhia peb txog oxygen, kev hloov chaw zaum, lossis lwm yam uas tus tsav tsheb yuav tsum paub, thiab peb yuav npaj.",
+          "Our vehicles can carry participants who use a wheelchair, a walker, or a cane.",
         ],
-      },
-      {
-        heading: "Tsev neeg npaj lossis hloov kev thauj li cas",
-        paragraphs: [
-          "Kev thauj teem tseg thaum koj tus neeg hlub kos npe nkag, thiab sij hawm tseem zoo li qub txhua lub limtiam.",
-          "Yog xav hloov chaw tuaj nqa, ntxiv ib hnub, lossis tshem kev thauj, hu rau chaw ua haujlwm.",
-          "Yog tshem kev thauj hnub ntawd, hu sai li sai tau kom tus tsav tsheb hloov tau txoj kev.",
-        ],
-        list: {
-          label: "Yog xav hloov kev thauj, npaj cov no:",
-          items: [
-            "Tus neeg caij npe",
-            "Hnub lossis cov hnub uas hloov",
-            "Chaw nyob tshiab, yog qhov chaw tuaj nqa hloov",
-            "Ib tus xov tooj uas peb hu tau koj hnub ntawd",
-          ],
-        },
       },
     ],
     secondPhoto: {
@@ -478,6 +455,8 @@ export const hmn: Content = {
     lead: "Kos npe nkag siv ob peb zaug sib tham, tsis yog ib pab ntawv loj. Nov yog li cas.",
     qualifies: {
       heading: "Leej twg tsim nyog",
+      // TODO: translate the English line below before turning this language on.
+      purpose: "We are here to help improve participants' health, both physically and mentally. We do not provide one-on-one care.",
       intro: "Golden Days feem ntau haum rau ib tug neeg laus uas:",
       items: [
         "Yog neeg laus nyob hauv tsev lossis nrog tsev neeg",
@@ -485,37 +464,35 @@ export const hmn: Content = {
         "Muaj mob uas tau txiaj ntsig ntawm kev tshuaj xyuas tsis tu ncua",
         "Koom tau hauv ib qhov kev pab cuam thaum nruab hnub ua pab pawg",
       ],
-      note: "Kev tsim nyog txiav txim tom qab ua kev ntsuam xyuas, tsis yog hla xov tooj. Hu rau peb thiab peb yuav qhia kauj ruam tom ntej yog li cas.",
+      // TODO: translate the English line below before turning this language on.
+      note: "An assessment can only be done with a doctor's approval. Call us and we will tell you what the next step looks like.",
     },
     pays: {
       heading: "Leej twg them nyiaj",
       intro: "Cov tsev neeg feem ntau them ib txoj kev hauv qab no:",
+      // TODO: translate the English line below before turning this language on.
+      value: "Adult day health care usually costs much less than a hospital stay later on, so enrolling early can help.",
       items: [
         {
           title: "Medi-Cal",
-          text: "Peb txais Medi-Cal ua ke nrog insurance, tab sis tsis txais Medi-Cal ib leeg. Peb piav tau tias cov kauj ruam zoo li cas.",
-        },
-        {
-          title: "Cov phiaj xwm saib xyuas kev noj qab haus huv (managed care)",
-          text: "Qee cov phiaj xwm kev noj qab haus huv them rau cov kev pab cuam thaum nruab hnub. Peb yuav tshawb xyuas seb koj txoj phiaj xwm hais li cas.",
+          // TODO: translate the English line below before turning this language on.
+          text: "We accept Medi-Cal. We can explain what the process looks like.",
         },
         {
           title: "Them nyiaj ncaj qha",
           text: "Cov tsev neeg kuj them ncaj qha tau.",
         },
       ],
-      note: "Tsis muaj dabtsi ntawm nplooj ntawv no yog lus cog tseg txog kev them lossis tus nqi. Hu rau peb kom paub xov xwm tam sim no txog koj li xwm txheej.",
+      // TODO: translate the English line below before turning this language on.
+      note: "Medicare does not cover this program. Nothing on this page is a promise of coverage or a price. Call us for current information about your situation.",
     },
     bring: {
       heading: "Yuav coj dab tsi",
       intro: "Coj cov uas koj muaj. Peb yuav pab lwm yam.",
+      // TODO: translate the English lines below before turning this language on.
       items: [
-        "Daim ntawv pov thawj muaj duab",
-        "Daim npav insurance (koj coj nws ib leeg tau)",
-        "Daim npav Medi-Cal (coj nrog koj daim npav insurance, tsis yog coj ib leeg)",
-        "Koj tus kws kho mob lub npe thiab xov tooj",
-        "Cov npe thiab xov tooj ntawm cov neeg hu thaum muaj xwm ceev",
-        "Cov ntawv kho mob tshiab uas koj twb muaj",
+        "Photo identification",
+        "Medi-Cal card",
       ],
     },
     steps: {
@@ -528,18 +505,6 @@ export const hmn: Content = {
         {
           title: "Tuaj saib lub chaw",
           text: "Tuaj thaum lub sij hawm pab cuam, zoo tshaj ua ntej 1:30 PM, kom koj pom ib hnub li niaj hnub. Coj koj tus neeg hlub tuaj yog nws xis nyob.",
-        },
-        {
-          title: "Kev ntsuam xyuas",
-          text: "Peb pab neeg tshuaj xyuas keeb kwm kev noj qab haus huv, yam xav tau txhua hnub, thiab lub hom phiaj kom paub tseeb tias qhov kev pab cuam haum.",
-        },
-        {
-          title: "Cov ntawv thiab insurance",
-          text: "Peb sau cov foos kos npe nkag ua ke thiab daws cov lus nug txog insurance.",
-        },
-        {
-          title: "Hnub thawj zaug",
-          text: "Peb teem sij hawm, npaj kev thauj, thiab qhia koj tus neeg hlub rau cov neeg ua haujlwm thiab lwm tus neeg tuaj koom.",
         },
       ],
     },
@@ -566,7 +531,8 @@ export const hmn: Content = {
     },
     qualifyPrompt: {
       heading: "Tsis paub tias puas haum?",
-      text: "Teb tsib lo lus nug luv luv thiab peb yuav qhia koj kauj ruam tom ntej. Siv kwv yees ib feeb.",
+      // TODO: translate the English line below before turning this language on.
+      text: "Answer four short questions and we will point you to the next step. It takes about a minute.",
     },
     cta: {
       heading: "Npaj pib lawm?",
@@ -580,8 +546,9 @@ export const hmn: Content = {
   qualify: {
     meta: {
       title: "Kuv puas tsim nyog?",
+      // TODO: translate the English line below before turning this language on.
       description:
-        "Teb tsib lo lus nug luv luv kom paub tias Golden Days hauv West Sacramento puas haum.",
+        "Answer four short questions to see whether Golden Days in West Sacramento may be a good fit.",
     },
     intro: {
       heading: "Saib seb Golden Days puas haum rau koj lossis koj tus neeg hlub.",
@@ -609,16 +576,16 @@ export const hmn: Content = {
         help: "Peb pab West Sacramento thiab cov thaj tsam ze, suav nrog Sacramento, Natomas, Elk Grove, Carmichael, Rancho Cordova, thiab Antelope. Yog koj tsis paub tseeb, xaiv Tsis paub tseeb thiab peb yuav tshawb xyuas.",
       },
       {
-        text: "Nws puas koom tau kev ua si ua pab pawg thaum nruab hnub, siv walker lossis wheelchair los tsis siv?",
-        help: "Kev ua si ua pab pawg muaj kev tawm dag zog, suab paj nruag, kev ua si, thiab noj mov ua ke. Neeg koom raws nws li kev, thiab qee tus kuj xav tau kev kho mob thaum nruab hnub. Yog koj tsis paub tseeb tias nws yuav nyob tau hauv pawg, xaiv Tsis paub tseeb.",
+        // TODO: translate the English line below before turning this language on.
+        text: "Can they take part in group activities during the day without needing one-on-one help?",
+        // TODO: translate the English line below before turning this language on.
+        help: "Group activities include music, games, and meals together. We do not provide one-on-one care. People take part in their own way, and some also need medical attention during the day. If you are not sure they could manage a group setting, choose Not sure.",
       },
       {
-        text: "Nws puas muaj insurance kev noj qab haus huv los ntawm lub tuam txhab insurance, muaj Medi-Cal los tsis muaj?",
-        help: "Peb txais insurance, thiab Medi-Cal ua ke nrog insurance. Medi-Cal ib leeg tsis txaus. Yog koj tsis paub tseeb, xaiv Tsis paub tseeb.",
-      },
-      {
-        text: "Nws puas muaj kws kho mob uas qhia tau cov ntawv kho mob tshiab?",
-        help: "Peb thov cov ntawv kho mob tshiab ntawm nws tus kws kho mob, nrog rau xov xwm insurance. Yog koj tsis paub tseeb, xaiv Tsis paub tseeb.",
+        // TODO: translate the English line below before turning this language on.
+        text: "Do they have Medi-Cal?",
+        // TODO: translate the English line below before turning this language on.
+        help: "We accept Medi-Cal. Private pay is also an option, so if they do not have Medi-Cal, choose No and call us to talk it over. If you are not sure, choose Not sure.",
       },
     ],
     results: {
