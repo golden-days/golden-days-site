@@ -292,21 +292,20 @@ export const en = {
       {
         icon: "nursing" as const,
         title: "Nursing Care",
-        summary: "Health checks and medications from our nurses during the day.",
+        summary: "Our nursing department works to promote participants' health, safety, dignity, independence, and overall well-being with coordinated, individualized, evidence-based nursing services.",
         details: [
-          "Nurses check vital signs and blood glucose (blood sugar).",
-          "Nurses give scheduled medications during program hours.",
-          "If health changes, we call the family and the doctor's office.",
+          "Vital signs, blood pressure, and blood glucose checks (for diabetic participants).",
+          "Monitoring and management of health conditions.",
+          "Health education and counseling.",
         ],
       },
       {
         icon: "rehabilitation" as const,
         title: "Rehabilitation",
-        summary: "Exercises and therapy that support strength, balance, and movement.",
+        summary: "Daily exercise-focused therapy in a group setting to help improve mobility, joint movement, strength, balance, coordination, and endurance.",
         details: [
-          "Therapy staff work on walking, balance, and everyday movement, with sessions planned around what each person is working toward.",
-          "Group exercise happens most mornings for people who want to join.",
-          "Licensed therapists provide massage therapy and paraffin wax treatments, included for participants at no extra charge.",
+          "Licensed physical and occupational therapists give individualized recommendations and education as needed, including home exercise programs and resources for equipment, to maximize independence and safety.",
+          "Massage therapy and paraffin wax treatments are included at no extra charge for suitable participants, after a therapist evaluates whether they are appropriate.",
         ],
       },
       {
