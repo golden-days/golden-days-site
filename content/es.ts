@@ -283,57 +283,32 @@ export const es: Content = {
       {
         icon: "nursing" as const,
         title: "Cuidado de enfermería",
-        summary: "Nuestro departamento de enfermería trabaja para promover la salud, la seguridad, la dignidad, la independencia y el bienestar general de los participantes mediante servicios de enfermería coordinados, individualizados y basados en la evidencia.",
-        details: [
-          "Control de signos vitales, presión arterial y glucosa en sangre (para participantes con diabetes).",
-          "Seguimiento y manejo de las condiciones de salud.",
-          "Educación y orientación sobre la salud.",
-        ],
+        summary: "Nuestro equipo de enfermería promueve la salud, la seguridad y la independencia. Las enfermeras controlan los signos vitales, la presión arterial y la glucosa (en participantes con diabetes), vigilan las condiciones de salud y brindan educación sobre la salud.",
       },
       {
         icon: "rehabilitation" as const,
         title: "Rehabilitación",
-        summary: "Terapia diaria centrada en el ejercicio, en grupo, para ayudar a mejorar la movilidad, el movimiento de las articulaciones, la fuerza, el equilibrio, la coordinación y la resistencia.",
-        details: [
-          "Terapeutas físicos y ocupacionales con licencia ofrecen recomendaciones y educación individualizadas según sea necesario, incluidos ejercicios para hacer en casa y recursos de equipo, para maximizar la independencia y la seguridad.",
-          "La terapia de masaje y los tratamientos de parafina están incluidos sin costo adicional para los participantes adecuados, después de que un terapeuta evalúe si son apropiados.",
-        ],
+        summary: "Terapia diaria de ejercicio en grupo para mejorar la movilidad, la fuerza, el equilibrio y la resistencia. Terapeutas con licencia dan orientación individualizada, y la terapia de masaje y los tratamientos de parafina se incluyen sin costo adicional para los participantes adecuados.",
       },
       {
         icon: "nutrition" as const,
         title: "Nutrición",
-        summary: "Desayuno y almuerzo cada día del programa, preparados por un cocinero que planea según las necesidades de cada persona.",
-        details: [
-          "El desayuno y el almuerzo se sirven todos los días del programa, y el menú va cambiando.",
-          "Un cocinero especializado planea las comidas según las necesidades de cada persona.",
-          "Cuéntenos sobre necesidades de alimentación, como alergias, dificultad para tragar (podemos picar la comida) o una dieta vegetariana.",
-        ],
+        summary: "Desayuno y almuerzo cada día de programa, con un menú rotativo. Nuestro cocinero planea las comidas según las necesidades de cada persona, incluidas alergias, dificultad para tragar y dietas vegetarianas.",
       },
       {
         icon: "socialWork" as const,
         title: "Trabajo social",
         summary: "Los trabajadores sociales son parte esencial del personal y se encargan de las evaluaciones psicosociales, la planificación de la atención, la defensa de los derechos y la coordinación de recursos de la comunidad para apoyar la salud, la seguridad y el bienestar de los participantes.",
-        details: [],
       },
       {
         icon: "recreation" as const,
         title: "Recreación",
-        summary: "Música, juegos, manualidades y compañía durante el día.",
-        details: [
-          "Actividades diarias en las que se puede participar o no, como música, juegos y manualidades.",
-          "Las excursiones se hacen hasta tres veces por semana en promedio, sin costo adicional. Las personas con necesidades de movilidad pueden acompañarnos.",
-          "Celebramos juntos los días festivos y los cumpleaños.",
-        ],
+        summary: "Música, juegos y manualidades todos los días, en los que puede participar o no, además de cumpleaños y fiestas. Salidas hasta tres veces por semana sin costo adicional; las personas con movilidad reducida pueden ir.",
       },
       {
         icon: "transportation" as const,
         title: "Transporte",
-        summary: "Viajes de ida y vuelta al centro en los días del programa.",
-        details: [
-          "Los viajes están disponibles dentro de nuestra zona de servicio.",
-          "Nuestros vehículos pueden transportar a personas que usan silla de ruedas o andador.",
-          "El autobús se acerca a la puerta lo más posible. En casa, un cuidador ayuda al participante a subir al autobús. En el centro, los conductores ayudan a los participantes a bajar del autobús.",
-        ],
+        summary: "Traslados de ida y vuelta al centro en los días de programa, incluidos participantes que usan silla de ruedas o andador. En casa un cuidador los ayuda a subir, y en el centro nuestros conductores los ayudan a bajar.",
       },
     ],
     glanceHeading: "Servicios de un vistazo",

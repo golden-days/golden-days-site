@@ -283,57 +283,32 @@ export const tl: Content = {
       {
         icon: "nursing" as const,
         title: "Pangangalaga ng Nurse",
-        summary: "Nagsusumikap ang aming nursing department na itaguyod ang kalusugan, kaligtasan, dignidad, kalayaan, at pangkalahatang kapakanan ng mga kalahok sa pamamagitan ng koordinado, indibidwal, at batay-sa-ebidensyang serbisyong pang-nursing.",
-        details: [
-          "Pagsusuri ng vital signs, blood pressure, at blood glucose (para sa mga kalahok na may diabetes).",
-          "Pagsubaybay at pamamahala ng mga kondisyong pangkalusugan.",
-          "Edukasyon at pagpapayo tungkol sa kalusugan.",
-        ],
+        summary: "Itinataguyod ng aming nursing team ang kalusugan, kaligtasan, at kalayaan. Sinusuri ng mga nurse ang vital signs, blood pressure, at blood glucose (para sa mga kalahok na may diabetes), binabantayan ang mga kondisyong pangkalusugan, at nagbibigay ng edukasyon sa kalusugan.",
       },
       {
         icon: "rehabilitation" as const,
         title: "Rehabilitasyon",
-        summary: "Pang-araw-araw na therapy na nakatuon sa ehersisyo sa grupo upang makatulong na mapabuti ang mobility, galaw ng mga kasukasuan, lakas, balanse, koordinasyon, at tibay.",
-        details: [
-          "Ang mga lisensyadong physical at occupational therapist ay nagbibigay ng indibidwal na rekomendasyon at edukasyon kung kailangan, kasama ang mga ehersisyo sa bahay at mapagkukunan ng kagamitan, upang mapalaki ang kalayaan at kaligtasan.",
-          "Kasama nang walang dagdag na bayad ang massage therapy at paraffin wax treatment para sa mga angkop na kalahok, matapos suriin ng therapist kung nararapat ang mga ito.",
-        ],
+        summary: "Pang-araw-araw na group exercise therapy upang mapabuti ang mobility, lakas, balanse, at tibay. Nagbibigay ng indibidwal na gabay ang mga lisensyadong therapist, at kasama nang walang dagdag na bayad ang massage at paraffin wax treatment para sa mga angkop na kalahok.",
       },
       {
         icon: "nutrition" as const,
         title: "Nutrisyon",
-        summary: "Almusal at tanghalian sa bawat araw ng programa, na inihahanda ng kusinerong nagpaplano para sa pangangailangan ng bawat tao.",
-        details: [
-          "Ang almusal at tanghalian ay inihahain sa bawat araw ng programa, at nagpapalit-palit ang mga pagkain.",
-          "Isang espesyalistang kusinero ang nagpaplano ng mga pagkain ayon sa pangangailangan ng bawat tao.",
-          "Sabihin sa amin ang tungkol sa pangangailangan sa pagkain, tulad ng allergy, hirap sa paglunok (maaari naming tadtarin ang pagkain), o vegetarian na diyeta.",
-        ],
+        summary: "Almusal at tanghalian sa bawat araw ng programa, na nag-iiba ang menu. Pinaplano ng aming kusinero ang mga pagkain ayon sa pangangailangan ng bawat tao, kasama ang allergy, hirap sa paglunok, at vegetarian na diyeta.",
       },
       {
         icon: "socialWork" as const,
         title: "Social Work",
         summary: "Ang mga social worker ay pangunahing staff na may responsibilidad sa psychosocial assessment, pagpaplano ng pangangalaga, adbokasiya, at pag-uugnay ng mga mapagkukunan ng komunidad upang suportahan ang kalusugan, kaligtasan, at kapakanan ng mga kalahok.",
-        details: [],
       },
       {
         icon: "recreation" as const,
         title: "Libangan",
-        summary: "Musika, laro, crafts, at kasama sa buong araw.",
-        details: [
-          "Mga pang-araw-araw na aktibidad na maaaring salihan o laktawan, tulad ng musika, laro, at crafts.",
-          "Ang mga field trip ay hanggang tatlong beses sa isang linggo sa karaniwan, nang walang dagdag na bayad. Maaaring sumama ang mga may kahirapan sa paggalaw.",
-          "Sabay-sabay naming ipinagdiriwang ang mga holiday at kaarawan.",
-        ],
+        summary: "Araw-araw na musika, laro, at crafts na maaaring salihan o laktawan, pati ang mga holiday at kaarawan. Pamamasyal hanggang tatlong beses sa isang linggo, walang dagdag na bayad, at maaaring sumama ang may kahirapan sa paggalaw.",
       },
       {
         icon: "transportation" as const,
         title: "Transportasyon",
-        summary: "Sakay papunta at pauwi mula sa center sa mga araw ng programa.",
-        details: [
-          "May sakay sa loob ng aming service area.",
-          "Kayang isakay ng aming mga sasakyan ang mga gumagamit ng wheelchair o walker.",
-          "Lumalapit ang bus hangga't maaari sa pinto. Sa bahay, tinutulungan ng isang tagapag-alaga ang kalahok na makasakay sa bus. Sa center, tinutulungan ng mga driver ang mga kalahok na makababa sa bus.",
-        ],
+        summary: "Sakay papunta at pabalik sa center sa mga araw ng programa, kasama ang mga kalahok na gumagamit ng wheelchair o walker. Sa bahay, tinutulungan sila ng caregiver na sumakay, at sa center, tinutulungan silang bumaba ng aming mga driver.",
       },
     ],
     glanceHeading: "Mga serbisyo sa isang tingin",

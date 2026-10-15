@@ -292,57 +292,32 @@ export const en = {
       {
         icon: "nursing" as const,
         title: "Nursing Care",
-        summary: "Our nursing department works to promote participants' health, safety, dignity, independence, and overall well-being with coordinated, individualized, evidence-based nursing services.",
-        details: [
-          "Vital signs, blood pressure, and blood glucose checks (for diabetic participants).",
-          "Monitoring and management of health conditions.",
-          "Health education and counseling.",
-        ],
+        summary: "Our nursing team promotes health, safety, and independence. Nurses check vital signs, blood pressure, and blood glucose (for diabetic participants), monitor health conditions, and provide health education.",
       },
       {
         icon: "rehabilitation" as const,
         title: "Rehabilitation",
-        summary: "Daily exercise-focused therapy in a group setting to help improve mobility, joint movement, strength, balance, coordination, and endurance.",
-        details: [
-          "Licensed physical and occupational therapists give individualized recommendations and education as needed, including home exercise programs and resources for equipment, to maximize independence and safety.",
-          "Massage therapy and paraffin wax treatments are included at no extra charge for suitable participants, after a therapist evaluates whether they are appropriate.",
-        ],
+        summary: "Daily group exercise therapy to improve mobility, strength, balance, and endurance. Licensed therapists give individualized guidance, and massage and paraffin wax treatments are included at no extra charge for suitable participants.",
       },
       {
         icon: "nutrition" as const,
         title: "Nutrition",
-        summary: "Breakfast and lunch each program day, made by a cook who plans for each person's needs.",
-        details: [
-          "Breakfast and lunch are served every program day, and the meals rotate.",
-          "A specialist cook plans meals around each person's needs.",
-          "Tell us about food needs, such as allergies, trouble swallowing (we can chop food), or a vegetarian diet.",
-        ],
+        summary: "Breakfast and lunch every program day, with a rotating menu. Our cook plans meals around each person's needs, including allergies, trouble swallowing, and vegetarian diets.",
       },
       {
         icon: "socialWork" as const,
         title: "Social Work",
         summary: "Social workers are core staff responsible for psychosocial assessments, care planning, advocacy, and coordinating community resources to support participants' health, safety, and well-being.",
-        details: [],
       },
       {
         icon: "recreation" as const,
         title: "Recreation",
-        summary: "Music, games, crafts, and company through the day.",
-        details: [
-          "Daily activities people can join or skip, such as music, games, and crafts.",
-          "Field trips happen up to three times a week on average, at no extra cost. People with mobility needs can come along.",
-          "Holidays and birthdays are celebrated together.",
-        ],
+        summary: "Daily music, games, and crafts you can join or skip, plus holidays and birthdays. Field trips up to three times a week at no extra cost, and people with mobility needs can come along.",
       },
       {
         icon: "transportation" as const,
         title: "Transportation",
-        summary: "Rides to and from the center on program days.",
-        details: [
-          "Rides are available within our service area.",
-          "Our vehicles can carry participants who use a wheelchair or a walker.",
-          "The bus drives as close to the door as possible. At home, a caregiver helps the participant onto the bus. At the center, drivers help participants off the bus.",
-        ],
+        summary: "Rides to and from the center on program days, including for participants who use a wheelchair or a walker. A caregiver helps them aboard at home, and our drivers help them off at the center.",
       },
     ],
     glanceHeading: "Services at a glance",
