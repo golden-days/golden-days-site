@@ -34,6 +34,16 @@ export default async function ServicesPage() {
             </li>
           ))}
         </ul>
+
+        <h2 className="mt-12 text-2xl sm:text-3xl">{services.glanceHeading}</h2>
+        <p className="mt-3 max-w-3xl">{services.glanceIntro}</p>
+        <ul className="mt-5 list-disc space-y-1 pl-6 sm:columns-2 lg:columns-3">
+          {services.glanceItems.map((item) => (
+            <li key={item} className="break-inside-avoid">
+              {item}
+            </li>
+          ))}
+        </ul>
       </Section>
 
       <Section background="cream">
