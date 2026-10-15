@@ -283,57 +283,32 @@ export const vi: Content = {
       {
         icon: "nursing" as const,
         title: "Chăm sóc điều dưỡng",
-        summary: "Bộ phận điều dưỡng của chúng tôi nỗ lực thúc đẩy sức khỏe, sự an toàn, phẩm giá, tính tự lập và phúc lợi chung của người tham gia thông qua các dịch vụ điều dưỡng phối hợp, cá nhân hóa và dựa trên bằng chứng.",
-        details: [
-          "Kiểm tra dấu hiệu sinh tồn, huyết áp và đường huyết (đối với người tham gia bị tiểu đường).",
-          "Theo dõi và quản lý các tình trạng sức khỏe.",
-          "Giáo dục và tư vấn về sức khỏe.",
-        ],
+        summary: "Đội ngũ điều dưỡng của chúng tôi thúc đẩy sức khỏe, sự an toàn và tính tự lập. Điều dưỡng kiểm tra dấu hiệu sinh tồn, huyết áp và đường huyết (đối với người tham gia bị tiểu đường), theo dõi tình trạng sức khỏe và giáo dục về sức khỏe.",
       },
       {
         icon: "rehabilitation" as const,
         title: "Phục hồi chức năng",
-        summary: "Liệu pháp tập luyện hằng ngày theo nhóm giúp cải thiện khả năng vận động, độ linh hoạt của khớp, sức mạnh, thăng bằng, sự phối hợp và sức bền.",
-        details: [
-          "Các chuyên viên vật lý trị liệu và hoạt động trị liệu có giấy phép đưa ra khuyến nghị và hướng dẫn riêng khi cần, gồm các bài tập tại nhà và nguồn trang thiết bị, nhằm tối đa hóa tính tự lập và an toàn.",
-          "Liệu pháp xoa bóp và liệu pháp sáp paraffin được cung cấp miễn phí cho những người tham gia phù hợp, sau khi chuyên viên trị liệu đánh giá mức độ phù hợp.",
-        ],
+        summary: "Liệu pháp tập luyện theo nhóm hằng ngày giúp cải thiện khả năng vận động, sức mạnh, thăng bằng và sức bền. Các chuyên viên trị liệu có giấy phép hướng dẫn riêng, và liệu pháp xoa bóp, sáp paraffin được cung cấp miễn phí cho những người tham gia phù hợp.",
       },
       {
         icon: "nutrition" as const,
         title: "Dinh dưỡng",
-        summary: "Bữa sáng và bữa trưa mỗi ngày có chương trình, do đầu bếp lên thực đơn theo nhu cầu của từng người.",
-        details: [
-          "Bữa sáng và bữa trưa được phục vụ mỗi ngày có chương trình, và thực đơn thay đổi luân phiên.",
-          "Một đầu bếp chuyên môn lên thực đơn theo nhu cầu của từng người.",
-          "Hãy cho chúng tôi biết về nhu cầu ăn uống, chẳng hạn dị ứng, khó nuốt (chúng tôi có thể cắt nhỏ thức ăn) hoặc ăn chay.",
-        ],
+        summary: "Bữa sáng và bữa trưa mỗi ngày sinh hoạt, thực đơn thay đổi. Đầu bếp của chúng tôi lên thực đơn theo nhu cầu của từng người, kể cả dị ứng, khó nuốt và chế độ ăn chay.",
       },
       {
         icon: "socialWork" as const,
         title: "Công tác xã hội",
         summary: "Nhân viên xã hội là nhân sự cốt lõi, phụ trách đánh giá tâm lý xã hội, lập kế hoạch chăm sóc, bênh vực quyền lợi và điều phối nguồn lực cộng đồng để hỗ trợ sức khỏe, sự an toàn và phúc lợi của người tham gia.",
-        details: [],
       },
       {
         icon: "recreation" as const,
         title: "Sinh hoạt giải trí",
-        summary: "Âm nhạc, trò chơi, thủ công và sự đồng hành suốt cả ngày.",
-        details: [
-          "Các hoạt động hằng ngày mà mọi người có thể tham gia hoặc bỏ qua, như âm nhạc, trò chơi và thủ công.",
-          "Các chuyến đi chơi xa diễn ra trung bình tối đa ba lần một tuần, không tính thêm phí. Người gặp khó khăn về đi lại vẫn có thể cùng đi.",
-          "Các ngày lễ và sinh nhật được cùng nhau chúc mừng.",
-        ],
+        summary: "Mỗi ngày có âm nhạc, trò chơi và thủ công để tham gia hoặc bỏ qua, cùng các dịp lễ và sinh nhật. Các chuyến đi tối đa ba lần mỗi tuần, không tính thêm phí, người hạn chế vận động cũng có thể tham gia.",
       },
       {
         icon: "transportation" as const,
         title: "Đưa đón",
-        summary: "Xe đưa đón đến và về từ trung tâm vào những ngày có chương trình.",
-        details: [
-          "Có xe đưa đón trong khu vực phục vụ của chúng tôi.",
-          "Xe của chúng tôi có thể chở người dùng xe lăn hoặc khung tập đi.",
-          "Xe buýt chạy đến gần cửa nhất có thể. Tại nhà, người chăm sóc giúp người tham gia lên xe. Tại trung tâm, tài xế giúp người tham gia xuống xe.",
-        ],
+        summary: "Đưa đón đến và từ trung tâm vào các ngày sinh hoạt, kể cả người tham gia dùng xe lăn hoặc khung tập đi. Ở nhà có người chăm sóc giúp họ lên xe, và tại trung tâm tài xế của chúng tôi giúp họ xuống xe.",
       },
     ],
     glanceHeading: "Dịch vụ tóm tắt",
