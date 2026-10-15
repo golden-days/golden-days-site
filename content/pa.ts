@@ -28,7 +28,7 @@ export const pa: Content = {
     addressLines: ["1215 Merkley Ave", "West Sacramento, CA 95691"],
     addressOneLine: "1215 Merkley Ave, West Sacramento, CA 95691",
     hoursLabel: "ਸਮਾਂ",
-    hours: "ਕੇਂਦਰ ਦਾ ਸਮਾਂ: ਸੋਮਵਾਰ ਤੋਂ ਸ਼ੁੱਕਰਵਾਰ, ਸਵੇਰੇ 8:00 ਤੋਂ ਸ਼ਾਮ 4:30 ਵਜੇ ਤੱਕ",
+    hours: "ਕੇਂਦਰ ਦਾ ਸਮਾਂ: ਸੋਮਵਾਰ ਤੋਂ ਸ਼ੁੱਕਰਵਾਰ, ਸਵੇਰੇ 8:00 ਤੋਂ ਸ਼ਾਮ 3:00 ਵਜੇ ਤੱਕ",
     programHours: "ਸੇਵਾ ਦਾ ਸਮਾਂ: ਸੋਮਵਾਰ ਤੋਂ ਸ਼ੁੱਕਰਵਾਰ, ਸਵੇਰੇ 8:00 ਤੋਂ ਦੁਪਹਿਰ 2:00 ਵਜੇ ਤੱਕ",
     hoursNote:
       "ਸ਼ਨੀਵਾਰ ਅਤੇ ਐਤਵਾਰ ਬੰਦ ਹੈ। ਥੈਂਕਸਗਿਵਿੰਗ, ਕ੍ਰਿਸਮਸ ਦੇ ਦਿਨ, ਨਵੇਂ ਸਾਲ ਦੇ ਦਿਨ ਅਤੇ ਚਾਰ ਜੁਲਾਈ ਨੂੰ ਵੀ ਬੰਦ ਰਹਿੰਦਾ ਹੈ।",
@@ -94,10 +94,9 @@ export const pa: Content = {
     },
     whoWeServe: {
       heading: "ਅਸੀਂ ਕਿਨ੍ਹਾਂ ਦੀ ਸੇਵਾ ਕਰਦੇ ਹਾਂ",
+      // TODO: translate the English lines below before turning this language on.
       paragraphs: [
-        "Golden Days ਉਨ੍ਹਾਂ ਬਾਲਗਾਂ ਦਾ ਸਵਾਗਤ ਕਰਦਾ ਹੈ ਜੋ ਘਰ ਵਿੱਚ ਰਹਿੰਦੇ ਹਨ ਅਤੇ ਦਿਨ ਵੇਲੇ ਸਹਾਰੇ, ਸੰਗਤ ਜਾਂ ਨਿਗਰਾਨੀ ਦੀ ਲੋੜ ਮਹਿਸੂਸ ਕਰਦੇ ਹਨ।",
-        "ਸਾਡੇ ਕੋਲ ਆਉਣ ਵਾਲੇ ਬਹੁਤ ਸਾਰੇ ਲੋਕ ਅਜਿਹੇ ਪਰਿਵਾਰਕ ਮੈਂਬਰ ਨਾਲ ਰਹਿੰਦੇ ਹਨ ਜੋ ਨੌਕਰੀ ਕਰਦਾ ਹੈ, ਜਾਂ ਜਿਸ ਨੂੰ ਹਫ਼ਤੇ ਦੌਰਾਨ ਬੱਸ ਥੋੜ੍ਹੇ ਆਰਾਮ ਦੀ ਲੋੜ ਹੈ।",
-        "ਜੇ ਤੁਹਾਨੂੰ ਪੱਕਾ ਨਹੀਂ ਪਤਾ ਕਿ Golden Days ਤੁਹਾਡੇ ਪਿਆਰੇ ਲਈ ਠੀਕ ਹੈ ਜਾਂ ਨਹੀਂ, ਤਾਂ ਸਾਨੂੰ ਫ਼ੋਨ ਕਰੋ। ਅਸੀਂ ਬਿਨਾਂ ਕਿਸੇ ਦਬਾਅ ਦੇ ਖੁਸ਼ੀ ਨਾਲ ਗੱਲ ਕਰਾਂਗੇ।",
+        "Adult day health care programs serve frail older adults, and younger adults with chronic, disabling medical, cognitive, or mental health conditions, who are at risk of needing to move into a care facility. Golden Days serves adults age 18 and over.",
       ],
     },
     services: {
@@ -124,12 +123,14 @@ export const pa: Content = {
         {
           icon: "socialWork" as const,
           title: "ਸਮਾਜਿਕ ਕਾਰਜ",
-          text: "ਲਾਭਾਂ, ਕਾਗਜ਼ੀ ਕਾਰਵਾਈ ਅਤੇ ਭਾਈਚਾਰੇ ਦੇ ਸਾਧਨਾਂ ਨੂੰ ਸਮਝਣ ਵਿੱਚ ਮਦਦ।",
+          // TODO: translate the English line below before turning this language on.
+          text: "Our social workers handle psychosocial assessments, care planning, advocacy, and community resources to support participants' health, safety, and well-being.",
         },
         {
           icon: "recreation" as const,
           title: "ਮਨੋਰੰਜਨ",
-          text: "ਸੰਗੀਤ, ਖੇਡਾਂ, ਦਸਤਕਾਰੀ, ਕਸਰਤ, ਸੈਰ-ਸਪਾਟੇ ਅਤੇ ਹੋਰ ਲੋਕਾਂ ਨਾਲ ਸਮਾਂ।",
+          // TODO: translate the English line below before turning this language on.
+          text: "Music, games, crafts, field trips, and time with other people.",
         },
         {
           icon: "transportation" as const,
@@ -169,7 +170,8 @@ export const pa: Content = {
         },
         {
           title: "ਮੁਲਾਂਕਣ ਪੂਰਾ ਕਰੋ",
-          text: "ਸਾਡੀ ਟੀਮ ਸਿਹਤ ਅਤੇ ਰੋਜ਼ਾਨਾ ਲੋੜਾਂ ਦੀ ਸਮੀਖਿਆ ਕਰਦੀ ਹੈ ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਪ੍ਰੋਗਰਾਮ ਠੀਕ ਬੈਠਦਾ ਹੈ ਜਾਂ ਨਹੀਂ।",
+          // TODO: translate the English line below before turning this language on.
+          text: "Our team reviews health and daily needs to see whether the program fits. An assessment can only be done with a doctor's approval.",
         },
         {
           title: "ਆਉਣਾ ਸ਼ੁਰੂ ਕਰੋ",
@@ -181,7 +183,8 @@ export const pa: Content = {
     },
     cost: {
       heading: "ਖਰਚੇ ਬਾਰੇ ਕੀ?",
-      text: "ਅਸੀਂ ਇੰਸ਼ੋਰੈਂਸ ਸਵੀਕਾਰ ਕਰਦੇ ਹਾਂ, ਅਤੇ ਇੰਸ਼ੋਰੈਂਸ ਪਲਾਨ ਦੇ ਨਾਲ Medi-Cal ਵੀ। ਆਪਣੀ ਜੇਬ ਤੋਂ ਭੁਗਤਾਨ ਦਾ ਵਿਕਲਪ ਵੀ ਹੈ। ਸਾਨੂੰ ਫ਼ੋਨ ਕਰੋ ਅਤੇ ਅਸੀਂ ਸਮਝਾਵਾਂਗੇ ਕਿ ਤੁਹਾਡੇ ਪਰਿਵਾਰ ਉੱਤੇ ਕੀ ਲਾਗੂ ਹੁੰਦਾ ਹੈ।",
+      // TODO: translate the English line below before turning this language on.
+      text: "We accept Medi-Cal. Private pay is also an option. Call us and we will explain what applies to your family.",
     },
     trust: {
       text: "2003 ਤੋਂ West Sacramento ਦੇ ਪਰਿਵਾਰਾਂ ਦੀ ਸੇਵਾ ਵਿੱਚ। 2007 ਤੋਂ ਪਰਿਵਾਰਕ ਮਾਲਕੀ।",
@@ -319,19 +322,18 @@ export const pa: Content = {
       {
         icon: "socialWork" as const,
         title: "ਸਮਾਜਿਕ ਕਾਰਜ",
-        summary: "ਲਾਭਾਂ, ਕਾਗਜ਼ੀ ਕਾਰਵਾਈ ਅਤੇ ਕੇਂਦਰ ਤੋਂ ਬਾਹਰ ਦੀਆਂ ਸੇਵਾਵਾਂ ਲੱਭਣ ਵਿੱਚ ਮਦਦ।",
-        details: [
-          "ਸਾਡਾ ਸਮਾਜਿਕ ਕਾਰਕੁਨ ਪਰਿਵਾਰਾਂ ਨੂੰ ਫਾਰਮਾਂ ਅਤੇ ਕਵਰੇਜ ਦੇ ਸਵਾਲ ਸਮਝਣ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ।",
-          "ਅਸੀਂ ਤੁਹਾਨੂੰ ਸਥਾਨਕ ਸੇਵਾਵਾਂ ਵੱਲ ਇਸ਼ਾਰਾ ਕਰ ਸਕਦੇ ਹਾਂ, ਜਿਵੇਂ ਘਰ ਵਿੱਚ ਮਦਦ ਜਾਂ ਖਾਣੇ ਦੇ ਪ੍ਰੋਗਰਾਮ।",
-          "ਜਦੋਂ ਕਿਸੇ ਯੋਜਨਾ ਨੂੰ ਬਦਲਣ ਦੀ ਲੋੜ ਪਵੇ ਤਾਂ ਪਰਿਵਾਰ ਨਾਲ ਮੀਟਿੰਗਾਂ ਹੋ ਸਕਦੀਆਂ ਹਨ।",
-        ],
+        // TODO: translate the English line below before turning this language on.
+        summary: "Social workers are core staff responsible for psychosocial assessments, care planning, advocacy, and coordinating community resources to support participants' health, safety, and well-being.",
+        details: [],
       },
       {
         icon: "recreation" as const,
         title: "ਮਨੋਰੰਜਨ",
-        summary: "ਸੰਗੀਤ, ਖੇਡਾਂ, ਦਸਤਕਾਰੀ, ਹਲਕੀ ਕਸਰਤ ਅਤੇ ਸਾਰਾ ਦਿਨ ਸੰਗਤ।",
+        // TODO: translate the English line below before turning this language on.
+        summary: "Music, games, crafts, and company through the day.",
         details: [
-          "ਰੋਜ਼ਾਨਾ ਗਤੀਵਿਧੀਆਂ ਜਿਨ੍ਹਾਂ ਵਿੱਚ ਲੋਕ ਸ਼ਾਮਲ ਹੋ ਸਕਦੇ ਹਨ ਜਾਂ ਛੱਡ ਸਕਦੇ ਹਨ, ਜਿਵੇਂ ਸੰਗੀਤ, ਖੇਡਾਂ, ਦਸਤਕਾਰੀ ਅਤੇ ਕਸਰਤ।",
+          // TODO: translate the English line below before turning this language on.
+          "Daily activities people can join or skip, such as music, games, and crafts.",
           "ਸੈਰ-ਸਪਾਟੇ ਔਸਤਨ ਹਫ਼ਤੇ ਵਿੱਚ ਤਿੰਨ ਵਾਰ ਤੱਕ ਹੁੰਦੇ ਹਨ, ਬਿਨਾਂ ਕਿਸੇ ਵਾਧੂ ਖਰਚੇ ਦੇ। ਚੱਲਣ-ਫਿਰਨ ਦੀਆਂ ਲੋੜਾਂ ਵਾਲੇ ਲੋਕ ਨਾਲ ਆ ਸਕਦੇ ਹਨ।",
           "ਤਿਉਹਾਰ ਅਤੇ ਜਨਮ-ਦਿਨ ਅਸੀਂ ਮਿਲ ਕੇ ਮਨਾਉਂਦੇ ਹਾਂ।",
         ],
@@ -352,18 +354,19 @@ export const pa: Content = {
       { time: "ਸਵੇਰੇ 8:30", text: "ਸਵਾਗਤ" },
       { time: "ਸਵੇਰੇ 9:00", text: "ਮੁੜ-ਵਸੇਬੇ ਦੀ ਕਸਰਤ" },
       { time: "ਸਵੇਰੇ 9:30", text: "ਨਾਸ਼ਤਾ / ਟੀਵੀ ਉੱਤੇ ਤਾਜ਼ਾ ਖ਼ਬਰਾਂ" },
-      { time: "ਸਵੇਰੇ 10:00", text: "ਸਿਹਤ ਦੀ ਸਿੱਖਿਆ / ਵਿਅਕਤੀਗਤ ਫਿਜ਼ੀਕਲ ਥੈਰੇਪੀ (ਸੋਮ, ਮੰਗਲ, ਸ਼ੁੱਕਰ)" },
+      { time: "ਸਵੇਰੇ 10:00", text: "ਸਿਹਤ ਦੀ ਸਿੱਖਿਆ / ਵਿਅਕਤੀਗਤ ਫਿਜ਼ੀਕਲ ਥੈਰੇਪੀ" },
       { time: "ਸਵੇਰੇ 10:30", text: "ਮੁੜ-ਵਸੇਬੇ ਦੀ ਕਸਰਤ / ਸੈਰ ਕਲੱਬ / ਸੈਰ-ਸਪਾਟਾ" },
       { time: "ਸਵੇਰੇ 11:00", text: "ਮੁੜ-ਵਸੇਬੇ ਦੀਆਂ ਕਸਰਤਾਂ / ਸਮੂਹਿਕ ਥੈਰੇਪੀ" },
       { time: "ਸਵੇਰੇ 11:30", text: "ਮੁੜ-ਵਸੇਬੇ ਦੀ ਕਸਰਤ / ਯਾਦਦਾਸ਼ਤ ਸਮੂਹ / ਗਤੀਵਿਧੀ ਵਾਲੀ ਖੇਡ / ਅਧਿਆਤਮਕ ਸਮੂਹ" },
-      { time: "ਦੁਪਹਿਰ 12:00", text: "ਮਹਿਮਾਨ ਅਤੇ ਬੁਲਾਰੇ / ਵਿਅਕਤੀਗਤ ਫਿਜ਼ੀਕਲ ਥੈਰੇਪੀ (ਸੋਮ, ਮੰਗਲ, ਸ਼ੁੱਕਰ)" },
-      { time: "ਦੁਪਹਿਰ 12:30", text: "ਵਿਅਕਤੀਗਤ ਆਕੂਪੇਸ਼ਨਲ ਥੈਰੇਪੀ (ਬੁੱਧ, ਸ਼ੁੱਕਰ)" },
+      { time: "ਦੁਪਹਿਰ 12:00", text: "ਮਹਿਮਾਨ ਅਤੇ ਬੁਲਾਰੇ / ਵਿਅਕਤੀਗਤ ਫਿਜ਼ੀਕਲ ਥੈਰੇਪੀ" },
+      { time: "ਦੁਪਹਿਰ 12:30", text: "ਵਿਅਕਤੀਗਤ ਆਕੂਪੇਸ਼ਨਲ ਥੈਰੇਪੀ" },
       { time: "ਦੁਪਹਿਰ 1:00", text: "ਦੁਪਹਿਰ ਦਾ ਖਾਣਾ" },
       { time: "ਦੁਪਹਿਰ 1:30", text: "ਫ਼ਿਲਮ / ਚਰਚਾ" },
     ],
     // TODO: translate the English heading and intro below before turning this language on.
     rotatingHeading: "Rotating activities",
-    rotatingIntro: "Activities rotate through the week. Bingo happens several times a week, and we go on outings to local stores, markets, and parks. Call us for this month's calendar, which is available in English and Russian.",
+    // TODO: translate the English line below before turning this language on.
+    rotatingIntro: "Activities rotate through the week. Bingo happens several times a week, and we go on outings to local stores, markets, and parks.",
     rotatingActivities: [
       "ਅੰਗਰੇਜ਼ੀ ਦੀ ਕਲਾਸ",
       "ਬਿੰਗੋ",
@@ -371,10 +374,6 @@ export const pa: Content = {
       "Outings to stores, markets, and parks",
       "Birthday celebrations",
     ],
-    cta: {
-      heading: "ਪੱਕਾ ਨਹੀਂ ਪਤਾ ਕਿ ਤੁਹਾਡੇ ਪਿਆਰੇ ਨੂੰ ਕਿਹੜੇ ਹਿੱਸਿਆਂ ਦੀ ਲੋੜ ਹੈ?",
-      text: "ਸਾਨੂੰ ਫ਼ੋਨ ਕਰੋ। ਅਸੀਂ ਕੁਝ ਸਵਾਲ ਪੁੱਛਾਂਗੇ ਅਤੇ ਤੁਹਾਨੂੰ ਸਿੱਧਾ ਜਵਾਬ ਦੇਵਾਂਗੇ।",
-    },
   },
 
   // ------------------------------------------------------ Transportation ---
@@ -418,39 +417,17 @@ export const pa: Content = {
       },
       {
         heading: "ਲੈਣ ਆਉਣਾ ਅਤੇ ਛੱਡਣਾ",
+        // TODO: translate the English lines below before turning this language on.
         paragraphs: [
-          "ਹਰ ਸਵਾਰ ਨੂੰ ਠੀਕ ਮਿੰਟ ਦੀ ਥਾਂ ਲੈਣ ਆਉਣ ਦਾ ਸਮਾਂ-ਦਾਇਰਾ ਦਿੱਤਾ ਜਾਂਦਾ ਹੈ, ਕਿਉਂਕਿ ਟਰੈਫ਼ਿਕ ਅਤੇ ਹੋਰ ਸਵਾਰ ਰੂਟ ਬਦਲ ਦਿੰਦੇ ਹਨ।",
-          "ਅਸੀਂ ਦਰਵਾਜ਼ੇ ਦੇ ਜਿੰਨੀ ਹੋ ਸਕੇ ਨੇੜੇ ਆਉਂਦੇ ਹਾਂ। ਲੈਣ ਵੇਲੇ, ਭਾਗੀਦਾਰ ਦੀ ਦੇਖਭਾਲ ਕਰਨ ਵਾਲਾ ਵਿਅਕਤੀ ਉਨ੍ਹਾਂ ਨੂੰ ਬੱਸ ਵਿੱਚ ਚੜ੍ਹਨ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ। ਡਰਾਈਵਰ ਭਾਗੀਦਾਰਾਂ ਨੂੰ ਚੜ੍ਹਨ ਵਿੱਚ ਮਦਦ ਨਹੀਂ ਕਰਦੇ, ਅਤੇ ਉਹ ਕਿਸੇ ਨੂੰ ਚੁੱਕ ਕੇ ਬੱਸ ਵਿੱਚ ਨਹੀਂ ਚੜ੍ਹਾ ਸਕਦੇ।",
-          "ਕੇਂਦਰ ਵਿੱਚ, ਡਰਾਈਵਰ ਭਾਗੀਦਾਰਾਂ ਨੂੰ ਬੱਸ ਤੋਂ ਉਤਰਨ ਵਿੱਚ ਮਦਦ ਕਰ ਸਕਦੇ ਹਨ, ਅਤੇ ਇੱਥੇ ਸਾਡੇ ਦੇਖਭਾਲ ਕਰਨ ਵਾਲੇ ਉਨ੍ਹਾਂ ਨੂੰ ਮਿਲਣ ਲਈ ਤਿਆਰ ਹੁੰਦੇ ਹਨ। ਸਾਡੇ ਦੇਖਭਾਲ ਕਰਨ ਵਾਲੇ ਲੋਕਾਂ ਦੇ ਘਰਾਂ ਵਿੱਚ ਨਹੀਂ ਜਾਂਦੇ।",
-          "ਜੇ ਬੱਸ ਦੇਰ ਨਾਲ ਚੱਲ ਰਹੀ ਹੋਵੇ, ਤਾਂ ਅਸੀਂ ਪਰਿਵਾਰ ਨੂੰ ਫ਼ੋਨ ਕਰਦੇ ਹਾਂ।",
+          "At home, a caregiver helps the participant onto the bus, and at the center our drivers help them off.",
         ],
       },
       {
         heading: "ਵ੍ਹੀਲਚੇਅਰ ਅਤੇ ਚੱਲਣ-ਫਿਰਨ ਲਈ ਪਹੁੰਚ",
+        // TODO: translate the English lines below before turning this language on.
         paragraphs: [
-          "ਸਾਡੀਆਂ ਗੱਡੀਆਂ ਵ੍ਹੀਲਚੇਅਰ, ਵਾਕਰ ਜਾਂ ਸੋਟੀ ਵਰਤਣ ਵਾਲੇ ਸਵਾਰਾਂ ਨੂੰ ਲਿਜਾ ਸਕਦੀਆਂ ਹਨ।",
-          "ਗੱਡੀ ਚੱਲਣ ਤੋਂ ਪਹਿਲਾਂ ਵ੍ਹੀਲਚੇਅਰਾਂ ਨੂੰ ਬੰਨ੍ਹ ਦਿੱਤਾ ਜਾਂਦਾ ਹੈ, ਅਤੇ ਹਰ ਸਵਾਰ ਲਈ ਸੀਟ ਬੈਲਟ ਵਰਤੀ ਜਾਂਦੀ ਹੈ।",
-          // TODO: translate the English line below before turning this language on.
-          "Our buses operate under a permit from the California Public Utilities Commission.",
-          "ਆਕਸੀਜਨ, ਇੱਕ ਥਾਂ ਤੋਂ ਦੂਜੀ ਥਾਂ ਬਦਲਣ, ਜਾਂ ਡਰਾਈਵਰ ਨੂੰ ਜਾਣਨ ਵਾਲੀ ਕਿਸੇ ਹੋਰ ਗੱਲ ਬਾਰੇ ਸਾਨੂੰ ਦੱਸੋ, ਅਤੇ ਅਸੀਂ ਉਸ ਦੀ ਤਿਆਰੀ ਕਰ ਲਵਾਂਗੇ।",
+          "Our vehicles can carry participants who use a wheelchair, a walker, or a cane.",
         ],
-      },
-      {
-        heading: "ਪਰਿਵਾਰ ਸਵਾਰੀ ਦਾ ਪ੍ਰਬੰਧ ਜਾਂ ਬਦਲਾਅ ਕਿਵੇਂ ਕਰਦੇ ਹਨ",
-        paragraphs: [
-          "ਸਵਾਰੀ ਦਾ ਪ੍ਰਬੰਧ ਉਦੋਂ ਹੋ ਜਾਂਦਾ ਹੈ ਜਦੋਂ ਤੁਹਾਡੇ ਪਿਆਰੇ ਦਾ ਦਾਖ਼ਲਾ ਹੁੰਦਾ ਹੈ, ਅਤੇ ਸਮਾਂ-ਸਾਰਣੀ ਹਫ਼ਤੇ ਤੋਂ ਹਫ਼ਤੇ ਇੱਕੋ ਜਿਹੀ ਰਹਿੰਦੀ ਹੈ।",
-          "ਲੈਣ ਆਉਣ ਦਾ ਪਤਾ ਬਦਲਣ, ਕੋਈ ਦਿਨ ਜੋੜਨ ਜਾਂ ਸਵਾਰੀ ਰੱਦ ਕਰਨ ਲਈ, ਦਫ਼ਤਰ ਨੂੰ ਫ਼ੋਨ ਕਰੋ।",
-          "ਉਸੇ ਦਿਨ ਰੱਦ ਕਰਨ ਲਈ, ਜਿੰਨੀ ਜਲਦੀ ਹੋ ਸਕੇ ਫ਼ੋਨ ਕਰੋ ਤਾਂ ਜੋ ਡਰਾਈਵਰ ਰੂਟ ਨੂੰ ਠੀਕ ਕਰ ਸਕੇ।",
-        ],
-        list: {
-          label: "ਸਵਾਰੀ ਬਦਲਣ ਲਈ, ਇਹ ਤਿਆਰ ਰੱਖੋ:",
-          items: [
-            "ਸਵਾਰ ਦਾ ਨਾਮ",
-            "ਬਦਲਣ ਵਾਲੀ ਤਾਰੀਖ਼ ਜਾਂ ਤਾਰੀਖ਼ਾਂ",
-            "ਨਵਾਂ ਪਤਾ, ਜੇ ਲੈਣ ਆਉਣ ਦੀ ਥਾਂ ਬਦਲ ਰਹੀ ਹੈ",
-            "ਉਸ ਦਿਨ ਸਾਡੇ ਲਈ ਤੁਹਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰਨ ਦਾ ਫ਼ੋਨ ਨੰਬਰ",
-          ],
-        },
       },
     ],
     secondPhoto: {
@@ -478,6 +455,8 @@ export const pa: Content = {
     lead: "ਦਾਖ਼ਲੇ ਲਈ ਕੁਝ ਗੱਲਾਂਬਾਤਾਂ ਲੱਗਦੀਆਂ ਹਨ, ਕਾਗਜ਼ਾਂ ਦਾ ਪਹਾੜ ਨਹੀਂ। ਇਹ ਹੈ ਕਿ ਇਹ ਕਿਵੇਂ ਹੁੰਦਾ ਹੈ।",
     qualifies: {
       heading: "ਕੌਣ ਯੋਗ ਹੈ",
+      // TODO: translate the English line below before turning this language on.
+      purpose: "We are here to help improve participants' health, both physically and mentally. We do not provide one-on-one care.",
       intro: "Golden Days ਆਮ ਤੌਰ 'ਤੇ ਅਜਿਹੇ ਬਾਲਗ ਲਈ ਠੀਕ ਹੈ ਜੋ:",
       items: [
         "ਘਰ ਵਿੱਚ ਜਾਂ ਪਰਿਵਾਰ ਨਾਲ ਰਹਿਣ ਵਾਲਾ ਬਾਲਗ ਹੈ",
@@ -485,37 +464,35 @@ export const pa: Content = {
         "ਅਜਿਹੀ ਸਿਹਤ ਸਮੱਸਿਆ ਹੈ ਜਿਸ ਨੂੰ ਨਿਯਮਿਤ ਜਾਂਚ ਤੋਂ ਲਾਭ ਹੁੰਦਾ ਹੈ",
         "ਸਮੂਹਿਕ ਦਿਨ ਦੇ ਪ੍ਰੋਗਰਾਮ ਵਿੱਚ ਹਿੱਸਾ ਲੈ ਸਕਦਾ ਹੈ",
       ],
-      note: "ਯੋਗਤਾ ਦਾ ਫ਼ੈਸਲਾ ਮੁਲਾਂਕਣ ਤੋਂ ਬਾਅਦ ਹੁੰਦਾ ਹੈ, ਫ਼ੋਨ ਉੱਤੇ ਨਹੀਂ। ਸਾਨੂੰ ਫ਼ੋਨ ਕਰੋ ਅਤੇ ਅਸੀਂ ਦੱਸਾਂਗੇ ਕਿ ਅਗਲਾ ਕਦਮ ਕੀ ਹੈ।",
+      // TODO: translate the English line below before turning this language on.
+      note: "An assessment can only be done with a doctor's approval. Call us and we will tell you what the next step looks like.",
     },
     pays: {
       heading: "ਭੁਗਤਾਨ ਕੌਣ ਕਰਦਾ ਹੈ",
       intro: "ਪਰਿਵਾਰ ਆਮ ਤੌਰ 'ਤੇ ਇਨ੍ਹਾਂ ਵਿੱਚੋਂ ਕਿਸੇ ਇੱਕ ਤਰੀਕੇ ਨਾਲ ਭੁਗਤਾਨ ਕਰਦੇ ਹਨ:",
+      // TODO: translate the English line below before turning this language on.
+      value: "Adult day health care usually costs much less than a hospital stay later on, so enrolling early can help.",
       items: [
         {
           title: "Medi-Cal",
-          text: "ਅਸੀਂ ਇੰਸ਼ੋਰੈਂਸ ਪਲਾਨ ਦੇ ਨਾਲ Medi-Cal ਸਵੀਕਾਰ ਕਰਦੇ ਹਾਂ, ਪਰ ਇਕੱਲਾ Medi-Cal ਨਹੀਂ। ਅਸੀਂ ਸਮਝਾ ਸਕਦੇ ਹਾਂ ਕਿ ਪ੍ਰਕਿਰਿਆ ਕਿਹੋ ਜਿਹੀ ਹੈ।",
-        },
-        {
-          title: "ਮੈਨੇਜਡ ਕੇਅਰ ਪਲਾਨ",
-          text: "ਕੁਝ ਸਿਹਤ ਪਲਾਨ ਦਿਨ ਦੇ ਪ੍ਰੋਗਰਾਮਾਂ ਨੂੰ ਕਵਰ ਕਰਦੇ ਹਨ। ਅਸੀਂ ਦੇਖਾਂਗੇ ਕਿ ਤੁਹਾਡਾ ਪਲਾਨ ਕੀ ਕਹਿੰਦਾ ਹੈ।",
+          // TODO: translate the English line below before turning this language on.
+          text: "We accept Medi-Cal. We can explain what the process looks like.",
         },
         {
           title: "ਆਪਣੀ ਜੇਬ ਤੋਂ ਭੁਗਤਾਨ",
           text: "ਪਰਿਵਾਰ ਸਿੱਧਾ ਭੁਗਤਾਨ ਵੀ ਕਰ ਸਕਦੇ ਹਨ।",
         },
       ],
-      note: "ਇਸ ਪੰਨੇ ਉੱਤੇ ਕੁਝ ਵੀ ਕਵਰੇਜ ਜਾਂ ਕੀਮਤ ਦਾ ਵਾਅਦਾ ਨਹੀਂ ਹੈ। ਆਪਣੇ ਹਾਲਾਤ ਬਾਰੇ ਤਾਜ਼ਾ ਜਾਣਕਾਰੀ ਲਈ ਸਾਨੂੰ ਫ਼ੋਨ ਕਰੋ।",
+      // TODO: translate the English line below before turning this language on.
+      note: "Medicare does not cover this program. Nothing on this page is a promise of coverage or a price. Call us for current information about your situation.",
     },
     bring: {
       heading: "ਕੀ ਲਿਆਉਣਾ ਹੈ",
       intro: "ਜੋ ਤੁਹਾਡੇ ਕੋਲ ਹੈ ਉਹ ਲਿਆਓ। ਬਾਕੀ ਵਿੱਚ ਅਸੀਂ ਮਦਦ ਕਰਾਂਗੇ।",
+      // TODO: translate the English lines below before turning this language on.
       items: [
-        "ਫ਼ੋਟੋ ਵਾਲਾ ਪਛਾਣ-ਪੱਤਰ",
-        "ਇੰਸ਼ੋਰੈਂਸ ਕਾਰਡ (ਇਹ ਤੁਸੀਂ ਇਕੱਲਾ ਵੀ ਲਿਆ ਸਕਦੇ ਹੋ)",
-        "Medi-Cal ਕਾਰਡ (ਇਹ ਆਪਣੇ ਇੰਸ਼ੋਰੈਂਸ ਕਾਰਡ ਦੇ ਨਾਲ ਲਿਆਓ, ਇਕੱਲਾ ਨਹੀਂ)",
-        "ਤੁਹਾਡੇ ਡਾਕਟਰ ਦਾ ਨਾਮ ਅਤੇ ਫ਼ੋਨ ਨੰਬਰ",
-        "ਐਮਰਜੈਂਸੀ ਸੰਪਰਕਾਂ ਦੇ ਨਾਮ ਅਤੇ ਨੰਬਰ",
-        "ਕੋਈ ਵੀ ਹਾਲੀਆ ਡਾਕਟਰੀ ਕਾਗਜ਼ਾਤ ਜੋ ਤੁਹਾਡੇ ਕੋਲ ਪਹਿਲਾਂ ਹੀ ਹਨ",
+        "Photo identification",
+        "Medi-Cal card",
       ],
     },
     steps: {
@@ -528,18 +505,6 @@ export const pa: Content = {
         {
           title: "ਕੇਂਦਰ ਦਾ ਦੌਰਾ ਕਰੋ",
           text: "ਪ੍ਰੋਗਰਾਮ ਦੇ ਸਮੇਂ ਦੌਰਾਨ, ਤਰਜੀਹੀ ਤੌਰ 'ਤੇ ਦੁਪਹਿਰ 1:30 ਤੋਂ ਪਹਿਲਾਂ, ਆਓ ਤਾਂ ਜੋ ਤੁਸੀਂ ਆਮ ਦਿਨ ਦੇਖ ਸਕੋ। ਜੇ ਠੀਕ ਲੱਗੇ ਤਾਂ ਆਪਣੇ ਪਿਆਰੇ ਨੂੰ ਨਾਲ ਲਿਆਓ।",
-        },
-        {
-          title: "ਮੁਲਾਂਕਣ",
-          text: "ਸਾਡੀ ਟੀਮ ਸਿਹਤ ਦੇ ਇਤਿਹਾਸ, ਰੋਜ਼ਾਨਾ ਲੋੜਾਂ ਅਤੇ ਟੀਚਿਆਂ ਦੀ ਸਮੀਖਿਆ ਕਰਦੀ ਹੈ ਤਾਂ ਜੋ ਪੱਕਾ ਹੋ ਸਕੇ ਕਿ ਪ੍ਰੋਗਰਾਮ ਠੀਕ ਬੈਠਦਾ ਹੈ।",
-        },
-        {
-          title: "ਕਾਗਜ਼ੀ ਕਾਰਵਾਈ ਅਤੇ ਕਵਰੇਜ",
-          text: "ਅਸੀਂ ਦਾਖ਼ਲੇ ਦੇ ਫਾਰਮ ਮਿਲ ਕੇ ਭਰਦੇ ਹਾਂ ਅਤੇ ਕਵਰੇਜ ਦੇ ਸਵਾਲ ਹੱਲ ਕਰਦੇ ਹਾਂ।",
-        },
-        {
-          title: "ਪਹਿਲਾ ਦਿਨ",
-          text: "ਅਸੀਂ ਸਮਾਂ-ਸਾਰਣੀ ਤੈਅ ਕਰਦੇ ਹਾਂ, ਸਵਾਰੀ ਦਾ ਪ੍ਰਬੰਧ ਕਰਦੇ ਹਾਂ, ਅਤੇ ਤੁਹਾਡੇ ਪਿਆਰੇ ਨੂੰ ਸਟਾਫ਼ ਅਤੇ ਹੋਰ ਭਾਗੀਦਾਰਾਂ ਨਾਲ ਮਿਲਾਉਂਦੇ ਹਾਂ।",
         },
       ],
     },
@@ -566,7 +531,8 @@ export const pa: Content = {
     },
     qualifyPrompt: {
       heading: "ਪੱਕਾ ਨਹੀਂ ਪਤਾ ਕਿ ਇਹ ਠੀਕ ਹੈ?",
-      text: "ਪੰਜ ਛੋਟੇ ਸਵਾਲਾਂ ਦੇ ਜਵਾਬ ਦਿਓ ਅਤੇ ਅਸੀਂ ਤੁਹਾਨੂੰ ਅਗਲੇ ਕਦਮ ਵੱਲ ਇਸ਼ਾਰਾ ਕਰਾਂਗੇ। ਇਸ ਵਿੱਚ ਲਗਭਗ ਇੱਕ ਮਿੰਟ ਲੱਗਦਾ ਹੈ।",
+      // TODO: translate the English line below before turning this language on.
+      text: "Answer four short questions and we will point you to the next step. It takes about a minute.",
     },
     cta: {
       heading: "ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਤਿਆਰ ਹੋ?",
@@ -580,8 +546,9 @@ export const pa: Content = {
   qualify: {
     meta: {
       title: "ਕੀ ਮੈਂ ਯੋਗ ਹਾਂ?",
+      // TODO: translate the English line below before turning this language on.
       description:
-        "ਪੰਜ ਛੋਟੇ ਸਵਾਲਾਂ ਦੇ ਜਵਾਬ ਦਿਓ ਅਤੇ ਦੇਖੋ ਕਿ West Sacramento ਵਿੱਚ Golden Days ਤੁਹਾਡੇ ਲਈ ਠੀਕ ਹੋ ਸਕਦਾ ਹੈ ਜਾਂ ਨਹੀਂ।",
+        "Answer four short questions to see whether Golden Days in West Sacramento may be a good fit.",
     },
     intro: {
       heading: "ਦੇਖੋ ਕਿ Golden Days ਤੁਹਾਡੇ ਜਾਂ ਤੁਹਾਡੇ ਪਿਆਰੇ ਲਈ ਠੀਕ ਹੋ ਸਕਦਾ ਹੈ ਜਾਂ ਨਹੀਂ।",
@@ -609,16 +576,16 @@ export const pa: Content = {
         help: "ਅਸੀਂ West Sacramento ਅਤੇ ਨੇੜਲੇ ਇਲਾਕਿਆਂ ਵਿੱਚ ਸੇਵਾ ਦਿੰਦੇ ਹਾਂ, ਜਿਨ੍ਹਾਂ ਵਿੱਚ Sacramento, Natomas, Elk Grove, Carmichael, Rancho Cordova ਅਤੇ Antelope ਸ਼ਾਮਲ ਹਨ। ਜੇ ਤੁਹਾਨੂੰ ਪੱਕਾ ਨਹੀਂ ਪਤਾ, ਤਾਂ \"ਪੱਕਾ ਨਹੀਂ ਪਤਾ\" ਚੁਣੋ ਅਤੇ ਅਸੀਂ ਦੇਖ ਲਵਾਂਗੇ।",
       },
       {
-        text: "ਕੀ ਉਹ ਵਾਕਰ ਜਾਂ ਵ੍ਹੀਲਚੇਅਰ ਨਾਲ ਜਾਂ ਉਸ ਤੋਂ ਬਿਨਾਂ, ਦਿਨ ਵੇਲੇ ਸਮੂਹਿਕ ਗਤੀਵਿਧੀਆਂ ਵਿੱਚ ਹਿੱਸਾ ਲੈ ਸਕਦੇ ਹਨ?",
-        help: "ਸਮੂਹਿਕ ਗਤੀਵਿਧੀਆਂ ਵਿੱਚ ਕਸਰਤ, ਸੰਗੀਤ, ਖੇਡਾਂ ਅਤੇ ਮਿਲ ਕੇ ਖਾਣਾ ਸ਼ਾਮਲ ਹਨ। ਲੋਕ ਆਪੋ-ਆਪਣੇ ਢੰਗ ਨਾਲ ਹਿੱਸਾ ਲੈਂਦੇ ਹਨ, ਅਤੇ ਕੁਝ ਨੂੰ ਦਿਨ ਵੇਲੇ ਡਾਕਟਰੀ ਧਿਆਨ ਦੀ ਵੀ ਲੋੜ ਹੁੰਦੀ ਹੈ। ਜੇ ਤੁਹਾਨੂੰ ਪੱਕਾ ਨਹੀਂ ਪਤਾ ਕਿ ਉਹ ਸਮੂਹ ਵਿੱਚ ਨਿਭ ਸਕਣਗੇ, ਤਾਂ \"ਪੱਕਾ ਨਹੀਂ ਪਤਾ\" ਚੁਣੋ।",
+        // TODO: translate the English line below before turning this language on.
+        text: "Can they take part in group activities during the day without needing one-on-one help?",
+        // TODO: translate the English line below before turning this language on.
+        help: "Group activities include music, games, and meals together. We do not provide one-on-one care. People take part in their own way, and some also need medical attention during the day. If you are not sure they could manage a group setting, choose Not sure.",
       },
       {
-        text: "ਕੀ ਉਨ੍ਹਾਂ ਕੋਲ ਕਿਸੇ ਇੰਸ਼ੋਰੈਂਸ ਕੰਪਨੀ ਤੋਂ ਸਿਹਤ ਇੰਸ਼ੋਰੈਂਸ ਹੈ, Medi-Cal ਦੇ ਨਾਲ ਜਾਂ ਬਿਨਾਂ?",
-        help: "ਅਸੀਂ ਇੰਸ਼ੋਰੈਂਸ ਸਵੀਕਾਰ ਕਰਦੇ ਹਾਂ, ਅਤੇ ਇੰਸ਼ੋਰੈਂਸ ਦੇ ਨਾਲ Medi-Cal ਵੀ। ਇਕੱਲਾ Medi-Cal ਕਾਫ਼ੀ ਨਹੀਂ ਹੈ। ਜੇ ਤੁਹਾਨੂੰ ਪੱਕਾ ਨਹੀਂ ਪਤਾ, ਤਾਂ \"ਪੱਕਾ ਨਹੀਂ ਪਤਾ\" ਚੁਣੋ।",
-      },
-      {
-        text: "ਕੀ ਉਨ੍ਹਾਂ ਦਾ ਕੋਈ ਡਾਕਟਰ ਹੈ ਜੋ ਹਾਲੀਆ ਡਾਕਟਰੀ ਕਾਗਜ਼ਾਤ ਸਾਂਝੇ ਕਰ ਸਕਦਾ ਹੈ?",
-        help: "ਅਸੀਂ ਉਨ੍ਹਾਂ ਦੇ ਇੰਸ਼ੋਰੈਂਸ ਦੀ ਜਾਣਕਾਰੀ ਦੇ ਨਾਲ ਉਨ੍ਹਾਂ ਦੇ ਡਾਕਟਰ ਤੋਂ ਹਾਲੀਆ ਡਾਕਟਰੀ ਕਾਗਜ਼ਾਤ ਮੰਗਦੇ ਹਾਂ। ਜੇ ਤੁਹਾਨੂੰ ਪੱਕਾ ਨਹੀਂ ਪਤਾ, ਤਾਂ \"ਪੱਕਾ ਨਹੀਂ ਪਤਾ\" ਚੁਣੋ।",
+        // TODO: translate the English line below before turning this language on.
+        text: "Do they have Medi-Cal?",
+        // TODO: translate the English line below before turning this language on.
+        help: "We accept Medi-Cal. Private pay is also an option, so if they do not have Medi-Cal, choose No and call us to talk it over. If you are not sure, choose Not sure.",
       },
     ],
     results: {

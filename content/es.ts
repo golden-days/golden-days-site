@@ -28,7 +28,7 @@ export const es: Content = {
     addressLines: ["1215 Merkley Ave", "West Sacramento, CA 95691"],
     addressOneLine: "1215 Merkley Ave, West Sacramento, CA 95691",
     hoursLabel: "Horario",
-    hours: "Horario del centro: de lunes a viernes, de 8:00 a. m. a 4:30 p. m.",
+    hours: "Horario del centro: de lunes a viernes, de 8:00 a. m. a 3:00 p. m.",
     programHours: "Horario del servicio: de lunes a viernes, de 8:00 a. m. a 2:00 p. m.",
     hoursNote:
       "Cerrado los sábados y domingos. También cerramos el Día de Acción de Gracias, el día de Navidad, el Día de Año Nuevo y el 4 de julio.",
@@ -94,9 +94,7 @@ export const es: Content = {
     whoWeServe: {
       heading: "A quién atendemos",
       paragraphs: [
-        "Golden Days recibe a adultos que viven en casa y necesitan apoyo, compañía o supervisión durante el día.",
-        "Muchas de las personas que vienen a nosotros viven con un familiar que trabaja o que simplemente necesita un descanso durante la semana.",
-        "Si no está seguro de que Golden Days sea lo más adecuado para su ser querido, llámenos. Con gusto lo hablamos, sin ninguna presión.",
+        "Los programas de atención médica diurna para adultos atienden a adultos mayores frágiles y a adultos más jóvenes con enfermedades crónicas incapacitantes, ya sean médicas, cognitivas o de salud mental, que corren el riesgo de tener que ingresar a un centro de cuidados. Golden Days atiende a adultos de 18 años en adelante.",
       ],
     },
     services: {
@@ -123,12 +121,12 @@ export const es: Content = {
         {
           icon: "socialWork" as const,
           title: "Trabajo social",
-          text: "Ayuda para entender beneficios, trámites y recursos de la comunidad.",
+          text: "Nuestros trabajadores sociales se encargan de las evaluaciones psicosociales, la planificación de la atención, la defensa de los derechos y los recursos de la comunidad para apoyar la salud, la seguridad y el bienestar de los participantes.",
         },
         {
           icon: "recreation" as const,
           title: "Recreación",
-          text: "Música, juegos, manualidades, ejercicio, excursiones y tiempo con otras personas.",
+          text: "Música, juegos, manualidades, salidas y tiempo con otras personas.",
         },
         {
           icon: "transportation" as const,
@@ -168,7 +166,7 @@ export const es: Content = {
         },
         {
           title: "Complete una evaluación",
-          text: "Nuestro equipo revisa la salud y las necesidades diarias para ver si el programa es adecuado.",
+          text: "Nuestro equipo revisa la salud y las necesidades diarias para ver si el programa es adecuado. Solo se puede hacer una evaluación con la aprobación de un médico.",
         },
         {
           title: "Comience a asistir",
@@ -180,7 +178,7 @@ export const es: Content = {
     },
     cost: {
       heading: "¿Y el costo?",
-      text: "Aceptamos seguro médico, y Medi-Cal junto con un plan de seguro. El pago particular también es una opción. Llámenos y le explicaremos qué se aplica a su familia.",
+      text: "Aceptamos Medi-Cal. También es posible pagar de su bolsillo. Llámenos y le explicaremos qué aplica a su familia.",
     },
     trust: {
       text: "Al servicio de las familias de West Sacramento desde 2003. Negocio familiar desde 2007.",
@@ -315,19 +313,15 @@ export const es: Content = {
       {
         icon: "socialWork" as const,
         title: "Trabajo social",
-        summary: "Ayuda con beneficios, trámites y la búsqueda de servicios fuera del centro.",
-        details: [
-          "Nuestra trabajadora social ayuda a las familias a entender formularios y preguntas sobre la cobertura.",
-          "Podemos orientarle hacia servicios locales, como ayuda en el hogar o programas de comidas.",
-          "Hay reuniones con la familia cuando es necesario cambiar un plan.",
-        ],
+        summary: "Los trabajadores sociales son parte esencial del personal y se encargan de las evaluaciones psicosociales, la planificación de la atención, la defensa de los derechos y la coordinación de recursos de la comunidad para apoyar la salud, la seguridad y el bienestar de los participantes.",
+        details: [],
       },
       {
         icon: "recreation" as const,
         title: "Recreación",
-        summary: "Música, juegos, manualidades, ejercicio suave y compañía durante todo el día.",
+        summary: "Música, juegos, manualidades y compañía durante el día.",
         details: [
-          "Actividades diarias en las que cada persona puede participar o no, como música, juegos, manualidades y ejercicio.",
+          "Actividades diarias en las que se puede participar o no, como música, juegos y manualidades.",
           "Las excursiones se hacen hasta tres veces por semana en promedio, sin costo adicional. Las personas con necesidades de movilidad pueden acompañarnos.",
           "Celebramos juntos los días festivos y los cumpleaños.",
         ],
@@ -348,27 +342,23 @@ export const es: Content = {
       { time: "8:30 a. m.", text: "Bienvenida" },
       { time: "9:00 a. m.", text: "Ejercicio de rehabilitación" },
       { time: "9:30 a. m.", text: "Desayuno / Noticias del día en la televisión" },
-      { time: "10:00 a. m.", text: "Educación para la salud / Fisioterapia individual (lun., mar., vie.)" },
+      { time: "10:00 a. m.", text: "Educación para la salud / Fisioterapia individual" },
       { time: "10:30 a. m.", text: "Ejercicio de rehabilitación / Club de caminata / Excursión" },
       { time: "11:00 a. m.", text: "Ejercicios de rehabilitación / Terapia de grupo" },
       { time: "11:30 a. m.", text: "Ejercicio de rehabilitación / Grupo para mejorar la memoria / Juego de actividad / Grupo espiritual" },
-      { time: "12:00 p. m.", text: "Invitados y conferencistas / Fisioterapia individual (lun., mar., vie.)" },
-      { time: "12:30 p. m.", text: "Terapia ocupacional individual (miér., vie.)" },
+      { time: "12:00 p. m.", text: "Invitados y conferencistas / Fisioterapia individual" },
+      { time: "12:30 p. m.", text: "Terapia ocupacional individual" },
       { time: "1:00 p. m.", text: "Almuerzo" },
       { time: "1:30 p. m.", text: "Película / Conversación" },
     ],
     rotatingHeading: "Actividades rotativas",
-    rotatingIntro: "Las actividades rotan durante la semana. El bingo se juega varias veces por semana y hacemos salidas a tiendas, mercados y parques de la zona. Llámenos para conocer el calendario de este mes, disponible en inglés y ruso.",
+    rotatingIntro: "Las actividades rotan durante la semana. El bingo se juega varias veces por semana y hacemos salidas a tiendas, mercados y parques de la zona.",
     rotatingActivities: [
       "Clase de inglés",
       "Bingo",
       "Salidas a tiendas, mercados y parques",
       "Celebraciones de cumpleaños",
     ],
-    cta: {
-      heading: "¿No sabe qué necesita su ser querido?",
-      text: "Llámenos. Le haremos algunas preguntas y le daremos una respuesta sincera.",
-    },
   },
 
   // ------------------------------------------------------ Transportation ---
@@ -413,37 +403,14 @@ export const es: Content = {
       {
         heading: "Recogida y regreso",
         paragraphs: [
-          "Cada pasajero recibe un margen de tiempo para la recogida y no una hora exacta, porque el tráfico y los demás pasajeros cambian la ruta.",
-          "Nos acercamos a la puerta lo más posible. En la recogida, el cuidador del participante lo ayuda a subir al autobús. Los conductores no ayudan a los participantes a subir, y no pueden levantar a nadie para subirlo al autobús.",
-          "En el centro, los conductores pueden ayudar a los participantes a bajar del autobús, y nuestros cuidadores están listos para recibirlos. Nuestros cuidadores no van a las casas de las personas.",
-          "Si el autobús se retrasa, llamamos a la familia.",
+          "En casa, un cuidador ayuda al participante a subir al autobús, y en el centro nuestros conductores lo ayudan a bajar.",
         ],
       },
       {
         heading: "Acceso para sillas de ruedas y movilidad",
         paragraphs: [
-          "Nuestros vehículos pueden transportar a personas que usan silla de ruedas, andador o bastón.",
-          "Las sillas de ruedas se aseguran antes de que el vehículo se mueva, y se usa cinturón de seguridad con todos los pasajeros.",
-          "Nuestros autobuses operan con un permiso de la Comisión de Servicios Públicos de California (California Public Utilities Commission).",
-          "Cuéntenos sobre el oxígeno, los traslados o cualquier otra cosa que el conductor deba saber, y lo tendremos en cuenta.",
+          "Nuestros vehículos pueden transportar a participantes que usan silla de ruedas, andador o bastón.",
         ],
-      },
-      {
-        heading: "Cómo las familias organizan o cambian un viaje",
-        paragraphs: [
-          "Los viajes se organizan cuando su ser querido se inscribe, y el horario se mantiene igual de una semana a otra.",
-          "Para cambiar la dirección de recogida, agregar un día o cancelar un viaje, llame a la oficina.",
-          "Si cancela el mismo día, llame lo antes posible para que el conductor pueda ajustar la ruta.",
-        ],
-        list: {
-          label: "Para cambiar un viaje, tenga a mano lo siguiente:",
-          items: [
-            "El nombre del pasajero",
-            "La fecha o las fechas que cambian",
-            "La nueva dirección, si cambia el lugar de recogida",
-            "Un número de teléfono donde podamos localizarle ese día",
-          ],
-        },
       },
     ],
     secondPhoto: {
@@ -471,6 +438,7 @@ export const es: Content = {
     lead: "Inscribirse requiere unas cuantas conversaciones, no una montaña de papeleo. Así es como funciona.",
     qualifies: {
       heading: "Quién califica",
+      purpose: "Estamos aquí para ayudar a mejorar la salud de los participantes, tanto física como mental. No ofrecemos atención individual uno a uno.",
       intro: "Golden Days suele ser adecuado para un adulto que:",
       items: [
         "Es un adulto que vive en casa o con su familia",
@@ -478,37 +446,30 @@ export const es: Content = {
         "Tiene una condición de salud que se beneficia de revisiones regulares",
         "Puede participar en un programa diurno en grupo",
       ],
-      note: "La elegibilidad se decide después de una evaluación, no por teléfono. Llámenos y le diremos cuál es el siguiente paso.",
+      note: "Solo se puede hacer una evaluación con la aprobación de un médico. Llámenos y le diremos cuál es el siguiente paso.",
     },
     pays: {
       heading: "Quién paga",
       intro: "Las familias suelen pagar de una de estas maneras:",
+      value: "La atención médica diurna para adultos suele costar mucho menos que una hospitalización más adelante, así que inscribirse temprano puede ayudar.",
       items: [
         {
           title: "Medi-Cal",
-          text: "Aceptamos Medi-Cal junto con un plan de seguro, pero no Medi-Cal por sí solo. Podemos explicarle cómo es el proceso.",
-        },
-        {
-          title: "Planes de atención administrada",
-          text: "Algunos planes de salud cubren los programas diurnos. Revisaremos lo que dice su plan.",
+          text: "Aceptamos Medi-Cal. Podemos explicarle cómo es el proceso.",
         },
         {
           title: "Pago particular",
           text: "Las familias también pueden pagar directamente.",
         },
       ],
-      note: "Nada en esta página es una promesa de cobertura ni un precio. Llámenos para obtener información actual sobre su situación.",
+      note: "Medicare no cubre este programa. Nada de lo que aparece en esta página es una promesa de cobertura ni un precio. Llámenos para obtener información actualizada sobre su situación.",
     },
     bring: {
       heading: "Qué traer",
       intro: "Traiga lo que tenga. Nosotros le ayudamos con el resto.",
       items: [
         "Identificación con foto",
-        "Tarjeta del seguro (puede traerla sola)",
-        "Tarjeta de Medi-Cal (tráigala junto con la tarjeta del seguro, no sola)",
-        "El nombre y el teléfono de su médico",
-        "Nombres y teléfonos de contactos de emergencia",
-        "Cualquier documento médico reciente que ya tenga",
+        "Tarjeta de Medi-Cal",
       ],
     },
     steps: {
@@ -521,18 +482,6 @@ export const es: Content = {
         {
           title: "Conozca el centro",
           text: "Visítenos durante el horario del programa, de preferencia antes de la 1:30 p. m., para ver un día normal. Traiga a su ser querido si le resulta cómodo.",
-        },
-        {
-          title: "Evaluación",
-          text: "Nuestro equipo revisa el historial de salud, las necesidades diarias y las metas para confirmar que el programa es adecuado.",
-        },
-        {
-          title: "Trámites y cobertura",
-          text: "Completamos juntos los formularios de inscripción y resolvemos las preguntas sobre la cobertura.",
-        },
-        {
-          title: "Primer día",
-          text: "Fijamos el horario, organizamos los viajes y presentamos a su ser querido al personal y a los demás participantes.",
         },
       ],
     },
@@ -559,7 +508,7 @@ export const es: Content = {
     },
     qualifyPrompt: {
       heading: "¿No está seguro de si es lo adecuado?",
-      text: "Responda cinco preguntas cortas y le indicaremos el siguiente paso. Toma cerca de un minuto.",
+      text: "Responda cuatro preguntas breves y le diremos cuál es el siguiente paso. Toma alrededor de un minuto.",
     },
     cta: {
       heading: "¿Listo para comenzar?",
@@ -574,7 +523,7 @@ export const es: Content = {
     meta: {
       title: "¿Califico?",
       description:
-        "Responda cinco preguntas cortas para ver si Golden Days, en West Sacramento, puede ser lo adecuado.",
+        "Responda cuatro preguntas breves para saber si Golden Days, en West Sacramento, puede ser una buena opción.",
     },
     intro: {
       heading: "Vea si Golden Days puede ser lo adecuado para usted o su ser querido.",
@@ -602,16 +551,12 @@ export const es: Content = {
         help: "Atendemos West Sacramento y zonas cercanas, incluidas Sacramento, Natomas, Elk Grove, Carmichael, Rancho Cordova y Antelope. Si no está seguro, elija No estoy seguro y lo verificaremos.",
       },
       {
-        text: "¿Puede participar en actividades de grupo durante el día, con o sin andador o silla de ruedas?",
-        help: "Las actividades de grupo incluyen ejercicio, música, juegos y comidas en compañía. Cada persona participa a su manera, y algunas también necesitan atención médica durante el día. Si no está seguro de que pueda estar en un grupo, elija No estoy seguro.",
+        text: "¿Puede participar en actividades de grupo durante el día sin necesitar ayuda individual uno a uno?",
+        help: "Las actividades de grupo incluyen música, juegos y comidas en compañía. No ofrecemos atención individual uno a uno. Cada persona participa a su manera, y algunas también necesitan atención médica durante el día. Si no está seguro/a de que pueda desenvolverse en un grupo, elija «No estoy seguro/a».",
       },
       {
-        text: "¿Tiene seguro médico de una compañía de seguros, con o sin Medi-Cal?",
-        help: "Aceptamos seguro médico, y Medi-Cal junto con un seguro. Medi-Cal por sí solo no es suficiente. Si no está seguro, elija No estoy seguro.",
-      },
-      {
-        text: "¿Tiene un médico que pueda compartir documentos médicos recientes?",
-        help: "Pedimos documentos médicos recientes de su médico, junto con la información de su seguro. Si no está seguro, elija No estoy seguro.",
+        text: "¿Tiene Medi-Cal?",
+        help: "Aceptamos Medi-Cal. También es posible pagar de su bolsillo, así que si no tiene Medi-Cal, elija «No» y llámenos para conversarlo. Si no está seguro/a, elija «No estoy seguro/a».",
       },
     ],
     results: {

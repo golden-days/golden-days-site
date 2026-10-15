@@ -28,7 +28,7 @@ export const tl: Content = {
     addressLines: ["1215 Merkley Ave", "West Sacramento, CA 95691"],
     addressOneLine: "1215 Merkley Ave, West Sacramento, CA 95691",
     hoursLabel: "Oras",
-    hours: "Oras ng pasilidad: Lunes hanggang Biyernes, 8:00 n.u. hanggang 4:30 n.h.",
+    hours: "Oras ng pasilidad: Lunes hanggang Biyernes, 8:00 n.u. hanggang 3:00 n.h.",
     programHours: "Oras ng serbisyo: Lunes hanggang Biyernes, 8:00 n.u. hanggang 2:00 n.h.",
     hoursNote:
       "Sarado kapag Sabado at Linggo. Sarado rin kapag Thanksgiving, Araw ng Pasko, Bagong Taon, at Ikaapat ng Hulyo.",
@@ -94,9 +94,7 @@ export const tl: Content = {
     whoWeServe: {
       heading: "Sino ang aming pinaglilingkuran",
       paragraphs: [
-        "Malugod na tinatanggap ng Golden Days ang mga nasa hustong gulang na nakatira sa bahay at nangangailangan ng suporta, kasama, o pangangasiwa sa araw.",
-        "Marami sa mga pumupunta sa amin ay kasama sa bahay ang isang kapamilyang nagtatrabaho, o nangangailangan lang ng pahinga sa loob ng linggo.",
-        "Kung hindi kayo sigurado kung angkop ang Golden Days para sa inyong mahal sa buhay, tawagan kami. Masaya kaming makipag-usap, nang walang pamimilit.",
+        "Ang mga adult day health care program ay para sa mahihinang matatanda at sa mas batang adult na may malalang kondisyong medikal, pangkaisipan, o sa mental health na nagpapahirap sa kanila, na nasa panganib na kailanganing tumira sa isang care facility. Tinatanggap ng Golden Days ang mga adult na 18 taong gulang pataas.",
       ],
     },
     services: {
@@ -123,12 +121,12 @@ export const tl: Content = {
         {
           icon: "socialWork" as const,
           title: "Social Work",
-          text: "Tulong sa pag-unawa sa mga benepisyo, papeles, at mga resource sa komunidad.",
+          text: "Ang aming mga social worker ang bahala sa psychosocial assessment, pagpaplano ng pangangalaga, adbokasiya, at mga mapagkukunan ng komunidad upang suportahan ang kalusugan, kaligtasan, at kapakanan ng mga kalahok.",
         },
         {
           icon: "recreation" as const,
           title: "Libangan",
-          text: "Musika, laro, crafts, ehersisyo, field trip, at oras na kasama ang ibang tao.",
+          text: "Musika, laro, crafts, pamamasyal, at oras na kasama ang ibang tao.",
         },
         {
           icon: "transportation" as const,
@@ -168,7 +166,7 @@ export const tl: Content = {
         },
         {
           title: "Kumpletuhin ang assessment",
-          text: "Sinusuri ng aming team ang kalusugan at pang-araw-araw na pangangailangan upang malaman kung angkop ang programa.",
+          text: "Sinusuri ng aming team ang kalusugan at pang-araw-araw na pangangailangan upang malaman kung angkop ang programa. Magagawa lamang ang assessment kung aprubado ito ng doktor.",
         },
         {
           title: "Simulan ang pagdalo",
@@ -180,7 +178,7 @@ export const tl: Content = {
     },
     cost: {
       heading: "Paano ang gastos?",
-      text: "Tumatanggap kami ng insurance, at ng Medi-Cal kasama ng isang insurance plan. Maaari rin ang private pay. Tawagan kami at ipapaliwanag namin kung ano ang naaangkop sa inyong pamilya.",
+      text: "Tumatanggap kami ng Medi-Cal. Maaari ring magbayad nang direkta. Tawagan kami at ipapaliwanag namin kung ano ang naaangkop sa inyong pamilya.",
     },
     trust: {
       text: "Naglilingkod sa mga pamilya sa West Sacramento mula pa noong 2003. Negosyong pag-aari ng pamilya mula noong 2007.",
@@ -315,19 +313,15 @@ export const tl: Content = {
       {
         icon: "socialWork" as const,
         title: "Social Work",
-        summary: "Tulong sa mga benepisyo, papeles, at paghahanap ng mga serbisyo sa labas ng center.",
-        details: [
-          "Tinutulungan ng aming social worker ang mga pamilya na maunawaan ang mga form at mga tanong tungkol sa coverage.",
-          "Maaari namin kayong ituro sa mga lokal na serbisyo tulad ng tulong sa bahay o mga programa sa pagkain.",
-          "May mga family meeting kapag kailangang baguhin ang plano.",
-        ],
+        summary: "Ang mga social worker ay pangunahing staff na may responsibilidad sa psychosocial assessment, pagpaplano ng pangangalaga, adbokasiya, at pag-uugnay ng mga mapagkukunan ng komunidad upang suportahan ang kalusugan, kaligtasan, at kapakanan ng mga kalahok.",
+        details: [],
       },
       {
         icon: "recreation" as const,
         title: "Libangan",
-        summary: "Musika, laro, crafts, banayad na ehersisyo, at kasama sa buong araw.",
+        summary: "Musika, laro, crafts, at kasama sa buong araw.",
         details: [
-          "Mga pang-araw-araw na aktibidad na maaaring salihan o laktawan, tulad ng musika, laro, crafts, at ehersisyo.",
+          "Mga pang-araw-araw na aktibidad na maaaring salihan o laktawan, tulad ng musika, laro, at crafts.",
           "Ang mga field trip ay hanggang tatlong beses sa isang linggo sa karaniwan, nang walang dagdag na bayad. Maaaring sumama ang mga may kahirapan sa paggalaw.",
           "Sabay-sabay naming ipinagdiriwang ang mga holiday at kaarawan.",
         ],
@@ -348,27 +342,23 @@ export const tl: Content = {
       { time: "8:30 n.u.", text: "Pagsalubong" },
       { time: "9:00 n.u.", text: "Ehersisyo sa Rehabilitasyon" },
       { time: "9:30 n.u.", text: "Almusal / Balita sa TV" },
-      { time: "10:00 n.u.", text: "Edukasyon sa Kalusugan / Individual na Physical Therapy (Lun, Mar, Biy)" },
+      { time: "10:00 n.u.", text: "Edukasyon sa Kalusugan / Individual na Physical Therapy" },
       { time: "10:30 n.u.", text: "Ehersisyo sa Rehabilitasyon / Walking Club / Field Trip" },
       { time: "11:00 n.u.", text: "Mga Ehersisyo sa Rehabilitasyon / Group Therapy" },
       { time: "11:30 n.u.", text: "Ehersisyo sa Rehabilitasyon / Grupo sa Memorya / Larong Aktibidad / Spiritual na Grupo" },
-      { time: "12:00 n.h.", text: "Mga Bisita at Tagapagsalita / Individual na Physical Therapy (Lun, Mar, Biy)" },
-      { time: "12:30 n.h.", text: "Individual na Occupational Therapy (Miy, Biy)" },
+      { time: "12:00 n.h.", text: "Mga Bisita at Tagapagsalita / Individual na Physical Therapy" },
+      { time: "12:30 n.h.", text: "Individual na Occupational Therapy" },
       { time: "1:00 n.h.", text: "Tanghalian" },
       { time: "1:30 n.h.", text: "Pelikula / Talakayan" },
     ],
     rotatingHeading: "Mga umiikot na aktibidad",
-    rotatingIntro: "Umiikot ang mga aktibidad sa buong linggo. Ilang beses sa isang linggo ang bingo, at namamasyal kami sa mga lokal na tindahan, palengke, at parke. Tawagan kami para sa kalendaryo ngayong buwan, na available sa Ingles at Ruso.",
+    rotatingIntro: "Umiikot ang mga aktibidad sa buong linggo. Ilang beses sa isang linggo ang bingo, at namamasyal kami sa mga lokal na tindahan, palengke, at parke.",
     rotatingActivities: [
       "Klase sa Ingles",
       "Bingo",
       "Pamamasyal sa mga tindahan, palengke, at parke",
       "Pagdiriwang ng kaarawan",
     ],
-    cta: {
-      heading: "Hindi sigurado kung alin ang kailangan ng inyong mahal sa buhay?",
-      text: "Tawagan kami. Magtatanong kami ng ilang bagay at bibigyan namin kayo ng tapat na sagot.",
-    },
   },
 
   // ------------------------------------------------------ Transportation ---
@@ -413,37 +403,14 @@ export const tl: Content = {
       {
         heading: "Sundo at hatid",
         paragraphs: [
-          "Ang bawat pasahero ay may saklaw na oras ng sundo sa halip na eksaktong minuto, dahil nababago ng trapiko at ng ibang pasahero ang ruta.",
-          "Lumalapit kami hangga't maaari sa pinto. Sa sundo, tinutulungan ng tagapag-alaga ng kalahok na makasakay sa bus. Hindi tumutulong ang mga driver sa pagsakay ng mga kalahok, at hindi nila kayang buhatin ang sinuman papasok sa bus.",
-          "Sa center, maaaring tulungan ng mga driver ang mga kalahok na makababa sa bus, at handa ang aming mga tagapag-alaga rito na salubungin sila. Hindi pumupunta sa mga bahay ng tao ang aming mga tagapag-alaga.",
-          "Kung nahuhuli ang bus, tinatawagan namin ang pamilya.",
+          "Sa bahay, tinutulungan ng caregiver ang kalahok na sumakay sa bus, at sa center, tinutulungan sila ng aming mga driver na bumaba.",
         ],
       },
       {
         heading: "Access para sa wheelchair at may kahirapan sa paggalaw",
         paragraphs: [
-          "Kayang isakay ng aming mga sasakyan ang mga gumagamit ng wheelchair, walker, o tungkod.",
-          "Ikinakabit nang maayos ang mga wheelchair bago umandar ang sasakyan, at may seat belt ang bawat pasahero.",
-          "Ang aming mga bus ay may permit mula sa California Public Utilities Commission.",
-          "Sabihin sa amin ang tungkol sa oxygen, paglilipat, o anumang dapat malaman ng driver, at paghahandaan namin ito.",
+          "Maaaring isakay sa aming mga sasakyan ang mga kalahok na gumagamit ng wheelchair, walker, o tungkod.",
         ],
-      },
-      {
-        heading: "Paano mag-ayos o magbago ng sakay ang mga pamilya",
-        paragraphs: [
-          "Inaayos ang sakay kapag nagpatala ang inyong mahal sa buhay, at pareho ang iskedyul sa bawat linggo.",
-          "Para baguhin ang address ng sundo, magdagdag ng araw, o magkansela ng sakay, tawagan ang opisina.",
-          "Para sa pagkansela sa mismong araw, tumawag sa lalong madaling panahon para maiayos ng driver ang ruta.",
-        ],
-        list: {
-          label: "Para magbago ng sakay, ihanda ang mga ito:",
-          items: [
-            "Pangalan ng pasahero",
-            "Ang petsa o mga petsang magbabago",
-            "Ang bagong address, kung lilipat ang lugar ng sundo",
-            "Numero ng telepono kung saan namin kayo makokontak sa araw na iyon",
-          ],
-        },
       },
     ],
     secondPhoto: {
@@ -471,6 +438,7 @@ export const tl: Content = {
     lead: "Ang pagpapatala ay ilang pag-uusap lang, hindi bundok ng papeles. Ganito ang proseso.",
     qualifies: {
       heading: "Sino ang kwalipikado",
+      purpose: "Narito kami upang tumulong na mapabuti ang kalusugan ng mga kalahok, pisikal man o mental. Hindi kami nagbibigay ng one-on-one na pangangalaga.",
       intro: "Karaniwang angkop ang Golden Days sa isang nasa hustong gulang na:",
       items: [
         "Nasa hustong gulang na nakatira sa bahay o kasama ang pamilya",
@@ -478,37 +446,30 @@ export const tl: Content = {
         "May kondisyong pangkalusugan na nakikinabang sa regular na pagsusuri",
         "Kayang makilahok sa isang group day program",
       ],
-      note: "Napagpapasyahan ang eligibility pagkatapos ng assessment, hindi sa telepono. Tawagan kami at sasabihin namin kung ano ang susunod na hakbang.",
+      note: "Magagawa lamang ang assessment kung aprubado ito ng doktor. Tawagan kami at sasabihin namin kung ano ang susunod na hakbang.",
     },
     pays: {
       heading: "Sino ang nagbabayad",
       intro: "Karaniwang nagbabayad ang mga pamilya sa isa sa mga paraang ito:",
+      value: "Karaniwang mas mura ang adult day health care kaysa sa pagpapaospital sa susunod, kaya makakatulong ang maagang pag-enroll.",
       items: [
         {
           title: "Medi-Cal",
-          text: "Tumatanggap kami ng Medi-Cal kasama ng isang insurance plan, ngunit hindi ng Medi-Cal lamang. Maipapaliwanag namin kung paano ang proseso.",
-        },
-        {
-          title: "Managed care plan",
-          text: "May ilang health plan na sumasagot sa day program. Titingnan namin kung ano ang sinasabi ng inyong plan.",
+          text: "Tumatanggap kami ng Medi-Cal. Maipapaliwanag namin kung paano ang proseso.",
         },
         {
           title: "Private pay",
           text: "Maaari ring direktang magbayad ang mga pamilya.",
         },
       ],
-      note: "Walang nasa pahinang ito na pangako ng coverage o presyo. Tawagan kami para sa kasalukuyang impormasyon tungkol sa inyong sitwasyon.",
+      note: "Hindi sakop ng Medicare ang programang ito. Walang nasa pahinang ito ang pangako ng saklaw o presyo. Tawagan kami para sa kasalukuyang impormasyon tungkol sa inyong sitwasyon.",
     },
     bring: {
       heading: "Ano ang dadalhin",
       intro: "Dalhin ang mayroon kayo. Tutulungan namin kayo sa iba pa.",
       items: [
-        "ID na may litrato",
-        "Insurance card (maaari itong dalhin nang mag-isa)",
-        "Medi-Cal card (dalhin ito kasama ng inyong insurance card, hindi nang mag-isa)",
-        "Pangalan at numero ng telepono ng inyong doktor",
-        "Mga pangalan at numero ng emergency contact",
-        "Anumang kamakailang medikal na papeles na mayroon na kayo",
+        "Photo ID",
+        "Medi-Cal card",
       ],
     },
     steps: {
@@ -521,18 +482,6 @@ export const tl: Content = {
         {
           title: "Libutin ang center",
           text: "Bumisita sa oras ng programa, mas mabuti bago mag-1:30 n.h., para makita ninyo ang karaniwang araw. Isama ang inyong mahal sa buhay kung komportable siya.",
-        },
-        {
-          title: "Assessment",
-          text: "Sinusuri ng aming team ang kasaysayan ng kalusugan, pang-araw-araw na pangangailangan, at mga layunin para matiyak na angkop ang programa.",
-        },
-        {
-          title: "Papeles at coverage",
-          text: "Magkasama naming pupunan ang mga form sa pagpapatala at aayusin ang mga tanong tungkol sa coverage.",
-        },
-        {
-          title: "Unang araw",
-          text: "Itinatakda namin ang iskedyul, inaayos ang sakay, at ipinakikilala ang inyong mahal sa buhay sa mga staff at sa ibang kalahok.",
         },
       ],
     },
@@ -559,7 +508,7 @@ export const tl: Content = {
     },
     qualifyPrompt: {
       heading: "Hindi sigurado kung angkop ito?",
-      text: "Sagutan ang limang maikling tanong at ituturo namin kayo sa susunod na hakbang. Mga isang minuto lang ito.",
+      text: "Sagutin ang apat na maikling tanong at sasabihin namin ang susunod na hakbang. Mga isang minuto lang ito.",
     },
     cta: {
       heading: "Handa na bang magsimula?",
@@ -574,7 +523,7 @@ export const tl: Content = {
     meta: {
       title: "Kwalipikado ba Ako?",
       description:
-        "Sagutan ang limang maikling tanong para malaman kung angkop ang Golden Days sa West Sacramento.",
+        "Sagutin ang apat na maikling tanong upang malaman kung maaaring angkop ang Golden Days sa West Sacramento.",
     },
     intro: {
       heading: "Alamin kung angkop ang Golden Days para sa inyo o sa inyong mahal sa buhay.",
@@ -602,16 +551,12 @@ export const tl: Content = {
         help: "Pinaglilingkuran namin ang West Sacramento at mga kalapit na lugar, kabilang ang Sacramento, Natomas, Elk Grove, Carmichael, Rancho Cordova, at Antelope. Kung hindi kayo sigurado, piliin ang Hindi sigurado at titingnan namin.",
       },
       {
-        text: "Kaya ba nilang makilahok sa mga group activity sa araw, may walker o wheelchair man o wala?",
-        help: "Kasama sa mga group activity ang ehersisyo, musika, laro, at sabay-sabay na pagkain. Nakikilahok ang mga tao sa sarili nilang paraan, at may ilan ding nangangailangan ng medikal na atensyon sa araw. Kung hindi kayo sigurado na kakayanin nila ang group setting, piliin ang Hindi sigurado.",
+        text: "Makakasali ba siya sa mga group activity sa araw nang hindi nangangailangan ng one-on-one na tulong?",
+        help: "Kasama sa mga group activity ang musika, laro, at sama-samang pagkain. Hindi kami nagbibigay ng one-on-one na pangangalaga. Iba-iba ang paraan ng pagsali ng bawat tao, at may ilan ding nangangailangan ng medikal na atensyon sa araw. Kung hindi kayo sigurado na kaya niya sa grupo, piliin ang «Hindi sigurado».",
       },
       {
-        text: "May health insurance ba sila mula sa isang insurance provider, may Medi-Cal man o wala?",
-        help: "Tumatanggap kami ng insurance, at ng Medi-Cal kasama ng insurance. Hindi sapat ang Medi-Cal lamang. Kung hindi kayo sigurado, piliin ang Hindi sigurado.",
-      },
-      {
-        text: "May doktor ba sila na maaaring magbahagi ng kamakailang medikal na papeles?",
-        help: "Humihingi kami ng kamakailang medikal na papeles mula sa kanilang doktor, kasama ang kanilang impormasyon sa insurance. Kung hindi kayo sigurado, piliin ang Hindi sigurado.",
+        text: "May Medi-Cal ba siya?",
+        help: "Tumatanggap kami ng Medi-Cal. Maaari ring magbayad nang direkta, kaya kung wala siyang Medi-Cal, piliin ang «Hindi» at tawagan kami para pag-usapan. Kung hindi kayo sigurado, piliin ang «Hindi sigurado».",
       },
     ],
     results: {

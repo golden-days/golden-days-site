@@ -29,6 +29,7 @@ export default async function EnrollmentPage() {
         </div>
 
         <h2 className="mt-12 text-2xl sm:text-3xl">{page.qualifies.heading}</h2>
+        <p className="mt-4 max-w-3xl">{page.qualifies.purpose}</p>
         <p className="mt-4 max-w-3xl">{page.qualifies.intro}</p>
         <ul className="mt-4 max-w-3xl list-disc space-y-2 pl-6">
           {page.qualifies.items.map((item) => (
@@ -43,7 +44,7 @@ export default async function EnrollmentPage() {
       <Section background="cream">
         <h2 className="text-2xl sm:text-3xl">{page.pays.heading}</h2>
         <p className="mt-4 max-w-3xl">{page.pays.intro}</p>
-        <ul className="mt-8 grid list-none gap-5 md:grid-cols-3">
+        <ul className="mt-8 grid list-none gap-5 md:grid-cols-2">
           {page.pays.items.map((item) => (
             <li key={item.title} className="rounded-xl border-2 border-gold-deep bg-white p-5">
               <h3 className="text-xl">{item.title}</h3>
@@ -51,7 +52,8 @@ export default async function EnrollmentPage() {
             </li>
           ))}
         </ul>
-        <p className="mt-8 max-w-3xl rounded-xl border-l-8 border-navy bg-white p-5 text-lg">
+        <p className="mt-8 max-w-3xl">{page.pays.value}</p>
+        <p className="mt-4 max-w-3xl rounded-xl border-l-8 border-navy bg-white p-5 text-lg">
           {page.pays.note}
         </p>
       </Section>

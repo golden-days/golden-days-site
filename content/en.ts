@@ -38,7 +38,7 @@ export const en = {
     addressLines: ["1215 Merkley Ave", "West Sacramento, CA 95691"],
     addressOneLine: "1215 Merkley Ave, West Sacramento, CA 95691",
     hoursLabel: "Hours",
-    hours: "Facility hours: Monday to Friday, 8:00 AM to 4:30 PM",
+    hours: "Facility hours: Monday to Friday, 8:00 AM to 3:00 PM",
     programHours: "Service hours: Monday to Friday, 8:00 AM to 2:00 PM",
     hoursNote: "Closed Saturday and Sunday. Also closed on Thanksgiving, Christmas Day, New Year's Day, and the Fourth of July.",
     mapTitle: "Map showing the Golden Days Adult Day Health Care location",
@@ -103,9 +103,7 @@ export const en = {
     whoWeServe: {
       heading: "Who we serve",
       paragraphs: [
-        "Golden Days welcomes adults who live at home and need support, company, or supervision during the day.",
-        "Many of the people who come to us live with a family member who works, or who simply needs a break during the week.",
-        "If you are not sure whether Golden Days is the right fit for your loved one, call us. We are happy to talk it through, with no pressure.",
+        "Adult day health care programs serve frail older adults, and younger adults with chronic, disabling medical, cognitive, or mental health conditions, who are at risk of needing to move into a care facility. Golden Days serves adults age 18 and over.",
       ],
     },
     services: {
@@ -132,12 +130,12 @@ export const en = {
         {
           icon: "socialWork" as const,
           title: "Social Work",
-          text: "Help understanding benefits, paperwork, and community resources.",
+          text: "Our social workers handle psychosocial assessments, care planning, advocacy, and community resources to support participants' health, safety, and well-being.",
         },
         {
           icon: "recreation" as const,
           title: "Recreation",
-          text: "Music, games, crafts, exercise, field trips, and time with other people.",
+          text: "Music, games, crafts, field trips, and time with other people.",
         },
         {
           icon: "transportation" as const,
@@ -149,7 +147,7 @@ export const en = {
     transportation: {
       heading: "Getting here is part of the care",
       paragraphs: [
-        "Golden Days offers rides to and from the center for people who attend the program, including riders who use a wheelchair or a walker.",
+        "Golden Days offers rides to and from the center for people who attend the program, including participants who use a wheelchair or a walker.",
         "We work out a pickup window with your family, and we call if a schedule needs to change.",
       ],
       linkLabel: "Read about transportation",
@@ -177,7 +175,7 @@ export const en = {
         },
         {
           title: "Complete an assessment",
-          text: "Our team reviews health and daily needs to see whether the program fits.",
+          text: "Our team reviews health and daily needs to see whether the program fits. An assessment can only be done with a doctor's approval.",
         },
         {
           title: "Start attending",
@@ -189,7 +187,7 @@ export const en = {
     },
     cost: {
       heading: "What about cost?",
-      text: "We accept insurance, and Medi-Cal together with an insurance plan. Private pay is also an option. Call us and we will explain what applies to your family.",
+      text: "We accept Medi-Cal. Private pay is also an option. Call us and we will explain what applies to your family.",
     },
     trust: {
       text: "Serving West Sacramento families since 2003. Family owned since 2007.",
@@ -324,19 +322,15 @@ export const en = {
       {
         icon: "socialWork" as const,
         title: "Social Work",
-        summary: "Help with benefits, paperwork, and finding services outside the center.",
-        details: [
-          "Our social worker helps families understand forms and coverage questions.",
-          "We can point you toward local services such as home help or meal programs.",
-          "Family meetings are available when a plan needs to change.",
-        ],
+        summary: "Social workers are core staff responsible for psychosocial assessments, care planning, advocacy, and coordinating community resources to support participants' health, safety, and well-being.",
+        details: [],
       },
       {
         icon: "recreation" as const,
         title: "Recreation",
-        summary: "Music, games, crafts, gentle exercise, and company through the day.",
+        summary: "Music, games, crafts, and company through the day.",
         details: [
-          "Daily activities people can join or skip, such as music, games, crafts, and exercise.",
+          "Daily activities people can join or skip, such as music, games, and crafts.",
           "Field trips happen up to three times a week on average, at no extra cost. People with mobility needs can come along.",
           "Holidays and birthdays are celebrated together.",
         ],
@@ -347,7 +341,7 @@ export const en = {
         summary: "Rides to and from the center on program days.",
         details: [
           "Rides are available within our service area.",
-          "Our vehicles can carry riders who use a wheelchair or a walker.",
+          "Our vehicles can carry participants who use a wheelchair or a walker.",
           "The bus drives as close to the door as possible. At home, a caregiver helps the participant onto the bus. At the center, drivers help participants off the bus.",
         ],
       },
@@ -357,27 +351,23 @@ export const en = {
       { time: "8:30 AM", text: "Greeting" },
       { time: "9:00 AM", text: "Rehabilitation Exercise" },
       { time: "9:30 AM", text: "Breakfast / Current Events on TV" },
-      { time: "10:00 AM", text: "Health Education / Individual Physical Therapy (Mon, Tue, Fri)" },
+      { time: "10:00 AM", text: "Health Education / Individual Physical Therapy" },
       { time: "10:30 AM", text: "Rehabilitation Exercise / Walking Club / Field Trip" },
       { time: "11:00 AM", text: "Rehabilitation Exercises / Group Therapy" },
       { time: "11:30 AM", text: "Rehabilitation Exercise / Memory Group / Activity Game / Spiritual Group" },
-      { time: "12:00 PM", text: "Guests and Speakers / Individual Physical Therapy (Mon, Tue, Fri)" },
-      { time: "12:30 PM", text: "Individual Occupational Therapy (Wed, Fri)" },
+      { time: "12:00 PM", text: "Guests and Speakers / Individual Physical Therapy" },
+      { time: "12:30 PM", text: "Individual Occupational Therapy" },
       { time: "1:00 PM", text: "Lunch" },
       { time: "1:30 PM", text: "Movie / Discussion" },
     ],
     rotatingHeading: "Rotating activities",
-    rotatingIntro: "Activities rotate through the week. Bingo happens several times a week, and we go on outings to local stores, markets, and parks. Call us for this month's calendar, which is available in English and Russian.",
+    rotatingIntro: "Activities rotate through the week. Bingo happens several times a week, and we go on outings to local stores, markets, and parks.",
     rotatingActivities: [
       "English Lesson",
       "Bingo",
       "Outings to stores, markets, and parks",
       "Birthday celebrations",
     ],
-    cta: {
-      heading: "Not sure which parts your loved one needs?",
-      text: "Call us. We will ask a few questions and give you a straight answer.",
-    },
   },
 
   // ------------------------------------------------------ Transportation ---
@@ -422,37 +412,14 @@ export const en = {
       {
         heading: "Pickup and drop-off",
         paragraphs: [
-          "Each rider gets a pickup window rather than an exact minute, because traffic and other riders change the route.",
-          "We drive as close to the door as possible. At pickup, the participant's caregiver helps them onto the bus. Drivers do not help participants on, and they cannot lift anyone onto the bus.",
-          "At the center, drivers can help participants off the bus, and our caregivers here are ready to meet them. Our caregivers do not go to people's homes.",
-          "If the bus is running late, we call the family.",
+          "At home, a caregiver helps the participant onto the bus, and at the center our drivers help them off.",
         ],
       },
       {
         heading: "Wheelchair and mobility access",
         paragraphs: [
-          "Our vehicles can carry riders who use a wheelchair, a walker, or a cane.",
-          "Wheelchairs are secured before the vehicle moves, and seat belts are used for every rider.",
-          "Our buses operate under a permit from the California Public Utilities Commission.",
-          "Tell us about oxygen, transfers, or anything else a driver should know, and we will plan for it.",
+          "Our vehicles can carry participants who use a wheelchair, a walker, or a cane.",
         ],
-      },
-      {
-        heading: "How families arrange or change a ride",
-        paragraphs: [
-          "Rides are set up when your loved one enrolls, and the schedule stays the same week to week.",
-          "To change a pickup address, add a day, or cancel a ride, call the office.",
-          "For a same-day cancellation, call as early as you can so the driver can adjust the route.",
-        ],
-        list: {
-          label: "To change a ride, have this ready:",
-          items: [
-            "The rider's name",
-            "The date or dates that are changing",
-            "The new address, if the pickup location is moving",
-            "A phone number where we can reach you that day",
-          ],
-        },
       },
     ],
     secondPhoto: {
@@ -480,6 +447,7 @@ export const en = {
     lead: "Enrolling takes a few conversations, not a mountain of paperwork. Here is how it goes.",
     qualifies: {
       heading: "Who qualifies",
+      purpose: "We are here to help improve participants' health, both physically and mentally. We do not provide one-on-one care.",
       intro: "Golden Days is generally a fit for an adult who:",
       items: [
         "Is an adult living at home or with family",
@@ -487,37 +455,30 @@ export const en = {
         "Has a health condition that benefits from regular check-ins",
         "Can take part in a group day program",
       ],
-      note: "Eligibility is decided after an assessment, not over the phone. Call us and we will tell you what the next step looks like.",
+      note: "An assessment can only be done with a doctor's approval. Call us and we will tell you what the next step looks like.",
     },
     pays: {
       heading: "Who pays",
       intro: "Families usually pay in one of these ways:",
+      value: "Adult day health care usually costs much less than a hospital stay later on, so enrolling early can help.",
       items: [
         {
           title: "Medi-Cal",
-          text: "We accept Medi-Cal together with an insurance plan, but not Medi-Cal on its own. We can explain what the process looks like.",
-        },
-        {
-          title: "Managed care plans",
-          text: "Some health plans cover day programs. We will check what your plan says.",
+          text: "We accept Medi-Cal. We can explain what the process looks like.",
         },
         {
           title: "Private pay",
           text: "Families can also pay directly.",
         },
       ],
-      note: "Nothing on this page is a promise of coverage or a price. Call us for current information about your situation.",
+      note: "Medicare does not cover this program. Nothing on this page is a promise of coverage or a price. Call us for current information about your situation.",
     },
     bring: {
       heading: "What to bring",
       intro: "Bring what you have. We will help with the rest.",
       items: [
         "Photo identification",
-        "Insurance card (you can bring this on its own)",
-        "Medi-Cal card (bring this together with your insurance card, not by itself)",
-        "Your doctor's name and phone number",
-        "Emergency contact names and numbers",
-        "Any recent medical paperwork you already have",
+        "Medi-Cal card",
       ],
     },
     steps: {
@@ -530,18 +491,6 @@ export const en = {
         {
           title: "Tour the center",
           text: "Visit during program hours, preferably before 1:30 PM, so you can see a normal day. Bring your loved one if that is comfortable.",
-        },
-        {
-          title: "Assessment",
-          text: "Our team reviews health history, daily needs, and goals to confirm the program is a good fit.",
-        },
-        {
-          title: "Paperwork and coverage",
-          text: "We complete enrollment forms together and work through the coverage questions.",
-        },
-        {
-          title: "First day",
-          text: "We set the schedule, arrange rides, and introduce your loved one to staff and other participants.",
         },
       ],
     },
@@ -568,7 +517,7 @@ export const en = {
     },
     qualifyPrompt: {
       heading: "Not sure if this is a fit?",
-      text: "Answer five short questions and we will point you to the next step. It takes about a minute.",
+      text: "Answer four short questions and we will point you to the next step. It takes about a minute.",
     },
     cta: {
       heading: "Ready to start?",
@@ -583,7 +532,7 @@ export const en = {
     meta: {
       title: "Do I qualify?",
       description:
-        "Answer five short questions to see whether Golden Days in West Sacramento may be a good fit.",
+        "Answer four short questions to see whether Golden Days in West Sacramento may be a good fit.",
     },
     intro: {
       heading: "See if Golden Days may be right for you or your loved one.",
@@ -611,16 +560,12 @@ export const en = {
         help: "We serve West Sacramento and nearby areas, including Sacramento, Natomas, Elk Grove, Carmichael, Rancho Cordova, and Antelope. If you are not sure, choose Not sure and we will check.",
       },
       {
-        text: "Can they take part in group activities during the day, with or without a walker or wheelchair?",
-        help: "Group activities include exercise, music, games, and meals together. People take part in their own way, and some also need medical attention during the day. If you are not sure they could manage a group setting, choose Not sure.",
+        text: "Can they take part in group activities during the day without needing one-on-one help?",
+        help: "Group activities include music, games, and meals together. We do not provide one-on-one care. People take part in their own way, and some also need medical attention during the day. If you are not sure they could manage a group setting, choose Not sure.",
       },
       {
-        text: "Do they have health insurance from an insurance provider, with or without Medi-Cal?",
-        help: "We accept insurance, and Medi-Cal together with insurance. Medi-Cal on its own is not enough. If you are not sure, choose Not sure.",
-      },
-      {
-        text: "Do they have a doctor who can share recent medical paperwork?",
-        help: "We ask for recent medical paperwork from their doctor, along with their insurance information. If you are not sure, choose Not sure.",
+        text: "Do they have Medi-Cal?",
+        help: "We accept Medi-Cal. Private pay is also an option, so if they do not have Medi-Cal, choose No and call us to talk it over. If you are not sure, choose Not sure.",
       },
     ],
     results: {
