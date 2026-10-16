@@ -116,7 +116,7 @@ export const tl: Content = {
         {
           icon: "nutrition" as const,
           title: "Nutrisyon",
-          text: "Almusal at tanghalian araw-araw, na inihahanda ng kusinerong nagpaplano para sa pangangailangan ng bawat tao.",
+          text: "Almusal at tanghalian araw-araw, na inihahanda ng aming kusinero.",
         },
         {
           icon: "socialWork" as const,
@@ -304,7 +304,7 @@ export const tl: Content = {
       {
         icon: "nutrition" as const,
         title: "Nutrisyon",
-        summary: "Almusal at tanghalian sa bawat araw ng programa, na nag-iiba ang menu. Pinaplano ng aming kusinero ang mga pagkain ayon sa pangangailangan ng bawat tao, kasama ang allergy, hirap sa paglunok, at vegetarian na diyeta.",
+        summary: "Almusal at tanghalian sa bawat araw ng programa, na inihahanda ng aming kusinero, at nag-iiba ang menu. Ipaalam po sa amin kung may allergy sa pagkain, at isasaalang-alang ito ng aming kusinero.",
       },
       {
         icon: "socialWork" as const,
