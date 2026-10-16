@@ -96,7 +96,7 @@ export const zh: Content = {
     whoWeServe: {
       heading: "我們服務的對象",
       paragraphs: [
-        "成人日間健康照護計劃服務體弱的長者，也服務患有慢性、致殘的身體、認知或精神健康問題、有可能需要住進照護機構的較年輕成年人。Golden Days 接待 18 歲以上的成年人。",
+        "18 歲以上、希望改善或維持自身身體、認知與心理健康狀況，以提升整體福祉與生活品質的成年人。",
       ],
     },
     services: {
@@ -310,7 +310,7 @@ export const zh: Content = {
       {
         icon: "transportation" as const,
         title: "交通接送",
-        summary: "在中心開放的日子接送往返，包括使用輪椅或助行器的參加者。在家中由照護人員協助上車，到了中心由我們的司機協助下車。",
+        summary: "在中心開放的日子接送往返，包括使用輪椅或助行器的參加者。",
       },
     ],
     glanceHeading: "服務一覽",

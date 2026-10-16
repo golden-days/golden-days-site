@@ -94,7 +94,7 @@ export const vi: Content = {
     whoWeServe: {
       heading: "Chúng tôi phục vụ ai",
       paragraphs: [
-        "Các chương trình chăm sóc sức khỏe ban ngày cho người lớn phục vụ người cao tuổi yếu sức và người lớn trẻ hơn mắc các bệnh mạn tính gây suy giảm chức năng về thể chất, nhận thức hoặc sức khỏe tâm thần, có nguy cơ phải vào cơ sở chăm sóc. Golden Days phục vụ người lớn từ 18 tuổi trở lên.",
+        "Người lớn từ 18 tuổi trở lên muốn cải thiện hoặc duy trì tình trạng sức khỏe thể chất, nhận thức và tinh thần, để nâng cao sức khỏe tổng thể và chất lượng cuộc sống.",
       ],
     },
     services: {
@@ -308,7 +308,7 @@ export const vi: Content = {
       {
         icon: "transportation" as const,
         title: "Đưa đón",
-        summary: "Đưa đón đến và từ trung tâm vào các ngày sinh hoạt, kể cả người tham gia dùng xe lăn hoặc khung tập đi. Ở nhà có người chăm sóc giúp họ lên xe, và tại trung tâm tài xế của chúng tôi giúp họ xuống xe.",
+        summary: "Đưa đón đến và từ trung tâm vào các ngày sinh hoạt, kể cả người tham gia dùng xe lăn hoặc khung tập đi.",
       },
     ],
     glanceHeading: "Dịch vụ tóm tắt",

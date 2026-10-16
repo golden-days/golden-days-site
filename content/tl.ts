@@ -94,7 +94,7 @@ export const tl: Content = {
     whoWeServe: {
       heading: "Sino ang aming pinaglilingkuran",
       paragraphs: [
-        "Ang mga adult day health care program ay para sa mahihinang matatanda at sa mas batang adult na may malalang kondisyong medikal, pangkaisipan, o sa mental health na nagpapahirap sa kanila, na nasa panganib na kailanganing tumira sa isang care facility. Tinatanggap ng Golden Days ang mga adult na 18 taong gulang pataas.",
+        "Mga adult na 18 taong gulang pataas na nais pagbutihin o panatilihin ang kanilang kalusugang medikal, pangkaisipan, at mental, upang mapabuti ang pangkalahatang kapakanan at kalidad ng buhay.",
       ],
     },
     services: {
@@ -308,7 +308,7 @@ export const tl: Content = {
       {
         icon: "transportation" as const,
         title: "Transportasyon",
-        summary: "Sakay papunta at pabalik sa center sa mga araw ng programa, kasama ang mga kalahok na gumagamit ng wheelchair o walker. Sa bahay, tinutulungan sila ng caregiver na sumakay, at sa center, tinutulungan silang bumaba ng aming mga driver.",
+        summary: "Sakay papunta at pabalik sa center sa mga araw ng programa, kasama ang mga kalahok na gumagamit ng wheelchair o walker.",
       },
     ],
     glanceHeading: "Mga serbisyo sa isang tingin",

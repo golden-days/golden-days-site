@@ -94,7 +94,7 @@ export const es: Content = {
     whoWeServe: {
       heading: "A quién atendemos",
       paragraphs: [
-        "Los programas de atención médica diurna para adultos atienden a adultos mayores frágiles y a adultos más jóvenes con enfermedades crónicas incapacitantes, ya sean médicas, cognitivas o de salud mental, que corren el riesgo de tener que ingresar a un centro de cuidados. Golden Days atiende a adultos de 18 años en adelante.",
+        "Adultos de 18 años en adelante que desean mejorar o mantener su salud médica, cognitiva y mental, para elevar su bienestar general y su calidad de vida.",
       ],
     },
     services: {
@@ -308,7 +308,7 @@ export const es: Content = {
       {
         icon: "transportation" as const,
         title: "Transporte",
-        summary: "Traslados de ida y vuelta al centro en los días de programa, incluidos participantes que usan silla de ruedas o andador. En casa un cuidador los ayuda a subir, y en el centro nuestros conductores los ayudan a bajar.",
+        summary: "Traslados de ida y vuelta al centro en los días de programa, incluidos participantes que usan silla de ruedas o andador.",
       },
     ],
     glanceHeading: "Servicios de un vistazo",
