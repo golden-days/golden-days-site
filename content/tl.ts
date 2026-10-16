@@ -96,6 +96,14 @@ export const tl: Content = {
       paragraphs: [
         "Mga adult na 18 taong gulang pataas na nais pagbutihin o panatilihin ang kanilang kalusugang medikal, pangkaisipan, at mental, upang mapabuti ang pangkalahatang kapakanan at kalidad ng buhay.",
       ],
+      photo: {
+        kind: "interior" as const,
+        label: "Staff ng Golden Days",
+        alt: "Walong miyembro ng staff ng Golden Days na magkakasamang nakatayo sa labas sa isang maaraw na araw.",
+        src: "/images/staff-patio.jpg",
+        width: 1600,
+        height: 1129,
+      },
     },
     services: {
       heading: "Ang aming iniaalok",
@@ -202,8 +210,11 @@ export const tl: Content = {
     lead: "Bahagi na ng West Sacramento ang Golden Days Adult Day Health Care mula pa noong 2003. Ang parehong mga may-ari ang namamahala sa center mula noong 2007.",
     photo: {
       kind: "interior" as const,
-      label: "Placeholder ng larawan - group photo ng mga staff",
-      alt: "Placeholder na larawan na kapalit ng group photo ng mga staff ng Golden Days",
+      label: "Staff ng Golden Days",
+      alt: "Ang staff ng Golden Days, nakahanay sa dalawang hilera sa harap ng namumulaklak na pink na oleander.",
+      src: "/images/staff-team.jpg",
+      width: 1600,
+      height: 1232,
     },
     story: {
       heading: "Ang aming kuwento",

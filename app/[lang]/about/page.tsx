@@ -45,6 +45,11 @@ export default async function AboutPage() {
             <p key={paragraph}>{paragraph}</p>
           ))}
         </div>
+        <PhotoPlaceholder
+          photo={about.photo}
+          sizes="(min-width: 1024px) 976px, 100vw"
+          className="mt-8"
+        />
       </Section>
 
       <Section background="cream">
