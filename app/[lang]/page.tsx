@@ -46,11 +46,16 @@ export default async function HomePage() {
       </div>
 
       <Section>
-        <h2 className="text-2xl sm:text-3xl">{home.whoWeServe.heading}</h2>
-        <div className="mt-4 max-w-3xl space-y-4">
-          {home.whoWeServe.paragraphs.map((paragraph) => (
-            <p key={paragraph}>{paragraph}</p>
-          ))}
+        <div className="grid gap-8 md:grid-cols-2 md:items-center">
+          <div>
+            <h2 className="text-2xl sm:text-3xl">{home.whoWeServe.heading}</h2>
+            <div className="mt-4 space-y-4">
+              {home.whoWeServe.paragraphs.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+            </div>
+          </div>
+          <PhotoPlaceholder photo={home.whoWeServe.photo} />
         </div>
       </Section>
 

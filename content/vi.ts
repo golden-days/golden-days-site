@@ -96,6 +96,14 @@ export const vi: Content = {
       paragraphs: [
         "Người lớn từ 18 tuổi trở lên muốn cải thiện hoặc duy trì tình trạng sức khỏe thể chất, nhận thức và tinh thần, để nâng cao sức khỏe tổng thể và chất lượng cuộc sống.",
       ],
+      photo: {
+        kind: "interior" as const,
+        label: "Nhân viên Golden Days",
+        alt: "Tám nhân viên Golden Days đứng cùng nhau ngoài trời vào một ngày nắng.",
+        src: "/images/staff-patio.jpg",
+        width: 1600,
+        height: 1129,
+      },
     },
     services: {
       heading: "Chúng tôi cung cấp gì",
@@ -202,8 +210,11 @@ export const vi: Content = {
     lead: "Golden Days Adult Day Health Care đã là một phần của West Sacramento từ năm 2003. Các chủ sở hữu hiện nay đã điều hành trung tâm từ năm 2007.",
     photo: {
       kind: "interior" as const,
-      label: "Chỗ dành cho ảnh - ảnh tập thể nhân viên",
-      alt: "Hình ảnh tạm thay cho ảnh chụp tập thể của nhân viên Golden Days",
+      label: "Nhân viên Golden Days",
+      alt: "Đội ngũ nhân viên Golden Days chụp ảnh thành hai hàng trước những bụi trúc đào hồng đang nở hoa.",
+      src: "/images/staff-team.jpg",
+      width: 1600,
+      height: 1232,
     },
     story: {
       heading: "Câu chuyện của chúng tôi",

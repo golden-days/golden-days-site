@@ -98,6 +98,14 @@ export const zh: Content = {
       paragraphs: [
         "18 歲以上、希望改善或維持自身身體、認知與心理健康狀況，以提升整體福祉與生活品質的成年人。",
       ],
+      photo: {
+        kind: "interior" as const,
+        label: "Golden Days 工作人員",
+        alt: "八位 Golden Days 工作人員在晴天一起站在戶外。",
+        src: "/images/staff-patio.jpg",
+        width: 1600,
+        height: 1129,
+      },
     },
     services: {
       heading: "我們提供的服務",
@@ -204,8 +212,11 @@ export const zh: Content = {
     lead: "Golden Days Adult Day Health Care 自 2003 年起在 West Sacramento 服務。自 2007 年起由同一批業主經營。",
     photo: {
       kind: "interior" as const,
-      label: "照片位置 — 中心工作人員",
-      alt: "Golden Days 工作人員團體照的暫用圖片",
+      label: "Golden Days 工作人員",
+      alt: "Golden Days 全體工作人員分兩排合影，背景是盛開的粉紅色夾竹桃。",
+      src: "/images/staff-team.jpg",
+      width: 1600,
+      height: 1232,
     },
     story: {
       heading: "我們的故事",

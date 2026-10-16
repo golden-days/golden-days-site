@@ -64,6 +64,8 @@ const scenes: Record<PhotoKind, React.ReactNode> = {
 type Props = {
   photo: PhotoInfo;
   wide?: boolean;
+  /** Overrides the default `sizes` hint for a real photo. */
+  sizes?: string;
   className?: string;
 };
 
@@ -71,7 +73,7 @@ type Props = {
  * A clearly labeled stand-in for a photo that has not been taken yet.
  * Swap these out for a real `next/image` once photography is available.
  */
-export default async function PhotoPlaceholder({ photo, wide = false, className = "" }: Props) {
+export default async function PhotoPlaceholder({ photo, wide = false, sizes, className = "" }: Props) {
   const t = await getContent();
 
   if (photo.src) {
@@ -82,7 +84,9 @@ export default async function PhotoPlaceholder({ photo, wide = false, className 
           alt={photo.alt}
           width={photo.width ?? 1200}
           height={photo.height ?? 900}
-          sizes={wide ? "(min-width: 1024px) 560px, 100vw" : "(min-width: 768px) 480px, 100vw"}
+          sizes={
+            sizes ?? (wide ? "(min-width: 1024px) 560px, 100vw" : "(min-width: 768px) 480px, 100vw")
+          }
           className="block h-auto w-full"
         />
       </figure>

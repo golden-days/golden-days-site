@@ -96,6 +96,14 @@ export const uk: Content = {
       paragraphs: [
         "Дорослі віком від 18 років, які прагнуть покращити або підтримати своє фізичне й психічне здоров’я та когнітивні функції, щоб підвищити загальне самопочуття і якість життя.",
       ],
+      photo: {
+        kind: "interior" as const,
+        label: "Працівники Golden Days",
+        alt: "Вісім співробітниць Golden Days стоять разом надворі сонячного дня.",
+        src: "/images/staff-patio.jpg",
+        width: 1600,
+        height: 1129,
+      },
     },
     services: {
       heading: "Що ми пропонуємо",
@@ -202,8 +210,11 @@ export const uk: Content = {
     lead: "Golden Days Adult Day Health Care працює у West Sacramento з 2003 року. Ті самі власники керують центром з 2007 року.",
     photo: {
       kind: "interior" as const,
-      label: "Місце для фото — співробітники центру",
-      alt: "Тимчасове зображення на місці групового фото співробітників Golden Days",
+      label: "Працівники Golden Days",
+      alt: "Колектив Golden Days: співробітниці у два ряди на тлі квітучих рожевих олеандрів.",
+      src: "/images/staff-team.jpg",
+      width: 1600,
+      height: 1232,
     },
     story: {
       heading: "Наша історія",

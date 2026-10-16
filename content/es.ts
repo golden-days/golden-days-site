@@ -96,6 +96,14 @@ export const es: Content = {
       paragraphs: [
         "Adultos de 18 años en adelante que desean mejorar o mantener su salud médica, cognitiva y mental, para elevar su bienestar general y su calidad de vida.",
       ],
+      photo: {
+        kind: "interior" as const,
+        label: "Personal de Golden Days",
+        alt: "Ocho integrantes del personal de Golden Days de pie juntos al aire libre en un día soleado.",
+        src: "/images/staff-patio.jpg",
+        width: 1600,
+        height: 1129,
+      },
     },
     services: {
       heading: "Lo que ofrecemos",
@@ -202,8 +210,11 @@ export const es: Content = {
     lead: "Golden Days Adult Day Health Care forma parte de West Sacramento desde 2003. Los mismos dueños dirigen el centro desde 2007.",
     photo: {
       kind: "interior" as const,
-      label: "Espacio para foto - foto grupal del personal",
-      alt: "Imagen provisional en lugar de una foto grupal del personal de Golden Days",
+      label: "Personal de Golden Days",
+      alt: "El personal de Golden Days, posando en dos filas frente a adelfas rosadas en flor.",
+      src: "/images/staff-team.jpg",
+      width: 1600,
+      height: 1232,
     },
     story: {
       heading: "Nuestra historia",
