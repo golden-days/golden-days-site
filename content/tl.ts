@@ -96,14 +96,6 @@ export const tl: Content = {
       paragraphs: [
         "Mga adult na 18 taong gulang pataas na nais pagbutihin o panatilihin ang kanilang kalusugang medikal, pangkaisipan, at mental, upang mapabuti ang pangkalahatang kapakanan at kalidad ng buhay.",
       ],
-      photo: {
-        kind: "interior" as const,
-        label: "Staff ng Golden Days",
-        alt: "Walong miyembro ng staff ng Golden Days na magkakasamang nakatayo sa labas sa isang maaraw na araw.",
-        src: "/images/staff-patio.jpg",
-        width: 1600,
-        height: 1129,
-      },
     },
     services: {
       heading: "Ang aming iniaalok",
@@ -223,6 +215,14 @@ export const tl: Content = {
         "Sa paglipas ng mga taon, nakilala namin ang maraming pamilya sa aming lugar. May mga taong pumupunta sa amin ng ilang araw sa isang linggo sa loob ng maraming taon, at ang kanilang mga pamilya ay nagiging bahagi rin ng center.",
         "Mga 120 katao ang gumugugol ng araw sa amin, at naglalaan pa rin ng oras ang mga staff para kilalanin ang mga pangalan, gawain, at kung ano ang nagpapagaan ng pakiramdam ng bawat tao.",
       ],
+      photo: {
+        kind: "interior" as const,
+        label: "Staff ng Golden Days",
+        alt: "Walong miyembro ng staff ng Golden Days na magkakasamang nakatayo sa labas sa isang maaraw na araw.",
+        src: "/images/staff-outdoors.jpg",
+        width: 1600,
+        height: 1129,
+      },
     },
     values: {
       heading: "Ang mahalaga sa amin",

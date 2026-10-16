@@ -96,14 +96,6 @@ export const es: Content = {
       paragraphs: [
         "Adultos de 18 años en adelante que desean mejorar o mantener su salud médica, cognitiva y mental, para elevar su bienestar general y su calidad de vida.",
       ],
-      photo: {
-        kind: "interior" as const,
-        label: "Personal de Golden Days",
-        alt: "Ocho integrantes del personal de Golden Days de pie juntos al aire libre en un día soleado.",
-        src: "/images/staff-patio.jpg",
-        width: 1600,
-        height: 1129,
-      },
     },
     services: {
       heading: "Lo que ofrecemos",
@@ -223,6 +215,14 @@ export const es: Content = {
         "A lo largo de esos años hemos llegado a conocer a muchas familias de la zona. Algunas personas vienen unos días a la semana durante años, y sus familias también pasan a formar parte del centro.",
         "Unas 120 personas pasan el día con nosotros, y el personal aun así se toma el tiempo de aprender los nombres, las rutinas y lo que hace sentir cómoda a cada persona.",
       ],
+      photo: {
+        kind: "interior" as const,
+        label: "Personal de Golden Days",
+        alt: "Ocho integrantes del personal de Golden Days de pie juntos al aire libre en un día soleado.",
+        src: "/images/staff-outdoors.jpg",
+        width: 1600,
+        height: 1129,
+      },
     },
     values: {
       heading: "Lo que nos importa",
