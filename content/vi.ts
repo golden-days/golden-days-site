@@ -96,14 +96,6 @@ export const vi: Content = {
       paragraphs: [
         "Người lớn từ 18 tuổi trở lên muốn cải thiện hoặc duy trì tình trạng sức khỏe thể chất, nhận thức và tinh thần, để nâng cao sức khỏe tổng thể và chất lượng cuộc sống.",
       ],
-      photo: {
-        kind: "interior" as const,
-        label: "Nhân viên Golden Days",
-        alt: "Tám nhân viên Golden Days đứng cùng nhau ngoài trời vào một ngày nắng.",
-        src: "/images/staff-patio.jpg",
-        width: 1600,
-        height: 1129,
-      },
     },
     services: {
       heading: "Chúng tôi cung cấp gì",
@@ -223,6 +215,14 @@ export const vi: Content = {
         "Qua những năm đó, chúng tôi đã quen biết nhiều gia đình địa phương. Có người đến với chúng tôi vài ngày mỗi tuần trong nhiều năm, và gia đình họ cũng trở thành một phần của trung tâm.",
         "Khoảng 120 người trải qua một ngày tại trung tâm mỗi ngày, và nhân viên vẫn dành thời gian tìm hiểu tên, thói quen và điều gì khiến mỗi người cảm thấy thoải mái.",
       ],
+      photo: {
+        kind: "interior" as const,
+        label: "Nhân viên Golden Days",
+        alt: "Tám nhân viên Golden Days đứng cùng nhau ngoài trời vào một ngày nắng.",
+        src: "/images/staff-outdoors.jpg",
+        width: 1600,
+        height: 1129,
+      },
     },
     values: {
       heading: "Điều chúng tôi coi trọng",

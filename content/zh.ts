@@ -98,14 +98,6 @@ export const zh: Content = {
       paragraphs: [
         "18 歲以上、希望改善或維持自身身體、認知與心理健康狀況，以提升整體福祉與生活品質的成年人。",
       ],
-      photo: {
-        kind: "interior" as const,
-        label: "Golden Days 工作人員",
-        alt: "八位 Golden Days 工作人員在晴天一起站在戶外。",
-        src: "/images/staff-patio.jpg",
-        width: 1600,
-        height: 1129,
-      },
     },
     services: {
       heading: "我們提供的服務",
@@ -225,6 +217,14 @@ export const zh: Content = {
         "這些年來，我們認識了許多附近的家庭。有些人多年來每週來好幾天，他們的家人也成為中心的一份子。",
         "每天大約有 120 人在這裡度過一天，工作人員仍然花時間了解每個人的名字、習慣，以及怎樣讓他們覺得舒適。",
       ],
+      photo: {
+        kind: "interior" as const,
+        label: "Golden Days 工作人員",
+        alt: "八位 Golden Days 工作人員在晴天一起站在戶外。",
+        src: "/images/staff-outdoors.jpg",
+        width: 1600,
+        height: 1129,
+      },
     },
     values: {
       heading: "我們重視的事",

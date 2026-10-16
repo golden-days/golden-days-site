@@ -105,14 +105,6 @@ export const en = {
       paragraphs: [
         "Adults ages 18 and older who want to improve or maintain their medical, cognitive, and mental health conditions to enhance overall well-being and quality of life.",
       ],
-      photo: {
-        kind: "interior" as const,
-        label: "Golden Days staff",
-        alt: "Eight Golden Days staff members standing together outside on a sunny day.",
-        src: "/images/staff-patio.jpg",
-        width: 1600,
-        height: 1129,
-      },
     },
     services: {
       heading: "What we offer",
@@ -232,6 +224,14 @@ export const en = {
         "Over those years we have come to know many local families. Some people come to us a few days a week for years, and their families become part of the center too.",
         "Around 120 people spend the day with us, and staff still take the time to learn names, routines, and what makes each person comfortable.",
       ],
+      photo: {
+        kind: "interior" as const,
+        label: "Golden Days staff",
+        alt: "Eight Golden Days staff members standing together outside on a sunny day.",
+        src: "/images/staff-outdoors.jpg",
+        width: 1600,
+        height: 1129,
+      },
     },
     values: {
       heading: "What matters to us",
