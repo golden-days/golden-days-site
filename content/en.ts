@@ -313,7 +313,7 @@ export const en = {
       {
         icon: "nutrition" as const,
         title: "Nutrition",
-        summary: "Breakfast and lunch every program day, made by our cook, with a rotating menu.",
+        summary: "Breakfast and lunch every program day, made by our cook, with a rotating menu. Let us know about any food allergies, and our cook will keep them in mind.",
       },
       {
         icon: "socialWork" as const,

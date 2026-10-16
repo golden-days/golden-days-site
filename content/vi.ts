@@ -304,7 +304,7 @@ export const vi: Content = {
       {
         icon: "nutrition" as const,
         title: "Dinh dưỡng",
-        summary: "Bữa sáng và bữa trưa mỗi ngày sinh hoạt, do đầu bếp của chúng tôi nấu, thực đơn thay đổi.",
+        summary: "Bữa sáng và bữa trưa mỗi ngày sinh hoạt, do đầu bếp của chúng tôi nấu, thực đơn thay đổi. Xin cho chúng tôi biết nếu có dị ứng thức ăn, đầu bếp sẽ lưu ý.",
       },
       {
         icon: "socialWork" as const,

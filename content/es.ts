@@ -304,7 +304,7 @@ export const es: Content = {
       {
         icon: "nutrition" as const,
         title: "Nutrición",
-        summary: "Desayuno y almuerzo cada día de programa, preparados por nuestro cocinero, con un menú rotativo.",
+        summary: "Desayuno y almuerzo cada día de programa, preparados por nuestro cocinero, con un menú rotativo. Avísenos si tiene alergias alimentarias y nuestro cocinero las tendrá en cuenta.",
       },
       {
         icon: "socialWork" as const,

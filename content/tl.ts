@@ -304,7 +304,7 @@ export const tl: Content = {
       {
         icon: "nutrition" as const,
         title: "Nutrisyon",
-        summary: "Almusal at tanghalian sa bawat araw ng programa, na inihahanda ng aming kusinero, at nag-iiba ang menu.",
+        summary: "Almusal at tanghalian sa bawat araw ng programa, na inihahanda ng aming kusinero, at nag-iiba ang menu. Ipaalam po sa amin kung may allergy sa pagkain, at isasaalang-alang ito ng aming kusinero.",
       },
       {
         icon: "socialWork" as const,
