@@ -103,7 +103,7 @@ export const en = {
     whoWeServe: {
       heading: "Who we serve",
       paragraphs: [
-        "Adult day health care programs serve frail older adults, and younger adults with chronic, disabling medical, cognitive, or mental health conditions, who are at risk of needing to move into a care facility. Golden Days serves adults age 18 and over.",
+        "Adults ages 18 and older who want to improve or maintain their medical, cognitive, and mental health conditions to enhance overall well-being and quality of life.",
       ],
     },
     services: {
@@ -317,7 +317,7 @@ export const en = {
       {
         icon: "transportation" as const,
         title: "Transportation",
-        summary: "Rides to and from the center on program days, including for participants who use a wheelchair or a walker. A caregiver helps them aboard at home, and our drivers help them off at the center.",
+        summary: "Rides to and from the center on program days, including for participants who use a wheelchair or a walker.",
       },
     ],
     glanceHeading: "Services at a glance",
