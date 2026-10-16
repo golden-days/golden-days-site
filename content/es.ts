@@ -116,7 +116,7 @@ export const es: Content = {
         {
           icon: "nutrition" as const,
           title: "Nutrición",
-          text: "Desayuno y almuerzo todos los días, preparados por un cocinero que planea según las necesidades de cada persona.",
+          text: "Desayuno y almuerzo todos los días, preparados por nuestro cocinero.",
         },
         {
           icon: "socialWork" as const,
@@ -304,7 +304,7 @@ export const es: Content = {
       {
         icon: "nutrition" as const,
         title: "Nutrición",
-        summary: "Desayuno y almuerzo cada día de programa, con un menú rotativo. Nuestro cocinero planea las comidas según las necesidades de cada persona, incluidas alergias, dificultad para tragar y dietas vegetarianas.",
+        summary: "Desayuno y almuerzo cada día de programa, preparados por nuestro cocinero, con un menú rotativo.",
       },
       {
         icon: "socialWork" as const,

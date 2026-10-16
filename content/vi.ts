@@ -116,7 +116,7 @@ export const vi: Content = {
         {
           icon: "nutrition" as const,
           title: "Dinh dưỡng",
-          text: "Bữa sáng và bữa trưa mỗi ngày, do đầu bếp lên thực đơn theo nhu cầu của từng người.",
+          text: "Bữa sáng và bữa trưa mỗi ngày, do đầu bếp của chúng tôi nấu.",
         },
         {
           icon: "socialWork" as const,
@@ -304,7 +304,7 @@ export const vi: Content = {
       {
         icon: "nutrition" as const,
         title: "Dinh dưỡng",
-        summary: "Bữa sáng và bữa trưa mỗi ngày sinh hoạt, thực đơn thay đổi. Đầu bếp của chúng tôi lên thực đơn theo nhu cầu của từng người, kể cả dị ứng, khó nuốt và chế độ ăn chay.",
+        summary: "Bữa sáng và bữa trưa mỗi ngày sinh hoạt, do đầu bếp của chúng tôi nấu, thực đơn thay đổi.",
       },
       {
         icon: "socialWork" as const,

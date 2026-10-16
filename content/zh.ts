@@ -118,7 +118,7 @@ export const zh: Content = {
         {
           icon: "nutrition" as const,
           title: "營養",
-          text: "每天提供早餐和午餐。廚師會配合每個人的需要。",
+          text: "每天提供早餐和午餐，由我們的廚師準備。",
         },
         {
           icon: "socialWork" as const,
@@ -306,7 +306,7 @@ export const zh: Content = {
       {
         icon: "nutrition" as const,
         title: "營養",
-        summary: "每個活動日提供早餐和午餐，菜單輪換。我們的廚師會依每個人的需要準備餐點，包括過敏、吞嚥困難和素食。",
+        summary: "每個活動日提供早餐和午餐，由我們的廚師準備，菜單輪換。",
       },
       {
         icon: "socialWork" as const,
