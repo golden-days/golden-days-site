@@ -313,7 +313,7 @@ export const en = {
       {
         icon: "nutrition" as const,
         title: "Nutrition",
-        summary: "Breakfast and lunch every program day, made by our cook, with a rotating menu. Let us know about any food allergies, and our cook will keep them in mind.",
+        summary: "Breakfast, lunch, and snacks every program day, made by our cook from a rotating menu that follows state and federal nutrition guidelines. We regularly check each person's health history, weight, and how well they are eating and drinking, and offer one-on-one nutrition counseling for participants and their families. Let us know about any food allergies, and our cook will keep them in mind.",
       },
       {
         icon: "socialWork" as const,
