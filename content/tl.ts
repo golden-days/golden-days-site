@@ -304,7 +304,7 @@ export const tl: Content = {
       {
         icon: "nutrition" as const,
         title: "Nutrisyon",
-        summary: "Almusal at tanghalian sa bawat araw ng programa, na inihahanda ng aming kusinero, at nag-iiba ang menu. Ipaalam po sa amin kung may allergy sa pagkain, at isasaalang-alang ito ng aming kusinero.",
+        summary: "Almusal, tanghalian, at meryenda sa bawat araw ng programa, na inihahanda ng aming kusinero mula sa nag-iibang menu na sumusunod sa mga patakaran sa nutrisyon ng estado at pederal. Regular naming tinitingnan ang kasaysayan ng kalusugan, timbang, at pagkain at pag-inom ng bawat tao, at nag-aalok kami ng one-on-one na nutrition counseling para sa mga kalahok at kanilang pamilya. Ipaalam po sa amin kung may allergy sa pagkain, at isasaalang-alang ito ng aming kusinero.",
       },
       {
         icon: "socialWork" as const,
