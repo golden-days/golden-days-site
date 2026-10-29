@@ -74,7 +74,7 @@ export const es: Content = {
   // ---------------------------------------------------------------- Home ---
   home: {
     meta: {
-      title: "Cuidado de salud diurno para adultos en West Sacramento",
+      title: "Cuidado de salud diurno para adultos (ADHC) en West Sacramento y Sacramento",
       description:
         "Golden Days Adult Day Health Care es un programa diurno para adultos en West Sacramento, California. Llámenos o programe una visita.",
     },

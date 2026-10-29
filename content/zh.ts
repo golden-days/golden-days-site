@@ -76,9 +76,9 @@ export const zh: Content = {
   // ---------------------------------------------------------------- Home ---
   home: {
     meta: {
-      title: "West Sacramento 成人日間照護中心",
+      title: "成人日間保健中心 (ADHC) — West Sacramento 及沙加緬度",
       description:
-        "Golden Days Adult Day Health Care 是位於加州 West Sacramento 的成人日間照護中心。歡迎致電或預約參觀。",
+        "Golden Days 是位於 West Sacramento 的成人日間保健中心（ADHC／CBAS），也接送沙加緬度的長者。提供護理、治療、餐點和交通接送，接受 Medi-Cal 健康計劃，並有中文翻譯協助。歡迎致電或預約參觀。",
     },
     hero: {
       heading: "West Sacramento 的成人日間照護",

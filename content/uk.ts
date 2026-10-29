@@ -74,7 +74,7 @@ export const uk: Content = {
   // ---------------------------------------------------------------- Home ---
   home: {
     meta: {
-      title: "Денний центр для дорослих у West Sacramento",
+      title: "Денний центр для літніх людей (ADHC) у Сакраменто та West Sacramento",
       description:
         "Golden Days Adult Day Health Care — програма денного догляду для дорослих у West Sacramento, Каліфорнія. Зателефонуйте нам або запишіться на екскурсію.",
     },

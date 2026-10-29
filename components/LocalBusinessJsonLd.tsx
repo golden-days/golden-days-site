@@ -27,7 +27,11 @@ export default async function LocalBusinessJsonLd() {
       postalCode: "95691",
       addressCountry: "US",
     },
-    areaServed: "West Sacramento, CA",
+    areaServed: [
+      { "@type": "City", name: "West Sacramento, CA" },
+      { "@type": "City", name: "Sacramento, CA" },
+      { "@type": "City", name: "Rancho Cordova, CA" },
+    ],
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",

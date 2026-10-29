@@ -74,7 +74,7 @@ export const vi: Content = {
   // ---------------------------------------------------------------- Home ---
   home: {
     meta: {
-      title: "Chăm sóc sức khỏe ban ngày cho người lớn tại West Sacramento",
+      title: "Chăm sóc sức khỏe ban ngày cho người lớn (ADHC) tại West Sacramento và Sacramento",
       description:
         "Golden Days Adult Day Health Care là chương trình chăm sóc ban ngày cho người lớn tại West Sacramento, California. Hãy gọi cho chúng tôi hoặc đặt lịch tham quan.",
     },
