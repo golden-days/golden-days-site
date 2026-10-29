@@ -28,7 +28,8 @@ export const tl: Content = {
     addressLines: ["1215 Merkley Ave", "West Sacramento, CA 95691"],
     addressOneLine: "1215 Merkley Ave, West Sacramento, CA 95691",
     hoursLabel: "Oras",
-    hours: "Oras ng pasilidad: Lunes hanggang Biyernes, 8:00 n.u. hanggang 3:00 n.h.",
+    hours: "Oras ng pasilidad: Lunes hanggang Biyernes, 8:00 n.u. hanggang 4:30 n.h.",
+    enrollHours: "Pagpapatala at pagbisita: tumawag mula 8:00 n.u. hanggang 3:00 n.h.",
     programHours: "Oras ng serbisyo: Lunes hanggang Biyernes, 8:00 n.u. hanggang 2:00 n.h.",
     hoursNote:
       "Sarado kapag Sabado at Linggo. Sarado rin kapag Thanksgiving, Araw ng Pasko, Bagong Taon, at Ikaapat ng Hulyo.",

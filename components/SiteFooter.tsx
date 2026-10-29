@@ -44,6 +44,7 @@ export default async function SiteFooter() {
           <h2 className="font-serif text-xl font-bold text-white">{t.footer.hoursHeading}</h2>
           <p className="mt-3 text-lg">{t.contact.hours}</p>
           <p className="text-lg">{t.contact.programHours}</p>
+          <p className="text-lg">{t.contact.enrollHours}</p>
           <p className="mt-2 text-lg">{t.contact.hoursNote}</p>
         </div>
       </div>
