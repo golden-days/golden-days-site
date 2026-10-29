@@ -31,6 +31,12 @@ export default async function LocalBusinessJsonLd() {
       { "@type": "City", name: "West Sacramento, CA" },
       { "@type": "City", name: "Sacramento, CA" },
       { "@type": "City", name: "Rancho Cordova, CA" },
+      { "@type": "City", name: "Mather, CA" },
+      { "@type": "City", name: "Roseville, CA" },
+      { "@type": "City", name: "Antelope, CA" },
+      { "@type": "City", name: "North Highlands, CA" },
+      { "@type": "City", name: "Carmichael, CA" },
+      { "@type": "City", name: "Rio Linda, CA" },
     ],
     openingHoursSpecification: [
       {
