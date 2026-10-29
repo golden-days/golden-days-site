@@ -23,6 +23,7 @@ export default async function ContactDetails() {
         <dd className="mt-1">
           {t.contact.hours}
           <span className="block">{t.contact.programHours}</span>
+          <span className="block">{t.contact.enrollHours}</span>
           <span className="block">{t.contact.hoursNote}</span>
         </dd>
       </div>

@@ -28,7 +28,8 @@ export const es: Content = {
     addressLines: ["1215 Merkley Ave", "West Sacramento, CA 95691"],
     addressOneLine: "1215 Merkley Ave, West Sacramento, CA 95691",
     hoursLabel: "Horario",
-    hours: "Horario del centro: de lunes a viernes, de 8:00 a. m. a 3:00 p. m.",
+    hours: "Horario del centro: de lunes a viernes, de 8:00 a. m. a 4:30 p. m.",
+    enrollHours: "Inscripción y visitas: llame de 8:00 a. m. a 3:00 p. m.",
     programHours: "Horario del servicio: de lunes a viernes, de 8:00 a. m. a 2:00 p. m.",
     hoursNote:
       "Cerrado los sábados y domingos. También cerramos el Día de Acción de Gracias, el día de Navidad, el Día de Año Nuevo y el 4 de julio.",
