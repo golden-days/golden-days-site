@@ -83,9 +83,9 @@ export const en = {
   // ---------------------------------------------------------------- Home ---
   home: {
     meta: {
-      title: "Adult Day Health Care in West Sacramento",
+      title: "Adult Day Health Care (ADHC) in West Sacramento and Sacramento",
       description:
-        "Golden Days Adult Day Health Care is a day program for adults in West Sacramento, California. Call us or schedule a tour.",
+        "Golden Days is an adult day health care center (ADHC, also called CBAS) in West Sacramento that also serves Sacramento. Nursing, therapy, meals and rides. Medi-Cal health plans accepted. Russian-speaking staff. Call us or schedule a tour.",
     },
     hero: {
       heading: "Daytime care for adults in West Sacramento",

@@ -74,7 +74,7 @@ export const tl: Content = {
   // ---------------------------------------------------------------- Home ---
   home: {
     meta: {
-      title: "Adult Day Health Care sa West Sacramento",
+      title: "Adult Day Health Care (ADHC) sa West Sacramento at Sacramento",
       description:
         "Ang Golden Days Adult Day Health Care ay isang day program para sa mga nasa hustong gulang sa West Sacramento, California. Tawagan kami o mag-iskedyul ng tour.",
     },
