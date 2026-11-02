@@ -28,7 +28,7 @@ export const vi: Content = {
     addressLines: ["1215 Merkley Ave", "West Sacramento, CA 95691"],
     addressOneLine: "1215 Merkley Ave, West Sacramento, CA 95691",
     hoursLabel: "Giờ làm việc",
-    hours: "Giờ làm việc của cơ sở: Thứ Hai đến Thứ Sáu, từ 8:00 sáng đến 4:30 chiều",
+    hours: "Giờ làm việc của cơ sở: Thứ Hai đến Thứ Sáu, từ 8:00 sáng đến 4:00 chiều",
     enrollHours: "Đăng ký và tham quan: vui lòng gọi từ 8:00 sáng đến 3:00 chiều",
     programHours: "Giờ chương trình: Thứ Hai đến Thứ Sáu, từ 8:00 sáng đến 2:00 chiều",
     hoursNote:
