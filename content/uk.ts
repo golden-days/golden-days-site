@@ -28,7 +28,7 @@ export const uk: Content = {
     addressLines: ["1215 Merkley Ave", "West Sacramento, CA 95691"],
     addressOneLine: "1215 Merkley Ave, West Sacramento, CA 95691",
     hoursLabel: "Години роботи",
-    hours: "Години роботи центру: понеділок – п’ятниця, з 8:00 до 16:30",
+    hours: "Години роботи центру: понеділок – п’ятниця, з 8:00 до 16:00",
     enrollHours: "Запис і екскурсії: телефонуйте з 8:00 до 15:00",
     programHours: "Години програми: понеділок – п’ятниця, з 8:00 до 14:00",
     hoursNote:

@@ -30,7 +30,7 @@ export const zh: Content = {
     addressLines: ["1215 Merkley Ave", "West Sacramento, CA 95691"],
     addressOneLine: "1215 Merkley Ave, West Sacramento, CA 95691",
     hoursLabel: "開放時間",
-    hours: "中心開放時間：星期一至星期五，上午 8:00 至下午 4:30",
+    hours: "中心開放時間：星期一至星期五，上午 8:00 至下午 4:00",
     enrollHours: "報名及參觀：請於上午 8:00 至下午 3:00 致電",
     programHours: "活動時間：星期一至星期五，上午 8:00 至下午 2:00",
     hoursNote:
