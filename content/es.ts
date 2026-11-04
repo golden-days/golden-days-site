@@ -489,6 +489,14 @@ export const es: Content = {
           title: "Conozca el centro",
           text: "Visítenos durante el horario del programa, de preferencia antes de la 1:30 p. m., para ver un día normal. Traiga a su ser querido si le resulta cómodo.",
         },
+        {
+          title: "Complete una evaluación",
+          text: "Nuestro equipo revisa la salud y las necesidades diarias para ver si el programa es adecuado. Solo se puede hacer una evaluación con la aprobación de un médico.",
+        },
+        {
+          title: "Comience a asistir",
+          text: "Acordamos los días, organizamos los viajes y recibimos con cariño a su ser querido.",
+        },
       ],
     },
     faq: {

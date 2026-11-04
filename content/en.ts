@@ -498,6 +498,14 @@ export const en = {
           title: "Tour the center",
           text: "Visit during program hours, preferably before 1:30 PM, so you can see a normal day. Bring your loved one if that is comfortable.",
         },
+        {
+          title: "Complete an assessment",
+          text: "Our team reviews health and daily needs to see whether the program fits. An assessment can only be done with a doctor's approval.",
+        },
+        {
+          title: "Start attending",
+          text: "We agree on days, arrange rides, and welcome your loved one in.",
+        },
       ],
     },
     faq: {
