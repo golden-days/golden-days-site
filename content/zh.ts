@@ -32,7 +32,7 @@ export const zh: Content = {
     hoursLabel: "開放時間",
     hours: "中心開放時間：星期一至星期五，上午 8:00 至下午 4:00",
     enrollHours: "報名及參觀：請於上午 8:00 至下午 3:00 致電",
-    programHours: "活動時間：星期一至星期五，上午 8:00 至下午 2:00",
+    programHours: "活動時間：星期一至星期五，上午 8:30 至下午 2:00",
     hoursNote:
       "星期六和星期日休息。感恩節、聖誕節（12 月 25 日）、元旦（1 月 1 日）和美國獨立紀念日（7 月 4 日）也休息。",
     mapTitle: "Golden Days Adult Day Health Care 位置地圖",

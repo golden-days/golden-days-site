@@ -30,7 +30,7 @@ export const es: Content = {
     hoursLabel: "Horario",
     hours: "Horario del centro: de lunes a viernes, de 8:00 a. m. a 4:00 p. m.",
     enrollHours: "Inscripción y visitas: llame de 8:00 a. m. a 3:00 p. m.",
-    programHours: "Horario del programa para participantes: de lunes a viernes, de 8:00 a. m. a 2:00 p. m.",
+    programHours: "Horario del programa para participantes: de lunes a viernes, de 8:30 a. m. a 2:00 p. m.",
     hoursNote:
       "Cerrado los sábados y domingos. También cerramos el Día de Acción de Gracias, el día de Navidad, el Día de Año Nuevo y el 4 de julio.",
     mapTitle: "Mapa con la ubicación de Golden Days Adult Day Health Care",
