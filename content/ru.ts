@@ -285,7 +285,7 @@ export const ru: Content = {
   // ------------------------------------------------------------ Services ---
   services: {
     meta: {
-      title: "Услуги",
+      title: "Услуги: медсестры, терапия, питание",
       description:
         "Медицинский уход, реабилитация, питание, социальная работа, досуг и транспорт в Golden Days, West Sacramento.",
     },
@@ -370,7 +370,7 @@ export const ru: Content = {
   // ------------------------------------------------------ Transportation ---
   transportation: {
     meta: {
-      title: "Транспорт",
+      title: "Транспорт от двери до двери",
       description:
         "Поездки в Golden Days в West Sacramento, в том числе на автомобилях, доступных для инвалидных колясок.",
     },
@@ -436,7 +436,7 @@ export const ru: Content = {
   // ---------------------------------------------------------- Enrollment ---
   enrollment: {
     meta: {
-      title: "Запись в центр",
+      title: "Как записаться (Medi-Cal / CBAS)",
       description:
         "Кто может участвовать в Golden Days, кто платит, что взять с собой и как записаться в West Sacramento.",
     },

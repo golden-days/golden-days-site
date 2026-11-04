@@ -285,7 +285,7 @@ export const vi: Content = {
   // ------------------------------------------------------------ Services ---
   services: {
     meta: {
-      title: "Dịch vụ",
+      title: "Dịch vụ: điều dưỡng, trị liệu, bữa ăn",
       description:
         "Chăm sóc điều dưỡng, phục hồi chức năng, dinh dưỡng, công tác xã hội, sinh hoạt giải trí và đưa đón tại Golden Days ở West Sacramento.",
     },
@@ -370,7 +370,7 @@ export const vi: Content = {
   // ------------------------------------------------------ Transportation ---
   transportation: {
     meta: {
-      title: "Đưa đón",
+      title: "Đưa đón tận nhà",
       description:
         "Xe đưa đón đến Golden Days ở West Sacramento, bao gồm xe có thể chở xe lăn.",
     },
@@ -436,7 +436,7 @@ export const vi: Content = {
   // ---------------------------------------------------------- Enrollment ---
   enrollment: {
     meta: {
-      title: "Ghi danh",
+      title: "Cách ghi danh (Medi-Cal / CBAS)",
       description:
         "Ai đủ điều kiện tham gia Golden Days, ai chi trả, cần mang theo gì và các bước ghi danh tại West Sacramento.",
     },
