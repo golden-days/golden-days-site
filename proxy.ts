@@ -3,7 +3,11 @@ import { NextResponse, type NextRequest } from "next/server";
 // Languages other than English keep their prefix (/ru/about). English has no prefix
 // (/about), so we quietly serve it from the /en pages. Keep this list in step with
 // `locales` in lib/i18n.ts.
-const otherLocales = ["ru", "zh", "es", "vi", "tl"];
+const otherLocales = ["ru", "zh"];
+
+// Languages that used to be on the site. Old links and search results for them
+// (/es/about) go to the same page in English instead of a "not found" page.
+const retiredLocales = ["es", "vi", "tl", "uk"];
 
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
@@ -13,6 +17,12 @@ export function proxy(request: NextRequest) {
   if (first === "en") {
     const url = request.nextUrl.clone();
     url.pathname = pathname.replace(/^\/en/, "") || "/";
+    return NextResponse.redirect(url, 308);
+  }
+
+  if (retiredLocales.includes(first)) {
+    const url = request.nextUrl.clone();
+    url.pathname = pathname.replace(new RegExp(`^/${first}`), "") || "/";
     return NextResponse.redirect(url, 308);
   }
 
