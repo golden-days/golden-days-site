@@ -294,7 +294,7 @@ export const en = {
   // ------------------------------------------------------------ Services ---
   services: {
     meta: {
-      title: "Services",
+      title: "Services: Nursing, Therapy and Meals",
       description:
         "Nursing care, rehabilitation, nutrition, social work, recreation, and transportation at Golden Days in West Sacramento.",
     },
@@ -379,7 +379,7 @@ export const en = {
   // ------------------------------------------------------ Transportation ---
   transportation: {
     meta: {
-      title: "Transportation",
+      title: "Door-to-Door Rides",
       description:
         "Rides to Golden Days in West Sacramento, including wheelchair accessible vehicles.",
     },
@@ -445,7 +445,7 @@ export const en = {
   // ---------------------------------------------------------- Enrollment ---
   enrollment: {
     meta: {
-      title: "Enrollment",
+      title: "How to Enroll (Medi-Cal / CBAS)",
       description:
         "Who qualifies for Golden Days, who pays, what to bring, and the steps to enroll in West Sacramento.",
     },

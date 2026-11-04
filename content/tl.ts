@@ -285,7 +285,7 @@ export const tl: Content = {
   // ------------------------------------------------------------ Services ---
   services: {
     meta: {
-      title: "Mga Serbisyo",
+      title: "Mga Serbisyo: nars, therapy at pagkain",
       description:
         "Pangangalaga ng nurse, rehabilitasyon, nutrisyon, social work, libangan, at transportasyon sa Golden Days sa West Sacramento.",
     },
@@ -370,7 +370,7 @@ export const tl: Content = {
   // ------------------------------------------------------ Transportation ---
   transportation: {
     meta: {
-      title: "Transportasyon",
+      title: "Sundo at hatid mula sa bahay",
       description:
         "Sakay papunta sa Golden Days sa West Sacramento, kasama ang mga sasakyang accessible sa wheelchair.",
     },
@@ -436,7 +436,7 @@ export const tl: Content = {
   // ---------------------------------------------------------- Enrollment ---
   enrollment: {
     meta: {
-      title: "Pagpapatala",
+      title: "Paano magpatala (Medi-Cal / CBAS)",
       description:
         "Sino ang kwalipikado sa Golden Days, sino ang nagbabayad, ano ang dadalhin, at ang mga hakbang sa pagpapatala sa West Sacramento.",
     },

@@ -287,7 +287,7 @@ export const zh: Content = {
   // ------------------------------------------------------------ Services ---
   services: {
     meta: {
-      title: "服務項目",
+      title: "服務項目：護理、治療、餐點",
       description:
         "Golden Days（West Sacramento）提供護理照護、復健、營養、社工服務、休閒活動和交通接送。",
     },
@@ -372,7 +372,7 @@ export const zh: Content = {
   // ------------------------------------------------------ Transportation ---
   transportation: {
     meta: {
-      title: "交通接送",
+      title: "到府交通接送",
       description:
         "Golden Days（West Sacramento）的接送服務，包括可載輪椅的車輛。",
     },
@@ -438,7 +438,7 @@ export const zh: Content = {
   // ---------------------------------------------------------- Enrollment ---
   enrollment: {
     meta: {
-      title: "如何報名",
+      title: "如何報名 (Medi-Cal / CBAS)",
       description:
         "了解誰可以參加 Golden Days、費用由誰支付、需要帶什麼，以及如何在 West Sacramento 報名。",
     },
