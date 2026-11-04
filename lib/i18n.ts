@@ -4,10 +4,12 @@
  * English is the default and has no prefix in the address (`/about`). Every other
  * language lives under its own prefix (`/ru/about`).
  */
-// Ukrainian (`content/uk.ts`) is written but switched off. To turn it back on, add "uk"
-// here, add its `localeInfo` entry (label "Українська", htmlLang "uk", ogLocale "uk_UA"),
-// import it in `lib/content.ts`, and add "uk" to `otherLocales` in `proxy.ts`.
-export const locales = ["en", "ru", "zh", "es", "vi", "tl"] as const;
+// Ukrainian, Spanish, Vietnamese and Tagalog (`content/uk.ts`, `es.ts`, `vi.ts`, `tl.ts`)
+// are written but switched off, because no one answers the phone in those languages
+// (Spanish, Vietnamese and Tagalog switched off Nov 2026). To turn one back on, add it
+// here, add its `localeInfo` entry, import it in `lib/content.ts`, add it to
+// `otherLocales` in `proxy.ts`, and remove it from `retiredLocales` there.
+export const locales = ["en", "ru", "zh"] as const;
 export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = "en";
 
@@ -16,9 +18,6 @@ export const localeInfo: Record<Locale, { label: string; htmlLang: string; ogLoc
   en: { label: "English", htmlLang: "en", ogLocale: "en_US" },
   ru: { label: "Русский", htmlLang: "ru", ogLocale: "ru_RU" },
   zh: { label: "中文", htmlLang: "zh-Hant", ogLocale: "zh_TW" },
-  es: { label: "Español", htmlLang: "es", ogLocale: "es_US" },
-  vi: { label: "Tiếng Việt", htmlLang: "vi", ogLocale: "vi_VN" },
-  tl: { label: "Tagalog", htmlLang: "tl", ogLocale: "tl_PH" },
 };
 
 export function hasLocale(value: string): value is Locale {

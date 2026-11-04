@@ -1,12 +1,9 @@
 import { en, type Content } from "@/content/en";
 import { ru } from "@/content/ru";
 import { zh } from "@/content/zh";
-import { es } from "@/content/es";
-import { vi } from "@/content/vi";
-import { tl } from "@/content/tl";
 import type { Locale } from "@/lib/i18n";
 
-const contentByLocale: Record<Locale, Content> = { en, ru, zh, es, vi, tl };
+const contentByLocale: Record<Locale, Content> = { en, ru, zh };
 
 /** The text for one language. Works anywhere, because the language is passed in. */
 export function contentFor(locale: Locale): Content {
