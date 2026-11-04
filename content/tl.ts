@@ -489,6 +489,14 @@ export const tl: Content = {
           title: "Libutin ang center",
           text: "Bumisita sa oras ng programa, mas mabuti bago mag-1:30 n.h., para makita ninyo ang karaniwang araw. Isama ang inyong mahal sa buhay kung komportable siya.",
         },
+        {
+          title: "Kumpletuhin ang assessment",
+          text: "Sinusuri ng aming team ang kalusugan at pang-araw-araw na pangangailangan upang malaman kung angkop ang programa. Magagawa lamang ang assessment kung aprubado ito ng doktor.",
+        },
+        {
+          title: "Simulan ang pagdalo",
+          text: "Pinagkakasunduan natin ang mga araw, inaayos ang sakay, at malugod naming tinatanggap ang inyong mahal sa buhay.",
+        },
       ],
     },
     faq: {

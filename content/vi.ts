@@ -489,6 +489,14 @@ export const vi: Content = {
           title: "Tham quan trung tâm",
           text: "Hãy đến trong giờ chương trình, tốt nhất là trước 1:30 chiều, để quý vị thấy một ngày bình thường. Hãy đưa người thân đi cùng nếu họ thấy thoải mái.",
         },
+        {
+          title: "Hoàn tất buổi đánh giá",
+          text: "Đội ngũ của chúng tôi xem xét sức khỏe và nhu cầu hằng ngày để biết chương trình có phù hợp hay không. Chỉ có thể thực hiện đánh giá khi được bác sĩ chấp thuận.",
+        },
+        {
+          title: "Bắt đầu tham gia",
+          text: "Chúng tôi thống nhất các ngày tham gia, sắp xếp xe đưa đón và chào đón người thân của quý vị.",
+        },
       ],
     },
     faq: {
