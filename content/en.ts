@@ -40,7 +40,7 @@ export const en = {
     hoursLabel: "Hours",
     hours: "Facility hours: Monday to Friday, 8:00 AM to 4:00 PM",
     enrollHours: "Enrollment and tours: please call 8:00 AM to 3:00 PM",
-    programHours: "Program hours for participants: Monday to Friday, 8:00 AM to 2:00 PM",
+    programHours: "Program hours for participants: Monday to Friday, 8:30 AM to 2:00 PM",
     hoursNote: "Closed Saturday and Sunday. Also closed on Thanksgiving, Christmas Day, New Year's Day, and the Fourth of July.",
     mapTitle: "Map showing the Golden Days Adult Day Health Care location",
     directionsLinkLabel: "Get directions",

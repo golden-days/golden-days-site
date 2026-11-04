@@ -30,7 +30,7 @@ export const vi: Content = {
     hoursLabel: "Giờ làm việc",
     hours: "Giờ làm việc của cơ sở: Thứ Hai đến Thứ Sáu, từ 8:00 sáng đến 4:00 chiều",
     enrollHours: "Đăng ký và tham quan: vui lòng gọi từ 8:00 sáng đến 3:00 chiều",
-    programHours: "Giờ chương trình: Thứ Hai đến Thứ Sáu, từ 8:00 sáng đến 2:00 chiều",
+    programHours: "Giờ chương trình: Thứ Hai đến Thứ Sáu, từ 8:30 sáng đến 2:00 chiều",
     hoursNote:
       "Đóng cửa Thứ Bảy và Chủ Nhật. Cũng đóng cửa vào Lễ Tạ Ơn, Lễ Giáng Sinh, Ngày Tết Dương Lịch và Ngày Quốc Khánh Hoa Kỳ (4 tháng 7).",
     mapTitle: "Bản đồ chỉ vị trí của Golden Days Adult Day Health Care",
