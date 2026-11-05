@@ -325,6 +325,14 @@ export const tl: Content = {
         summary: "Sakay papunta at pabalik sa center sa mga araw ng programa, kasama ang mga kalahok na gumagamit ng wheelchair o walker.",
       },
     ],
+    photo: {
+      kind: "interior" as const,
+      label: "Photo - exercise room",
+      alt: "The Golden Days exercise and therapy room, with a treadmill, exercise bikes, parallel bars and practice stairs.",
+      src: "/images/activity-room.jpg",
+      width: 1109,
+      height: 832,
+    },
     glanceHeading: "Mga serbisyo sa isang tingin",
     glanceIntro: "Layunin naming panatilihin ang inyong kalusugan sa pinakamataas na antas na posible. Ang aming team ng mga health care professional ay nag-aalok ng mga serbisyo tulad ng:",
     glanceItems: [

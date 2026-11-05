@@ -325,6 +325,14 @@ export const uk: Content = {
         summary: "Поїздки до центру й назад у дні роботи програми, зокрема для учасників з інвалідним візком або ходунками.",
       },
     ],
+    photo: {
+      kind: "interior" as const,
+      label: "Photo - exercise room",
+      alt: "The Golden Days exercise and therapy room, with a treadmill, exercise bikes, parallel bars and practice stairs.",
+      src: "/images/activity-room.jpg",
+      width: 1109,
+      height: 832,
+    },
     glanceHeading: "Послуги коротко",
     glanceIntro: "Наша мета — підтримувати ваше здоров’я на найвищому можливому рівні. Наша команда медичних фахівців пропонує такі послуги, як:",
     glanceItems: [

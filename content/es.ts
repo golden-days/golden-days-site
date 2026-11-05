@@ -325,6 +325,14 @@ export const es: Content = {
         summary: "Traslados de ida y vuelta al centro en los días de programa, incluidos participantes que usan silla de ruedas o andador.",
       },
     ],
+    photo: {
+      kind: "interior" as const,
+      label: "Photo - exercise room",
+      alt: "The Golden Days exercise and therapy room, with a treadmill, exercise bikes, parallel bars and practice stairs.",
+      src: "/images/activity-room.jpg",
+      width: 1109,
+      height: 832,
+    },
     glanceHeading: "Servicios de un vistazo",
     glanceIntro: "Nuestro objetivo es mantener su salud en el nivel más alto posible. Nuestro equipo de profesionales de la salud ofrece servicios como:",
     glanceItems: [

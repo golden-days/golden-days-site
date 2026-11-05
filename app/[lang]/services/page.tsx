@@ -1,5 +1,6 @@
 import LocaleLink from "@/components/LocaleLink";
 import PageHero from "@/components/PageHero";
+import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 import Section from "@/components/Section";
 import ServiceIcon from "@/components/ServiceIcon";
 import { getContent } from "@/lib/content-server";
@@ -27,6 +28,8 @@ export default async function ServicesPage() {
             </li>
           ))}
         </ul>
+
+        <PhotoPlaceholder photo={services.photo} wide className="mx-auto mt-12 max-w-3xl" />
 
         <h2 className="mt-12 text-2xl sm:text-3xl">{services.glanceHeading}</h2>
         <p className="mt-3 max-w-3xl">{services.glanceIntro}</p>
