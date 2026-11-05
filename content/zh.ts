@@ -23,8 +23,8 @@ export const zh: Content = {
     phoneDisplay: phone.display,
     phoneHref: phone.href,
     phoneLabel: "電話",
-    email: "1215goldendays@gmail.com",
-    emailHref: "mailto:1215goldendays@gmail.com",
+    email: "info@goldendaysadhc.net",
+    emailHref: "mailto:info@goldendaysadhc.net",
     emailLabel: "電子郵件",
     addressLabel: "地址",
     addressLines: ["1215 Merkley Ave", "West Sacramento, CA 95691"],
@@ -38,7 +38,7 @@ export const zh: Content = {
     mapTitle: "Golden Days Adult Day Health Care 位置地圖",
     directionsLinkLabel: "取得路線",
     languagesLabel: "語言",
-    languagesLine: "我們會說英語、俄語和烏克蘭語，也可提供中文口譯。",
+    languagesLine: "我們會說英語和俄語，也可提供中文口譯。",
   },
 
   nav: {
@@ -506,7 +506,7 @@ export const zh: Content = {
         },
         {
           question: "你們說中文嗎？",
-          answer: "我們的員工說俄語、烏克蘭語和英語，並提供中文翻譯。",
+          answer: "我們的員工說俄語和英語，並提供中文翻譯。",
         },
       ],
     },
