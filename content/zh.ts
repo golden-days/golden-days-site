@@ -753,7 +753,7 @@ export const zh: Content = {
       {
         heading: "訪客人數統計",
         paragraphs: [
-          "我們使用 Vercel Analytics 來統計訪問次數。它會記錄瀏覽了哪些頁面、訪客所在的國家、裝置和瀏覽器的類型，以及訪客是從哪個網站過來的。它不使用 cookie，不顯示廣告，也不會跟著您到其他網站。",
+          "我們使用 Vercel Analytics 來統計訪問次數。它會記錄瀏覽了哪些頁面、訪客所在的國家、裝置和瀏覽器的類型，以及訪客是從哪個網站過來的。它不使用 cookie，不顯示廣告，也不會跟著您到其他網站。我們也使用 Vercel Speed Insights 來測量網頁在訪客裝置上的載入速度，它同樣不使用 cookie。",
         ],
       },
       {
