@@ -7,7 +7,7 @@
  * file before launch.
  */
 
-import { phone, type Content } from "./en";
+import { en, phone, type Content } from "./en";
 
 export const tl: Content = {
   site: {
@@ -180,6 +180,8 @@ export const tl: Content = {
     cost: {
       heading: "Paano ang gastos?",
       text: "Tumatanggap kami ng Medi-Cal. Maaari ring magbayad nang direkta. Tawagan kami at ipapaliwanag namin kung ano ang naaangkop sa inyong pamilya.",
+      linkLabel: "How Medi-Cal coverage works",
+      linkHref: "/medi-cal",
     },
     trust: {
       text: "Naglilingkod sa mga pamilya sa West Sacramento mula pa noong 2003. Negosyong pag-aari ng pamilya mula noong 2007.",
@@ -432,6 +434,9 @@ export const tl: Content = {
       text: "Tawagan ang opisina at hingin ang iskedyul ng transportasyon.",
     },
   },
+
+  // Medi-Cal page: not translated; this language is switched off.
+  coverage: en.coverage,
 
   // ---------------------------------------------------------- Enrollment ---
   enrollment: {

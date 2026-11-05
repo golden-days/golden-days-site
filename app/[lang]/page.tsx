@@ -148,6 +148,14 @@ export default async function HomePage() {
         <div className="max-w-3xl rounded-xl border-l-8 border-gold-deep bg-cream p-6">
           <h2 className="text-2xl">{home.cost.heading}</h2>
           <p className="mt-3">{home.cost.text}</p>
+          <p className="mt-3">
+            <LocaleLink
+              href={home.cost.linkHref}
+              className="inline-flex min-h-12 min-w-12 items-center font-semibold text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
+            >
+              {home.cost.linkLabel}
+            </LocaleLink>
+          </p>
         </div>
       </Section>
 

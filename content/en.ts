@@ -189,6 +189,8 @@ export const en = {
     cost: {
       heading: "What about cost?",
       text: "We accept Medi-Cal. Private pay is also an option. Call us and we will explain what applies to your family.",
+      linkLabel: "How Medi-Cal coverage works",
+      linkHref: "/medi-cal",
     },
     trust: {
       text: "Serving West Sacramento families since 2003. Family owned since 2007.",
@@ -403,15 +405,13 @@ export const en = {
         list: {
           label: "Areas we usually serve:",
           items: [
-            "West Sacramento",
-            "Bryte and Broderick",
-            "Southport",
-            "Parts of Sacramento near the river",
-            "Antelope",
-            "Elk Grove",
-            "Natomas",
+            "West Sacramento, including Bryte, Broderick and Southport",
+            "Sacramento, including Natomas and areas near the river",
+            "Rancho Cordova and Mather",
             "Carmichael",
-            "Rancho Cordova",
+            "North Highlands, Antelope and Rio Linda",
+            "Roseville",
+            "Elk Grove",
           ],
         },
       },
@@ -439,6 +439,79 @@ export const en = {
     cta: {
       heading: "Questions about a pickup?",
       text: "Call the office and ask for the transportation schedule.",
+    },
+  },
+
+  // ------------------------------------------------------------ Medi-Cal ---
+  coverage: {
+    meta: {
+      title: "Does Medi-Cal Cover Adult Day Health Care (CBAS)?",
+      description:
+        "Yes, through Medi-Cal health plans. Which plans Golden Days accepts in Yolo and Sacramento counties, who qualifies for CBAS, what it costs, and how to start.",
+    },
+    heading: "Does Medi-Cal cover adult day health care?",
+    lead: "Usually, yes. Adult day health care is a Medi-Cal benefit called CBAS (Community-Based Adult Services). It is paid through your Medi-Cal health plan. Here is how it works at Golden Days.",
+    sections: [
+      {
+        heading: "What is adult day health care (ADHC / CBAS)?",
+        paragraphs: [
+          "Adult day health care is a daytime program for adults who live at home but need nursing care, therapy or supervision during the day. In California, the Medi-Cal version is called CBAS.",
+          "At Golden Days, participants come on their approved days, see our nurses and therapists, eat meals that follow their medical diet, take part in activities, and ride our buses to and from home. They sleep in their own bed every night.",
+        ],
+      },
+      {
+        heading: "Health plans we accept",
+        paragraphs: [
+          "Medi-Cal pays for CBAS through a Medi-Cal health plan, not on its own.",
+          "Not sure which plan you have? Look at your health plan card, or call us and we will check.",
+        ],
+        list: {
+          label: "Plans we accept:",
+          items: [
+            "Yolo County (West Sacramento): Partnership HealthPlan",
+            "Sacramento County: Anthem Blue Cross, Health Net, Molina Healthcare, Kaiser Permanente",
+          ],
+        },
+      },
+      {
+        heading: "Who qualifies",
+        paragraphs: [
+          "CBAS is for adults 18 and older who have Medi-Cal and a health condition that makes it hard to stay safe at home without daytime care. Examples include memory loss, recovery from a stroke, diabetes, heart disease, or needing help with daily activities.",
+          "Your health plan decides eligibility after a face-to-face assessment. We help you with the paperwork and the request.",
+        ],
+      },
+      {
+        heading: "What does it cost?",
+        paragraphs: [
+          "When your Medi-Cal health plan approves CBAS, the plan pays for your approved days, including rides to and from the center.",
+          "Medicare does not cover adult day health care. If you do not have Medi-Cal, private pay is possible. Call us and we will explain the cost.",
+        ],
+      },
+    ],
+    faq: {
+      heading: "Common questions",
+      items: [
+        {
+          question: "How is this different from assisted living or a nursing home?",
+          answer: "Your loved one keeps living at home. They come to the center during the day and go home in the afternoon.",
+        },
+        {
+          question: "How many days a week can they come?",
+          answer: "Your health plan approves a number of days a week. We choose the days together with you.",
+        },
+        {
+          question: "How long does it take to start?",
+          answer: "It depends on the health plan and your doctor's paperwork. We will give you a realistic timeline on the first call.",
+        },
+        {
+          question: "Do you speak Russian or Chinese?",
+          answer: "Our staff speak Russian, Ukrainian and English. A Chinese interpreter is available.",
+        },
+      ],
+    },
+    cta: {
+      heading: "Check your coverage",
+      text: "Call us with your health plan card nearby. We will tell you what applies to your family.",
     },
   },
 

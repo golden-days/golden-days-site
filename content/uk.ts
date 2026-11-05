@@ -7,7 +7,7 @@
  * file before launch.
  */
 
-import { phone, type Content } from "./en";
+import { en, phone, type Content } from "./en";
 
 export const uk: Content = {
   site: {
@@ -180,6 +180,8 @@ export const uk: Content = {
     cost: {
       heading: "А як щодо вартості?",
       text: "Ми приймаємо Medi-Cal. Можлива й оплата з особистих коштів. Зателефонуйте нам, і ми пояснимо, що підходить вашій родині.",
+      linkLabel: "How Medi-Cal coverage works",
+      linkHref: "/medi-cal",
     },
     trust: {
       text: "Ми піклуємося про родини West Sacramento з 2003 року. Родинний бізнес з 2007 року.",
@@ -432,6 +434,9 @@ export const uk: Content = {
       text: "Зателефонуйте до офісу й запитайте розклад поїздок.",
     },
   },
+
+  // Medi-Cal page: not translated; this language is switched off.
+  coverage: en.coverage,
 
   // ---------------------------------------------------------- Enrollment ---
   enrollment: {

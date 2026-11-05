@@ -7,7 +7,7 @@
  * file before launch.
  */
 
-import { phone, type Content } from "./en";
+import { en, phone, type Content } from "./en";
 
 export const es: Content = {
   site: {
@@ -180,6 +180,8 @@ export const es: Content = {
     cost: {
       heading: "¿Y el costo?",
       text: "Aceptamos Medi-Cal. También es posible pagar de su bolsillo. Llámenos y le explicaremos qué aplica a su familia.",
+      linkLabel: "How Medi-Cal coverage works",
+      linkHref: "/medi-cal",
     },
     trust: {
       text: "Al servicio de las familias de West Sacramento desde 2003. Negocio familiar desde 2007.",
@@ -432,6 +434,9 @@ export const es: Content = {
       text: "Llame a la oficina y pida el horario de transporte.",
     },
   },
+
+  // Medi-Cal page: not translated; this language is switched off.
+  coverage: en.coverage,
 
   // ---------------------------------------------------------- Enrollment ---
   enrollment: {
