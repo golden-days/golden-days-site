@@ -37,6 +37,7 @@ export default async function LocalBusinessJsonLd() {
       { "@type": "City", name: "North Highlands, CA" },
       { "@type": "City", name: "Carmichael, CA" },
       { "@type": "City", name: "Rio Linda, CA" },
+      { "@type": "City", name: "Elk Grove, CA" },
     ],
     openingHoursSpecification: [
       {

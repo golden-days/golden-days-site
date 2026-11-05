@@ -7,7 +7,7 @@
  * file before launch.
  */
 
-import { phone, type Content } from "./en";
+import { en, phone, type Content } from "./en";
 
 export const vi: Content = {
   site: {
@@ -180,6 +180,8 @@ export const vi: Content = {
     cost: {
       heading: "Còn chi phí thì sao?",
       text: "Chúng tôi nhận Medi-Cal. Quý vị cũng có thể tự thanh toán. Hãy gọi cho chúng tôi, chúng tôi sẽ giải thích điều gì áp dụng cho gia đình quý vị.",
+      linkLabel: "How Medi-Cal coverage works",
+      linkHref: "/medi-cal",
     },
     trust: {
       text: "Phục vụ các gia đình West Sacramento từ năm 2003. Doanh nghiệp gia đình từ năm 2007.",
@@ -432,6 +434,9 @@ export const vi: Content = {
       text: "Hãy gọi cho văn phòng và hỏi về lịch đưa đón.",
     },
   },
+
+  // Medi-Cal page: not translated; this language is switched off.
+  coverage: en.coverage,
 
   // ---------------------------------------------------------- Enrollment ---
   enrollment: {

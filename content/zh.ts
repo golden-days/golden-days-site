@@ -182,6 +182,8 @@ export const zh: Content = {
     cost: {
       heading: "費用方面呢？",
       text: "我們接受 Medi-Cal。也可以自費。請打電話給我們，我們會說明適合您家庭的方式。",
+      linkLabel: "Medi-Cal 如何支付",
+      linkHref: "/medi-cal",
     },
     trust: {
       text: "自 2003 年起，我們一直照顧 West Sacramento 的家庭。自 2007 年起由家族經營。",
@@ -396,15 +398,13 @@ export const zh: Content = {
         list: {
           label: "我們通常服務的地區：",
           items: [
-            "West Sacramento",
-            "Bryte 和 Broderick",
-            "Southport",
-            "Sacramento 靠河的部分地區",
-            "Antelope",
-            "Elk Grove",
-            "Natomas",
+            "West Sacramento（包括 Bryte、Broderick 和 Southport）",
+            "沙加緬度（包括 Natomas 和靠河地區）",
+            "Rancho Cordova 和 Mather",
             "Carmichael",
-            "Rancho Cordova",
+            "North Highlands、Antelope 和 Rio Linda",
+            "Roseville",
+            "Elk Grove",
           ],
         },
       },
@@ -432,6 +432,79 @@ export const zh: Content = {
     cta: {
       heading: "對接送有疑問？",
       text: "請打電話到辦公室，詢問接送時間表。",
+    },
+  },
+
+  // ------------------------------------------------------------ Medi-Cal ---
+  coverage: {
+    meta: {
+      title: "Medi-Cal 是否支付成人日間健康護理 (CBAS)？",
+      description:
+        "是的，透過 Medi-Cal 健康保險計劃支付。了解 Golden Days 在 Yolo 縣和沙加緬度縣接受哪些計劃、誰符合 CBAS 資格、費用以及如何開始。",
+    },
+    heading: "Medi-Cal 是否支付成人日間健康護理？",
+    lead: "通常會。成人日間健康護理是 Medi-Cal 的一項福利，稱為 CBAS（社區成人服務），由您的 Medi-Cal 健康保險計劃支付。以下說明 Golden Days 的做法。",
+    sections: [
+      {
+        heading: "什麼是成人日間健康護理 (ADHC / CBAS)？",
+        paragraphs: [
+          "這是一項日間計劃，服務住在家中、但白天需要護理、治療或照看的成年人。在加州，Medi-Cal 的這項服務稱為 CBAS。",
+          "在 Golden Days，參加者在核准的日子來中心，由護士和治療師照顧，享用配合醫療飲食的餐點，參加活動，並由我們的巴士接送。每晚都在自己家中休息。",
+        ],
+      },
+      {
+        heading: "我們接受的健康保險計劃",
+        paragraphs: [
+          "Medi-Cal 須透過 Medi-Cal 健康保險計劃支付 CBAS，不能單獨使用。",
+          "不確定您的計劃？請查看您的保險卡，或致電我們幫您確認。",
+        ],
+        list: {
+          label: "我們接受：",
+          items: [
+            "Yolo 縣（West Sacramento）：Partnership HealthPlan",
+            "沙加緬度縣：Anthem Blue Cross、Health Net、Molina Healthcare、Kaiser Permanente",
+          ],
+        },
+      },
+      {
+        heading: "誰符合資格",
+        paragraphs: [
+          "CBAS 適合18歲或以上、有 Medi-Cal，並因健康狀況而在沒有日間照護時難以安全住在家中的成年人。例如記憶力衰退、中風後康復、糖尿病、心臟病，或日常生活需要協助。",
+          "由您的健康保險計劃在面對面評估後決定資格。我們會協助您準備文件和申請。",
+        ],
+      },
+      {
+        heading: "費用是多少？",
+        paragraphs: [
+          "當您的 Medi-Cal 健康保險計劃核准 CBAS 後，計劃會支付核准的日數，包括往返中心的接送。",
+          "Medicare 不支付成人日間健康護理。如果您沒有 Medi-Cal，也可以自費。歡迎致電了解費用。",
+        ],
+      },
+    ],
+    faq: {
+      heading: "常見問題",
+      items: [
+        {
+          question: "這和輔助生活或療養院有什麼不同？",
+          answer: "您的親人繼續住在家中，白天來中心，下午回家。",
+        },
+        {
+          question: "每週可以來幾天？",
+          answer: "您的健康保險計劃會核准每週的天數，具體日子我們會與您一起安排。",
+        },
+        {
+          question: "多久可以開始？",
+          answer: "取決於健康保險計劃和醫生的文件。第一次通話時，我們會告訴您實際的時間。",
+        },
+        {
+          question: "你們說中文嗎？",
+          answer: "我們的員工說俄語、烏克蘭語和英語，並提供中文翻譯。",
+        },
+      ],
+    },
+    cta: {
+      heading: "確認您的保險",
+      text: "請準備好您的保險卡並致電我們，我們會說明適合您家庭的方式。",
     },
   },
 
