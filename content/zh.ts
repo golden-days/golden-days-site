@@ -50,6 +50,7 @@ export const zh: Content = {
       { href: "/about", label: "關於我們" },
       { href: "/services", label: "服務項目" },
       { href: "/transportation", label: "交通接送" },
+      { href: "/medi-cal", label: "Medi-Cal" },
       { href: "/qualify", label: "我適合嗎？" },
       { href: "/enrollment", label: "如何報名" },
       { href: "/contact", label: "聯絡我們" },

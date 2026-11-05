@@ -48,6 +48,7 @@ export const vi: Content = {
       { href: "/about", label: "Giới thiệu" },
       { href: "/services", label: "Dịch vụ" },
       { href: "/transportation", label: "Đưa đón" },
+      { href: "/medi-cal", label: "Medi-Cal" },
       { href: "/qualify", label: "Tôi có đủ điều kiện không?" },
       { href: "/enrollment", label: "Ghi danh" },
       { href: "/contact", label: "Liên hệ" },

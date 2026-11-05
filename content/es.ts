@@ -48,6 +48,7 @@ export const es: Content = {
       { href: "/about", label: "Quiénes somos" },
       { href: "/services", label: "Servicios" },
       { href: "/transportation", label: "Transporte" },
+      { href: "/medi-cal", label: "Medi-Cal" },
       { href: "/qualify", label: "¿Califico?" },
       { href: "/enrollment", label: "Inscripción" },
       { href: "/contact", label: "Contacto" },

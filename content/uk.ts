@@ -48,6 +48,7 @@ export const uk: Content = {
       { href: "/about", label: "Про нас" },
       { href: "/services", label: "Послуги" },
       { href: "/transportation", label: "Транспорт" },
+      { href: "/medi-cal", label: "Medi-Cal" },
       { href: "/qualify", label: "Чи підходжу я?" },
       { href: "/enrollment", label: "Запис до центру" },
       { href: "/contact", label: "Контакти" },

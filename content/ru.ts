@@ -48,6 +48,7 @@ export const ru: Content = {
       { href: "/about", label: "О нас" },
       { href: "/services", label: "Услуги" },
       { href: "/transportation", label: "Транспорт" },
+      { href: "/medi-cal", label: "Medi-Cal" },
       { href: "/qualify", label: "Подхожу ли я?" },
       { href: "/enrollment", label: "Запись в центр" },
       { href: "/contact", label: "Контакты" },

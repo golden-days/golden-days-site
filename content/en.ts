@@ -57,6 +57,7 @@ export const en = {
       { href: "/about", label: "About" },
       { href: "/services", label: "Services" },
       { href: "/transportation", label: "Transportation" },
+      { href: "/medi-cal", label: "Medi-Cal" },
       { href: "/qualify", label: "Do I qualify?" },
       { href: "/enrollment", label: "Enrollment" },
       { href: "/contact", label: "Contact" },

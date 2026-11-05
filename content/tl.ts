@@ -48,6 +48,7 @@ export const tl: Content = {
       { href: "/about", label: "Tungkol sa Amin" },
       { href: "/services", label: "Mga Serbisyo" },
       { href: "/transportation", label: "Transportasyon" },
+      { href: "/medi-cal", label: "Medi-Cal" },
       { href: "/qualify", label: "Kwalipikado ba Ako?" },
       { href: "/enrollment", label: "Pagpapatala" },
       { href: "/contact", label: "Makipag-ugnayan" },
