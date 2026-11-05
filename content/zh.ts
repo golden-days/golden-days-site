@@ -493,6 +493,22 @@ export const zh: Content = {
       heading: "常見問題",
       items: [
         {
+          question: "ADHC 是什麼意思？和 CBAS 一樣嗎？",
+          answer: "ADHC 是成人日間健康護理（adult day health care）。在加州，支付這項服務的 Medi-Cal 福利稱為 CBAS（社區成人服務）。Golden Days 是提供 CBAS 的持牌 ADHC 中心。",
+        },
+        {
+          question: "成人日間照顧和成人日間健康護理有什麼不同？",
+          answer: "一般的成人日間照顧主要是活動和照看，通常由家庭自費。成人日間健康護理另有護士、治療師和社工，由州政府發牌，並可由 Medi-Cal 支付。",
+        },
+        {
+          question: "Medicare 會支付成人日間照顧嗎？",
+          answer: "不會。Medicare 不支付成人日間照顧或成人日間健康護理。Medi-Cal 可以透過 CBAS 支付。如果您同時有 Medicare 和 Medi-Cal，可以透過您的 Medi-Cal 健康保險計劃支付 CBAS。",
+        },
+        {
+          question: "你們照顧失智或記憶力衰退的人嗎？",
+          answer: "是的。我們許多參加者有記憶力衰退或失智症。員工整天照看他們，每日活動中也有記憶小組。這也讓照顧者在白天有喘息的機會。歡迎致電，談談您親人的需要。",
+        },
+        {
           question: "這和輔助生活或療養院有什麼不同？",
           answer: "您的親人繼續住在家中，白天來中心，下午回家。",
         },
