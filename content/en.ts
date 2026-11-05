@@ -89,9 +89,9 @@ export const en = {
         "Golden Days is an adult day health care center (ADHC, also called CBAS) in West Sacramento that also serves Sacramento. Nursing, therapy, meals and rides. Medi-Cal health plans accepted. Russian-speaking staff. Call us or schedule a tour.",
     },
     hero: {
-      heading: "Daytime care for adults in West Sacramento",
+      heading: "Adult Day Health Care (ADHC / CBAS) in West Sacramento",
       intro:
-        "Golden Days is a day program for adults, and for the families who care for them.",
+        "Golden Days is a licensed adult day health care center serving West Sacramento and Sacramento: nursing, therapy, meals and rides for adults, and support for the families who care for them.",
       photo: {
         kind: "building" as const,
         label: "Photo placeholder - building exterior",
@@ -470,7 +470,7 @@ export const en = {
       items: [
         {
           title: "Medi-Cal",
-          text: "We accept Medi-Cal. We can explain what the process looks like.",
+          text: "We accept Medi-Cal through these health plans: Partnership HealthPlan, Anthem Blue Cross, Health Net, Molina, Kaiser. Call us and we will check your plan.",
         },
         {
           title: "Private pay",

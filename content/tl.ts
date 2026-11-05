@@ -80,9 +80,9 @@ export const tl: Content = {
         "Ang Golden Days Adult Day Health Care ay isang day program para sa mga nasa hustong gulang sa West Sacramento, California. Tawagan kami o mag-iskedyul ng tour.",
     },
     hero: {
-      heading: "Pangangalaga sa araw para sa mga nasa hustong gulang sa West Sacramento",
+      heading: "Adult Day Health Care (ADHC / CBAS) sa West Sacramento",
       intro:
-        "Ang Golden Days ay isang day program para sa mga nasa hustong gulang, at para sa mga pamilyang nag-aalaga sa kanila.",
+        "Ang Golden Days ay isang lisensyadong adult day health care center na naglilingkod sa West Sacramento at Sacramento: nars, therapy, pagkain at sundo-hatid para sa mga nasa hustong gulang, at suporta para sa mga pamilyang nag-aalaga sa kanila.",
       photo: {
         kind: "building" as const,
         label: "Placeholder ng larawan - labas ng gusali",
@@ -461,7 +461,7 @@ export const tl: Content = {
       items: [
         {
           title: "Medi-Cal",
-          text: "Tumatanggap kami ng Medi-Cal. Maipapaliwanag namin kung paano ang proseso.",
+          text: "Tumatanggap kami ng Medi-Cal sa mga health plan na ito: Partnership HealthPlan, Anthem Blue Cross, Health Net, Molina, Kaiser. Tawagan kami at susuriin namin ang inyong plan.",
         },
         {
           title: "Private pay",

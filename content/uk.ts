@@ -80,9 +80,9 @@ export const uk: Content = {
         "Golden Days Adult Day Health Care — програма денного догляду для дорослих у West Sacramento, Каліфорнія. Зателефонуйте нам або запишіться на екскурсію.",
     },
     hero: {
-      heading: "Денний догляд для дорослих у West Sacramento",
+      heading: "Денний медичний центр для дорослих (ADHC / CBAS) у West Sacramento",
       intro:
-        "Golden Days — це програма денного догляду для дорослих і підтримка для родин, які про них дбають.",
+        "Golden Days — ліцензований центр денного медичного догляду для West Sacramento і Сакраменто: медсестри, терапія, харчування й транспорт для дорослих, а також підтримка для родин, які про них дбають.",
       photo: {
         kind: "building" as const,
         label: "Місце для фото — будівля ззовні",
@@ -461,7 +461,7 @@ export const uk: Content = {
       items: [
         {
           title: "Medi-Cal",
-          text: "Ми приймаємо Medi-Cal. Ми можемо пояснити, як відбувається процес.",
+          text: "Ми приймаємо Medi-Cal через ці страхові плани: Partnership HealthPlan, Anthem Blue Cross, Health Net, Molina, Kaiser. Зателефонуйте нам, і ми перевіримо ваш план.",
         },
         {
           title: "Оплата з особистих коштів",

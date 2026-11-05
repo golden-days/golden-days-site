@@ -80,9 +80,9 @@ export const es: Content = {
         "Golden Days Adult Day Health Care es un programa diurno para adultos en West Sacramento, California. Llámenos o programe una visita.",
     },
     hero: {
-      heading: "Cuidado diurno para adultos en West Sacramento",
+      heading: "Centro de salud diurno para adultos (ADHC / CBAS) en West Sacramento",
       intro:
-        "Golden Days es un programa diurno para adultos y para las familias que los cuidan.",
+        "Golden Days es un centro de salud diurno para adultos con licencia que atiende West Sacramento y Sacramento: enfermería, terapia, comidas y transporte para adultos, y apoyo para las familias que los cuidan.",
       photo: {
         kind: "building" as const,
         label: "Espacio para foto - exterior del edificio",
@@ -461,7 +461,7 @@ export const es: Content = {
       items: [
         {
           title: "Medi-Cal",
-          text: "Aceptamos Medi-Cal. Podemos explicarle cómo es el proceso.",
+          text: "Aceptamos Medi-Cal a través de estos planes de salud: Partnership HealthPlan, Anthem Blue Cross, Health Net, Molina, Kaiser. Llámenos y revisaremos su plan.",
         },
         {
           title: "Pago particular",
