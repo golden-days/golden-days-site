@@ -462,6 +462,8 @@ export const tl: Content = {
     pays: {
       heading: "Sino ang nagbabayad",
       intro: "Karaniwang nagbabayad ang mga pamilya sa isa sa mga paraang ito:",
+      linkLabel: "See which Medi-Cal plans we accept",
+      linkHref: "/medi-cal",
       value: "Karaniwang mas mura ang adult day health care kaysa sa pagpapaospital sa susunod, kaya makakatulong ang maagang pag-enroll.",
       items: [
         {

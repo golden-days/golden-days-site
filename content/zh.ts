@@ -532,6 +532,8 @@ export const zh: Content = {
     pays: {
       heading: "費用由誰支付",
       intro: "家庭通常用以下方式之一支付：",
+      linkLabel: "查看我們接受的 Medi-Cal 計劃",
+      linkHref: "/medi-cal",
       value: "成人日間健康照護的費用通常遠低於日後住院，因此及早報名會有幫助。",
       items: [
         {

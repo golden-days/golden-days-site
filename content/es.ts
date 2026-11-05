@@ -462,6 +462,8 @@ export const es: Content = {
     pays: {
       heading: "Quién paga",
       intro: "Las familias suelen pagar de una de estas maneras:",
+      linkLabel: "See which Medi-Cal plans we accept",
+      linkHref: "/medi-cal",
       value: "La atención médica diurna para adultos suele costar mucho menos que una hospitalización más adelante, así que inscribirse temprano puede ayudar.",
       items: [
         {

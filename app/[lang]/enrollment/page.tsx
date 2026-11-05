@@ -1,3 +1,4 @@
+import LocaleLink from "@/components/LocaleLink";
 import ButtonLink from "@/components/ButtonLink";
 import CallToAction from "@/components/CallToAction";
 import PageHero from "@/components/PageHero";
@@ -52,6 +53,14 @@ export default async function EnrollmentPage() {
             </li>
           ))}
         </ul>
+        <p className="mt-6">
+          <LocaleLink
+            href={page.pays.linkHref}
+            className="inline-flex min-h-12 min-w-12 items-center font-semibold text-navy underline decoration-2 underline-offset-4 hover:text-navy-dark"
+          >
+            {page.pays.linkLabel} →
+          </LocaleLink>
+        </p>
         <p className="mt-8 max-w-3xl">{page.pays.value}</p>
         <p className="mt-4 max-w-3xl rounded-xl border-l-8 border-navy bg-white p-5 text-lg">
           {page.pays.note}

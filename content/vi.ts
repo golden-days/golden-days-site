@@ -462,6 +462,8 @@ export const vi: Content = {
     pays: {
       heading: "Ai chi trả",
       intro: "Các gia đình thường chi trả theo một trong những cách sau:",
+      linkLabel: "See which Medi-Cal plans we accept",
+      linkHref: "/medi-cal",
       value: "Chăm sóc sức khỏe ban ngày cho người lớn thường tốn kém ít hơn nhiều so với nằm viện về sau, vì vậy đăng ký sớm có thể có lợi.",
       items: [
         {
