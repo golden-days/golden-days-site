@@ -327,6 +327,14 @@ export const zh: Content = {
         summary: "在中心開放的日子接送往返，包括使用輪椅或助行器的參加者。",
       },
     ],
+    photo: {
+      kind: "interior" as const,
+      label: "照片 — 運動室",
+      alt: "Golden Days 的運動及治療室，有跑步機、健身單車、雙槓和練習樓梯。",
+      src: "/images/activity-room.jpg",
+      width: 1109,
+      height: 832,
+    },
     glanceHeading: "服務一覽",
     glanceIntro: "我們的目標是讓您的健康維持在最佳狀態。我們的醫護專業團隊提供的服務包括：",
     glanceItems: [

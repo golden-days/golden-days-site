@@ -325,6 +325,14 @@ export const vi: Content = {
         summary: "Đưa đón đến và từ trung tâm vào các ngày sinh hoạt, kể cả người tham gia dùng xe lăn hoặc khung tập đi.",
       },
     ],
+    photo: {
+      kind: "interior" as const,
+      label: "Photo - exercise room",
+      alt: "The Golden Days exercise and therapy room, with a treadmill, exercise bikes, parallel bars and practice stairs.",
+      src: "/images/activity-room.jpg",
+      width: 1109,
+      height: 832,
+    },
     glanceHeading: "Dịch vụ tóm tắt",
     glanceIntro: "Mục tiêu của chúng tôi là giữ sức khỏe của quý vị ở mức tốt nhất có thể. Đội ngũ chuyên viên chăm sóc sức khỏe của chúng tôi cung cấp các dịch vụ như:",
     glanceItems: [

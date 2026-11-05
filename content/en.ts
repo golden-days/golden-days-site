@@ -334,6 +334,14 @@ export const en = {
         summary: "Rides to and from the center on program days, including for participants who use a wheelchair or a walker.",
       },
     ],
+    photo: {
+      kind: "interior" as const,
+      label: "Photo - exercise room",
+      alt: "The Golden Days exercise and therapy room, with a treadmill, exercise bikes, parallel bars and practice stairs.",
+      src: "/images/activity-room.jpg",
+      width: 1109,
+      height: 832,
+    },
     glanceHeading: "Services at a glance",
     glanceIntro: "Our goal is to keep your health at the highest possible level. Our team of health care professionals offers services such as:",
     glanceItems: [
