@@ -9,7 +9,7 @@ export default async function LocalBusinessJsonLd() {
 
   const localBusiness = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "MedicalBusiness",
     name: t.site.name,
     description: t.home.meta.description,
     url: `${siteUrl}${localizeHref("/", lang)}`,

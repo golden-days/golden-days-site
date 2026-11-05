@@ -31,8 +31,8 @@ export const en = {
     phoneDisplay: phone.display,
     phoneHref: phone.href,
     phoneLabel: "Phone",
-    email: "1215goldendays@gmail.com",
-    emailHref: "mailto:1215goldendays@gmail.com",
+    email: "info@goldendaysadhc.net",
+    emailHref: "mailto:info@goldendaysadhc.net",
     emailLabel: "Email",
     addressLabel: "Address",
     addressLines: ["1215 Merkley Ave", "West Sacramento, CA 95691"],
@@ -45,7 +45,7 @@ export const en = {
     mapTitle: "Map showing the Golden Days Adult Day Health Care location",
     directionsLinkLabel: "Get directions",
     languagesLabel: "Languages",
-    languagesLine: "We speak English, Russian, and Ukrainian, and a Chinese interpreter is available.",
+    languagesLine: "We speak English and Russian, and a Chinese interpreter is available.",
   },
 
   nav: {
@@ -513,7 +513,7 @@ export const en = {
         },
         {
           question: "Do you speak Russian or Chinese?",
-          answer: "Our staff speak Russian, Ukrainian and English. A Chinese interpreter is available.",
+          answer: "Our staff speak Russian and English. A Chinese interpreter is available.",
         },
       ],
     },
