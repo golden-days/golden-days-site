@@ -462,6 +462,8 @@ export const uk: Content = {
     pays: {
       heading: "Хто платить",
       intro: "Зазвичай родини платять одним із таких способів:",
+      linkLabel: "See which Medi-Cal plans we accept",
+      linkHref: "/medi-cal",
       value: "Денний догляд зазвичай коштує набагато дешевше, ніж подальше перебування в лікарні, тож раннє звернення може допомогти.",
       items: [
         {

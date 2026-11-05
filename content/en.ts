@@ -539,6 +539,8 @@ export const en = {
     pays: {
       heading: "Who pays",
       intro: "Families usually pay in one of these ways:",
+      linkLabel: "See which Medi-Cal plans we accept",
+      linkHref: "/medi-cal",
       value: "Adult day health care usually costs much less than a hospital stay later on, so enrolling early can help.",
       items: [
         {
