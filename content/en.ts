@@ -500,6 +500,22 @@ export const en = {
       heading: "Common questions",
       items: [
         {
+          question: "What does ADHC mean? Is it the same as CBAS?",
+          answer: "ADHC stands for adult day health care. In California, the Medi-Cal benefit that pays for it is called CBAS (Community-Based Adult Services). Golden Days is a licensed ADHC center that provides CBAS.",
+        },
+        {
+          question: "What is the difference between adult day care and adult day health care?",
+          answer: "Adult day care (sometimes called senior day care) is mostly activities and supervision, and families usually pay for it themselves. Adult day health care adds nurses, therapists and social workers, is licensed by the state, and can be covered by Medi-Cal.",
+        },
+        {
+          question: "Does Medicare pay for adult day care?",
+          answer: "No. Medicare does not cover adult day care or adult day health care. Medi-Cal can, through CBAS. If you have both Medicare and Medi-Cal, CBAS can be covered through your Medi-Cal health plan.",
+        },
+        {
+          question: "Do you help people with dementia or memory loss?",
+          answer: "Yes. Many of our participants live with memory loss or dementia. Staff supervise them throughout the day, and a memory group is part of the daily schedule. It also gives family caregivers a break (respite) during the day. Call us to talk about your loved one's needs.",
+        },
+        {
           question: "How is this different from assisted living or a nursing home?",
           answer: "Your loved one keeps living at home. They come to the center during the day and go home in the afternoon.",
         },
