@@ -82,9 +82,9 @@ export const zh: Content = {
         "Golden Days 是位於 West Sacramento 的成人日間保健中心（ADHC／CBAS），也接送沙加緬度的長者。提供護理、治療、餐點和交通接送，接受 Medi-Cal 健康計劃，並有中文翻譯協助。歡迎致電或預約參觀。",
     },
     hero: {
-      heading: "West Sacramento 的成人日間照護",
+      heading: "West Sacramento 成人日間健康護理中心 (ADHC / CBAS)",
       intro:
-        "Golden Days 為成年人提供日間照護，也為照顧他們的家人提供支持。",
+        "Golden Days 是持牌成人日間健康護理中心，服務 West Sacramento 和沙加緬度：為成年人提供護理、治療、餐點和接送，也為照顧他們的家人提供支持。",
       photo: {
         kind: "building" as const,
         label: "照片位置 — 中心外觀",
@@ -463,7 +463,7 @@ export const zh: Content = {
       items: [
         {
           title: "Medi-Cal",
-          text: "我們接受 Medi-Cal。我們可以向您說明流程。",
+          text: "我們透過以下健康保險計劃接受 Medi-Cal：Partnership HealthPlan, Anthem Blue Cross, Health Net, Molina, Kaiser。歡迎致電，我們會幫您確認您的計劃。",
         },
         {
           title: "自費",

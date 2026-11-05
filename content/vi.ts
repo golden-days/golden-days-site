@@ -80,9 +80,9 @@ export const vi: Content = {
         "Golden Days Adult Day Health Care là chương trình chăm sóc ban ngày cho người lớn tại West Sacramento, California. Hãy gọi cho chúng tôi hoặc đặt lịch tham quan.",
     },
     hero: {
-      heading: "Chăm sóc ban ngày cho người lớn tại West Sacramento",
+      heading: "Trung tâm chăm sóc sức khỏe ban ngày cho người lớn (ADHC / CBAS) tại West Sacramento",
       intro:
-        "Golden Days là chương trình ban ngày dành cho người lớn và cho các gia đình đang chăm sóc họ.",
+        "Golden Days là trung tâm chăm sóc sức khỏe ban ngày cho người lớn có giấy phép, phục vụ West Sacramento và Sacramento: điều dưỡng, trị liệu, bữa ăn và đưa đón cho người lớn, cùng sự hỗ trợ cho các gia đình chăm sóc họ.",
       photo: {
         kind: "building" as const,
         label: "Chỗ dành cho ảnh - mặt ngoài tòa nhà",
@@ -461,7 +461,7 @@ export const vi: Content = {
       items: [
         {
           title: "Medi-Cal",
-          text: "Chúng tôi nhận Medi-Cal. Chúng tôi có thể giải thích quy trình.",
+          text: "Chúng tôi nhận Medi-Cal qua các chương trình bảo hiểm sau: Partnership HealthPlan, Anthem Blue Cross, Health Net, Molina, Kaiser. Hãy gọi cho chúng tôi để kiểm tra chương trình của quý vị.",
         },
         {
           title: "Tự thanh toán",
