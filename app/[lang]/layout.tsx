@@ -6,6 +6,7 @@ import LanguageBar from "@/components/LanguageBar";
 import LocalBusinessJsonLd from "@/components/LocalBusinessJsonLd";
 import { LocaleProvider } from "@/components/LocaleProvider";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import MobileCallBar from "@/components/MobileCallBar";
 import SiteFooter from "@/components/SiteFooter";
 import SiteHeader from "@/components/SiteHeader";
@@ -101,6 +102,8 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[la
         </LocaleProvider>
         {/* Page views only (no cookies). Switch it on in the Vercel project: Analytics tab. */}
         <Analytics />
+        {/* Page loading speed for real visitors (no cookies). Switch it on in the Vercel project: Speed Insights tab. */}
+        <SpeedInsights />
       </body>
     </html>
   );

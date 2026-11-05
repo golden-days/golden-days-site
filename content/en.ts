@@ -764,7 +764,7 @@ export const en = {
       {
         heading: "Visitor counts",
         paragraphs: [
-          "We use Vercel Analytics to count visits. It records which pages were viewed, the country, the type of device and browser, and which website sent the visitor. It does not use cookies, does not show ads, and does not follow you to other websites.",
+          "We use Vercel Analytics to count visits. It records which pages were viewed, the country, the type of device and browser, and which website sent the visitor. It does not use cookies, does not show ads, and does not follow you to other websites. We also use Vercel Speed Insights, which measures how fast pages load on visitors' devices. It does not use cookies either.",
         ],
       },
       {
