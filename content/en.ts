@@ -19,14 +19,10 @@ export const phone = {
   href: "tel:+19163716011",
 };
 
-/**
- * TODO: confirm the center's fax number, then fill these in. The fax line shows on
- * the For referring providers page only when `display` is not empty. (The 211
- * listing shows (916) 371-6061, but no one at the center has confirmed it.)
- */
+/** The center's fax number (from the owners' business card, 11/06). Shown on the For referring providers page. */
 export const fax = {
-  display: "",
-  href: "",
+  display: "(916) 371-6061",
+  href: "tel:+19163716061",
 };
 
 export const en = {
