@@ -548,6 +548,8 @@ export const es: Content = {
   // ------------------------------------------------- Do I qualify? check ---
   // Five questions, one per screen. Nothing here is stored or sent anywhere;
   // the answers only live in the browser while the page is open.
+  referrals: en.referrals,
+
   qualify: {
     meta: {
       title: "¿Califico?",

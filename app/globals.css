@@ -56,3 +56,19 @@
 .on-navy :focus-visible {
   outline-color: #ffffff;
 }
+
+/* For referring providers page: print on one letter page, without the site's
+   language bar, header, footer and call bar (everything outside <main>). */
+@media print {
+  @page {
+    size: letter;
+    margin: 0.5in;
+  }
+  body:has(.referral-sheet) > :not(main) {
+    display: none !important;
+  }
+  .referral-sheet {
+    font-size: 10pt;
+    line-height: 1.3;
+  }
+}

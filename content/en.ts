@@ -19,6 +19,16 @@ export const phone = {
   href: "tel:+19163716011",
 };
 
+/**
+ * TODO: confirm the center's fax number, then fill these in. The fax line shows on
+ * the For referring providers page only when `display` is not empty. (The 211
+ * listing shows (916) 371-6061, but no one at the center has confirmed it.)
+ */
+export const fax = {
+  display: "",
+  href: "",
+};
+
 export const en = {
   site: {
     name: "Golden Days Adult Day Health Care",
@@ -641,6 +651,45 @@ export const en = {
   // ------------------------------------------------- Do I qualify? check ---
   // Five questions, one per screen. Nothing here is stored or sent anywhere;
   // the answers only live in the browser while the page is open.
+  // ------------------------------------------------------- Referrals ---
+  referrals: {
+    meta: {
+      title: "For Referring Providers: CBAS in West Sacramento",
+      description:
+        "How doctors, case managers and hospital discharge planners can refer patients to Golden Days, a licensed adult day health care (CBAS) center in West Sacramento, Yolo County.",
+    },
+    footerLabel: "For referring providers",
+    heading: "For referring providers",
+    lead: "For doctors, case managers and hospital discharge planners. Golden Days is a licensed adult day health care (CBAS) center in West Sacramento, Yolo County. Here is who we serve and how to refer.",
+    printLabel: "Print this page",
+    fitHeading: "Who is a good fit",
+    provideHeading: "What we provide",
+    provideNote: "Breakfast and lunch are made daily. Rides are door to door, and our vehicles carry wheelchairs and walkers.",
+    privatePay: "Private pay is also available.",
+    referHeading: "How to refer",
+    steps: [
+      {
+        title: "Call us",
+        text: "Tell us the person's Medi-Cal health plan and the best family or caregiver contact.",
+      },
+      {
+        title: "We reach out",
+        text: "We contact the person or family, answer their questions and set up a tour.",
+      },
+      {
+        title: "Doctor's approval",
+        text: "An assessment can only be done with a doctor's approval. We will tell you what is needed.",
+      },
+      {
+        title: "Health plan assessment",
+        text: "The Medi-Cal health plan does a face-to-face assessment and decides which days are approved. We help with the paperwork.",
+      },
+    ],
+    privacyNote: "Please do not send patient health information by email. Call us instead.",
+    contactHeading: "Contact",
+    faxLabel: "Fax",
+  },
+
   qualify: {
     meta: {
       title: "Do I qualify?",
