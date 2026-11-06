@@ -181,7 +181,7 @@ export const zh: Content = {
     },
     cost: {
       heading: "費用方面呢？",
-      text: "我們接受 Medi-Cal。也可以自費。請打電話給我們，我們會說明適合您家庭的方式。",
+      text: "我們接受透過 Partnership HealthPlan（Yolo 縣）以及 Anthem Blue Cross、Health Net、Molina 和 Kaiser（沙加緬度縣）的 Medi-Cal。也可以自費。請打電話給我們，我們會說明適合您家庭的方式。",
       linkLabel: "Medi-Cal 如何支付",
       linkHref: "/medi-cal",
     },

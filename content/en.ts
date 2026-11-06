@@ -194,7 +194,7 @@ export const en = {
     },
     cost: {
       heading: "What about cost?",
-      text: "We accept Medi-Cal. Private pay is also an option. Call us and we will explain what applies to your family.",
+      text: "We accept Medi-Cal through Partnership HealthPlan (Yolo County) and Anthem Blue Cross, Health Net, Molina and Kaiser (Sacramento County). Private pay is also an option. Call us and we will explain what applies to your family.",
       linkLabel: "How Medi-Cal coverage works",
       linkHref: "/medi-cal",
     },
