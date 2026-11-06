@@ -526,14 +526,6 @@ export const en = {
           answer: "Your loved one keeps living at home. They come to the center during the day and go home in the afternoon.",
         },
         {
-          question: "How many days a week can they come?",
-          answer: "Your health plan approves a number of days a week. We choose the days together with you.",
-        },
-        {
-          question: "How long does it take to start?",
-          answer: "It depends on the health plan and your doctor's paperwork. We will give you a realistic timeline on the first call.",
-        },
-        {
           question: "Do you speak Russian or Chinese?",
           answer: "Our staff speak Russian and English. A Chinese interpreter is available.",
         },
@@ -617,32 +609,16 @@ export const en = {
       heading: "Common questions",
       items: [
         {
-          question: "What is CBAS?",
-          answer: "CBAS (Community-Based Adult Services) is the Medi-Cal benefit that pays for adult day health care. Golden Days is a licensed center that provides CBAS.",
-        },
-        {
-          question: "Who qualifies for CBAS?",
-          answer: "Adults 18 and older with Medi-Cal who have a medical condition that needs treatment or rehabilitation prescribed by a doctor, have a physical or mental impairment but do not need constant care, and can take part in a group day program. Your health plan decides after a face-to-face assessment.",
-        },
-        {
-          question: "Does Partnership HealthPlan cover it?",
-          answer: "Yes. We accept Medi-Cal through Partnership HealthPlan (Yolo County) and Anthem Blue Cross, Health Net, Molina and Kaiser (Sacramento County). When your plan approves CBAS, it pays for your approved days, including rides.",
-        },
-        {
-          question: "What if we don't have Medi-Cal?",
-          answer: "Private pay is available. Call us and we will explain the cost. Medicare does not cover adult day health care.",
-        },
-        {
           question: "Do I need a doctor's referral?",
           answer: "Not to call us or take a tour. An assessment can only be done with a doctor's approval, and we will tell you what is needed.",
         },
         {
           question: "How many days a week can my loved one come?",
-          answer: "Schedules range from one day to five days a week. We will set the schedule together with you.",
+          answer: "Your health plan approves a number of days a week, from one to five. We choose the days together with you.",
         },
         {
           question: "How long does enrollment take?",
-          answer: "It depends on paperwork and coverage. We will give you a realistic timeline on the first call.",
+          answer: "It depends on the health plan and your doctor's paperwork. We will give you a realistic timeline on the first call.",
         },
         {
           question: "Can we try it first?",
