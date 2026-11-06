@@ -1,4 +1,5 @@
 import CallToAction from "@/components/CallToAction";
+import FaqJsonLd from "@/components/FaqJsonLd";
 import PageHero from "@/components/PageHero";
 import Section from "@/components/Section";
 import { getContent } from "@/lib/content-server";
@@ -38,6 +39,7 @@ export default async function MediCalPage() {
         </Section>
       ))}
 
+      <FaqJsonLd items={page.faq.items} />
       <Section id="faq">
         <h2 className="text-2xl sm:text-3xl">{page.faq.heading}</h2>
         <dl className="mt-6 max-w-3xl space-y-6">

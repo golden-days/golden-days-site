@@ -1,6 +1,7 @@
 import LocaleLink from "@/components/LocaleLink";
 import ButtonLink from "@/components/ButtonLink";
 import CallToAction from "@/components/CallToAction";
+import FaqJsonLd from "@/components/FaqJsonLd";
 import PageHero from "@/components/PageHero";
 import Section from "@/components/Section";
 import { getContent } from "@/lib/content-server";
@@ -103,6 +104,7 @@ export default async function EnrollmentPage() {
         </ol>
       </Section>
 
+      <FaqJsonLd items={page.faq.items} />
       <Section id="faq" className="scroll-mt-28">
         <h2 className="text-2xl sm:text-3xl">{page.faq.heading}</h2>
         <div className="mt-8 max-w-3xl divide-y-2 divide-gold-deep border-y-2 border-gold-deep">

@@ -634,6 +634,45 @@ export const zh: Content = {
   // ------------------------------------------------- Do I qualify? check ---
   // Five questions, one per screen. Nothing here is stored or sent anywhere;
   // the answers only live in the browser while the page is open.
+  // ------------------------------------------------------- Referrals ---
+  referrals: {
+    meta: {
+      title: "轉介機構專頁：West Sacramento 的 CBAS",
+      description:
+        "醫生、個案管理員和醫院出院規劃人員如何將病人轉介到 Golden Days——位於 Yolo 縣 West Sacramento 的持牌成人日間保健（CBAS）中心。",
+    },
+    footerLabel: "轉介機構專頁",
+    heading: "給轉介機構",
+    lead: "適用於醫生、個案管理員和醫院出院規劃人員。Golden Days 是位於 Yolo 縣 West Sacramento 的持牌成人日間保健（CBAS）中心。以下說明適合的對象和轉介方式。",
+    printLabel: "列印本頁",
+    fitHeading: "適合的對象",
+    provideHeading: "我們提供的服務",
+    provideNote: "每天現做早餐和午餐。提供到府接送，輪椅和助行器使用者都可以搭乘。",
+    privatePay: "也可以自費。",
+    referHeading: "如何轉介",
+    steps: [
+      {
+        title: "打電話給我們",
+        text: "請告訴我們病人的 Medi-Cal 健康計劃，以及家人或照顧者的聯絡方式。",
+      },
+      {
+        title: "我們聯絡家屬",
+        text: "我們會聯絡病人或家屬，回答問題並安排參觀。",
+      },
+      {
+        title: "醫生核准",
+        text: "評估必須先經醫生核准才能進行。我們會告訴您需要什麼。",
+      },
+      {
+        title: "健康計劃評估",
+        text: "Medi-Cal 健康計劃會進行面對面評估，並決定核准的天數。我們會協助處理文件。",
+      },
+    ],
+    privacyNote: "請不要用電子郵件傳送病人的健康資料，請直接打電話給我們。",
+    contactHeading: "聯絡方式",
+    faxLabel: "傳真",
+  },
+
   qualify: {
     meta: {
       title: "我適合嗎？",

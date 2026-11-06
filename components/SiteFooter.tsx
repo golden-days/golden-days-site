@@ -71,6 +71,14 @@ export default async function SiteFooter() {
           </li>
           <li>
             <LocaleLink
+              href="/referrals"
+              className="inline-flex min-h-12 min-w-12 items-center text-white underline decoration-2 underline-offset-4"
+            >
+              {t.referrals.footerLabel}
+            </LocaleLink>
+          </li>
+          <li>
+            <LocaleLink
               href="/enrollment#faq"
               className="inline-flex min-h-12 min-w-12 items-center text-white underline decoration-2 underline-offset-4"
             >
