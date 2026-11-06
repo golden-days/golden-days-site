@@ -604,6 +604,26 @@ export const zh: Content = {
       heading: "常見問題",
       items: [
         {
+          question: "什麼是 CBAS？",
+          answer: "CBAS（Community-Based Adult Services，社區成人服務）是 Medi-Cal 支付成人日間保健的福利。Golden Days 是提供 CBAS 的持牌中心。",
+        },
+        {
+          question: "誰符合 CBAS 資格？",
+          answer: "年滿 18 歲、有 Medi-Cal，並且有需要醫生開立治療或復健的健康狀況、有身體或精神障礙但不需要持續照護、能夠參加團體日間活動的成年人。由您的健康計劃在面對面評估後決定。",
+        },
+        {
+          question: "Partnership HealthPlan 有給付嗎？",
+          answer: "有。我們接受透過 Partnership HealthPlan（Yolo 縣）以及 Anthem Blue Cross、Health Net、Molina 和 Kaiser（沙加緬度縣）的 Medi-Cal。健康計劃核准 CBAS 後，會支付核准的天數，包括接送。",
+        },
+        {
+          question: "如果我們沒有 Medi-Cal 怎麼辦？",
+          answer: "可以自費。請打電話給我們，我們會說明費用。Medicare 不給付成人日間保健。",
+        },
+        {
+          question: "需要醫生轉介嗎？",
+          answer: "打電話給我們或來參觀都不需要。評估必須先經醫生核准才能進行，我們會告訴您需要什麼。",
+        },
+        {
           question: "我的家人每週可以來幾天？",
           answer: "可以安排每週一到五天。我們會與您一起訂出行程。",
         },
